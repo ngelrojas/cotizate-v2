@@ -11,11 +11,15 @@ urlpatterns = [
         name="personal",
     ),
     path(
-        "company/profile", UpdateCompanyView.as_view({"post": "create"}), name="company"
+        "company/profile",
+        UpdateCompanyView.as_view({"get": "list", "post": "create"}),
+        name="company",
     ),
     path(
         "company/profile/<int:pk>",
-        UpdateCompanyView.as_view({"get": "retrieve", "put": "update"}),
+        UpdateCompanyView.as_view(
+            {"get": "retrieve", "put": "update", "delete": "delete"}
+        ),
         name="company-detail",
     ),
 ]
