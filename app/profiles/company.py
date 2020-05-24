@@ -1,11 +1,12 @@
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
-from core.profile import CompanyProfile
-from core.profile import PersonalProfile
-from .companySerializers import CompanySerializer
 from api.cotizate import ProfileComplete
 from api.cotizate import HelperCompany
+from core.profile import CompanyProfile
+from core.profile import PersonalProfile
+from core.queries.HelperCompany import HelperCompany
+from .companySerializers import CompanySerializer
 
 
 class UpdateCompanyView(viewsets.ModelViewSet):
@@ -13,6 +14,15 @@ class UpdateCompanyView(viewsets.ModelViewSet):
 
     serializer_class = CompanySerializer
     queryset = CompanyProfile.objects.all()
+
+    def list(self, request):
+        """list all companies about current user"""
+        try:
+            queryset = HelperCompany.getAllCompanies(self, request)
+            serializer = self.serializer_class(queryset)
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+        except CompanyProfile.DoesNotExist as err:
+            return Response({"error": f"{err}"}, status=status.HTTP_400_BAD_REQUEST)
 
     def create(self, request):
         """create a company"""
@@ -51,5 +61,13 @@ class UpdateCompanyView(viewsets.ModelViewSet):
                 return Response(
                     {"data": "company profile updated."}, status=status.HTTP_200_OK,
                 )
+        except CompanyProfile.DoesNotExist as err:
+            return Response({"error": f"{err}"}, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk=None):
+        """delete current company"""
+        try:
+            HelperCompany.deleteCompany(self, request, pk)
+            return Response({"data": "company deleted."}, status=status.HTTP_200_OK)
         except CompanyProfile.DoesNotExist as err:
             return Response({"error": f"{err}"}, status=status.HTTP_400_BAD_REQUEST)
