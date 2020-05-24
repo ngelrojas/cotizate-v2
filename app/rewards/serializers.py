@@ -4,11 +4,7 @@ from core.reward import Reward
 
 class RewardSerializer(serializers.ModelSerializer):
     """serialzier reward"""
+
     class Meta:
         model = Reward
-        fields = (
-            'title',
-            'description',
-            'amount',
-            'campaings',
-            'users')
+        fields = ("id", "title", "description", "amount", "campaings", "users")

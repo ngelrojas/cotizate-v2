@@ -9,6 +9,7 @@ from currencies.serializers import CurrencySerializer
 
 class CampaingSerializer(serializers.ModelSerializer):
     """campaing serializer"""
+
     users = UserSerializer()
     categories = CategorySerializer()
     tags = TagSerializer(many=True, read_only=True)
@@ -17,45 +18,46 @@ class CampaingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Campaing
         fields = (
-            'title',
-            'slug',
-            'excerpt',
-            'description',
-            'created_at',
-            'updated_at',
-            'public_at',
-            'ended_at',
-            'amount',
-            'qty_day',
-            'status',
-            'users',
-            'categories',
-            'tags',
-            'currencies')
+            "id",
+            "title",
+            "slug",
+            "excerpt",
+            "description",
+            "created_at",
+            "updated_at",
+            "public_at",
+            "ended_at",
+            "amount",
+            "qty_day",
+            "status",
+            "users",
+            "categories",
+            "tags",
+            "currencies",
+        )
 
 
 class CCampaingSerializer(serializers.ModelSerializer):
     """campaing create serializer"""
-    tags = serializers.PrimaryKeyRelatedField(
-        many=True,
-        queryset=Tag.objects.all()
-    )
+
+    tags = serializers.PrimaryKeyRelatedField(many=True, queryset=Tag.objects.all())
 
     class Meta:
         model = Campaing
         fields = (
-            'title',
-            'slug',
-            'excerpt',
-            'description',
-            'created_at',
-            'updated_at',
-            'public_at',
-            'ended_at',
-            'amount',
-            'qty_day',
-            'status',
-            'tags',
-            'categories',
-            'currencies')
-        read_only_fields = ('id', )
+            "title",
+            "slug",
+            "excerpt",
+            "description",
+            "created_at",
+            "updated_at",
+            "public_at",
+            "ended_at",
+            "amount",
+            "qty_day",
+            "status",
+            "tags",
+            "categories",
+            "currencies",
+        )
+        read_only_fields = ("id",)

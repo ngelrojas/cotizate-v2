@@ -4,13 +4,16 @@ from core.payment import Payment
 
 class PaymentSerializer(serializers.ModelSerializer):
     """serializer payment model"""
+
     class Meta:
         model = Payment
         fields = (
-            'name',
-            'amount',
-            'type_pay',
-            'status_pay',
-            'created_at',
-            'users',
-            'campaings')
+            "id",
+            "name",
+            "amount",
+            "type_pay",
+            "status_pay",
+            "created_at",
+            "users",
+            "campaings",
+        )

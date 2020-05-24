@@ -1,7 +1,7 @@
 from core.profile import CompanyProfile
 
 
-class HelperCompany:
+class HelperQueryCompany:
     def getAllCompanies(self, request):
         result = CompanyProfile.objects.filter(user=request.user)
         return result
