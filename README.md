@@ -1,5 +1,3 @@
-TRAVIS CI [![Build Status](https://travis-ci.org/ngelrojas/cotizate-v2.svg?branch=master)](https://travis-ci.org/ngelrojas/cotizate-v2)
-
 # COTIZATE V2
 
 the project is a back end for cms crowfounding, is build in django, django rest framework, django rest framework jwt, postgresql,
