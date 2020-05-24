@@ -1,0 +1,80 @@
+version: '3.7'
+
+services:
+    api:
+        build: ./app
+        command: python manage.py runserver --settings=api.settings.development 0.0.0.0:8000
+        volumes:
+            - ./app/:/usr/src/app/
+        ports:
+            - 8000:8000
+        #env_file:
+            #- ./.env
+        environment:
+            - SQL_HOST=db
+            - SQL_DATABASE=${SQL_DATABASE}
+            - SQL_USER=${SQL_USER}
+            - SQL_PASSWORD=${SQL_PASSWORD}
+        depends_on:
+            - db
+            - broker
+    db:
+        image: postgres:12.0-alpine
+        volumes:
+            - postgres_data:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_DB=${SQL_DATABASE}
+            - POSTGRES_USER=${SQL_USER}
+            - POSTGRES_PASSWORD=${SQL_PASSWORD}
+
+    pgadmin:
+        image: dpage/pgadmin4
+        container_name: pgadmin-dev
+        depends_on:
+            - db
+        ports:
+            - 5051:80
+        environment:
+            - PGADMIN_DEFAULT_EMAIL=${PG_EMAIL}
+            - PGADMIN_DEFAULT_PASSWORD=${PG_PASSWORD}
+        restart: always
+
+    worker:
+        build: ./app
+        restart: 'no'
+        environment:
+            - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+            - CELERY_BROKER=${CELERY_BROKER}
+            - FLOWER_BROKER=${FLOWER_BROKER}
+        command: celery worker --app=api.celery --concurrency=1 --loglevel=INFO
+        volumes:
+            - ./app/:/usr/src/app/
+        depends_on:
+            - broker
+
+    flower:
+        image: zoomeranalytics/flower:0.9.1-4.0.2
+        restart: 'no'
+        environment:
+            - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+            - CELERY_BROKER=${CELERY_BROKER}
+            - FLOWER_BROKER=${FLOWER_BROKER}
+        ports:
+            - 5555:5555
+        depends_on:
+            - broker
+    broker:
+        image: rabbitmq:3
+        environment:
+            - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+            - CELERY_BROKER=${CELERY_BROKER}
+            - FLOWER_BROKER=${FLOWER_BROKER}
+        ports:
+            - 5672:5672
+ 
+
+volumes:
+    postgres_data:

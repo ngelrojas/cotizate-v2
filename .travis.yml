@@ -1,0 +1,14 @@
+language: python
+python:
+    - "3.8"
+
+services:
+    - docker
+
+before_script: pip install docker-compose
+
+install:
+    - pip install -r ./app/requirements.txt
+
+script:
+    - docker-compose run api sh -c "python manage.py test && flake8"

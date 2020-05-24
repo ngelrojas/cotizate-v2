@@ -1,0 +1,11 @@
+/app/staticfiles/
+/app/api/staticfiles/
+/app/core/migrations/
+.env
+.env.prod
+.env.prod.db
+.env.prod.pgadmin
+.env.rabbitmq
+.env.prod.rabbitmq
+TODO.md
+
