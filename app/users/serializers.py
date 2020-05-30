@@ -9,7 +9,7 @@ from api.settings import production
 
 URL_SEND_EMAIL = production.URL_PRODUCTION
 ACTIVATION_ACCOUNT = "/activar-cuenta"
-RECOVERY_PASSWORD = "recuperar-contrasena"
+RECOVERY_PASSWORD = "/recuperar-contrasena"
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -29,7 +29,7 @@ class UserSerializer(serializers.ModelSerializer):
         user_instance = User.objects.create_user(**validate_data)
         uid = encode_user_id(user_instance.id)
         token = make_user_token(user_instance)
-        url = f"{URL_SEND_EMAIL}/"
+        url = URL_SEND_EMAIL
         context_page = ACTIVATION_ACCOUNT
         email_context = {
             "fullname": f'{validate_data["first_name"]}',
@@ -72,7 +72,7 @@ class RecoveryPwdSerializer(serializers.ModelSerializer):
         user = get_object_or_404(User, email=validate_data.get("email"))
         uid = encode_user_id(user.id)
         token = make_user_token(user)
-        url = f"{URL_SEND_EMAIL}"
+        url = URL_SEND_EMAIL
         context_page = RECOVERY_PASSWORD
         email_context = {
             "fullname": f'{validate_data["user.first_name"]}',
