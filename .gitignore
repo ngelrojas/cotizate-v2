@@ -1,6 +1,5 @@
 /app/staticfiles/
 /app/api/staticfiles/
-/app/core/migrations/
 .env
 .env.prod
 .env.prod.db
