@@ -46,7 +46,5 @@ class ProfileComplete:
 
 class HelperCompany:
     def getCurrentCompany(self, request, pk):
-        current_pro = CompanyProfile.objects.get(
-            id=pk, user=request.user, represent=True
-        )
+        current_pro = CompanyProfile.objects.get(id=pk, user=request.user)
         return current_pro
