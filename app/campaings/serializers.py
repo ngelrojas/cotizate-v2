@@ -20,6 +20,7 @@ class CampaingSerializer(serializers.ModelSerializer):
         fields = (
             "id",
             "title",
+            "video_img",
             "slug",
             "excerpt",
             "description",
@@ -34,6 +35,7 @@ class CampaingSerializer(serializers.ModelSerializer):
             "categories",
             "tags",
             "currencies",
+            "profiles",
         )
 
 
