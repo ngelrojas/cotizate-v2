@@ -158,12 +158,14 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
+    "http://34.71.45.26",
 ]
 
 CORS_ORIGIN_REGEX_WHITELIST = (
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
+    "http://34.71.45.26",
 )
 CSRF_COOKIE_NAME = "csrftoken"
 
@@ -171,6 +173,7 @@ CSRF_TRUSTED_ORIGINS = (
     "localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
+    "http://34.71.45.26",
 )
 
 CORS_ALLOW_HEADERS = default_headers + (
@@ -200,4 +203,4 @@ EMAIL_HOST_USER = "me@ngelrojasp.com"
 EMAIL_HOST_PASSWORD = "mengelrojas2019"
 EMAIL_BACKEND = "django_smtp_ssl.SSLEmailBackend"
 DEFAULT_FROM_EMAIL = "me@ngelrojasp.com"
-URL_PRODUCTION = "http://cotizate.com"
+URL_PRODUCTION = os.environ.get("URL_PRODUCTION")
