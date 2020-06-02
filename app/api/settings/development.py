@@ -191,4 +191,4 @@ EMAIL_HOST_USER = "me@ngelrojasp.com"
 EMAIL_HOST_PASSWORD = "mengelrojas2019"
 EMAIL_BACKEND = "django_smtp_ssl.SSLEmailBackend"
 DEFAULT_FROM_EMAIL = "me@ngelrojasp.com"
-URL_PRODUCTION = "http://localhost:3000"
+URL_PRODUCTION = os.environ.get("URL_PRODUCTION")
