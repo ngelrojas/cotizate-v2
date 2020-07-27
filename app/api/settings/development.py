@@ -183,12 +183,12 @@ JWT_AUTH = {
 }
 
 # config email
-EMAIL_USE_TLS = False
-EMAIL_USE_SSL = True
-EMAIL_HOST = "mail.ngelrojasp.com"
-EMAIL_PORT = 465
-EMAIL_HOST_USER = "me@ngelrojasp.com"
-EMAIL_HOST_PASSWORD = "mengelrojas2019"
-EMAIL_BACKEND = "django_smtp_ssl.SSLEmailBackend"
-DEFAULT_FROM_EMAIL = "me@ngelrojasp.com"
+EMAIL_USE_TLS = os.environ.get("EMAIL_USE_TLS")
+EMAIL_USE_SSL = os.environ.get("EMAIL_USE_SSL")
+EMAIL_HOST = os.environ.get("EMAIL_HOST")
+EMAIL_PORT = os.environ.get("EMAIL_PORT")
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
+EMAIL_BACKEND = os.environ.get("EMAIL_BACKEND")
+DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL")
 URL_PRODUCTION = os.environ.get("URL_PRODUCTION")
