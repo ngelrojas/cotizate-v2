@@ -190,5 +190,5 @@ EMAIL_PORT = os.environ.get("EMAIL_PORT")
 EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 EMAIL_BACKEND = os.environ.get("EMAIL_BACKEND")
-DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL")
-URL_PRODUCTION = os.environ.get("URL_PRODUCTION")
+DEFAULT_FROM_EMAIL = "test@localhost.com"
+URL_PRODUCTION = "http://127.0.0.1:8000"
