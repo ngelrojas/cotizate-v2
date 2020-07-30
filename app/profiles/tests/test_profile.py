@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.contrib.auth import get_user_model
-from django.urls import reverse
+# from django.urls import reverse
 
 # from rest_framework.test import APIClient
 # from rest_framework import status
@@ -8,7 +8,7 @@ from core.profile import PersonalProfile
 from core.profile import CompanyProfile
 
 
-PROFILE_URL = reverse('profile:personal')
+# PROFILE_URL = reverse('profile:personal')
 
 
 def create_user(**params):
