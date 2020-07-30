@@ -14,6 +14,7 @@ import os
 import datetime
 from corsheaders.defaults import default_methods
 from corsheaders.defaults import default_headers
+from .conf_email import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -195,12 +196,12 @@ JWT_AUTH = {
 }
 
 # config email
-EMAIL_USE_TLS = os.environ.get("EMAIL_USE_TLS")
-EMAIL_USE_SSL = os.environ.get("EMAIL_USE_SSL")
-EMAIL_HOST = os.environ.get("EMAIL_HOST")
-EMAIL_PORT = os.environ.get("EMAIL_PORT")
-EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
-EMAIL_BACKEND = os.environ.get("EMAIL_BACKEND")
-DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL")
-URL_PRODUCTION = os.environ.get("URL_PRODUCTION")
+EMAIL_USE_TLS = EMAILUSETLS
+EMAIL_USE_SSL = EMAILUSESSL
+EMAIL_HOST = EMAILHOST
+EMAIL_PORT = EMAILPORT
+EMAIL_HOST_USER = EMAILHOSTUSER
+EMAIL_HOST_PASSWORD = EMAILHOSTPASSWORD
+EMAIL_BACKEND = EMAILBACKEND
+DEFAULT_FROM_EMAIL = DEFAULTFROMEMAIL
+URL_PRODUCTION = URLPRODUCTION
