@@ -1,5 +1,6 @@
 /app/staticfiles/
 /app/api/staticfiles/
+/app/api/settings/conf_email.py
 .env
 .env.prod
 .env.prod.db
