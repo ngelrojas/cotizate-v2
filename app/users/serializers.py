@@ -5,11 +5,11 @@ from core.user import User
 from core.encoder_tokens import encode_user_id
 from core.encoder_tokens import make_user_token
 from api.celery import send_email_module
-from api.settings import development
+from api.settings import production
 
-URL_SEND_EMAIL = development.URL_PRODUCTION
+URL_SEND_EMAIL = production.URL_PRODUCTION
 ACTIVATION_ACCOUNT = "/activar-cuenta"
-RECOVERY_PASSWORD = "recuperar-contrasena"
+RECOVERY_PASSWORD = "/recuperar-contrasena"
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -29,7 +29,7 @@ class UserSerializer(serializers.ModelSerializer):
         user_instance = User.objects.create_user(**validate_data)
         uid = encode_user_id(user_instance.id)
         token = make_user_token(user_instance)
-        url = f"{URL_SEND_EMAIL}/"
+        url = f"{URL_SEND_EMAIL}"
         context_page = ACTIVATION_ACCOUNT
         email_context = {
             "fullname": f'{validate_data["first_name"]}',
