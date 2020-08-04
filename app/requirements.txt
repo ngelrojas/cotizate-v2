@@ -11,3 +11,4 @@ Babel
 celery
 django-autoslug
 django-filter
+django-decouple
