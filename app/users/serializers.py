@@ -29,11 +29,10 @@ class UserSerializer(serializers.ModelSerializer):
         user_instance = User.objects.create_user(**validate_data)
         uid = encode_user_id(user_instance.id)
         token = make_user_token(user_instance)
-        url = f"{URL_SEND_EMAIL}"
         context_page = ACTIVATION_ACCOUNT
         email_context = {
             "fullname": f'{validate_data["first_name"]}',
-            "domain": url + context_page,
+            "domain": URL_SEND_EMAIL + context_page,
             "uid": uid,
             "token": token,
         }
@@ -72,17 +71,16 @@ class RecoveryPwdSerializer(serializers.ModelSerializer):
         user = get_object_or_404(User, email=validate_data.get("email"))
         uid = encode_user_id(user.id)
         token = make_user_token(user)
-        url = f"{URL_SEND_EMAIL}"
         context_page = RECOVERY_PASSWORD
         email_context = {
             "fullname": f'{validate_data["user.first_name"]}',
-            "domain": url + context_page,
+            "domain": URL_SEND_EMAIL + context_page,
             "uid": uid,
             "token": token,
         }
         tmp_name = "emails/recovery_password_email.html"
         send_email_module.delay(
-            subject="Cotizate - Recovery Password",
+            subject="Cotizate - Recuperar contraseña",
             to=[validate_data["email"]],
             body="",
             template_name=tmp_name,
