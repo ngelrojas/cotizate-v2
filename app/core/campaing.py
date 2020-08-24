@@ -42,19 +42,29 @@ class Campaing(models.Model):
     def __str__(self):
         return self.title
 
-    def get_not_del_and_archived(self):
+    def get_not_del_and_archived(self, request):
         """
         get all campaing without deleted and archived
         for current user
         """
-        return Campaing.objects.filter(users=self.request.user).exclude(
+        return Campaing.objects.filter(users=request.user).exclude(
             Q(status=8) | Q(status=9)
         )
 
     @classmethod
     def get_all_available(cls):
-        """get all available campaings"""
+        """get all available campaings to public"""
         return Campaing.objects.filter(status=5)
+
+    @classmethod
+    def get_completed_campaings(cls):
+        """get all completed campaings to public"""
+        return Campaing.objects.filter(status=6)
+
+    @classmethod
+    def get_terminated_campaings(cls):
+        """get all completed campaings to public"""
+        return Campaing.objects.filter(status=7)
 
     def get_all_completed(self):
         """get all completed campaing to
@@ -92,7 +102,7 @@ class Campaing(models.Model):
 
     def update_to_delete(self, current_user, pk):
         """update status to deleted=9"""
-        camp = Campaing.objects.exclude(Q(status=5) | Q(status=6) | Q(status=87)).get(
+        camp = Campaing.objects.exclude(Q(status=5) | Q(status=6) | Q(status=7) | Q(status=8)).get(
             users=current_user, id=pk
         )
         camp.status = 9
