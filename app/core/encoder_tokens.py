@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 import six
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -9,7 +9,7 @@ class TokenGenerator(PasswordResetTokenGenerator):
     """generate code """
     def _make_hash_value(self, user, timestamp):
         """creatring a value to current user"""
-        now = datetime.datetime.now().minute
+        now = datetime.now().minute
         user_now = six.text_type(user.pk) + six.text_type(now)
         hashed_string = user_now + six.text_type(user.is_activate)
         return hashed_string
@@ -19,7 +19,8 @@ class TokenGenerator(PasswordResetTokenGenerator):
         returns a token that can be user once to do a password reset
         for the given user.
         """
-        now = self._num_days(self._today())
+        date_now = datetime.now()
+        now = int(date_now.strftime('%Y%m%d'))
         token_generated = self._make_token_with_timestamp(user, now)
         return token_generated
 

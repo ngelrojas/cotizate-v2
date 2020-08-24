@@ -27,18 +27,6 @@ services:
             - POSTGRES_USER=${SQL_USER}
             - POSTGRES_PASSWORD=${SQL_PASSWORD}
 
-    pgadmin:
-        image: dpage/pgadmin4
-        container_name: pgadmin-dev
-        depends_on:
-            - db
-        ports:
-            - 5051:80
-        environment:
-            - PGADMIN_DEFAULT_EMAIL=${PG_EMAIL}
-            - PGADMIN_DEFAULT_PASSWORD=${PG_PASSWORD}
-        restart: always
-
     worker:
         build: ./app
         restart: 'no'

@@ -6,7 +6,7 @@ app_name = "profile"
 
 urlpatterns = [
     path(
-        "personal/profile/<int:pk>",
+        "personal/profile",
         UpdatePersonalView.as_view({"get": "retrieve", "put": "update"}),
         name="personal",
     ),
