@@ -38,6 +38,7 @@ class Campaing(models.Model):
     tags = models.ManyToManyField(Tag)
     currencies = models.ForeignKey(Currency, on_delete=models.CASCADE)
     profiles = models.IntegerField(default=0)
+    short_url = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):
         return self.title
@@ -87,9 +88,9 @@ class Campaing(models.Model):
         """
         retrieve current campaing with the current user
         """
-        return Campaing.objects.exclude(Q(status=8) | Q(status=9)).get(
-            users=current_user, id=pk
-        )
+        return Campaing.objects.exclude(
+            Q(status=8) | Q(status=9)).get(
+                users=current_user, id=pk)
 
     def update_to_archived(self, current_user, pk):
         """update status to archived=8"""
@@ -102,9 +103,9 @@ class Campaing(models.Model):
 
     def update_to_delete(self, current_user, pk):
         """update status to deleted=9"""
-        camp = Campaing.objects.exclude(Q(status=5) | Q(status=6) | Q(status=7) | Q(status=8)).get(
-            users=current_user, id=pk
-        )
+        camp = Campaing.objects.exclude(
+            Q(status=5) | Q(status=6) | Q(status=7) | Q(status=8)).get(
+                users=current_user, id=pk)
         camp.status = 9
         camp.save()
         return camp
