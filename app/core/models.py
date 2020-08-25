@@ -9,3 +9,5 @@ from core.accumulated import Accumulated
 from core.payment import Payment
 from core.comment import Comment
 from core.reward import Reward
+from core.favorite import Favorite
+from core.like import Like
