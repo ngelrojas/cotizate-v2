@@ -57,6 +57,8 @@ APP_API = [
     "payments",
     "comments",
     "rewards",
+    "favorites",
+    "likes",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
