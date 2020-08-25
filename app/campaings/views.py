@@ -40,8 +40,8 @@ class Campaings(viewsets.ViewSet):
             data['profiles'] = request.user.id
             serializer = self.serializer_class(data=data)
             if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response({'data': True,
+                camp = serializer.save()
+                return Response({'data': camp.id,
                                  'msg': 'campaing is saved.'},
                                 status=status.HTTP_201_CREATED)
 
