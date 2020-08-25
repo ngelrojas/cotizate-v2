@@ -51,4 +51,6 @@ urlpatterns = [
     path('api/v2/', include('payments.urls')),
     path('api/v2/', include('comments.urls')),
     path('api/v2/', include('rewards.urls')),
+    path('api/v2/', include('favorites.urls')),
+    path('api/v2/', include('likes.urls')),
 ]
