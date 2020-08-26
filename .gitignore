@@ -7,5 +7,6 @@
 .env.prod.pgadmin
 .env.rabbitmq
 .env.prod.rabbitmq
+git-detect.sh
 TODO.md
 
