@@ -6,7 +6,7 @@ from core.profile import PersonalProfile
 from .serializers import CampaingSerializer
 
 
-class Campaings(viewsets.ViewSet):
+class Campaings(viewsets.ModelViewSet):
     """Campaing
     - list: list campaing to current user
     - create: create campaing to current user
@@ -23,22 +23,34 @@ class Campaings(viewsets.ViewSet):
             serializer = self.serializer_class(list_campaing, many=True)
             return Response({'data': serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
-            return Response({'error': f'{err}'},
+            return Response({'data': False,
+                             'msg': f'{err}'},
                             status=status.HTTP_400_BAD_REQUEST)
 
     def create(self, request):
         """create campaing to current user"""
         try:
-            data = request.data.copy()
+            send_data = {
+                'title': request.data.get('title'),
+                'excerpt': request.data.get('excerpt'),
+                'description': request.data.get('description'),
+                'qty_day': request.data.get('qty_day'),
+                'amount': request.data.get('amount'),
+                'video_img': request.data.get('video_img'),
+                'public_at': request.data.get('public_at'),
+                'categories': request.data.get('categories'),
+                'currencies': request.data.get('currencies'),
+                'tags': request.data.get('tags'),
+                'users': request.user.id,
+                'profiles': request.user.id
+            }
             current_profile = PersonalProfile.objects.get(user=request.user)
             if current_profile.complete is not True:
                 return Response({'data': False,
                                  'msg': 'profile user is not complete'},
                                 status=status.HTTP_200_OK)
 
-            data['users'] = request.user.id
-            data['profiles'] = request.user.id
-            serializer = self.serializer_class(data=data)
+            serializer = self.serializer_class(data=send_data)
             if serializer.is_valid(raise_exception=True):
                 camp = serializer.save()
                 return Response({'data': camp.id,
