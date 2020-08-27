@@ -1,12 +1,12 @@
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
+from api.cotizate import ProfileComplete
 from core.profile import PersonalProfile as PerPF
 from .personalSerializers import PersonalSerializer
-from api.cotizate import ProfileComplete
 
 
-class UpdatePersonalView(viewsets.ModelViewSet):
+class UpdatePersonalView(viewsets.ViewSet):
     """update profile current user"""
     serializer_class = PersonalSerializer
     queryset = PerPF.objects.all()
@@ -24,7 +24,7 @@ class UpdatePersonalView(viewsets.ModelViewSet):
             return Response({'error': f'{err}'},
                             status=status.HTTP_404_NOT_FOUND)
 
-    def update(self, request, *args, **kwargs):
+    def update(self, request, pk=None):
         """update profile current user"""
         prof = ProfileComplete()
         current_profile = prof.currentProfile(
