@@ -13,6 +13,7 @@ class PersonalSerializer(serializers.ModelSerializer):
         fields = (
             'address',
             'dni',
+            'complete',
             'country',
             'city',
             'cellphone',
@@ -21,4 +22,3 @@ class PersonalSerializer(serializers.ModelSerializer):
             'headline',
             'birthdate',
             'age')
-        extra_kwargs = {'complete': {'write_only': True}}
