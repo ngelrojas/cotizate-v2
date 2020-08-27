@@ -5,7 +5,7 @@ from core.favorite import Favorite
 from .serializers import FavoriteSerializer
 
 
-class FavoriteView(viewsets.ViewSet):
+class FavoriteView(viewsets.ModelViewSet):
     """Favorite
     - list: list favorites to current user
     - create: create favorite to current user
