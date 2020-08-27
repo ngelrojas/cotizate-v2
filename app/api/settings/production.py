@@ -174,7 +174,7 @@ CORS_ORIGIN_REGEX_WHITELIST = (
 CSRF_COOKIE_NAME = "csrftoken"
 
 CSRF_TRUSTED_ORIGINS = (
-    "localhost:3000",
+    "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
     "http://34.71.45.26",
