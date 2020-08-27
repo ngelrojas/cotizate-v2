@@ -5,7 +5,7 @@ from core.like import Like
 from .serializers import LikeSerializer
 
 
-class LikeView(viewsets.ViewSet):
+class LikeView(viewsets.ModelViewSet):
     """Like
     - list: list likes to current user
     - create: create likes to current user
