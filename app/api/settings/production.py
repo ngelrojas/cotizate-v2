@@ -25,12 +25,12 @@ X_FRAME_OPTIONS = "Deny"
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY', default='SECRET')
+SECRET_KEY = config("SECRET_KEY", default="SECRET")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(config("DEBUG", default=0))
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(' ')
+ALLOWED_HOSTS = config("ALLOWED_HOSTS").split(" ")
 
 
 # Application definition
@@ -53,6 +53,7 @@ APP_API = [
     "core",
     "users",
     "profiles",
+    "profilesAssociations",
     "categories",
     "campaings",
     "payments",
@@ -60,6 +61,8 @@ APP_API = [
     "rewards",
     "favorites",
     "likes",
+    "countries",
+    "cities",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
@@ -127,9 +130,15 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
-    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",},
-    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",},
-    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
+    {
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+    },
 ]
 
 
@@ -152,6 +161,7 @@ USE_TZ = True
 
 STATIC_URL = "/staticfiles/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+MEDIA_ROOT = os.path.join(BASE_DIR, "..", "app")
 
 # CORS AND STUFF
 CORS_ALLOW_CREDENTIALS = False

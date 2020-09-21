@@ -52,6 +52,7 @@ APP_API = [
     "core",
     "users",
     "profiles",
+    "profilesAssociations",
     "categories",
     "campaings",
     "payments",
@@ -59,6 +60,8 @@ APP_API = [
     "rewards",
     "favorites",
     "likes",
+    "countries",
+    "cities",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
@@ -127,9 +130,15 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
-    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",},
-    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",},
-    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
+    {
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+    },
 ]
 
 

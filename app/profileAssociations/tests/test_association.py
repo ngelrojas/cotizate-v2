@@ -8,14 +8,11 @@ from django.contrib.auth import get_user_model
 from core.profile import PersonalProfile
 
 
-# PROFILE_URL = reverse('profile:personal')
-
-
 def create_user(**params):
     return get_user_model().objects.create_user(**params)
 
 
-class ProfileManagerTests(TestCase):
+class AssociationTests(TestCase):
     """test personal profile """
 
     def test_create_personal_profile(self):

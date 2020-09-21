@@ -1,25 +1,20 @@
 from django.urls import path
-from profiles.personal import UpdatePersonalView
-from profiles.company import UpdateCompanyView
+from profiles.personal import PersonalProfileView
+
 
 app_name = "profile"
 
 urlpatterns = [
     path(
-        "personal/profile",
-        UpdatePersonalView.as_view({"get": "retrieve", "put": "update"}),
+        "profile/personal",
+        PersonalProfileView.as_view({"post": "create"}),
         name="personal",
     ),
     path(
-        "company/profile",
-        UpdateCompanyView.as_view({"get": "list", "post": "create"}),
-        name="company",
-    ),
-    path(
-        "company/profile/<int:pk>",
-        UpdateCompanyView.as_view(
+        "profile/personal/<int:pk>",
+        PersonalProfileView.as_view(
             {"get": "retrieve", "put": "update", "delete": "delete"}
         ),
-        name="company-detail",
+        name="personal-detail",
     ),
 ]

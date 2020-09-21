@@ -22,7 +22,7 @@ from drf_yasg import openapi
 schema_view = get_schema_view(
     openapi.Info(
         title="COTIZATE API V2",
-        default_version='V2',
+        default_version="V2",
         description="cotizate v2 updated new modules",
         terms_of_service="https://ngelrojasp.com/policies/terms/",
         contact=openapi.Contact(email="me@ngelrojasp.com"),
@@ -32,25 +32,37 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 
+# TODO: create a modules for social-network personalprofile, profileassociation, profilecompany
+# TODO: create a module for profile-company
+
 urlpatterns = [
-    re_path(r'^api/v2/cotizate(?P<format>\.json|\.yaml)$',
-            schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    re_path(r'^api/v2/cotizate/$',
-            schema_view.with_ui('swagger',
-                                cache_timeout=0),
-            name='schema-swagger-ui'),
-    re_path(r'^api/v2/cotizate/$',
-            schema_view.with_ui('redoc', cache_timeout=0),
-            name='schema-redoc'),
-    path('admin/', admin.site.urls),
-    path('api/v2/', include('users.urls')),
-    path('api/v2/', include('profiles.urls')),
-    path('api/v2/', include('categories.urls')),
-    path('api/v2/', include('tags.urls')),
-    path('api/v2/', include('campaings.urls')),
-    path('api/v2/', include('payments.urls')),
-    path('api/v2/', include('comments.urls')),
-    path('api/v2/', include('rewards.urls')),
-    path('api/v2/', include('favorites.urls')),
-    path('api/v2/', include('likes.urls')),
+    re_path(
+        r"^api/v2/cotizate(?P<format>\.json|\.yaml)$",
+        schema_view.without_ui(cache_timeout=0),
+        name="schema-json",
+    ),
+    re_path(
+        r"^api/v2/cotizate/$",
+        schema_view.with_ui("swagger", cache_timeout=0),
+        name="schema-swagger-ui",
+    ),
+    re_path(
+        r"^api/v2/cotizate/$",
+        schema_view.with_ui("redoc", cache_timeout=0),
+        name="schema-redoc",
+    ),
+    path("admin/", admin.site.urls),
+    path("api/v2/", include("users.urls")),
+    path("api/v2/", include("profiles.urls")),
+    path("api/v2/", include("profileAssociations.urls")),
+    path("api/v2/", include("categories.urls")),
+    path("api/v2/", include("tags.urls")),
+    path("api/v2/", include("campaings.urls")),
+    path("api/v2/", include("payments.urls")),
+    path("api/v2/", include("comments.urls")),
+    path("api/v2/", include("rewards.urls")),
+    path("api/v2/", include("favorites.urls")),
+    path("api/v2/", include("likes.urls")),
+    path("api/v2/", include("countries.urls")),
+    path("api/v2/", include("cities.urls")),
 ]

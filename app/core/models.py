@@ -1,6 +1,7 @@
 from core.user import User
 from core.profile import PersonalProfile
-from core.profile import CompanyProfile
+from core.profileAssociation import ProfileAssociation
+from core.profileCompany import ProfileCompany
 from core.category import Category
 from core.tag import Tag
 from core.campaing import Campaing
@@ -11,3 +12,8 @@ from core.comment import Comment
 from core.reward import Reward
 from core.favorite import Favorite
 from core.like import Like
+from core.country import Country
+from core.city import City
+from core.socialNetwork import SocialNetworkPP
+from core.socialNetwork import SocialNetworkPA
+from core.socialNetwork import SocialNetworkPC

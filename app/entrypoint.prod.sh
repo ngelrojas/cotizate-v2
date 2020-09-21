@@ -11,4 +11,7 @@ then
     echo "POSTGESQL STARTED"
 fi
 
+python manage.py makemigrations
+python manage.py migrate
+
 exec "$@"
