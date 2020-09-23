@@ -54,6 +54,7 @@ APP_API = [
     "users",
     "profiles",
     "profilesAssociations",
+    "profileCompanies",
     "categories",
     "campaings",
     "payments",
@@ -63,6 +64,7 @@ APP_API = [
     "likes",
     "countries",
     "cities",
+    "socialNetworks",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
@@ -208,6 +210,39 @@ JWT_AUTH = {
     "JWT_AUTH_COOKIE": None,
 }
 
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "[%(asctime)s.%(msecs)03d]%(levelname)s [%(name)s:%(lineno)s] %(message)s",
+            "datefmt": "%d/%b/%Y %H:%M:%S",
+        }
+    },
+    "simple": {"format": "%(levelname)s %(message)s"},
+    "handlers": {
+        "file": {
+            "level": "INFO",
+            "class": "logging.handlers.TimedRotatingFileHandler",
+            "filename": "log/cotizate_api_application.log",
+            "when": "D",
+            "interval": 1,
+            "backupCount": 40,
+            "formatter": "verbose",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["file"],
+            "propagate": True,
+            "level": "INFO",
+        },
+        "app01": {
+            "handlers": ["file"],
+            "level": "INFO",
+        },
+    },
+}
 # config email
 EMAIL_USE_TLS = EMAILUSETLS
 EMAIL_USE_SSL = EMAILUSESSL

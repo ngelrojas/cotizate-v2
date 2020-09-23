@@ -55,6 +55,7 @@ urlpatterns = [
     path("api/v2/", include("users.urls")),
     path("api/v2/", include("profiles.urls")),
     path("api/v2/", include("profileAssociations.urls")),
+    path("api/v2/", include("profileCompanies.urls")),
     path("api/v2/", include("categories.urls")),
     path("api/v2/", include("tags.urls")),
     path("api/v2/", include("campaings.urls")),
@@ -65,4 +66,5 @@ urlpatterns = [
     path("api/v2/", include("likes.urls")),
     path("api/v2/", include("countries.urls")),
     path("api/v2/", include("cities.urls")),
+    path("api/v2/", include("socialNetworks.urls")),
 ]

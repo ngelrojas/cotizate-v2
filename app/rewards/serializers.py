@@ -7,4 +7,4 @@ class RewardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Reward
-        fields = ("id", "title", "description", "amount", "campaings", "users")
+        fields = "__all__"
