@@ -1,5 +1,5 @@
 from core.user import User
-from core.profile import CompanyProfile
+from core.profileCompany import ProfileCompany
 
 
 class ActiveUser:
@@ -31,9 +31,9 @@ class ProfileComplete:
 
     def update_profile(self, profile, request):
         """
-            update complete field to True
-            return True means is updated recently
-            return False means was updated
+        update complete field to True
+        return True means is updated recently
+        return False means was updated
         """
         is_complete = self.isComplete(profile, request)
         if not is_complete:
@@ -46,5 +46,5 @@ class ProfileComplete:
 
 class HelperCompany:
     def getCurrentCompany(self, request, pk):
-        current_pro = CompanyProfile.objects.get(id=pk, user=request.user)
+        current_pro = ProfileCompany.objects.get(id=pk, user=request.user)
         return current_pro

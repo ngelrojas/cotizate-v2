@@ -13,8 +13,12 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # install psycopg2 and dependencies
+
 RUN apk update \
-    && apk add postgresql-dev gcc python3-dev musl-dev
+    && apk add postgresql-dev python3-dev gcc musl-dev
+    #&& apk add zlib-dev jpeg-dev gcc musl-dev \
+    #&& pip install Pillow \ 
+    #&& apk del build-deps 
 
 # lint using flake8
 RUN pip install --upgrade pip

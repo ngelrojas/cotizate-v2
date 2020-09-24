@@ -32,9 +32,6 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 
-# TODO: create a modules for social-network personalprofile, profileassociation, profilecompany
-# TODO: create a module for profile-company
-
 urlpatterns = [
     re_path(
         r"^api/v2/cotizate(?P<format>\.json|\.yaml)$",
@@ -67,4 +64,6 @@ urlpatterns = [
     path("api/v2/", include("countries.urls")),
     path("api/v2/", include("cities.urls")),
     path("api/v2/", include("socialNetworks.urls")),
+    path("api/v2/", include("phases.urls")),
+    path("api/v2/", include("improvies.urls")),
 ]

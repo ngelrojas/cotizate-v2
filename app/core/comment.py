@@ -1,14 +1,14 @@
 from django.db import models
 from .user import User
+from .campaing import CampaingHeader
 
 
 class Comment(models.Model):
     """comment model"""
+
     discuss = models.CharField(max_length=200)
-    users = models.ForeignKey(
-        User,
-        on_delete=models.CASCADE)
-    campaings = models.IntegerField(default=0)
+    users = models.ForeignKey(User, on_delete=models.CASCADE)
+    campaings = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
     parentid = models.IntegerField(default=0)
 
     def __str__(self):
@@ -27,8 +27,7 @@ class Comment(models.Model):
         return Comment.objects.filter(campaings=campaing)
 
     def get_all_ans_by_comment_user(self, request, parentID):
-        return Comment.objects.filter(users=request.user.id,
-                                      parentid=parentID)
+        return Comment.objects.filter(users=request.user.id, parentid=parentID)
 
     def get_all_ans_by_comment(self, parentID):
         return Comment.objects.filter(parentid=parentID)

@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from core.reward import Reward
 from core.queries.rewardQuery import RewardQuery
 from .serializers import RewardSerializer
+from .componentReward.compReward import CompReward
 
 
 class RewardView(viewsets.ViewSet):
@@ -49,19 +50,14 @@ class RewardView(viewsets.ViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
-    # TODO: this method recived an array object and need looping
     def create(self, request):
         """create reward"""
         try:
-            # for data in request.data:
-            data = request.data.copy()
-            data["user"] = request.user
-            serializer = self.serializer_class(data=data)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response(
-                    {"data": True, "msg": "reward saved."}, status=status.HTTP_200_OK
-                )
+            data_reward = CompReward.save_array_data(request, self.serializer_class)
+            return Response(
+                {"data": data_reward, "msg": "reward saved."},
+                status=status.HTTP_201_CREATED,
+            )
         except Reward.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
@@ -70,19 +66,16 @@ class RewardView(viewsets.ViewSet):
     def update(self, request, pk):
         """update reward"""
         try:
-            current_reward = Reward.get_reward(self, request, pk)
-            data_send = {
-                "title": request.data.get("title"),
-                "description": request.data.get("description"),
-                "amount": request.data.get("amount"),
-                "campaings": current_reward.id,
-                "users": request.user.id,
-            }
+            current_reward = RewardQuery.retrieve_reward(
+                request.data.get("header_id"), pk
+            )
+            data_send = request.data.copy()
+            data_send["user"] = request.user.id
             serializer = self.serializer_class(current_reward, data=data_send)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
                 return Response(
-                    {"data": serializer.data, "msg": "reward updated."},
+                    {"data": True, "msg": "reward updated."},
                     status=status.HTTP_200_OK,
                 )
         except Reward.DoesNotExist as err:
@@ -93,7 +86,10 @@ class RewardView(viewsets.ViewSet):
     def delete(self, request, pk):
         """delete reward"""
         try:
-            Reward.delete_reward(self, request, pk)
+            current_reward = RewardQuery.retrieve_reward(
+                request.data.get("header_id"), pk
+            )
+            current_reward.delete()
             return Response(
                 {"data": True, "msg": "reward deleted."},
                 status=status.HTTP_204_NO_CONTENT,

@@ -14,12 +14,12 @@ class CampaingHeaderSerializer(serializers.ModelSerializer):
         model = CampaingHeader
         fields = (
             "id",
-            "users",
-            "categories",
-            "cities",
+            "user",
+            "category",
+            "city",
             "qty_days",
             "amount",
-            "roles",
+            "role",
         )
         read_only_fields = ("id",)
 

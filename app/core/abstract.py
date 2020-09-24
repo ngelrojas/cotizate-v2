@@ -1,7 +1,5 @@
 from django.db import models
 from autoslug import AutoSlugField
-from .country import Country
-from .city import City
 
 
 class AbstractProfile(models.Model):
@@ -11,8 +9,6 @@ class AbstractProfile(models.Model):
     address = models.CharField(max_length=250)
     number_address = models.CharField(max_length=10)
     neightbordhood = models.CharField(max_length=250, blank=True)
-    countries = models.ForeignKey(Country, on_delete=models.CASCADE)
-    cities = models.ForeignKey(City, on_delete=models.CASCADE)
     cellphone = models.CharField(max_length=50)
     telephone = models.CharField(max_length=50)
     description = models.TextField(blank=True, null=True)

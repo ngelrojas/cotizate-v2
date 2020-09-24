@@ -53,7 +53,7 @@ APP_API = [
     "core",
     "users",
     "profiles",
-    "profilesAssociations",
+    "profileAssociations",
     "profileCompanies",
     "categories",
     "campaings",
@@ -65,6 +65,8 @@ APP_API = [
     "countries",
     "cities",
     "socialNetworks",
+    "phases",
+    "improvies",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
@@ -163,7 +165,7 @@ USE_TZ = True
 
 STATIC_URL = "/staticfiles/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-MEDIA_ROOT = os.path.join(BASE_DIR, "..", "app")
+MEDIA_ROOT = os.path.join(BASE_DIR, "..", "app/media")
 
 # CORS AND STUFF
 CORS_ALLOW_CREDENTIALS = False

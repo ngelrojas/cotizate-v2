@@ -18,3 +18,5 @@ from core.city import City
 from core.socialNetwork import SocialNetworkPP
 from core.socialNetwork import SocialNetworkPA
 from core.socialNetwork import SocialNetworkPC
+from core.phase import Phase
+from core.improve import Improve

@@ -1,72 +1,103 @@
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from core.campaing import Campaing
+from core.campaing import CampaingHeader
 from core.reward import Reward
+from core.city import City
 
 
 class Command(BaseCommand):
-    help = 'this command create items to campaings'
+    help = "this command create items to campaings"
 
     def success(self, message):
-        return self.stdout.write(
-            self.style.SUCCESS(message)
-        )
+        return self.stdout.write(self.style.SUCCESS(message))
 
     def warning(self, message):
-        return self.stdout.write(
-            self.style.WARNING(message)
-        )
+        return self.stdout.write(self.style.WARNING(message))
 
     def error(self, message):
-        return self.stdout.write(
-            self.style.ERROR(message)
-        )
+        return self.stdout.write(self.style.ERROR(message))
 
     def handle(self, *args, **options):
-        self.warning('if something goes wrong ater installations, \n'
-                     'please use develop environment: \n'
-                     'docker-compose exec api python manage.py flush')
+        self.warning(
+            "if something goes wrong ater installations, \n"
+            "please use develop environment: \n"
+            "docker-compose exec api python manage.py flush"
+        )
 
         with transaction.atomic():
+            # get city
+            lp = City.objects.get(code_name="LP")
+            scz = City.objects.get(code_name="SCZ")
+            cbb = City.objects.get(code_name="CBB")
+            oru = City.objects.get(code_name="OR")
+            tj = City.objects.get(code_name="TJ")
             # get campaings
-            camp_one = Campaing.objects.get(id=1)
-            camp_two = Campaing.objects.get(id=2)
-            camp_three = Campaing.objects.get(id=3)
+            camp_one = CampaingHeader.objects.get(id=1)
+            camp_two = CampaingHeader.objects.get(id=2)
+            camp_three = CampaingHeader.objects.get(id=3)
             # create rewards
             Reward.objects.create(
-                title='fist reward to campaing one',
-                description='description to campaing one',
+                title="fist reward to campaing one",
+                description="description to campaing one",
                 amount=50,
-                campaings=camp_one.id,
-                users=0)
+                expected_delivery="2020-09-10 00:00:00",
+                header=camp_one,
+                users=0,
+                cities=[lp, scz, cbb, oru, tj],
+            )
             Reward.objects.create(
-                title='second reward to campaing one',
-                description='description to campaing one',
+                title="second reward to campaing one",
+                description="description to campaing one",
                 amount=65,
-                campaings=camp_one.id,
-                users=0)
+                expected_delivery="2020-09-10 00:00:00",
+                header=camp_one,
+                users=0,
+                cities=[lp, scz],
+            )
             Reward.objects.create(
-                title='fist reward to campaing two',
-                description='description to campaing two',
+                title="threedth reward to campaing two",
+                description="description to campaing two",
                 amount=70,
-                campaings=camp_two.id,
-                users=0)
+                expected_delivery="2020-09-10 00:00:00",
+                header=camp_one,
+                users=0,
+                cities=[oru, tj],
+            )
             Reward.objects.create(
-                title='second reward to campaing two',
-                description='description to campaing second',
+                title="fourth reward to campaing two",
+                description="description to campaing second",
                 amount=50,
-                campaings=camp_two.id,
-                users=0)
+                expected_delivery="2020-09-10 00:00:00",
+                header=camp_two,
+                users=0,
+                cities=[cbb, oru],
+            )
             Reward.objects.create(
-                title='first reward to campaing three',
-                description='description to campaing three',
+                title="fiveth reward to campaing three",
+                description="description to campaing three",
                 amount=50,
-                campaings=camp_three.id,
-                users=0)
+                expected_delivery="2020-09-10 00:00:00",
+                header=camp_two,
+                users=0,
+                cities=[cbb, oru],
+            )
             Reward.objects.create(
-                title='second reward to campaing three',
-                description='description to campaing three',
+                title="second reward to campaing three",
+                description="description to campaing three",
                 amount=60,
-                campaings=camp_three.id,
-                users=0)
-            self.success('rewards created')
+                expected_delivery="2020-09-10 00:00:00",
+                header=camp_three,
+                users=0,
+                cities=[tj],
+            )
+            Reward.objects.create(
+                title="sixth reward to campaing three",
+                description="description to campaing three",
+                amount=60,
+                expected_delivery="2020-09-10 00:00:00",
+                header=camp_three,
+                users=0,
+                all_cities=True,
+                pick_up_locally=True,
+            )
+            self.success("rewards created")

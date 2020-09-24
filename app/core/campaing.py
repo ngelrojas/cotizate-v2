@@ -6,19 +6,24 @@ from core.currency import Currency
 from core.city import City
 
 
+def user_directory_path(instance, filename):
+    """campaing id"""
+    return f"campaing/{instance.user.id}/{filename}"
+
+
 class CampaingHeader(models.Model):
     """model campaing header"""
 
-    ROLE_CAMPAING = (1, "social cause", 2, "entrepreneuship")
+    ROLE_CAMPAING = ((1, "social cause"), (2, "entrepreneuship"))
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     city = models.ForeignKey(City, on_delete=models.CASCADE)
-    qty_days = models.IntergerField(default=0)
+    qty_days = models.IntegerField(default=0)
     amount = models.DecimalField(max_digits=12, decimal_places=3, default=0)
-    role = models.IntergerField(choices=ROLE_CAMPAING, default=0)
+    role = models.IntegerField(choices=ROLE_CAMPAING, default=2)
 
     def __str__(self):
-        return self.categories.name
+        return self.user.first_name
 
 
 class CampaingBody(models.Model):
@@ -38,7 +43,7 @@ class CampaingBody(models.Model):
 
     title = models.CharField(max_length=200)
     video_main = models.CharField(max_length=250)
-    imagen_main = models.CharField(max_length=250)
+    imagen_main = models.FileField(upload_to=user_directory_path)
     slug = AutoSlugField(populate_from="title", always_update=True)
     excerpt = models.CharField(max_length=250)
     description = models.TextField()
@@ -50,7 +55,7 @@ class CampaingBody(models.Model):
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
     currency = models.ForeignKey(Currency, on_delete=models.CASCADE)
     short_url = models.CharField(max_length=100, null=True, blank=True)
-    slogan_campaing = models.CharFiel(max_length=200, null=True, blank=True)
+    slogan_campaing = models.CharField(max_length=200, null=True, blank=True)
 
     def __str__(self):
         return self.title

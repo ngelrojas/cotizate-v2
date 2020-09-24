@@ -52,7 +52,7 @@ APP_API = [
     "core",
     "users",
     "profiles",
-    "profilesAssociations",
+    "profileAssociations",
     "profileCompanies",
     "categories",
     "campaings",
@@ -64,6 +64,8 @@ APP_API = [
     "countries",
     "cities",
     "socialNetworks",
+    "phases",
+    "improvies",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API

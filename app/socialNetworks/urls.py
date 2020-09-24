@@ -12,7 +12,7 @@ urlpatterns = [
         name="social-network-pa-list",
     ),
     path(
-        "social-network-pa/<pk:int>",
+        "social-network-pa/<int:pk>",
         SnetWPAView.as_view({"get": "retrieve", "put": "update", "delete": "delete"}),
         name="social-network-pa-details",
     ),
@@ -22,7 +22,7 @@ urlpatterns = [
         name="social-network-pp-list",
     ),
     path(
-        "social-network-pp/<pk:int>",
+        "social-network-pp/<int:pk>",
         SnetWPPView.as_view({"get": "retrieve", "put": "update", "delete": "delete"}),
         name="social-network-pp-details",
     ),
@@ -32,7 +32,7 @@ urlpatterns = [
         name="social-network-pc-list",
     ),
     path(
-        "social-network-pc/<pk:int>",
+        "social-network-pc/<int:pk>",
         SnetWPCView.as_view({"get": "retrieve", "put": "update", "delete": "delete"}),
         name="social-network-pc-details",
     ),

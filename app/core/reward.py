@@ -1,5 +1,4 @@
 from django.db import models
-from core.user import User
 from core.campaing import CampaingHeader
 from core.city import City
 
@@ -12,8 +11,8 @@ class Reward(models.Model):
     amount = models.DecimalField(max_digits=12, decimal_places=3)
     expected_delivery = models.DateTimeField()
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    cities = models.ManyToMany(City)
+    user = models.IntegerField(default=0)
+    cities = models.ManyToManyField(City)
     all_cities = models.BooleanField(default=False)
     pick_up_locally = models.BooleanField(default=False)
 

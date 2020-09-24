@@ -1,5 +1,4 @@
 from django.db import models
-from core.user import User
 from core.campaing import CampaingHeader
 
 
@@ -10,7 +9,6 @@ class Phase(models.Model):
     description = models.CharField(max_length=150)
     amount = models.DecimalField(max_digits=12, decimal_places=3)
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
