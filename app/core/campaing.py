@@ -18,7 +18,7 @@ class CampaingHeader(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     city = models.ForeignKey(City, on_delete=models.CASCADE)
-    qty_days = models.IntegerField(default=0)
+    qty_day = models.IntegerField(default=0)
     amount = models.DecimalField(max_digits=12, decimal_places=3, default=0)
     role = models.IntegerField(choices=ROLE_CAMPAING, default=2)
 

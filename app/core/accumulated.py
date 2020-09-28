@@ -14,16 +14,3 @@ class Accumulated(models.Model):
 
     def __str__(self):
         return self.campaings.title
-
-
-@receiver(post_save, sender=CampaingHeader)
-def create_accumulated(sender, instance, created, **kwargs):
-    if created:
-        Accumulated.objects.create(days_left=instance.qty_day, campaings=instance)
-
-
-@receiver(post_save, sender=Payment)
-def update_accumulated(sender, instance, **kwargs):
-    caccumulated = Accumulated.objects.get(campaings=instance.campaings.id)
-    caccumulated.amount = caccumulated.amount + instance.amount
-    caccumulated.save()

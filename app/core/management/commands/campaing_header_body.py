@@ -57,7 +57,7 @@ class Command(BaseCommand):
                     user=jhon,
                     category=cultura,
                     city=la_paz,
-                    qty_days=90,
+                    qty_day=90,
                     amount=5000,
                     role=2,
                 )
@@ -71,7 +71,7 @@ class Command(BaseCommand):
                     public_at="2020-09-10 00:00:00",
                     status=2,
                     header=first_camp_header,
-                    currencies=bo,
+                    currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the campaing.",
                 )
@@ -80,7 +80,7 @@ class Command(BaseCommand):
                     user=azumi,
                     category=tecnologia,
                     city=santa_cruz,
-                    qty_days=40,
+                    qty_day=40,
                     amount=15000,
                     role=2,
                 )
@@ -94,7 +94,7 @@ class Command(BaseCommand):
                     public_at="2020-09-10 00:00:00",
                     status=2,
                     header=second_camp_header,
-                    currencies=bo,
+                    currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the second campaing.",
                 )
@@ -102,7 +102,7 @@ class Command(BaseCommand):
                     user=mery,
                     category=emp,
                     city=cochabamba,
-                    qty_days=120,
+                    qty_day=120,
                     amount=19000,
                     role=1,
                 )
@@ -116,7 +116,7 @@ class Command(BaseCommand):
                     public_at="2020-09-10 00:00:00",
                     status=2,
                     header=threeth_camp_header,
-                    currencies=bo,
+                    currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the second campaing.",
                 )

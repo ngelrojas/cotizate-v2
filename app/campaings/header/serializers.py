@@ -17,7 +17,7 @@ class CampaingHeaderSerializer(serializers.ModelSerializer):
             "user",
             "category",
             "city",
-            "qty_days",
+            "qty_day",
             "amount",
             "role",
         )

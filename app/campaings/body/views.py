@@ -32,7 +32,7 @@ class CampaingsBody(viewsets.ModelViewSet):
                 "description": request.data.get("description"),
                 "public_at": public_camp,
                 "header": request.data.get("header"),
-                "currencies": 1,
+                "currency": 1,
                 "short_url": request.data.get("short_url"),
                 "slogan_campaing": request.data.get("slogan_campaing"),
             }

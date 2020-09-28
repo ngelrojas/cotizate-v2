@@ -8,7 +8,7 @@ class Comment(models.Model):
 
     discuss = models.CharField(max_length=200)
     users = models.ForeignKey(User, on_delete=models.CASCADE)
-    campaings = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    campaings = models.IntegerField(default=0)
     parentid = models.IntegerField(default=0)
 
     def __str__(self):

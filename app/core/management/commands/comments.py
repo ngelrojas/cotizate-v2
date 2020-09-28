@@ -31,15 +31,25 @@ class Command(BaseCommand):
             jhon = User.objects.get(id=2)
             mery = User.objects.get(id=3)
             azumi = User.objects.get(id=4)
+            # get campaings
+            camp_one = CampaingHeader.objects.get(id=1)
+            camp_two = CampaingHeader.objects.get(id=2)
+            camp_three = CampaingHeader.objects.get(id=3)
             # create comments
             comment1 = Comment.objects.create(
-                discuss="my first comment to first campaing", campaings=1, users=azumi
+                discuss="my first comment to first campaing",
+                campaings=camp_one.id,
+                users=azumi,
             )
             comment2 = Comment.objects.create(
-                discuss="my first comment to second camaping", campaings=2, users=mery
+                discuss="my first comment to second camaping",
+                campaings=camp_two.id,
+                users=mery,
             )
             comment3 = Comment.objects.create(
-                discuss="my first comment to threeth campaing", campaings=3, users=jhon
+                discuss="my first comment to threeth campaing",
+                campaings=camp_three.id,
+                users=jhon,
             )
             self.success("comments created.")
             # create answers to comment

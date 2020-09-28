@@ -54,11 +54,19 @@
 ```
 
 ```python
+    docker-compose -f docker-compose.prod.yml exec api python manage.py county_city
+```
+
+```python
     docker-compose -f docker-compose.prod.yml exec api python manage.py users
 ```
 
 ```python
-    docker-compose -f docker-compose.prod.yml exec api python manage.py items
+    docker-compose -f docker-compose.prod.yml exec api python manage.py campaing_header_body
+```
+
+```python
+    docker-compose -f docker-compose.prod.yml exec api python manage.py phases
 ```
 
 ```python
@@ -68,7 +76,6 @@
 ```python
     docker-compose -f docker-compose.prod.yml exec api python manage.py comments
 ```
-
 #### run server send email production using supervisor
 
 -   give permissions to `server_email.sh` file:
