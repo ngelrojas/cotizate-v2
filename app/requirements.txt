@@ -1,9 +1,9 @@
-Django
+Django>=3
 psycopg2-binary
 gunicorn
 flake8
-djangorestframework
-drf-yasg
+djangorestframework>=3.11
+drf-yasg>=1.17.1
 django-cors-headers
 django-smtp-ssl
 djangorestframework-jwt
@@ -12,3 +12,4 @@ celery
 django-autoslug
 django-filter
 django-decouple
+packaging

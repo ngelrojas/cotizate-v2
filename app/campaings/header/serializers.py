@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from core.campaing import CampaingHeader
+from cities.serializers import CitySerializer
+from categories.serializers import CategorySerializer
 
 # from core.category import Category
 # from core.city import City
@@ -9,6 +11,26 @@ from core.campaing import CampaingHeader
 
 class CampaingHeaderSerializer(serializers.ModelSerializer):
     """campaing header serializer"""
+
+    class Meta:
+        model = CampaingHeader
+        fields = (
+            "id",
+            "user",
+            "category",
+            "city",
+            "qty_day",
+            "amount",
+            "role",
+        )
+        read_only_fields = ("id",)
+
+
+class CHDetailSerializer(serializers.ModelSerializer):
+    """campaing header serializer"""
+
+    city = CitySerializer()
+    category = CategorySerializer()
 
     class Meta:
         model = CampaingHeader

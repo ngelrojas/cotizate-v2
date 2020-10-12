@@ -1,0 +1,2008 @@
+[08/Oct/2020 17:00:22.096]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:01:57.125]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:02:21.443]WARNING [django.security.SuspiciousSession:131] Session data corrupted
+[08/Oct/2020 17:02:21.562]INFO [django.server:157] "GET /admin/ HTTP/1.1" 302 0
+[08/Oct/2020 17:02:21.575]WARNING [django.security.SuspiciousSession:131] Session data corrupted
+[08/Oct/2020 17:02:21.620]INFO [django.server:157] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2216
+[08/Oct/2020 17:02:21.727]INFO [django.server:157] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+[08/Oct/2020 17:02:21.730]INFO [django.server:157] "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 1185
+[08/Oct/2020 17:02:21.731]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 16307
+[08/Oct/2020 17:02:21.732]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18294
+[08/Oct/2020 17:02:21.781]INFO [django.server:157] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 200 423
+[08/Oct/2020 17:02:21.782]INFO [django.server:157] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[08/Oct/2020 17:02:22.063]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[08/Oct/2020 17:02:22.063]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[08/Oct/2020 17:02:22.136]WARNING [django.request:224] Not Found: /favicon.ico
+[08/Oct/2020 17:02:22.137]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 3788
+[08/Oct/2020 17:02:37.106]WARNING [django.request:224] Not Found: /api/v2/cotizate
+[08/Oct/2020 17:02:37.107]WARNING [django.server:157] "GET /api/v2/cotizate HTTP/1.1" 404 9715
+[08/Oct/2020 17:03:06.473]INFO [django.server:157] "GET /admin HTTP/1.1" 301 0
+[08/Oct/2020 17:03:06.488]WARNING [django.security.SuspiciousSession:131] Session data corrupted
+[08/Oct/2020 17:03:06.489]INFO [django.server:157] "GET /admin/ HTTP/1.1" 302 0
+[08/Oct/2020 17:03:06.504]WARNING [django.security.SuspiciousSession:131] Session data corrupted
+[08/Oct/2020 17:03:06.527]INFO [django.server:157] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2216
+[08/Oct/2020 17:03:08.206]WARNING [django.security.SuspiciousSession:131] Session data corrupted
+[08/Oct/2020 17:03:08.368]INFO [django.server:157] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2389
+[08/Oct/2020 17:03:08.620]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[08/Oct/2020 17:03:17.546]WARNING [django.security.SuspiciousSession:131] Session data corrupted
+[08/Oct/2020 17:03:17.711]INFO [django.server:157] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[08/Oct/2020 17:03:17.760]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 12579
+[08/Oct/2020 17:03:17.863]INFO [django.server:157] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 200 380
+[08/Oct/2020 17:03:17.970]INFO [django.server:157] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[08/Oct/2020 17:03:17.970]INFO [django.server:157] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[08/Oct/2020 17:03:20.319]INFO [django.server:157] "GET /admin/core/user/ HTTP/1.1" 200 14000
+[08/Oct/2020 17:03:20.411]INFO [django.server:157] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 200 347
+[08/Oct/2020 17:03:20.413]INFO [django.server:157] "GET /staticfiles/admin/js/core.js HTTP/1.1" 200 5418
+[08/Oct/2020 17:03:20.415]INFO [django.server:157] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
+[08/Oct/2020 17:03:20.417]INFO [django.server:157] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6263
+[08/Oct/2020 17:03:20.421]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Oct/2020 17:03:20.426]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 200 6783
+[08/Oct/2020 17:03:20.429]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[08/Oct/2020 17:03:20.430]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 200 8632
+[08/Oct/2020 17:03:20.434]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[08/Oct/2020 17:03:20.442]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[08/Oct/2020 17:03:20.529]INFO [django.server:157] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[08/Oct/2020 17:03:20.530]INFO [django.server:157] "GET /staticfiles/admin/img/search.svg HTTP/1.1" 200 458
+[08/Oct/2020 17:03:20.542]INFO [django.server:157] "GET /staticfiles/admin/img/icon-no.svg HTTP/1.1" 200 560
+[08/Oct/2020 17:03:20.596]INFO [django.server:157] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[08/Oct/2020 17:09:36.975]INFO [django.server:157] "GET /admin/core/user/ HTTP/1.1" 200 14000
+[08/Oct/2020 17:09:37.082]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Oct/2020 17:10:28.321]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[08/Oct/2020 17:10:52.519]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 46, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 17:10:52.521]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 95901
+[08/Oct/2020 17:12:59.821]INFO [django.server:157] "GET /api/v2/campaing-header HTTP/1.1" 200 96
+[08/Oct/2020 17:13:45.036]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:13:46.311]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:13:48.659]INFO [django.server:157] "GET /api/v2/campaing-header HTTP/1.1" 200 85
+[08/Oct/2020 17:14:13.761]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:14:14.988]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:14:22.773]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[08/Oct/2020 17:14:22.777]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 76776
+[08/Oct/2020 17:16:14.820]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[08/Oct/2020 17:16:15.958]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:17:44.699]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:17:45.748]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:17:52.443]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:17:53.508]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:18:02.994]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[08/Oct/2020 17:18:35.636]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:18:36.671]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:19:09.346]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:19:10.447]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:19:25.354]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:19:26.405]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:19:35.208]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:19:36.312]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:20:23.427]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:20:24.528]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:20:32.677]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 17:20:32.678]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 95797
+[08/Oct/2020 17:20:48.769]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:20:49.838]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:20:51.608]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 17:20:51.608]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 62
+[08/Oct/2020 17:21:08.119]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/serializers.py changed, reloading.
+[08/Oct/2020 17:21:09.117]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:21:12.468]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "user_id" violates not-null constraint
+DETAIL:  Failing row contains (23, 30, 15000.000, 2, 2, 2, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    camp_header = serializer.save()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 447, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "user_id" violates not-null constraint
+DETAIL:  Failing row contains (23, 30, 15000.000, 2, 2, 2, null).
+
+[08/Oct/2020 17:21:12.471]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 188311
+[08/Oct/2020 17:21:33.548]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:21:34.640]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:21:39.967]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 17:21:39.968]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 95671
+[08/Oct/2020 17:34:34.539]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:34:35.573]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:34:39.030]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 17:34:39.032]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 95668
+[08/Oct/2020 17:38:10.595]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 17:38:11.688]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:39:16.777]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:40:43.517]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:54:53.378]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 17:54:57.406]INFO [django.server:157] "OPTIONS /api/v2/campaing-header HTTP/1.1" 200 0
+[08/Oct/2020 17:54:59.073]INFO [django.server:157] "OPTIONS /api/v2/campaing-header HTTP/1.1" 200 0
+[08/Oct/2020 17:55:48.722]INFO [django.server:157] "GET /admin/core/user/ HTTP/1.1" 200 14000
+[08/Oct/2020 17:55:48.811]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Oct/2020 17:57:08.875]INFO [django.server:157] "OPTIONS /api/v2/campaing-header HTTP/1.1" 200 0
+[08/Oct/2020 18:19:28.075]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:19:28.076]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:24:10.442]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:24:10.443]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:24:17.407]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:24:17.408]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:24:18.373]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:24:18.374]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:24:18.925]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:24:18.925]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:26:50.113]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:26:50.115]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:26:51.177]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:26:51.178]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:26:51.760]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:26:51.760]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:27:24.404]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:27:24.406]WARNING [django.server:157] "POST /api/v2/auth HTTP/1.1" 400 76
+[08/Oct/2020 18:27:33.657]WARNING [django.request:224] Not Found: /api/v2/auth;email=jhon@yopmail.com;password=me123456
+[08/Oct/2020 18:27:33.657]WARNING [django.server:157] "POST /api/v2/auth;email=jhon%40yopmail.com;password=me123456 HTTP/1.1" 404 9835
+[08/Oct/2020 18:27:41.699]WARNING [django.request:224] Not Found: /api/v2/auth;email=jhon@yopmail.com;password=me123456
+[08/Oct/2020 18:27:41.700]WARNING [django.server:157] "POST /api/v2/auth;email=jhon%40yopmail.com;password=me123456 HTTP/1.1" 404 9835
+[08/Oct/2020 18:27:48.518]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:27:48.519]WARNING [django.server:157] "POST /api/v2/auth HTTP/1.1" 400 76
+[08/Oct/2020 18:28:36.917]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:28:36.918]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:28:38.238]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:28:38.239]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:31:13.930]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[08/Oct/2020 18:31:19.192]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 18:31:19.192]WARNING [django.server:157] "POST /api/v2/auth?email=jhon%40yopmail.com&password=me123456 HTTP/1.1" 400 76
+[08/Oct/2020 18:31:26.207]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[08/Oct/2020 19:42:37.710]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    serializer = self.get_serialzier(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'get_serialzier'
+[08/Oct/2020 19:42:37.711]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90154
+[08/Oct/2020 19:43:38.892]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    serializer = self.get_serialzier(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'get_serialzier'
+[08/Oct/2020 19:43:38.893]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90472
+[08/Oct/2020 19:43:41.053]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    serializer = self.get_serialzier(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'get_serialzier'
+[08/Oct/2020 19:43:41.054]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90472
+[08/Oct/2020 19:45:43.092]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    serializer = self.get_serialzier(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'get_serialzier'
+[08/Oct/2020 19:45:43.093]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90472
+[08/Oct/2020 19:45:46.501]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    serializer = self.get_serialzier(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'get_serialzier'
+[08/Oct/2020 19:45:46.502]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90472
+[08/Oct/2020 19:45:56.168]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    serializer = self.get_serialzier(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'get_serialzier'
+[08/Oct/2020 19:45:56.169]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90472
+[08/Oct/2020 19:46:32.522]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/auth/models.py", line 414, in __int__
+    raise TypeError('Cannot cast AnonymousUser to int. Are you trying to use it in place of User?')
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 24, in list
+    list_campaing = CampHQ.get_list_ch(request)
+  File "/usr/src/app/core/queries/campaingQuery.py", line 11, in get_list_ch
+    return CampaingHeader.objects.filter(user=request.user)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/related_lookups.py", line 117, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7fba8259cdf0>.
+[08/Oct/2020 19:46:32.524]ERROR [django.server:157] "GET /api/v2/campaing-header?category=2&city=2&qty_day=80&amount=17000 HTTP/1.1" 500 157393
+[08/Oct/2020 20:31:22.742]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 20:31:23.780]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 20:37:54.360]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 20:37:55.486]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 20:38:03.863]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[08/Oct/2020 20:38:03.864]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 77105
+[08/Oct/2020 20:38:25.893]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 20:38:26.945]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 20:38:29.610]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[08/Oct/2020 20:39:46.631]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 20:39:47.745]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 20:40:30.435]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 12579
+[08/Oct/2020 20:40:30.524]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[08/Oct/2020 20:40:30.530]INFO [django.server:157] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[08/Oct/2020 20:40:30.531]INFO [django.server:157] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 304 0
+[08/Oct/2020 20:40:30.532]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[08/Oct/2020 20:40:30.569]INFO [django.server:157] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[08/Oct/2020 20:40:30.569]INFO [django.server:157] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[08/Oct/2020 20:40:30.716]INFO [django.server:157] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[08/Oct/2020 20:40:30.716]INFO [django.server:157] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[08/Oct/2020 20:40:31.101]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[08/Oct/2020 20:40:31.101]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[08/Oct/2020 20:40:31.101]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.753]INFO [django.server:157] "GET /admin/core/city/ HTTP/1.1" 200 13495
+[08/Oct/2020 20:40:36.812]INFO [django.server:157] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.812]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.821]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.821]INFO [django.server:157] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.821]INFO [django.server:157] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.823]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.827]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.830]INFO [django.server:157] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.831]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[08/Oct/2020 20:40:36.844]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Oct/2020 20:40:36.984]INFO [django.server:157] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[08/Oct/2020 20:40:40.159]INFO [django.server:157] "GET /admin/core/country/ HTTP/1.1" 200 11901
+[08/Oct/2020 20:40:40.252]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Oct/2020 20:40:47.246]INFO [django.server:157] "GET /admin/core/category/ HTTP/1.1" 200 12337
+[08/Oct/2020 20:40:47.342]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Oct/2020 20:41:58.880]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/serializers.py changed, reloading.
+[08/Oct/2020 20:41:59.968]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:00:52.211]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[08/Oct/2020 22:00:53.229]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[08/Oct/2020 22:00:54.045]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[08/Oct/2020 22:02:16.475]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:02:17.563]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:02:18.819]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AnonymousUser is not JSON serializable
+[08/Oct/2020 22:02:18.820]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 99778
+[08/Oct/2020 22:02:33.518]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:02:34.657]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:03:28.737]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:03:29.828]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:03:32.526]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 68
+[08/Oct/2020 22:05:23.447]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:05:24.421]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:05:33.174]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:05:34.233]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:05:36.886]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:05:36.887]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:06:03.654]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:06:04.750]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:06:07.722]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:06:07.723]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 71
+[08/Oct/2020 22:06:15.641]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:06:16.711]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:06:18.325]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:06:18.326]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 40
+[08/Oct/2020 22:06:50.127]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:06:51.218]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:07:39.070]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:07:40.363]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:07:45.198]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:07:45.198]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:08:35.515]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:08:36.625]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:08:50.408]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:08:51.539]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:16:42.670]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:16:43.757]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:16:46.688]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 22:16:46.689]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 96209
+[08/Oct/2020 22:17:00.609]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 22:17:00.610]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 96209
+[08/Oct/2020 22:17:01.900]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 22:17:01.901]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 96209
+[08/Oct/2020 22:17:02.556]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 22:17:02.557]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 96209
+[08/Oct/2020 22:17:02.868]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 22:17:02.868]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 96209
+[08/Oct/2020 22:17:03.203]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 22:17:03.204]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 96209
+[08/Oct/2020 22:17:03.396]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 22:17:03.397]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 96209
+[08/Oct/2020 22:17:18.408]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:17:19.522]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:17:20.197]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:17:20.197]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 40
+[08/Oct/2020 22:20:28.803]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:20:29.858]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:20:33.733]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 22:20:33.734]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 96027
+[08/Oct/2020 22:20:58.336]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/serializers.py changed, reloading.
+[08/Oct/2020 22:20:59.438]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:21:17.496]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:21:18.653]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:21:20.040]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:21:20.041]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 40
+[08/Oct/2020 22:21:39.710]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:21:40.823]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:21:43.253]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    serializer = self.serializer_class(data=send_data, owner=request.user)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 115, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'owner'
+[08/Oct/2020 22:21:43.255]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 95879
+[08/Oct/2020 22:21:54.715]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:21:55.759]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:21:58.379]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:21:58.389]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:26:05.450]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:26:06.594]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:26:08.762]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    if serializer.is_valid(raise_exception=True):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+[08/Oct/2020 22:26:08.764]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 96078
+[08/Oct/2020 22:26:43.305]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:26:44.307]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:28:16.133]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:28:17.140]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:28:19.477]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:28:19.478]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 71
+[08/Oct/2020 22:31:03.522]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:31:04.569]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:31:07.556]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:31:07.557]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 40
+[08/Oct/2020 22:31:21.635]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/serializers.py changed, reloading.
+[08/Oct/2020 22:31:22.700]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:31:27.302]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:31:28.389]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:31:29.057]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:31:29.057]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 71
+[08/Oct/2020 22:41:29.382]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:41:30.395]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:41:33.715]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:41:33.716]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:41:46.422]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:41:47.525]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:41:48.012]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:41:48.014]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:43.616]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/serializers.py changed, reloading.
+[08/Oct/2020 22:42:44.728]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:42:47.134]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:47.135]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:48.221]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:48.222]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:48.793]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:48.793]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:49.292]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:49.293]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:49.735]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:49.735]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:49.983]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:49.984]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:50.146]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:50.147]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:50.404]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:50.406]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:50.576]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:50.576]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:50.785]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:50.785]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:42:51.002]WARNING [django.request:224] Bad Request: /api/v2/campaing-header
+[08/Oct/2020 22:42:51.003]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 400 36
+[08/Oct/2020 22:48:00.518]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/serializers.py changed, reloading.
+[08/Oct/2020 22:48:01.593]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:48:48.331]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:48:49.484]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:48:54.101]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    serializer = self.class_serializer(request.user, data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:48:54.102]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90385
+[08/Oct/2020 22:49:13.694]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/serializers.py changed, reloading.
+[08/Oct/2020 22:49:14.864]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:49:16.183]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    serializer = self.class_serializer(request.user, data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:49:16.184]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90385
+[08/Oct/2020 22:49:17.166]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    serializer = self.class_serializer(request.user, data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:49:17.166]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90385
+[08/Oct/2020 22:50:03.825]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/serializers.py changed, reloading.
+[08/Oct/2020 22:50:04.962]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:50:50.613]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:50:51.638]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:51:07.923]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    serializer = self.class_serializer(request.user, data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:51:07.925]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90587
+[08/Oct/2020 22:51:09.021]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    serializer = self.class_serializer(request.user, data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:51:09.022]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90587
+[08/Oct/2020 22:51:17.974]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:51:19.090]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:51:30.796]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:51:31.831]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:51:33.290]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:51:33.292]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90657
+[08/Oct/2020 22:51:34.352]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:51:34.352]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90657
+[08/Oct/2020 22:51:35.013]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:51:35.015]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90657
+[08/Oct/2020 22:51:39.579]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:51:40.693]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:51:42.932]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:51:42.936]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90588
+[08/Oct/2020 22:51:43.704]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:51:43.705]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90588
+[08/Oct/2020 22:51:44.372]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:51:44.373]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90588
+[08/Oct/2020 22:51:58.732]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:51:59.857]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:52:34.305]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 12579
+[08/Oct/2020 22:52:34.444]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[08/Oct/2020 22:52:34.446]INFO [django.server:157] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[08/Oct/2020 22:52:34.450]INFO [django.server:157] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 304 0
+[08/Oct/2020 22:52:34.452]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[08/Oct/2020 22:52:34.498]INFO [django.server:157] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[08/Oct/2020 22:52:34.508]INFO [django.server:157] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[08/Oct/2020 22:52:34.641]INFO [django.server:157] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[08/Oct/2020 22:52:34.642]INFO [django.server:157] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[08/Oct/2020 22:52:35.274]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[08/Oct/2020 22:52:35.274]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[08/Oct/2020 22:52:35.274]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.615]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12397
+[08/Oct/2020 22:52:37.762]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.767]INFO [django.server:157] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.768]INFO [django.server:157] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.769]INFO [django.server:157] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.778]INFO [django.server:157] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.785]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.787]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.793]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.795]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[08/Oct/2020 22:52:37.801]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Oct/2020 22:52:37.949]INFO [django.server:157] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[08/Oct/2020 22:52:43.200]INFO [django.server:157] "GET /admin/core/campaingheader/1/change/ HTTP/1.1" 200 16617
+[08/Oct/2020 22:52:43.371]INFO [django.server:157] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 200 8423
+[08/Oct/2020 22:52:43.381]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Oct/2020 22:52:43.440]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[08/Oct/2020 22:52:43.440]INFO [django.server:157] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 200 10592
+[08/Oct/2020 22:52:43.450]INFO [django.server:157] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 200 606
+[08/Oct/2020 22:53:14.618]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12397
+[08/Oct/2020 22:53:14.818]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Oct/2020 22:53:23.107]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:53:23.110]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90559
+[08/Oct/2020 22:53:25.035]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:53:25.036]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90559
+[08/Oct/2020 22:53:53.699]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:53:54.818]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:53:55.968]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:53:55.970]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90559
+[08/Oct/2020 22:53:56.959]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 43, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:53:56.960]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90559
+[08/Oct/2020 22:54:08.667]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:54:09.849]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:54:11.083]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:11.084]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90657
+[08/Oct/2020 22:54:12.180]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:12.181]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90657
+[08/Oct/2020 22:54:12.920]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(data=send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:12.921]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90657
+[08/Oct/2020 22:54:24.791]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:54:26.024]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:54:27.967]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:27.968]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90647
+[08/Oct/2020 22:54:28.751]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:28.753]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90647
+[08/Oct/2020 22:54:29.326]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:29.329]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90647
+[08/Oct/2020 22:54:29.804]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:29.806]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90647
+[08/Oct/2020 22:54:30.072]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:30.074]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90647
+[08/Oct/2020 22:54:30.303]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:30.303]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90647
+[08/Oct/2020 22:54:30.588]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:30.589]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90647
+[08/Oct/2020 22:54:30.822]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:30.823]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90647
+[08/Oct/2020 22:54:31.021]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(send_data)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:31.022]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90647
+[08/Oct/2020 22:54:55.598]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:54:56.689]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:54:57.323]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(request)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:57.325]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90643
+[08/Oct/2020 22:54:58.152]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(request)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:54:58.158]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90643
+[08/Oct/2020 22:55:29.007]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 22:55:29.954]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 22:55:36.597]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    serializer = self.class_serializer(request)
+AttributeError: 'CampaingsHeader' object has no attribute 'class_serializer'
+[08/Oct/2020 22:55:36.599]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90671
+[08/Oct/2020 23:09:16.650]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 23:09:17.705]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:09:36.104]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:09:36.105]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:10:23.023]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 23:10:24.086]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:10:30.721]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:10:30.722]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:11:41.690]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 23:11:42.718]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:11:46.318]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 23:11:47.465]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:11:50.637]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:11:50.638]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:11:52.762]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:11:52.763]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:12:05.984]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:12:05.984]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:12:11.258]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:12:11.259]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:12:18.950]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 23:12:20.082]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:15:22.481]INFO [django.utils.autoreload:236] /usr/src/app/api/celery.py changed, reloading.
+[08/Oct/2020 23:15:23.522]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:16:17.418]INFO [django.utils.autoreload:236] /usr/src/app/manage.py changed, reloading.
+[08/Oct/2020 23:16:18.500]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:17:12.321]INFO [django.utils.autoreload:236] /usr/src/app/users/serializers.py changed, reloading.
+[08/Oct/2020 23:17:13.341]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:17:24.051]INFO [django.utils.autoreload:236] /usr/src/app/users/serializers.py changed, reloading.
+[08/Oct/2020 23:17:24.967]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:20:18.438]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:20:18.440]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:20:19.417]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:20:19.418]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:20:19.900]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:20:19.901]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:20:20.117]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:20:20.118]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:20:20.354]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:20:20.356]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:27:54.993]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[08/Oct/2020 23:27:56.131]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:28:01.273]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:28:01.273]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:28:02.156]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:28:02.157]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:28:02.592]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:28:02.593]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:28:51.124]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:29:00.806]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:29:00.806]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:29:04.674]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:29:04.675]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:29:05.313]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:29:05.314]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:29:05.794]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:29:05.795]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:29:06.227]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:29:06.228]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:29:06.698]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:29:06.698]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:29:06.966]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:29:06.967]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:29:18.406]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:29:18.406]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:31:27.349]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:31:33.151]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:31:33.152]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:31:39.606]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:31:39.607]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:32:09.222]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[08/Oct/2020 23:32:56.264]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:32:56.264]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:32:57.085]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:32:57.085]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:32:57.799]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:32:57.799]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:38:03.096]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[08/Oct/2020 23:38:04.095]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:39:00.975]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[08/Oct/2020 23:39:01.934]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:39:10.832]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:39:10.833]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:42:01.644]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[08/Oct/2020 23:42:09.003]WARNING [django.request:224] Bad Request: /api/v2/auth
+[08/Oct/2020 23:42:09.004]WARNING [django.server:157] "POST /api/v2/auth HTTP/1.1" 400 67
+[08/Oct/2020 23:42:15.842]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[08/Oct/2020 23:42:52.741]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:42:52.742]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:42:53.483]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:42:53.483]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:42:54.101]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:42:54.102]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:42:54.574]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:42:54.574]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:50:39.870]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 23:50:41.270]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:50:57.274]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[08/Oct/2020 23:50:58.761]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:51:04.459]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:51:04.461]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:51:05.322]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:51:05.322]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:51:05.823]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:51:05.824]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:51:06.010]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:51:06.010]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:51:06.242]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:51:06.243]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[08/Oct/2020 23:51:53.895]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[08/Oct/2020 23:52:00.484]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[08/Oct/2020 23:52:00.485]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[09/Oct/2020 00:17:02.309]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:17:03.405]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:17:08.824]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:17:48.605]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[09/Oct/2020 00:17:49.844]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:18:01.766]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:18:13.294]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[09/Oct/2020 00:18:14.383]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:18:32.552]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:18:33.607]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:18:36.124]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:18:43.662]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:18:44.671]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:20:22.375]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:20:23.470]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:20:28.509]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:22:51.696]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:22:52.637]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:28:17.222]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:28:18.290]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:28:25.353]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:32:10.283]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:32:11.321]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:32:15.847]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:32:35.778]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:32:36.763]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:34:47.742]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:34:48.818]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:34:56.452]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:35:07.943]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:35:09.006]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:42:36.121]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:42:37.343]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 00:42:44.463]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:42:45.804]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 00:42:53.621]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 00:42:54.638]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:13:59.182]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 01:14:00.341]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:14:08.102]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 01:15:01.157]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 01:15:02.178]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:15:09.848]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 01:15:11.146]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:16:56.172]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[09/Oct/2020 01:16:57.376]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:17:02.014]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 01:17:03.706]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 01:17:04.444]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 01:18:06.528]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[09/Oct/2020 01:18:07.681]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:20:13.623]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 01:20:14.625]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:20:19.768]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 45, in create
+    print(self.context["request"].user.is_authenticated())
+AttributeError: 'CampaingsHeader' object has no attribute 'context'
+[09/Oct/2020 01:20:19.770]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90639
+[09/Oct/2020 01:20:23.570]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 45, in create
+    print(self.context["request"].user.is_authenticated())
+AttributeError: 'CampaingsHeader' object has no attribute 'context'
+[09/Oct/2020 01:20:23.571]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90639
+[09/Oct/2020 01:20:30.795]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 01:20:31.892]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:20:38.330]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 45, in create
+    print(self.context["request"].user.is_authenticated)
+AttributeError: 'CampaingsHeader' object has no attribute 'context'
+[09/Oct/2020 01:20:38.331]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90635
+[09/Oct/2020 01:20:39.117]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 45, in create
+    print(self.context["request"].user.is_authenticated)
+AttributeError: 'CampaingsHeader' object has no attribute 'context'
+[09/Oct/2020 01:20:39.117]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90635
+[09/Oct/2020 01:20:51.203]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 01:20:52.387]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:20:55.481]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 45, in create
+    print(self.context["request"].user)
+AttributeError: 'CampaingsHeader' object has no attribute 'context'
+[09/Oct/2020 01:20:55.482]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90601
+[09/Oct/2020 01:20:56.779]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 45, in create
+    print(self.context["request"].user)
+AttributeError: 'CampaingsHeader' object has no attribute 'context'
+[09/Oct/2020 01:20:56.780]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90601
+[09/Oct/2020 01:20:57.229]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 45, in create
+    print(self.context["request"].user)
+AttributeError: 'CampaingsHeader' object has no attribute 'context'
+[09/Oct/2020 01:20:57.229]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90601
+[09/Oct/2020 01:20:57.526]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 45, in create
+    print(self.context["request"].user)
+AttributeError: 'CampaingsHeader' object has no attribute 'context'
+[09/Oct/2020 01:20:57.527]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90601
+[09/Oct/2020 01:21:10.673]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 01:21:11.888]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:21:14.171]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 200 13
+[09/Oct/2020 01:53:06.909]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[09/Oct/2020 01:53:08.025]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:53:28.259]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[09/Oct/2020 01:53:29.350]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:53:34.625]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[09/Oct/2020 01:53:34.627]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[09/Oct/2020 01:56:39.966]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[09/Oct/2020 01:56:41.099]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[09/Oct/2020 01:56:52.321]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[09/Oct/2020 01:56:52.322]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[09/Oct/2020 01:56:54.295]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[09/Oct/2020 01:56:54.297]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[09/Oct/2020 01:56:54.868]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[09/Oct/2020 01:56:54.869]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[09/Oct/2020 01:56:55.359]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[09/Oct/2020 01:56:55.361]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[09/Oct/2020 01:56:55.579]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[09/Oct/2020 01:56:55.580]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[09/Oct/2020 01:56:55.761]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[09/Oct/2020 01:56:55.762]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[09/Oct/2020 01:56:59.871]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[09/Oct/2020 01:56:59.872]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58
+[09/Oct/2020 01:57:00.613]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header
+[09/Oct/2020 01:57:00.615]WARNING [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 401 58

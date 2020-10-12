@@ -1,10 +1,12 @@
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 from core.campaing import CampaingHeader
 from core.queries.campaingQuery import CampaingHeaderQuery as CampHQ
 from core.profile import PersonalProfile
 from .serializers import CampaingHeaderSerializer
+from .serializers import CHDetailSerializer
 
 
 class CampaingsHeader(viewsets.ModelViewSet):
@@ -17,15 +19,14 @@ class CampaingsHeader(viewsets.ModelViewSet):
 
     serializer_class = CampaingHeaderSerializer
     queryset = CampaingHeader.objects.all()
+    permission_classes = (IsAuthenticated,)
 
     def list(self, request):
         """list all campaings to current user"""
         try:
             list_campaing = CampHQ.get_list_ch(request)
             serializer = self.serializer_class(list_campaing, many=True)
-            return Response(
-                {"data": serializer.data, "msg": "ok"}, status=status.HTTP_200_OK
-            )
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except CampaingHeader.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
@@ -35,35 +36,37 @@ class CampaingsHeader(viewsets.ModelViewSet):
         """create campaing to current user"""
         try:
             send_data = {
-                "user": request.user,
+                "user": request.user.id,
                 "category": request.data.get("category"),
                 "city": request.data.get("city"),
                 "qty_day": request.data.get("qty_day"),
                 "amount": request.data.get("amount"),
                 "role": request.data.get("role"),
             }
-
-            serializer = self.serializer_class(data=send_data)
-            if serializer.is_valid(raise_exception=True):
-                camp_header = serializer.save()
-                return Response(
-                    {"data": camp_header.id, "msg": "campaing header is saved."},
-                    status=status.HTTP_201_CREATED,
-                )
-
+            serializer = self.get_serializer(data=send_data)
+            serializer.is_valid(raise_exception=True)
+            self.perform_create(serializer)
+            headers = self.get_success_headers(serializer.data)
+            return Response(
+                {"data": serializer.data},
+                status=status.HTTP_201_CREATED,
+                headers=headers,
+            )
         except CampaingHeader.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
+    def perform_create(self, serializer):
+        """create with current user"""
+        serializer.save(user=self.request.user)
+
     def retrieve(self, request, pk):
         """retrieve campaing to current user and ID campaing"""
         try:
             current_campaingh = CampHQ.retrieve_ch(request, pk)
-            serializer = self.serializer_class(current_campaingh)
-            return Response(
-                {"data": serializer.data, "msg": "ok"}, status=status.HTTP_200_OK
-            )
+            serializer = CHDetailSerializer(current_campaingh)
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except CampaingHeader.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
@@ -77,9 +80,9 @@ class CampaingsHeader(viewsets.ModelViewSet):
                 current_campaingh, data=request.data, partial=True
             )
             if serializer.is_valid(raise_exception=True):
-                camp_header = serializer.save()
+                serializer.save()
                 return Response(
-                    {"data": camp_header.id, "msg": "campaing header updated."},
+                    {"data": serializer.data},
                     status=status.HTTP_200_OK,
                 )
         except CampaingHeader.DoesNotExist as err:
@@ -87,14 +90,14 @@ class CampaingsHeader(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def delete(self, request, pk):
+    def destroy(self, request, pk):
         """retrieve campaing to current user and ID campaing"""
         try:
             current_campaingh = CampHQ.retrieve_ch(request, pk)
             current_campaingh.delete()
             return Response(
-                {"data": True, "msg": "campaing header deleted."},
-                status=status.HTTP_204_NOT_CONTENT,
+                {"data": "campaing deleted."},
+                status=status.HTTP_204_NO_CONTENT,
             )
         except CampaingHeader.DoesNotExist as err:
             return Response(

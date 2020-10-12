@@ -13,4 +13,9 @@ class CampaingHeaderQuery:
     @staticmethod
     def retrieve_ch(request, pk):
         """retrieve current campaing header"""
-        return CampaingHeader.objects.get(id=pk, user=request.user)
+        return CampaingHeader.objects.get(user=request.user, id=pk)
+
+    @staticmethod
+    def get_campch_id(pk):
+        """get id campaing header"""
+        return CampaingHeader.objects.get(id=pk)

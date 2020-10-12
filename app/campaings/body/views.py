@@ -2,9 +2,12 @@ from datetime import datetime
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 from core.campaing import CampaingBody
 from core.queries.campaingBodyQuery import CampaingBodyQuery as CampBQ
+from core.currency import Currency
 from .serializers import CampaingBodySerializer
+from ..component.CmpHeader import CampHeaderComp
 
 
 class CampaingsBody(viewsets.ModelViewSet):
@@ -17,35 +20,18 @@ class CampaingsBody(viewsets.ModelViewSet):
 
     serializer_class = CampaingBodySerializer
     queryset = CampaingBody.objects.all()
+    permission_classes = (IsAuthenticated,)
 
     def create(self, request):
         """create campaing body current user"""
         try:
-            public_camp = datetime.strptime(
-                request.data.get("public_at"), "%d/%m/%Y"
-            ).strftime("%Y-%m-%dT%H:%M:%S-00:00")
-            send_data = {
-                "title": request.data.get("title"),
-                "video_main": request.data.get("video_main"),
-                "imagen_main": request.data.get("imagen_main"),
-                "excerpt": request.data.get("excerpt"),
-                "description": request.data.get("description"),
-                "public_at": public_camp,
-                "header": request.data.get("header"),
-                "currency": 1,
-                "short_url": request.data.get("short_url"),
-                "slogan_campaing": request.data.get("slogan_campaing"),
-            }
+            data = CampHeaderComp.saving_campaing(request)
+            return Response(
+                {"data": data},
+                status=status.HTTP_201_CREATED,
+            )
 
-            serializer = self.serializer_class(data=send_data)
-            if serializer.is_valid(raise_exception=True):
-                camp_cb = serializer.save()
-                return Response(
-                    {"data": camp_cb.id, "msg": "campaing body is saved."},
-                    status=status.HTTP_201_CREATED,
-                )
-
-        except CampaingBody.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "mgs": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
@@ -53,11 +39,9 @@ class CampaingsBody(viewsets.ModelViewSet):
     def retrieve(self, request, pk):
         """retrieve campaing body using header_id and pk=campaing_body"""
         try:
-            current_campaing = CampBQ.retrieve_cb(request.data.get("header_id"), pk)
+            current_campaing = CampBQ.retrieve_cb(pk, request.data.get("header_id"))
             serializer = self.serializer_class(current_campaing)
-            return Response(
-                {"data": serializer.data, "msg": "ok"}, status=status.HTTP_200_OK
-            )
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
 
         except CampaingBody.DoesNotExist as err:
             return Response(
@@ -67,7 +51,7 @@ class CampaingsBody(viewsets.ModelViewSet):
     def update(self, request, pk):
         """update campaing body using header_id and pk=campaing_body"""
         try:
-            current_campaing = CampBQ.retrieve_cb(request.data.get("header_id"), pk)
+            current_campaing = CampBQ.retrieve_cb(pk, request.data.get("header"))
             serializer = self.serializer_class(
                 current_campaing, data=request.data, partial=True
             )
@@ -82,13 +66,13 @@ class CampaingsBody(viewsets.ModelViewSet):
                 {"data": False, "mgs": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def delete(self, request, pk):
+    def destroy(self, request, pk):
         """retrieve campaing to current user and ID campaing"""
         try:
-            CampBQ.delete_cb(request.data.get("header_id"), pk)
+            CampBQ.delete_cb(pk, request.data.get("header_id"))
             return Response(
-                {"data": True, "msg": "campaing deleted."},
-                status=status.HTTP_204_NOT_CONTENT,
+                {"data": "campaing deleted."},
+                status=status.HTTP_204_NO_CONTENT,
             )
         except CampaingBody.DoesNotExist as err:
             return Response(

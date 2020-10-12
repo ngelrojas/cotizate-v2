@@ -15,6 +15,7 @@ class CampaingHeader(models.Model):
     """model campaing header"""
 
     ROLE_CAMPAING = ((1, "social cause"), (2, "entrepreneuship"))
+
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     city = models.ForeignKey(City, on_delete=models.CASCADE)

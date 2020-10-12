@@ -13,7 +13,7 @@ urlpatterns = [
     path(
         "campaing-header/<int:pk>",
         CampaingsHeader.as_view(
-            {"get": "retrieve", "put": "update", "delete": "delete"}
+            {"get": "retrieve", "put": "update", "delete": "destroy"}
         ),
         name="campaing-header-detail",
     ),
@@ -22,7 +22,9 @@ urlpatterns = [
     ),
     path(
         "campaing-body/<int:pk>",
-        CampaingsBody.as_view({"get": "retrieve", "put": "update", "delete": "delete"}),
+        CampaingsBody.as_view(
+            {"get": "retrieve", "put": "update", "delete": "destroy"}
+        ),
         name="campaing-body-detail",
     ),
 ]

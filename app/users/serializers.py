@@ -5,9 +5,9 @@ from core.user import User
 from core.encoder_tokens import encode_user_id
 from core.encoder_tokens import make_user_token
 from api.celery import send_email_module
-from api.settings import production
+from api.settings import development
 
-URL_SEND_EMAIL = production.URL_PRODUCTION
+URL_SEND_EMAIL = development.URL_PRODUCTION
 ACTIVATION_ACCOUNT = "/activar-cuenta"
 RECOVERY_PASSWORD = "/recuperar-contrasena"
 
@@ -92,9 +92,13 @@ class RecoveryPwdSerializer(serializers.ModelSerializer):
 class PwdConfirmSerialzier(serializers.ModelSerializer):
     """confirm password serializer"""
 
-    password = fields.CharField(style={"input_type": "password"}, required=True,)
+    password = fields.CharField(
+        style={"input_type": "password"},
+        required=True,
+    )
     password_confirm = fields.CharField(
-        style={"input_type": "password"}, required=True,
+        style={"input_type": "password"},
+        required=True,
     )
 
     class Meta:
