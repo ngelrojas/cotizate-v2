@@ -10,6 +10,6 @@ class RewardQuery:
         return Reward.objects.filter(header=header_id)
 
     @staticmethod
-    def retrieve_reward(header_id, pk):
+    def retrieve_reward(pk, header_id):
         """retrieve reward campaing header"""
-        return Reward.objects.get(header=header_id, id=pk)
+        return Reward.objects.get(id=pk, header=header_id)

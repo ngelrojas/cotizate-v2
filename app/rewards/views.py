@@ -24,12 +24,10 @@ class RewardView(viewsets.ViewSet):
         """
         try:
             current_list_reward = RewardQuery.get_list_reward(
-                request.data.get("header_id")
+                request.data.get("header")
             )
             serializer = self.serializer_class(current_list_reward, many=True)
-            return Response(
-                {"data": serializer.data, "msg": "ok"}, status=status.HTTP_200_OK
-            )
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Reward.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
@@ -38,13 +36,9 @@ class RewardView(viewsets.ViewSet):
     def retrieve(self, request, pk):
         """retrieve reward current campaing_header_id, campaing_id"""
         try:
-            current_reward = RewardQuery.retrieve_reward(
-                request.data.get("header_id"), pk
-            )
+            current_reward = RewardQuery.retrieve_reward(pk, request.data.get("header"))
             serializer = self.serializer_class(current_reward)
-            return Response(
-                {"data": serializer.data, "msg": "ok"}, status=status.HTTP_200_OK
-            )
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Reward.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
@@ -53,11 +47,14 @@ class RewardView(viewsets.ViewSet):
     def create(self, request):
         """create reward"""
         try:
-            data_reward = CompReward.save_array_data(request, self.serializer_class)
-            return Response(
-                {"data": data_reward, "msg": "reward saved."},
-                status=status.HTTP_201_CREATED,
-            )
+            # data_reward = CompReward.save_array_data(request, self.serializer_class)
+            serializer = self.serializer_class(data=request.data)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save()
+                return Response(
+                    {"data": "reward saved."},
+                    status=status.HTTP_201_CREATED,
+                )
         except Reward.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
@@ -66,16 +63,14 @@ class RewardView(viewsets.ViewSet):
     def update(self, request, pk):
         """update reward"""
         try:
-            current_reward = RewardQuery.retrieve_reward(
-                request.data.get("header_id"), pk
-            )
-            data_send = request.data.copy()
-            data_send["user"] = request.user.id
-            serializer = self.serializer_class(current_reward, data=data_send)
+            current_reward = RewardQuery.retrieve_reward(pk, request.data.get("header"))
+            # data_send = request.data.copy()
+            # data_send["user"] = request.user.id
+            serializer = self.serializer_class(current_reward, data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
                 return Response(
-                    {"data": True, "msg": "reward updated."},
+                    {"data": "reward updated."},
                     status=status.HTTP_200_OK,
                 )
         except Reward.DoesNotExist as err:

@@ -22,13 +22,9 @@ class PhaseView(viewsets.ViewSet):
         about the current campaing
         """
         try:
-            current_list_phase = PhaseQuery.get_list_phase(
-                request.data.get("header_id")
-            )
+            current_list_phase = PhaseQuery.get_list_phase(request.data.get("header"))
             serializer = self.serializer_class(current_list_phase, many=True)
-            return Response(
-                {"data": serializer.data, "msg": "ok"}, status=status.HTTP_200_OK
-            )
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Phase.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
@@ -37,11 +33,9 @@ class PhaseView(viewsets.ViewSet):
     def retrieve(self, request, pk):
         """retrieve phase current campaing_header_id, campaing_id"""
         try:
-            current_phase = PhaseQuery.retrieve_phase(request.data.get("header_id"), pk)
+            current_phase = PhaseQuery.retrieve_phase(pk, request.data.get("header"))
             serializer = self.serializer_class(current_phase)
-            return Response(
-                {"data": serializer.data, "msg": "ok"}, status=status.HTTP_200_OK
-            )
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Phase.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
@@ -50,13 +44,11 @@ class PhaseView(viewsets.ViewSet):
     def create(self, request):
         """create phase"""
         try:
-            datas = request.data.copy()
-            datas["user"] = request.user
-            serializer = self.serializer_class(data=datas)
+            serializer = self.serializer_class(data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
                 return Response(
-                    {"data": True, "msg": "phase saved."},
+                    {"data": "phase saved."},
                     status=status.HTTP_201_CREATED,
                 )
         except Phase.DoesNotExist as err:
@@ -67,14 +59,12 @@ class PhaseView(viewsets.ViewSet):
     def update(self, request, pk):
         """update reward"""
         try:
-            current_phase = PhaseQuery.retrieve_phase(request.data.get("header_id"), pk)
-            data_send = request.data.copy()
-            data_send["user"] = request.user
-            serializer = self.serializer_class(current_phase, data=data_send)
+            current_phase = PhaseQuery.retrieve_phase(pk, request.data.get("header"))
+            serializer = self.serializer_class(current_phase, data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
                 return Response(
-                    {"data": True, "msg": "phase updated."},
+                    {"data": "phase updated."},
                     status=status.HTTP_200_OK,
                 )
         except Phase.DoesNotExist as err:
@@ -86,11 +76,10 @@ class PhaseView(viewsets.ViewSet):
         """delete reward"""
         try:
 
-            current_phase = PhaseQuery.retrieve_phase(request.data.get("header_id"), pk)
-
+            current_phase = PhaseQuery.retrieve_phase(pk, request.data.get("header"))
             current_phase.delete()
             return Response(
-                {"data": True, "msg": " phase deleted."},
+                {"data": " phase deleted."},
                 status=status.HTTP_204_NO_CONTENT,
             )
         except Phase.DoesNotExist as err:

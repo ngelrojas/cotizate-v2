@@ -10,6 +10,6 @@ class PhaseQuery:
         return Phase.objects.filter(header=header_id)
 
     @staticmethod
-    def retrieve_phase(header_id, pk):
+    def retrieve_phase(pk, header_id):
         """retrieve phase header_id, phase_pk"""
-        return Phase.objects.get(header=header_id, id=pk)
+        return Phase.objects.get(id=pk, header=header_id)
