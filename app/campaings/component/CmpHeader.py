@@ -13,4 +13,4 @@ class CampHeaderComp:
         current_currency = CurrencyQuery.get_currency(request.data.get("currency"))
         resp = CampBQ.save_campaing(request, camp_header, current_currency)
 
-        return resp.id
+        return resp

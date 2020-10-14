@@ -25,9 +25,9 @@ class CampaingsBody(viewsets.ModelViewSet):
     def create(self, request):
         """create campaing body current user"""
         try:
-            data = CampHeaderComp.saving_campaing(request)
+            CampHeaderComp.saving_campaing(request)
             return Response(
-                {"data": data},
+                {"data": "campaing body saved."},
                 status=status.HTTP_201_CREATED,
             )
 
@@ -58,7 +58,7 @@ class CampaingsBody(viewsets.ModelViewSet):
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
                 return Response(
-                    {"data": True, "msg": "campaing body updated."},
+                    {"data": "campaing body updated."},
                     status=status.HTTP_200_OK,
                 )
         except CampaingBody.DoesNotExist as err:

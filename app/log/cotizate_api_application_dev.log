@@ -2736,3 +2736,671 @@ Original exception text was: 'QuerySet' object has no attribute 'title'.
 [13/Oct/2020 02:22:54.081]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
 [13/Oct/2020 02:22:54.108]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
 [13/Oct/2020 02:22:54.123]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 21:32:19.319]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:38:00.857]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 21:38:01.869]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:39:13.955]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 21:39:14.945]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:39:37.191]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 21:39:38.167]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:39:57.236]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[13/Oct/2020 21:39:58.449]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:40:25.815]INFO [django.utils.autoreload:236] /usr/src/app/api/urls.py changed, reloading.
+[13/Oct/2020 21:40:26.952]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:41:37.329]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:45:06.688]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[13/Oct/2020 21:45:07.893]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:45:59.726]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:49:27.554]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[13/Oct/2020 21:49:28.733]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:50:05.752]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:50:43.397]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[13/Oct/2020 21:50:44.729]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:54:15.814]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 21:54:20.214]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 14912
+[13/Oct/2020 21:54:20.274]INFO [django.server:157] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.275]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.276]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.276]INFO [django.server:157] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.325]INFO [django.server:157] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.330]INFO [django.server:157] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.368]INFO [django.server:157] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.369]INFO [django.server:157] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.376]INFO [django.server:157] "GET /staticfiles/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.899]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.899]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.900]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[13/Oct/2020 21:54:20.998]WARNING [django.request:224] Not Found: /favicon.ico
+[13/Oct/2020 21:54:20.998]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 3788
+[13/Oct/2020 21:55:26.625]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 14912
+[13/Oct/2020 22:09:53.511]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[13/Oct/2020 22:09:54.559]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:18:59.982]INFO [django.utils.autoreload:236] /usr/src/app/campaings/urls.py changed, reloading.
+[13/Oct/2020 22:19:01.174]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:20:10.090]INFO [django.utils.autoreload:236] /usr/src/app/campaings/urls.py changed, reloading.
+[13/Oct/2020 22:20:11.091]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:20:19.540]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Oct/2020 22:20:45.671]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header-last
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: retrieve() missing 1 required positional argument: 'pk'
+[13/Oct/2020 22:20:45.672]ERROR [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 500 85968
+[13/Oct/2020 22:20:47.567]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header-last
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: retrieve() missing 1 required positional argument: 'pk'
+[13/Oct/2020 22:20:47.568]ERROR [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 500 85968
+[13/Oct/2020 22:22:08.525]INFO [django.utils.autoreload:236] /usr/src/app/campaings/urls.py changed, reloading.
+[13/Oct/2020 22:22:09.636]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:22:20.489]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/helpers.py changed, reloading.
+[13/Oct/2020 22:22:21.526]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:22:29.228]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:22:50.109]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:22:51.122]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:22:52.087]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:22:53.637]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:25:23.099]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:25:24.206]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:25:28.554]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:33:43.468]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:33:44.519]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:33:48.160]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:33:59.720]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:34:00.861]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:34:01.734]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:34:02.809]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:34:03.520]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:35:11.899]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:35:12.906]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:35:16.195]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:37:57.488]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:37:58.559]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:38:01.152]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:38:16.832]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:38:17.855]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:38:18.696]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:39:56.045]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:39:57.007]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:40:05.685]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 2028
+[13/Oct/2020 22:40:39.070]INFO [django.utils.autoreload:236] /usr/src/app/campaings/urls.py changed, reloading.
+[13/Oct/2020 22:40:40.095]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:40:42.019]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header-last
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/helpers.py", line 24, in list
+    current_campaingh = CampHQ.get_last_id(request)
+  File "/usr/src/app/core/queries/campaingQuery.py", line 26, in get_last_id
+    return CampaingHeader.objects.get(user=request.user).order_by("-id")
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 433, in get
+    raise self.model.MultipleObjectsReturned(
+core.campaing.CampaingHeader.MultipleObjectsReturned: get() returned more than one CampaingHeader -- it returned 11!
+[13/Oct/2020 22:40:42.020]ERROR [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 500 102376
+[13/Oct/2020 22:41:03.486]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:41:04.552]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:41:05.715]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header-last
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/helpers.py", line 24, in list
+    current_campaingh = CampHQ.get_last_id(request)
+  File "/usr/src/app/core/queries/campaingQuery.py", line 26, in get_last_id
+    return CampaingHeader.objects.get(user=request.user).last()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 433, in get
+    raise self.model.MultipleObjectsReturned(
+core.campaing.CampaingHeader.MultipleObjectsReturned: get() returned more than one CampaingHeader -- it returned 11!
+[13/Oct/2020 22:41:05.717]ERROR [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 500 102338
+[13/Oct/2020 22:41:06.970]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header-last
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/helpers.py", line 24, in list
+    current_campaingh = CampHQ.get_last_id(request)
+  File "/usr/src/app/core/queries/campaingQuery.py", line 26, in get_last_id
+    return CampaingHeader.objects.get(user=request.user).last()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 433, in get
+    raise self.model.MultipleObjectsReturned(
+core.campaing.CampaingHeader.MultipleObjectsReturned: get() returned more than one CampaingHeader -- it returned 11!
+[13/Oct/2020 22:41:06.971]ERROR [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 500 102338
+[13/Oct/2020 22:41:32.952]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/helpers.py changed, reloading.
+[13/Oct/2020 22:41:34.000]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:41:35.185]WARNING [django.request:224] Bad Request: /api/v2/campaing-header-last
+[13/Oct/2020 22:41:35.186]WARNING [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 400 85
+[13/Oct/2020 22:41:50.066]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Oct/2020 22:41:51.125]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:41:52.008]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[13/Oct/2020 22:42:32.051]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 14520
+[13/Oct/2020 22:42:32.120]INFO [django.server:157] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+[13/Oct/2020 22:42:32.137]INFO [django.server:157] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[13/Oct/2020 22:42:32.137]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[13/Oct/2020 22:42:32.148]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Oct/2020 22:42:32.149]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[13/Oct/2020 22:42:32.154]INFO [django.server:157] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[13/Oct/2020 22:42:32.157]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[13/Oct/2020 22:42:32.164]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[13/Oct/2020 22:42:32.165]INFO [django.server:157] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[13/Oct/2020 22:42:32.167]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[13/Oct/2020 22:42:32.261]INFO [django.server:157] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[13/Oct/2020 22:43:47.031]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/helpers.py changed, reloading.
+[13/Oct/2020 22:43:48.137]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Oct/2020 22:43:50.937]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[13/Oct/2020 22:43:52.057]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[13/Oct/2020 22:58:18.077]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[13/Oct/2020 22:58:18.218]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Oct/2020 22:58:18.246]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[13/Oct/2020 22:58:18.255]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Oct/2020 22:58:18.256]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Oct/2020 22:58:18.729]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:00:33.186]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[13/Oct/2020 23:00:33.186]INFO [django.server:157] "OPTIONS /api/v2/category HTTP/1.1" 200 0
+[13/Oct/2020 23:00:33.200]INFO [django.server:157] "OPTIONS /api/v2/category HTTP/1.1" 200 0
+[13/Oct/2020 23:00:33.207]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:00:33.209]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:00:33.219]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 23:00:33.226]INFO [django.server:157] "OPTIONS /api/v2/personal/profile HTTP/1.1" 200 0
+[13/Oct/2020 23:00:33.237]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[13/Oct/2020 23:00:33.238]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[13/Oct/2020 23:00:33.259]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:04:34.415]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:04:34.424]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[13/Oct/2020 23:04:34.424]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:04:34.461]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[13/Oct/2020 23:04:34.474]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:04:34.486]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 23:04:34.497]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:05:10.433]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[13/Oct/2020 23:05:10.434]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:05:10.441]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:05:10.466]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[13/Oct/2020 23:05:10.469]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:05:10.483]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:05:10.486]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 23:05:34.208]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[13/Oct/2020 23:05:34.213]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:05:34.221]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[13/Oct/2020 23:05:34.239]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:05:34.253]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:05:34.292]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:05:34.295]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 23:05:41.049]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:05:41.135]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:05:41.147]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:05:41.155]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 23:05:41.163]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[13/Oct/2020 23:05:41.164]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[13/Oct/2020 23:05:41.190]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:05:55.682]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:05:55.697]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:05:55.716]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[13/Oct/2020 23:05:55.731]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[13/Oct/2020 23:05:55.744]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:05:55.751]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:05:55.756]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 23:06:17.453]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:06:17.479]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[13/Oct/2020 23:06:17.503]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:06:17.522]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:06:17.523]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[13/Oct/2020 23:06:17.554]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 23:06:17.561]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:12:55.579]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:12:55.643]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[13/Oct/2020 23:12:55.644]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:12:55.648]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:12:55.662]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[13/Oct/2020 23:12:55.697]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 23:12:55.707]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:13:17.947]INFO [django.server:157] "OPTIONS /api/v2/campaing-header-last HTTP/1.1" 200 0
+[13/Oct/2020 23:13:17.980]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[13/Oct/2020 23:19:47.217]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:19:47.288]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[13/Oct/2020 23:19:47.289]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Oct/2020 23:19:47.307]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[13/Oct/2020 23:19:47.312]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[13/Oct/2020 23:19:47.320]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Oct/2020 23:19:47.337]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 00:30:07.660]WARNING [django.request:224] Unauthorized: /api/v2/category
+[14/Oct/2020 00:30:07.663]WARNING [django.request:224] Unauthorized: /api/v2/city
+[14/Oct/2020 00:30:07.664]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 35
+[14/Oct/2020 00:30:07.664]WARNING [django.server:157] "GET /api/v2/city HTTP/1.1" 401 35
+[14/Oct/2020 00:30:07.671]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Oct/2020 00:30:07.678]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Oct/2020 00:30:07.681]WARNING [django.request:224] Unauthorized: /api/v2/category
+[14/Oct/2020 00:30:07.682]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 35
+[14/Oct/2020 00:30:07.688]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 35
+[14/Oct/2020 00:30:07.691]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 00:30:07.692]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 35
+[14/Oct/2020 00:30:07.693]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 00:30:24.133]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Oct/2020 00:30:24.160]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Oct/2020 00:30:24.161]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Oct/2020 00:30:24.696]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 00:30:37.468]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 00:30:37.480]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 00:30:37.489]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 00:30:37.500]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 00:30:37.505]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 00:30:37.514]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 00:31:37.020]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 00:49:19.749]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 00:49:19.760]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 00:49:19.763]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 00:49:19.772]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 00:49:19.783]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 00:49:19.783]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 00:49:19.783]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 00:54:38.737]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 00:55:30.655]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 00:55:30.726]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 00:55:30.759]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 00:55:30.762]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 00:55:30.779]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 00:55:30.790]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 00:55:30.792]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 00:59:06.213]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:01:32.985]INFO [django.server:157] "OPTIONS /api/v2/category HTTP/1.1" 200 0
+[14/Oct/2020 01:01:32.992]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[14/Oct/2020 01:01:33.025]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[14/Oct/2020 01:01:33.030]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[14/Oct/2020 01:01:33.052]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:01:33.065]INFO [django.server:157] "OPTIONS /api/v2/personal/profile HTTP/1.1" 200 0
+[14/Oct/2020 01:01:33.112]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:01:33.176]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:01:33.178]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:01:33.199]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:01:33.208]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:01:33.211]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:01:40.381]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:02:29.520]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:02:29.522]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:02:29.540]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:02:29.555]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:02:29.581]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:02:29.590]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:02:29.597]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:02:33.139]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:03:30.948]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:03:30.961]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:03:30.977]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:03:30.979]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:03:30.996]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:03:31.020]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:03:31.052]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:03:37.475]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:03:37.533]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:03:37.541]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:03:37.560]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:03:37.561]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:03:37.575]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:03:37.576]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:04:32.456]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:04:32.483]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:04:32.494]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:04:32.500]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:04:32.515]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:04:32.538]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:04:32.551]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:05:03.593]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:06:20.222]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:06:20.245]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:06:20.276]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:06:20.277]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:06:20.300]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:06:20.302]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:06:20.320]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:06:31.105]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:07:11.653]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:07:11.697]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:07:11.698]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:07:11.717]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:07:11.729]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:07:11.731]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:07:11.742]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:07:40.288]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:07:40.289]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:07:40.316]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:07:40.318]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:07:40.346]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:07:40.366]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:07:40.375]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:09:19.347]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:09:19.358]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:09:19.359]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:09:19.388]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:09:19.402]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:09:19.414]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:09:19.432]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:14:27.633]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:14:27.686]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:14:27.695]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:14:27.695]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:14:27.718]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:14:27.723]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:14:27.733]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:20:23.732]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:20:23.790]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:20:23.820]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:20:23.825]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:20:23.830]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:20:23.843]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:20:23.848]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:23:02.936]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:23:02.937]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:23:02.948]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:23:02.959]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:23:02.978]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:23:03.001]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:23:03.005]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:23:52.547]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:23:52.552]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:23:52.568]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:23:52.570]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:23:52.594]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:23:52.613]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:23:52.617]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:30:20.069]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:30:20.074]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:30:20.093]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:30:20.110]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:30:20.147]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:30:20.148]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:30:20.151]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:31:33.386]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:31:33.396]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:31:33.408]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:31:33.416]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:31:33.437]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:31:33.438]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:31:33.440]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:31:41.432]INFO [django.server:157] "OPTIONS /api/v2/campaing-header-last HTTP/1.1" 200 0
+[14/Oct/2020 01:31:41.452]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:32:18.193]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:32:18.204]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:32:18.210]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:32:18.236]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:32:18.262]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:32:18.283]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:32:18.285]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:40:10.593]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:40:43.746]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:40:43.777]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:40:43.778]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:40:43.819]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:40:43.832]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:40:43.842]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:40:43.851]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:40:47.808]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:42:22.497]WARNING [django.request:224] Unauthorized: /api/v2/category
+[14/Oct/2020 01:42:22.497]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 35
+[14/Oct/2020 01:42:22.501]WARNING [django.request:224] Unauthorized: /api/v2/city
+[14/Oct/2020 01:42:22.502]WARNING [django.server:157] "GET /api/v2/city HTTP/1.1" 401 35
+[14/Oct/2020 01:42:33.571]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header-last
+[14/Oct/2020 01:42:33.572]WARNING [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 401 35
+[14/Oct/2020 01:42:53.356]WARNING [django.request:224] Unauthorized: /api/v2/category
+[14/Oct/2020 01:42:53.360]WARNING [django.request:224] Unauthorized: /api/v2/city
+[14/Oct/2020 01:42:53.373]WARNING [django.server:157] "GET /api/v2/city HTTP/1.1" 401 35
+[14/Oct/2020 01:42:53.367]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Oct/2020 01:42:53.374]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 35
+[14/Oct/2020 01:42:53.375]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 35
+[14/Oct/2020 01:42:53.385]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Oct/2020 01:42:53.386]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 35
+[14/Oct/2020 01:42:53.389]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:42:53.393]WARNING [django.request:224] Unauthorized: /api/v2/category
+[14/Oct/2020 01:42:53.393]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:42:53.395]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 35
+[14/Oct/2020 01:43:39.912]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header-last
+[14/Oct/2020 01:43:39.912]WARNING [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 401 35
+[14/Oct/2020 01:46:44.039]INFO [django.server:157] "OPTIONS /api/v2/campaing-body HTTP/1.1" 200 0
+[14/Oct/2020 01:46:44.041]WARNING [django.request:224] Unauthorized: /api/v2/campaing-body
+[14/Oct/2020 01:46:44.042]WARNING [django.server:157] "POST /api/v2/campaing-body HTTP/1.1" 401 35
+[14/Oct/2020 01:46:58.436]WARNING [django.request:224] Unauthorized: /api/v2/category
+[14/Oct/2020 01:46:58.438]WARNING [django.request:224] Unauthorized: /api/v2/city
+[14/Oct/2020 01:46:58.440]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Oct/2020 01:46:58.444]WARNING [django.server:157] "GET /api/v2/city HTTP/1.1" 401 35
+[14/Oct/2020 01:46:58.444]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 35
+[14/Oct/2020 01:46:58.449]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:46:58.451]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Oct/2020 01:46:58.453]WARNING [django.request:224] Unauthorized: /api/v2/category
+[14/Oct/2020 01:46:58.454]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 35
+[14/Oct/2020 01:46:58.455]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:46:58.455]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 35
+[14/Oct/2020 01:46:58.456]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 35
+[14/Oct/2020 01:47:13.285]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[14/Oct/2020 01:47:13.416]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Oct/2020 01:47:13.441]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Oct/2020 01:47:13.441]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Oct/2020 01:47:13.840]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:47:17.497]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:47:17.497]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:47:17.513]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:47:17.516]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:47:17.524]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:47:17.527]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:47:22.169]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:49:00.515]WARNING [django.request:224] Bad Request: /api/v2/campaing-body
+[14/Oct/2020 01:49:00.515]WARNING [django.server:157] "POST /api/v2/campaing-body HTTP/1.1" 400 409
+[14/Oct/2020 01:51:20.802]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:51:20.804]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:51:20.824]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:51:20.834]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:51:20.837]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:51:20.848]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:51:20.855]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:51:32.134]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 01:52:46.326]WARNING [django.request:224] Bad Request: /api/v2/campaing-body
+[14/Oct/2020 01:52:46.326]WARNING [django.server:157] "POST /api/v2/campaing-body HTTP/1.1" 400 66
+[14/Oct/2020 01:56:25.970]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:56:25.994]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 01:56:26.002]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:56:26.016]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 01:56:26.017]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 01:56:26.021]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 01:56:26.025]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 01:57:40.848]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingBodyQuery.py changed, reloading.
+[14/Oct/2020 01:57:41.722]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[14/Oct/2020 02:00:44.416]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:00:44.435]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:00:44.459]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:00:44.460]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:00:44.466]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:00:44.476]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:00:44.476]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:00:50.305]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 02:01:41.552]WARNING [django.request:224] Bad Request: /api/v2/campaing-body
+[14/Oct/2020 02:01:41.552]WARNING [django.server:157] "POST /api/v2/campaing-body HTTP/1.1" 400 36
+[14/Oct/2020 02:09:22.901]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingBodyQuery.py changed, reloading.
+[14/Oct/2020 02:09:23.984]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[14/Oct/2020 02:09:29.191]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:09:29.193]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:09:29.228]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:09:29.250]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:09:29.253]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:09:29.264]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:09:29.265]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:09:30.882]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 02:10:21.275]WARNING [django.request:224] Bad Request: /api/v2/campaing-body
+[14/Oct/2020 02:10:21.275]WARNING [django.server:157] "POST /api/v2/campaing-body HTTP/1.1" 400 410
+[14/Oct/2020 02:12:24.363]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:12:24.366]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:12:24.374]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:12:24.386]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:12:24.395]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:12:24.413]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:12:24.433]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:14:18.783]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:14:18.801]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:14:18.806]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:14:18.809]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:14:18.832]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:14:18.833]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:14:18.834]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:16:21.609]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:16:21.615]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:16:21.622]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:16:21.626]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:16:21.657]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:16:21.662]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:16:21.664]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:16:58.398]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:16:58.401]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:16:58.418]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:16:58.419]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:16:58.435]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:16:58.447]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:16:58.448]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:17:01.415]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 02:17:53.392]WARNING [django.request:224] Bad Request: /api/v2/campaing-body
+[14/Oct/2020 02:17:53.392]WARNING [django.server:157] "POST /api/v2/campaing-body HTTP/1.1" 400 410
+[14/Oct/2020 02:20:54.562]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:20:54.566]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:20:54.574]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:20:54.573]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:20:54.592]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:20:54.612]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:20:54.619]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:21:01.080]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 02:22:44.701]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:22:44.712]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:22:44.723]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:22:44.726]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:22:44.741]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:22:44.745]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:22:44.745]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:22:46.840]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 02:23:16.860]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:23:16.863]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:23:16.873]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:23:16.874]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:23:16.881]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:23:16.885]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:23:16.886]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:23:19.062]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 02:25:17.407]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:25:17.422]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:25:17.422]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:25:17.425]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:25:17.455]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:25:17.457]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:25:17.463]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:25:27.854]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 02:27:55.267]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:27:55.270]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:27:55.272]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:27:55.281]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:27:55.305]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:27:55.307]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:27:55.326]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:28:15.400]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:28:15.423]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:28:15.423]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:28:15.434]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:28:15.439]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:28:15.457]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:28:15.458]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:28:18.250]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 02:28:18.258]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 02:28:18.261]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:28:18.261]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:28:18.280]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 02:28:18.293]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 02:28:18.297]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 02:28:21.925]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 02:29:10.426]INFO [django.server:157] "POST /api/v2/campaing-body HTTP/1.1" 201 11
+[14/Oct/2020 02:29:17.090]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 14520
+[14/Oct/2020 02:29:17.135]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[14/Oct/2020 02:29:20.044]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 12861
+[14/Oct/2020 02:29:20.069]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[14/Oct/2020 02:29:21.774]INFO [django.server:157] "GET /admin/core/campaingbody/12/change/ HTTP/1.1" 200 23181
+[14/Oct/2020 02:29:21.799]INFO [django.server:157] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+[14/Oct/2020 02:29:21.800]INFO [django.server:157] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 304 0
+[14/Oct/2020 02:29:21.807]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[14/Oct/2020 02:29:21.808]INFO [django.server:157] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[14/Oct/2020 02:29:21.823]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[14/Oct/2020 02:29:21.823]INFO [django.server:157] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+[14/Oct/2020 02:29:21.842]INFO [django.server:157] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
+[14/Oct/2020 02:29:21.964]INFO [django.server:157] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[14/Oct/2020 02:29:21.965]INFO [django.server:157] "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[14/Oct/2020 02:32:58.782]INFO [django.utils.autoreload:236] /usr/src/app/campaings/component/CmpHeader.py changed, reloading.
+[14/Oct/2020 02:32:59.743]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[14/Oct/2020 02:33:26.148]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[14/Oct/2020 02:33:27.107]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[14/Oct/2020 02:33:56.537]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[14/Oct/2020 02:33:57.481]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader

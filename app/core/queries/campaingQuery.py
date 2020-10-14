@@ -19,3 +19,8 @@ class CampaingHeaderQuery:
     def get_campch_id(pk):
         """get id campaing header"""
         return CampaingHeader.objects.get(id=pk)
+
+    @staticmethod
+    def get_last_id(request):
+        """get last campaing header from current user"""
+        return CampaingHeader.objects.filter(user=request.user).last()

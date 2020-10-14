@@ -36,7 +36,7 @@ class CampaingBodyQuery:
         camp = CampaingBody.objects.create(
             title=request.data.get("title"),
             video_main=request.data.get("video_main"),
-            imagen_main=request.data.get("imagen_main"),
+            imagen_main=request.FILES.get("imagen_main"),
             excerpt=request.data.get("excerpt"),
             description=request.data.get("description"),
             public_at=request.data.get("public_at"),

@@ -1,5 +1,6 @@
 from django.urls import path
 from .header.views import CampaingsHeader
+from .header.helpers import HelperHeader
 from .body.views import CampaingsBody
 
 app_name = "campaing-app"
@@ -26,5 +27,10 @@ urlpatterns = [
             {"get": "retrieve", "put": "update", "delete": "destroy"}
         ),
         name="campaing-body-detail",
+    ),
+    path(
+        "campaing-header-last",
+        HelperHeader.as_view({"get": "list"}),
+        name="campaing-last",
     ),
 ]
