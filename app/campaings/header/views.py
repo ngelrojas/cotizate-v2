@@ -1,3 +1,5 @@
+import string
+import random
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
@@ -35,6 +37,13 @@ class CampaingsHeader(viewsets.ModelViewSet):
     def create(self, request):
         """create campaing to current user"""
         try:
+            code_cotizate = "cotizate"
+            possible_characters = string.digits
+            attempt_this = "".join(
+                random.choice(possible_characters) for i in range(len(code_cotizate))
+            )
+            code = f"CAMP{attempt_this}{request.user.id}"
+
             send_data = {
                 "user": request.user.id,
                 "category": request.data.get("category"),
@@ -42,11 +51,14 @@ class CampaingsHeader(viewsets.ModelViewSet):
                 "qty_day": request.data.get("qty_day"),
                 "amount": request.data.get("amount"),
                 "role": request.data.get("role"),
+                "code_campaing": code,
             }
+
             serializer = self.get_serializer(data=send_data)
             serializer.is_valid(raise_exception=True)
             self.perform_create(serializer)
             headers = self.get_success_headers(serializer.data)
+
             return Response(
                 {"data": serializer.data},
                 status=status.HTTP_201_CREATED,

@@ -22,6 +22,7 @@ class CampaingHeaderSerializer(serializers.ModelSerializer):
             "qty_day",
             "amount",
             "role",
+            "code_campaing",
         )
         read_only_fields = ("id",)
 
@@ -42,6 +43,7 @@ class CHDetailSerializer(serializers.ModelSerializer):
             "qty_day",
             "amount",
             "role",
+            "code_campaing",
         )
         read_only_fields = ("id",)
 

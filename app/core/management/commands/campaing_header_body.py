@@ -60,6 +60,7 @@ class Command(BaseCommand):
                     qty_day=90,
                     amount=5000,
                     role=2,
+                    code_campaing="camp-0001",
                 )
 
                 CampaingBody.objects.create(
@@ -83,6 +84,7 @@ class Command(BaseCommand):
                     qty_day=40,
                     amount=15000,
                     role=2,
+                    code_campaing="camp-0002",
                 )
 
                 CampaingBody.objects.create(
@@ -105,6 +107,7 @@ class Command(BaseCommand):
                     qty_day=120,
                     amount=19000,
                     role=1,
+                    code_campaing="camp-0003",
                 )
 
                 CampaingBody.objects.create(

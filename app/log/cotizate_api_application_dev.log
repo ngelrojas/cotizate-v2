@@ -3404,3 +3404,1966 @@ core.campaing.CampaingHeader.MultipleObjectsReturned: get() returned more than o
 [14/Oct/2020 02:33:27.107]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
 [14/Oct/2020 02:33:56.537]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
 [14/Oct/2020 02:33:57.481]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[14/Oct/2020 22:52:20.758]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[14/Oct/2020 23:13:32.655]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[14/Oct/2020 23:13:32.795]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Oct/2020 23:13:32.823]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[14/Oct/2020 23:13:32.827]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Oct/2020 23:13:32.827]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Oct/2020 23:13:33.167]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:13:45.304]INFO [django.server:157] "OPTIONS /api/v2/campaing HTTP/1.1" 200 0
+[14/Oct/2020 23:13:45.320]WARNING [django.request:224] Not Found: /api/v2/campaing
+[14/Oct/2020 23:13:45.321]WARNING [django.server:157] "GET /api/v2/campaing HTTP/1.1" 404 9911
+[14/Oct/2020 23:18:29.518]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:19:16.090]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:19:31.651]INFO [django.server:157] "OPTIONS /api/v2/category HTTP/1.1" 200 0
+[14/Oct/2020 23:19:31.652]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[14/Oct/2020 23:19:31.667]INFO [django.server:157] "OPTIONS /api/v2/category HTTP/1.1" 200 0
+[14/Oct/2020 23:19:31.708]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:19:31.709]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 23:19:31.723]INFO [django.server:157] "OPTIONS /api/v2/personal/profile HTTP/1.1" 200 0
+[14/Oct/2020 23:19:31.725]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 23:19:31.752]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 23:19:31.753]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 23:19:31.754]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 23:19:33.884]INFO [django.server:157] "OPTIONS /api/v2/campaing-header-last HTTP/1.1" 200 0
+[14/Oct/2020 23:19:33.902]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 23:37:48.467]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 23:37:48.474]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 23:37:48.475]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:37:48.500]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 23:37:48.519]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:37:48.520]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 23:37:48.526]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 23:37:51.566]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 23:38:21.359]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 23:38:21.374]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 23:38:21.388]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:38:21.388]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 23:38:21.416]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 23:38:21.417]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 23:38:21.424]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:38:30.042]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 23:41:15.516]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 23:41:15.526]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:41:15.551]WARNING [django.request:224] Not Found: /api/v2/personal/profile
+[14/Oct/2020 23:41:15.556]WARNING [django.server:157] "GET /api/v2/personal/profile HTTP/1.1" 404 9935
+[14/Oct/2020 23:41:15.560]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[14/Oct/2020 23:41:15.584]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Oct/2020 23:41:15.594]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[14/Oct/2020 23:41:28.818]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 377
+[14/Oct/2020 23:57:44.717]INFO [django.utils.autoreload:236] /usr/src/app/api/settings/development.py changed, reloading.
+[14/Oct/2020 23:57:45.798]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:00:37.558]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[15/Oct/2020 00:00:37.571]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[15/Oct/2020 00:01:03.573]INFO [django.server:157] "OPTIONS /api/v2/campaing-header HTTP/1.1" 200 0
+[15/Oct/2020 00:01:03.600]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 90
+[15/Oct/2020 00:01:05.703]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 398
+[15/Oct/2020 00:02:05.022]INFO [django.server:157] "OPTIONS /api/v2/campaing-body HTTP/1.1" 200 0
+[15/Oct/2020 00:02:05.048]INFO [django.server:157] "POST /api/v2/campaing-body HTTP/1.1" 201 31
+[15/Oct/2020 00:02:14.939]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 14912
+[15/Oct/2020 00:02:14.993]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.002]INFO [django.server:157] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.004]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.004]INFO [django.server:157] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.050]INFO [django.server:157] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.054]INFO [django.server:157] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.087]INFO [django.server:157] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.088]INFO [django.server:157] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.095]INFO [django.server:157] "GET /staticfiles/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.519]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.519]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.520]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[15/Oct/2020 00:02:15.608]WARNING [django.request:224] Not Found: /favicon.ico
+[15/Oct/2020 00:02:15.609]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 3788
+[15/Oct/2020 00:02:19.311]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 13092
+[15/Oct/2020 00:02:19.404]INFO [django.server:157] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+[15/Oct/2020 00:02:19.424]INFO [django.server:157] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:19.434]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:19.437]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:19.438]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:02:19.442]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:19.446]INFO [django.server:157] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:19.448]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[15/Oct/2020 00:02:19.449]INFO [django.server:157] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:19.459]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[15/Oct/2020 00:02:19.565]INFO [django.server:157] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[15/Oct/2020 00:02:21.789]INFO [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 200 20500
+[15/Oct/2020 00:02:21.824]INFO [django.server:157] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+[15/Oct/2020 00:02:21.825]INFO [django.server:157] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:21.825]INFO [django.server:157] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:21.830]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:02:21.844]INFO [django.server:157] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+[15/Oct/2020 00:02:21.854]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:21.866]INFO [django.server:157] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
+[15/Oct/2020 00:02:22.024]INFO [django.server:157] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[15/Oct/2020 00:02:22.024]INFO [django.server:157] "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[15/Oct/2020 00:02:47.717]ERROR [django.request:224] Internal Server Error: /admin/core/campaingbody/13/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 869, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 869, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 307, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 86, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 322, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/usr/src/app/core/campaing.py", line 11, in user_directory_path
+    return f"campaing/{instance.user.id}/{filename}"
+AttributeError: 'CampaingBody' object has no attribute 'user'
+[15/Oct/2020 00:02:47.719]ERROR [django.server:157] "POST /admin/core/campaingbody/13/change/ HTTP/1.1" 500 153125
+[15/Oct/2020 00:02:58.458]ERROR [django.request:224] Internal Server Error: /admin/core/campaingbody/13/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 869, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 869, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 307, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 86, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 322, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/usr/src/app/core/campaing.py", line 11, in user_directory_path
+    return f"campaing/{instance.user.id}/{filename}"
+AttributeError: 'CampaingBody' object has no attribute 'user'
+[15/Oct/2020 00:02:58.459]ERROR [django.server:157] "POST /admin/core/campaingbody/13/change/ HTTP/1.1" 500 153125
+[15/Oct/2020 00:03:06.837]INFO [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 200 20500
+[15/Oct/2020 00:05:48.549]INFO [django.utils.autoreload:236] /usr/src/app/core/campaing.py changed, reloading.
+[15/Oct/2020 00:05:49.571]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:05:56.293]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 14700
+[15/Oct/2020 00:05:56.340]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:06:01.344]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 13092
+[15/Oct/2020 00:06:01.389]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:06:03.540]ERROR [django.request:224] Internal Server Error: /admin/core/campaingbody/13/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/usr/local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 994, in render
+    return render_value_in_context(output, context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 973, in render_value_in_context
+    value = str(value)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/html.py", line 376, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 93, in as_widget
+    return widget.render(
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/widgets.py", line 283, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 678, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 639, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 587, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1157, in __iter__
+    yield self.choice(obj)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1171, in choice
+    self.field.label_from_instance(obj),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1240, in label_from_instance
+    return str(obj)
+TypeError: __str__ returned non-string (type int)
+[15/Oct/2020 00:06:03.543]ERROR [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 500 584305
+[15/Oct/2020 00:06:17.202]ERROR [django.request:224] Internal Server Error: /admin/core/campaingbody/13/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/usr/local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 994, in render
+    return render_value_in_context(output, context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 973, in render_value_in_context
+    value = str(value)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/html.py", line 376, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 93, in as_widget
+    return widget.render(
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/widgets.py", line 283, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 678, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 639, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 587, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1157, in __iter__
+    yield self.choice(obj)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1171, in choice
+    self.field.label_from_instance(obj),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1240, in label_from_instance
+    return str(obj)
+TypeError: __str__ returned non-string (type int)
+[15/Oct/2020 00:06:17.203]ERROR [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 500 584442
+[15/Oct/2020 00:07:46.760]INFO [django.utils.autoreload:236] /usr/src/app/core/campaing.py changed, reloading.
+[15/Oct/2020 00:07:47.854]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:11:34.192]INFO [django.utils.autoreload:236] /usr/src/app/core/campaing.py changed, reloading.
+[15/Oct/2020 00:11:35.162]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:11:41.895]INFO [django.utils.autoreload:236] /usr/src/app/core/campaing.py changed, reloading.
+[15/Oct/2020 00:11:42.928]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:11:47.741]ERROR [django.request:224] Internal Server Error: /admin/core/campaingbody/13/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/usr/local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 994, in render
+    return render_value_in_context(output, context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 973, in render_value_in_context
+    value = str(value)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/html.py", line 376, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 93, in as_widget
+    return widget.render(
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/widgets.py", line 283, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 678, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 639, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 587, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1157, in __iter__
+    yield self.choice(obj)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1171, in choice
+    self.field.label_from_instance(obj),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1240, in label_from_instance
+    return str(obj)
+  File "/usr/src/app/core/campaing.py", line 27, in __str__
+    return self.user.first_name + " - " + self.id
+TypeError: can only concatenate str (not "int") to str
+[15/Oct/2020 00:11:47.753]ERROR [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 500 588200
+[15/Oct/2020 00:12:04.429]INFO [django.utils.autoreload:236] /usr/src/app/core/campaing.py changed, reloading.
+[15/Oct/2020 00:12:05.629]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:12:07.994]INFO [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 200 20567
+[15/Oct/2020 00:12:08.069]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:12:47.910]ERROR [django.request:224] Internal Server Error: /admin/core/campaingbody/13/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 869, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 869, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 307, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 86, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 322, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/usr/src/app/core/campaing.py", line 11, in user_directory_path
+    return f"campaing/{instance.user.id}/{filename}"
+AttributeError: 'CampaingBody' object has no attribute 'user'
+[15/Oct/2020 00:12:47.918]ERROR [django.server:157] "POST /admin/core/campaingbody/13/change/ HTTP/1.1" 500 153125
+[15/Oct/2020 00:12:58.848]INFO [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 200 20567
+[15/Oct/2020 00:14:14.387]INFO [django.utils.autoreload:236] /usr/src/app/core/campaing.py changed, reloading.
+[15/Oct/2020 00:14:15.417]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:14:17.032]ERROR [django.request:224] Internal Server Error: /admin/core/campaingbody/13/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/usr/local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 994, in render
+    return render_value_in_context(output, context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 973, in render_value_in_context
+    value = str(value)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/html.py", line 376, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 93, in as_widget
+    return widget.render(
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/widgets.py", line 283, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 678, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 639, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 587, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1157, in __iter__
+    yield self.choice(obj)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1171, in choice
+    self.field.label_from_instance(obj),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1240, in label_from_instance
+    return str(obj)
+TypeError: __str__ returned non-string (type int)
+[15/Oct/2020 00:14:17.037]ERROR [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 500 584442
+[15/Oct/2020 00:14:47.755]ERROR [django.request:224] Internal Server Error: /admin/core/campaingbody/13/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/usr/local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 994, in render
+    return render_value_in_context(output, context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 973, in render_value_in_context
+    value = str(value)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/html.py", line 376, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "/usr/local/lib/python3.8/site-packages/django/forms/boundfield.py", line 93, in as_widget
+    return widget.render(
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/widgets.py", line 283, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 241, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 678, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 639, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/widgets.py", line 587, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1157, in __iter__
+    yield self.choice(obj)
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1171, in choice
+    self.field.label_from_instance(obj),
+  File "/usr/local/lib/python3.8/site-packages/django/forms/models.py", line 1240, in label_from_instance
+    return str(obj)
+TypeError: __str__ returned non-string (type int)
+[15/Oct/2020 00:14:47.757]ERROR [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 500 584442
+[15/Oct/2020 00:15:10.256]INFO [django.utils.autoreload:236] /usr/src/app/core/campaing.py changed, reloading.
+[15/Oct/2020 00:15:11.297]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:15:11.899]INFO [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 200 20804
+[15/Oct/2020 00:15:11.948]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:15:36.495]ERROR [django.request:224] Internal Server Error: /admin/core/campaingbody/13/change/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 869, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/base.py", line 869, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 307, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 86, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/files.py", line 322, in generate_filename
+    filename = self.upload_to(instance, filename)
+  File "/usr/src/app/core/campaing.py", line 11, in user_directory_path
+    return f"campaing/{instance.user.id}/{filename}"
+AttributeError: 'CampaingBody' object has no attribute 'user'
+[15/Oct/2020 00:15:36.497]ERROR [django.server:157] "POST /admin/core/campaingbody/13/change/ HTTP/1.1" 500 153150
+[15/Oct/2020 00:16:35.247]INFO [django.utils.autoreload:236] /usr/src/app/core/campaing.py changed, reloading.
+[15/Oct/2020 00:16:36.325]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:16:58.535]INFO [django.utils.autoreload:236] /usr/src/app/core/campaing.py changed, reloading.
+[15/Oct/2020 00:16:59.614]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:23:18.626]INFO [django.server:157] "POST /admin/core/campaingbody/13/change/ HTTP/1.1" 302 0
+[15/Oct/2020 00:23:18.674]INFO [django.server:157] "GET /admin/login/?next=/admin/core/campaingbody/13/change/ HTTP/1.1" 200 2272
+[15/Oct/2020 00:23:18.723]INFO [django.server:157] "GET /staticfiles/admin/css/login.css HTTP/1.1" 304 0
+[15/Oct/2020 00:23:27.336]INFO [django.server:157] "POST /admin/login/?next=/admin/core/campaingbody/13/change/ HTTP/1.1" 302 0
+[15/Oct/2020 00:23:27.348]INFO [django.server:157] "GET /admin/core/campaingbody/13/change/ HTTP/1.1" 302 0
+[15/Oct/2020 00:23:27.388]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 12432
+[15/Oct/2020 00:23:27.453]INFO [django.server:157] "GET /staticfiles/admin/img/icon-alert.svg HTTP/1.1" 200 504
+[15/Oct/2020 00:23:35.124]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 12255
+[15/Oct/2020 00:23:38.076]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12411
+[15/Oct/2020 00:23:38.132]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:32:38.748]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/serializers.py changed, reloading.
+[15/Oct/2020 00:32:39.878]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:37:37.788]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 00:37:38.791]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:38:37.702]WARNING [django.request:224] Bad Request: /api/v2/auth
+[15/Oct/2020 00:38:37.702]WARNING [django.server:157] "POST /api/v2/auth HTTP/1.1" 400 55
+[15/Oct/2020 00:38:46.038]INFO [django.server:157] "GET /admin/core/user/ HTTP/1.1" 200 14000
+[15/Oct/2020 00:38:46.087]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:38:46.145]INFO [django.server:157] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[15/Oct/2020 00:38:46.146]INFO [django.server:157] "GET /staticfiles/admin/img/search.svg HTTP/1.1" 200 458
+[15/Oct/2020 00:38:46.163]INFO [django.server:157] "GET /staticfiles/admin/img/icon-no.svg HTTP/1.1" 200 560
+[15/Oct/2020 00:38:48.274]INFO [django.server:157] "GET /admin/core/user/2/change/ HTTP/1.1" 200 16841
+[15/Oct/2020 00:38:48.317]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:38:52.380]INFO [django.server:157] "POST /admin/core/user/2/change/ HTTP/1.1" 302 0
+[15/Oct/2020 00:38:52.447]INFO [django.server:157] "GET /admin/core/user/ HTTP/1.1" 200 14204
+[15/Oct/2020 00:38:52.492]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:38:56.818]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[15/Oct/2020 00:39:27.966]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 119
+[15/Oct/2020 00:40:02.664]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12627
+[15/Oct/2020 00:40:02.712]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 00:51:00.776]INFO [django.utils.autoreload:236] /usr/src/app/campaings/component/CmpHeader.py changed, reloading.
+[15/Oct/2020 00:51:01.762]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:51:19.940]INFO [django.utils.autoreload:236] /usr/src/app/campaings/component/CmpHeader.py changed, reloading.
+[15/Oct/2020 00:51:20.979]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:51:29.743]INFO [django.utils.autoreload:236] /usr/src/app/campaings/component/CmpHeader.py changed, reloading.
+[15/Oct/2020 00:51:30.781]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:52:47.144]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 00:52:48.118]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:53:37.471]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 00:53:38.454]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:56:32.234]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 00:56:33.278]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:58:50.904]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 00:58:51.945]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:59:17.349]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 00:59:18.414]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 00:59:21.111]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 40, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 00:59:21.112]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90343
+[15/Oct/2020 01:00:01.477]INFO [django.utils.autoreload:236] /usr/src/app/campaings/component/CmpHeader.py changed, reloading.
+[15/Oct/2020 01:00:02.483]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:00:19.394]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 40, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:00:19.395]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90343
+[15/Oct/2020 01:03:05.814]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:03:06.884]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:06:07.274]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:06:08.343]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:06:34.304]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 40, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:06:34.305]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90343
+[15/Oct/2020 01:07:14.675]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:07:20.647]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 40, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:07:20.648]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90343
+[15/Oct/2020 01:09:21.504]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[15/Oct/2020 01:09:46.800]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 40, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:09:46.801]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90343
+[15/Oct/2020 01:11:05.735]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 40, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:11:05.736]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90343
+[15/Oct/2020 01:11:42.894]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12627
+[15/Oct/2020 01:11:42.942]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 01:11:44.595]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12627
+[15/Oct/2020 01:11:44.636]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 01:12:29.386]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 40, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:12:29.387]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90343
+[15/Oct/2020 01:14:07.183]INFO [django.utils.autoreload:236] /usr/src/app/campaings/component/CmpHeader.py changed, reloading.
+[15/Oct/2020 01:14:08.245]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:14:34.522]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:14:35.534]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:14:39.800]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 40, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:14:39.801]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90342
+[15/Oct/2020 01:15:50.735]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:15:51.772]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:16:16.129]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:16:17.191]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:16:21.130]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{code_camp-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:16:21.131]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90498
+[15/Oct/2020 01:18:42.898]INFO [django.utils.autoreload:236] /usr/src/app/campaings/component/CmpHeader.py changed, reloading.
+[15/Oct/2020 01:18:43.880]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:20:16.745]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:20:17.760]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:20:23.036]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:20:23.038]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:21:45.675]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:22:17.982]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:22:17.983]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:23:40.314]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:23:41.364]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:24:31.449]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:24:32.684]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:25:36.537]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:25:36.538]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:26:31.670]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:26:32.770]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:26:42.556]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:26:42.557]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:28:37.760]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:28:45.873]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:28:45.874]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:31:20.382]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:31:21.448]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:31:27.044]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:31:27.046]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:31:35.785]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:31:35.785]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:32:14.241]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:32:14.242]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:32:16.178]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:32:16.179]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:32:17.032]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:32:17.033]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:32:17.694]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:32:17.695]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:32:18.333]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:32:18.333]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:32:18.916]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:32:18.916]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:32:19.520]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:32:19.521]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:32:19.909]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 41, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:32:19.910]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90225
+[15/Oct/2020 01:33:17.429]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:33:18.586]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:33:28.209]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:33:29.569]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:34:03.147]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:34:04.195]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:34:11.945]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:34:12.954]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:34:22.695]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 46, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:34:22.696]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90213
+[15/Oct/2020 01:37:49.496]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:37:50.598]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:37:55.414]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:37:55.416]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:38:40.849]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:38:41.838]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:46:05.288]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:46:06.359]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:46:10.487]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:10.488]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:32.058]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:32.059]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:33.058]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:33.059]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:33.804]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:33.805]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:34.295]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:34.296]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:34.747]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:34.748]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:35.140]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:35.141]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:36.683]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:36.684]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:37.429]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:37.430]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:38.148]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:38.148]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:38.494]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 42, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:46:38.496]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90229
+[15/Oct/2020 01:46:45.275]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12627
+[15/Oct/2020 01:46:45.312]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 01:46:46.880]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12627
+[15/Oct/2020 01:46:46.916]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 01:46:47.634]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12627
+[15/Oct/2020 01:46:47.670]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 01:47:49.002]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:47:50.224]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:48:14.272]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:48:15.299]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:48:37.664]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:48:38.751]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:49:08.304]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:49:09.318]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:49:22.482]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:49:22.483]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90441
+[15/Oct/2020 01:50:29.324]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:50:37.877]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:50:37.879]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90441
+[15/Oct/2020 01:50:59.266]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:50:59.267]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90441
+[15/Oct/2020 01:51:00.843]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:51:00.844]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90441
+[15/Oct/2020 01:51:01.716]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 44, in create
+    code = f"camp-{new_code-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:51:01.717]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90441
+[15/Oct/2020 01:53:15.283]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:53:16.338]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:54:00.616]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:54:01.609]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:54:06.274]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 118
+[15/Oct/2020 01:55:19.157]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:55:20.182]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:55:23.807]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-header
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/header/views.py", line 40, in create
+    code = f"camp-000{string.digits-request.user.id}"
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[15/Oct/2020 01:55:23.814]ERROR [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 500 90124
+[15/Oct/2020 01:56:18.747]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:56:19.771]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:56:31.540]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:56:32.541]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:57:08.370]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:57:09.392]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:57:20.513]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 186
+[15/Oct/2020 01:58:47.634]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:58:48.744]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:59:06.832]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:59:07.844]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:59:12.941]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 134
+[15/Oct/2020 01:59:34.391]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 01:59:35.377]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 01:59:37.866]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 134
+[15/Oct/2020 02:00:04.066]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 02:00:05.177]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 02:00:07.748]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 134
+[15/Oct/2020 02:00:20.451]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 02:00:21.537]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 02:00:23.159]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 125
+[15/Oct/2020 02:00:58.630]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 02:00:59.668]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 02:01:00.620]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 125
+[15/Oct/2020 02:02:10.933]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 02:02:11.961]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 02:02:15.354]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 124
+[15/Oct/2020 02:02:28.130]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 02:02:29.161]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 02:02:30.818]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 124
+[15/Oct/2020 02:02:40.265]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 02:02:41.438]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 02:02:42.326]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 123
+[15/Oct/2020 02:03:05.555]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 14932
+[15/Oct/2020 02:03:05.617]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[15/Oct/2020 02:06:55.858]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 02:06:56.869]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 02:07:05.685]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 02:07:06.712]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[15/Oct/2020 02:09:15.164]INFO [django.utils.autoreload:236] /usr/src/app/campaings/header/views.py changed, reloading.
+[15/Oct/2020 02:09:16.265]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader

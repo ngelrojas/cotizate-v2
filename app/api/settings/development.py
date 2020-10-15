@@ -165,6 +165,7 @@ USE_TZ = True
 
 STATIC_URL = "/staticfiles/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+MEDIA_ROOT = os.path.join(BASE_DIR, "..", "app/media")
 
 # CORS AND STUFF
 CORS_ALLOW_CREDENTIALS = False

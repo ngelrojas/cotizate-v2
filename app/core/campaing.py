@@ -22,9 +22,10 @@ class CampaingHeader(models.Model):
     qty_day = models.IntegerField(default=0)
     amount = models.DecimalField(max_digits=12, decimal_places=3, default=0)
     role = models.IntegerField(choices=ROLE_CAMPAING, default=2)
+    code_campaing = models.CharField(max_length=250)
 
     def __str__(self):
-        return self.user.first_name
+        return self.code_campaing
 
 
 class CampaingBody(models.Model):
