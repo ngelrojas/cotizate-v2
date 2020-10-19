@@ -30,13 +30,13 @@ class PersonalProfileView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
             )
 
-    def retrieve(self, pk):
+    def retrieve(self, request, pk=None):
         """retrieve profile current user"""
         try:
-            current_profile = PerPF.objects.get(user=pk)
+            current_profile = PerPF.objects.get(user=request.user)
             serializer = self.serializer_class(current_profile)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
-        except PerPF.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )

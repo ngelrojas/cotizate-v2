@@ -7,7 +7,7 @@ class Reward(models.Model):
     """model reward"""
 
     title = models.CharField(max_length=50)
-    description = models.CharField(max_length=150)
+    description = models.CharField(max_length=940)
     amount = models.DecimalField(max_digits=12, decimal_places=3)
     expected_delivery = models.DateTimeField()
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)

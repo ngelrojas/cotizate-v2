@@ -12,9 +12,7 @@ urlpatterns = [
     ),
     path(
         "profile/personal/<int:pk>",
-        PersonalProfileView.as_view(
-            {"get": "retrieve", "put": "update", "delete": "delete"}
-        ),
+        PersonalProfileView.as_view({"get": "retrieve", "put": "update"}),
         name="personal-detail",
     ),
 ]
