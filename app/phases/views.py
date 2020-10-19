@@ -86,3 +86,25 @@ class PhaseView(viewsets.ViewSet):
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
+
+
+class PhaseListView(viewsets.ViewSet):
+    """
+    list:
+        - list all phase
+        about the current phase
+    """
+
+    serializer_class = PhaseSerializer
+    queryset = Phase.objects.all()
+
+    def list(self, request, pk=None):
+        """retrieve phase current campaing_header_id, campaing_id"""
+        try:
+            current_phases = PhaseQuery.get_list_phase(pk)
+            serializer = self.serializer_class(current_phases, many=True)
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+        except Exception as err:
+            return Response(
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+            )

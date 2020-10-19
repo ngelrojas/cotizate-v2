@@ -25,7 +25,7 @@ class CampaingHeader(models.Model):
     code_campaing = models.CharField(max_length=250)
 
     def __str__(self):
-        return self.code_campaing
+        return str(self.id)
 
 
 class CampaingBody(models.Model):

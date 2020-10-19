@@ -1,4 +1,6 @@
 from core.phase import Phase
+from core.user import User
+from core.campaing import CampaingHeader
 
 
 class PhaseQuery:
@@ -7,6 +9,7 @@ class PhaseQuery:
     @staticmethod
     def get_list_phase(header_id):
         """get list all phases about current campaing"""
+
         return Phase.objects.filter(header=header_id)
 
     @staticmethod
