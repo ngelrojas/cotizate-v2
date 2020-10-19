@@ -5,9 +5,9 @@ from core.user import User
 from core.encoder_tokens import encode_user_id
 from core.encoder_tokens import make_user_token
 from api.celery import send_email_module
-from api.settings import development
+from api.settings import production
 
-URL_SEND_EMAIL = development.URL_PRODUCTION
+URL_SEND_EMAIL = production.URL_PRODUCTION
 ACTIVATION_ACCOUNT = "/activar-cuenta"
 RECOVERY_PASSWORD = "/recuperar-contrasena"
 
