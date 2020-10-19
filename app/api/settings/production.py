@@ -178,6 +178,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://cotizate.com",
     "http://www.cotizate.com",
     "http://34.71.45.26",
+    "http://35.226.118.27",
 ]
 
 CORS_ORIGIN_REGEX_WHITELIST = (
@@ -185,6 +186,7 @@ CORS_ORIGIN_REGEX_WHITELIST = (
     "http://cotizate.com",
     "http://www.cotizate.com",
     "http://34.71.45.26",
+    "http://35.226.118.27",
 )
 CSRF_COOKIE_NAME = "csrftoken"
 
@@ -193,6 +195,7 @@ CSRF_TRUSTED_ORIGINS = (
     "http://cotizate.com",
     "http://www.cotizate.com",
     "http://34.71.45.26",
+    "http://35.226.118.27",
 )
 
 CORS_ALLOW_HEADERS = default_headers + (
