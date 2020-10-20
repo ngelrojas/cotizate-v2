@@ -72,6 +72,8 @@ APP_API = [
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
 
 MIDDLEWARE = [
+    # "corsheaders.middleware.CorsMiddleware",
+    # "api.cors.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -169,11 +171,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 MEDIA_ROOT = os.path.join(BASE_DIR, "..", "app/media")
 
 # CORS AND STUFF
-CORS_ALLOW_CREDENTIALS = False
+CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = list(default_methods)
 
-CORS_ORIGIN_WHITELIST = [
+CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
@@ -181,21 +183,30 @@ CORS_ORIGIN_WHITELIST = [
     "http://35.226.118.27",
 ]
 
-CORS_ORIGIN_REGEX_WHITELIST = (
-    "http://localhost:3000",
-    "http://cotizate.com",
-    "http://www.cotizate.com",
-    "http://34.71.45.26",
-    "http://35.226.118.27",
-)
+# CORS_ORIGIN_WHITELIST = [
+# "http://localhost:3000",
+# "http://cotizate.com",
+# "http://www.cotizate.com",
+# "http://34.71.45.26",
+# "http://35.226.118.27",
+# ]
+
+# CORS_ORIGIN_REGEX_WHITELIST = (
+# "http://localhost:3000",
+# "http://cotizate.com",
+# "http://www.cotizate.com",
+# "http://34.71.45.26",
+# "http://35.226.118.27",
+# )
+
 CSRF_COOKIE_NAME = "csrftoken"
 
 CSRF_TRUSTED_ORIGINS = (
-    "http://localhost:3000",
-    "http://cotizate.com",
-    "http://www.cotizate.com",
-    "http://34.71.45.26",
-    "http://35.226.118.27",
+    "localhost:3000",
+    "cotizate.com",
+    "www.cotizate.com",
+    "34.71.45.26",
+    "35.226.118.27",
 )
 
 CORS_ALLOW_HEADERS = default_headers + (

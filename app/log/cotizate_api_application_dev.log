@@ -2840,3 +2840,38 @@ TypeError: retrieve() got multiple values for argument 'pk'
 [19/Oct/2020 21:35:45.683]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
 [19/Oct/2020 21:35:45.686]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
 [19/Oct/2020 21:35:45.705]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[20/Oct/2020 02:21:54.500]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[20/Oct/2020 02:22:10.898]INFO [django.server:157] "GET /admin/core/campaingheader/15/change/ HTTP/1.1" 302 0
+[20/Oct/2020 02:22:10.958]INFO [django.server:157] "GET /admin/login/?next=/admin/core/campaingheader/15/change/ HTTP/1.1" 200 2276
+[20/Oct/2020 02:22:11.021]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[20/Oct/2020 02:22:11.023]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[20/Oct/2020 02:22:11.024]INFO [django.server:157] "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 1185
+[20/Oct/2020 02:22:11.285]WARNING [django.request:224] Not Found: /favicon.ico
+[20/Oct/2020 02:22:11.286]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 3788
+[20/Oct/2020 02:22:15.983]INFO [django.server:157] "POST /admin/login/?next=/admin/core/campaingheader/15/change/ HTTP/1.1" 200 2447
+[20/Oct/2020 02:22:20.198]INFO [django.server:157] "POST /admin/login/?next=/admin/core/campaingheader/15/change/ HTTP/1.1" 302 0
+[20/Oct/2020 02:22:20.281]INFO [django.server:157] "GET /admin/core/campaingheader/15/change/ HTTP/1.1" 200 17160
+[20/Oct/2020 02:22:20.327]INFO [django.server:157] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+[20/Oct/2020 02:22:20.340]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[20/Oct/2020 02:22:20.344]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[20/Oct/2020 02:22:20.350]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[20/Oct/2020 02:22:20.354]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[20/Oct/2020 02:22:20.386]INFO [django.server:157] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+[20/Oct/2020 02:22:28.598]INFO [django.server:157] "GET /admin/core/user/ HTTP/1.1" 200 14000
+[20/Oct/2020 02:22:28.650]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[20/Oct/2020 02:23:41.316]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[20/Oct/2020 02:23:41.455]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[20/Oct/2020 02:23:41.496]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[20/Oct/2020 02:23:41.510]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[20/Oct/2020 02:23:41.511]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[20/Oct/2020 02:23:42.144]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[20/Oct/2020 02:23:50.007]INFO [django.server:157] "OPTIONS /api/v2/category HTTP/1.1" 200 0
+[20/Oct/2020 02:23:50.009]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[20/Oct/2020 02:23:50.027]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/2 HTTP/1.1" 200 0
+[20/Oct/2020 02:23:50.046]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[20/Oct/2020 02:23:50.047]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 287
+[20/Oct/2020 02:23:50.087]INFO [django.server:157] "GET /api/v2/profile/personal/2 HTTP/1.1" 200 438
+[20/Oct/2020 02:23:50.089]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[20/Oct/2020 02:23:50.099]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[20/Oct/2020 02:24:12.914]INFO [django.server:157] "OPTIONS /api/v2/campaing-header HTTP/1.1" 200 0
+[20/Oct/2020 02:24:12.936]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 123
