@@ -5,12 +5,11 @@ from django.contrib.auth.models import PermissionsMixin
 
 
 class UserManager(BaseUserManager):
-
     def create_user(self, email, password=None, **extra_fields):
         """creates and saves a new user"""
         if not email:
-            raise ValueError('Users must have an email address.')
-        user = self.model(email=self.normalize_email(email), **extra_fields)
+            raise ValueError("Users must have an email address.")
+        user = self.model(email=self.normalize_email(email.lower()), **extra_fields)
         user.is_activate = False
         user.set_password(password)
         user.save(using=self._db)
@@ -19,7 +18,7 @@ class UserManager(BaseUserManager):
 
     def create_superuser(self, email, password):
         """creates and saves new superuser"""
-        user = self.create_user(email, password)
+        user = self.create_user(email.lower(), password)
         user.is_activate = True
         user.is_staff = True
         user.is_superuser = True
@@ -29,21 +28,16 @@ class UserManager(BaseUserManager):
 
 class User(AbstractBaseUser, PermissionsMixin):
     """custom user model that supposrts using email instead of username"""
-    TYPE_USER = (
-        (1, 'contributor'),
-        (2, 'creator')
-    )
+
+    TYPE_USER = ((1, "contributor"), (2, "creator"))
     email = models.EmailField(max_length=255, unique=True)
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
-    type_user = models.PositiveSmallIntegerField(
-        choices=TYPE_USER,
-        default=1
-    )
+    type_user = models.PositiveSmallIntegerField(choices=TYPE_USER, default=1)
     deleted = models.BooleanField(default=False)
     is_activate = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
     objects = UserManager()
 
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = "email"

@@ -12,7 +12,7 @@ class Reward(models.Model):
     expected_delivery = models.DateTimeField()
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
     user = models.IntegerField(default=0)
-    cities = models.ManyToManyField(City)
+    cities = models.ManyToManyField(City, blank=True)
     all_cities = models.BooleanField(default=False)
     pick_up_locally = models.BooleanField(default=False)
 

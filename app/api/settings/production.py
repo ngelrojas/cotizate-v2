@@ -72,10 +72,9 @@ APP_API = [
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
 
 MIDDLEWARE = [
-    # "corsheaders.middleware.CorsMiddleware",
-    # "api.cors.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -171,7 +170,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 MEDIA_ROOT = os.path.join(BASE_DIR, "..", "app/media")
 
 # CORS AND STUFF
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = list(default_methods)
 
@@ -183,13 +182,13 @@ CORS_ALLOWED_ORIGINS = [
     "http://35.226.118.27",
 ]
 
-# CORS_ORIGIN_WHITELIST = [
-# "http://localhost:3000",
-# "http://cotizate.com",
-# "http://www.cotizate.com",
-# "http://34.71.45.26",
-# "http://35.226.118.27",
-# ]
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000",
+    "http://cotizate.com",
+    "http://www.cotizate.com",
+    "http://34.71.45.26",
+    "http://35.226.118.27",
+]
 
 # CORS_ORIGIN_REGEX_WHITELIST = (
 # "http://localhost:3000",
@@ -204,7 +203,6 @@ CSRF_COOKIE_NAME = "csrftoken"
 CSRF_TRUSTED_ORIGINS = (
     "localhost:3000",
     "cotizate.com",
-    "www.cotizate.com",
     "34.71.45.26",
     "35.226.118.27",
 )
@@ -220,9 +218,11 @@ AUTH_USER_MODEL = "core.user"
 
 # config jwt
 JWT_AUTH = {
+    "JWT_SECRET_KEY": SECRET_KEY,
+    "JWT_VERIFY_EXPIRATION": True,
     "JWT_EXPIRATION_DELTA": datetime.timedelta(seconds=4300),
     "JWT_ALLOW_REFRESH": False,
-    "JWT_REFRESH_EXPIRATION_DELTA": datetime.timedelta(days=7),
+    "JWT_REFRESH_EXPIRATION_DELTA": datetime.timedelta(days=1),
     "JWT_AUTH_HEADER_PREFIX": "Bearer",
     "JWT_AUTH_COOKIE": None,
 }
