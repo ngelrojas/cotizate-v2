@@ -46,3 +46,8 @@ class CampaingBodyQuery:
             slogan_campaing=request.data.get("slogan_campaing"),
         )
         return camp
+
+    @staticmethod
+    def retrieve_campaing_body(camp_header_id):
+        """return campaing body"""
+        return CampaingBody.objects.get(header=camp_header_id)
