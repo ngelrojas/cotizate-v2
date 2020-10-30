@@ -2,6 +2,7 @@ from rest_framework import serializers
 from core.campaing import CampaingHeader
 from cities.serializers import CitySerializer
 from categories.serializers import CategorySerializer
+from users.serializers import UserPublicSerializer
 
 # from core.category import Category
 # from core.city import City
@@ -32,6 +33,7 @@ class CHDetailSerializer(serializers.ModelSerializer):
 
     city = CitySerializer()
     category = CategorySerializer()
+    user = UserPublicSerializer()
 
     class Meta:
         model = CampaingHeader
@@ -40,8 +42,10 @@ class CHDetailSerializer(serializers.ModelSerializer):
             "user",
             "category",
             "city",
-            "qty_day",
+            "qty_day_left",
             "amount",
+            "amount_reached",
+            "percent_reached",
             "role",
             "code_campaing",
         )

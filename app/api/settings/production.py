@@ -67,6 +67,7 @@ APP_API = [
     "socialNetworks",
     "phases",
     "improvies",
+    "bookMarks",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
@@ -167,7 +168,8 @@ USE_TZ = True
 
 STATIC_URL = "/staticfiles/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-MEDIA_ROOT = os.path.join(BASE_DIR, "..", "app/media")
+MEDIA_URL = "/campaing/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "campaing")
 
 # CORS AND STUFF
 # CORS_ALLOW_CREDENTIALS = True

@@ -1,21 +1,21 @@
 from rest_framework import serializers
-from core.like import Like
+from core.bookMark import BookMark
 from users.serializers import UserPublicSerializer
 from campaings.header.serializers import CHDetailSerializer
 
 
-class LikeSerializer(serializers.ModelSerializer):
-    """like serializer"""
+class BookMarkSerializer(serializers.ModelSerializer):
+    """bookmark serializer"""
 
     user = UserPublicSerializer()
     header = CHDetailSerializer()
 
     class Meta:
-        model = Like
+        model = BookMark
         fields = (
             "id",
             "user",
             "header",
-            "liked",
+            "marked",
         )
         read_only_fields = ("id",)

@@ -20,7 +20,10 @@ class CampaingHeader(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     city = models.ForeignKey(City, on_delete=models.CASCADE)
     qty_day = models.IntegerField(default=0)
+    qty_day_left = models.IntegerField(default=0)
     amount = models.DecimalField(max_digits=12, decimal_places=3, default=0)
+    amount_reached = models.DecimalField(max_digits=12, decimal_places=3, default=0)
+    percent_reached = models.DecimalField(max_digits=12, decimal_places=3, default=0)
     role = models.IntegerField(choices=ROLE_CAMPAING, default=2)
     code_campaing = models.CharField(max_length=250)
 

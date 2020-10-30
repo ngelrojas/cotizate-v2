@@ -110,3 +110,14 @@ class PwdConfirmSerialzier(serializers.ModelSerializer):
         if attrs.get("password") != attrs.get("password_confirm"):
             raise serializers.ValidationError("Those passwords don't match")
         return attrs
+
+
+class UserPublicSerializer(serializers.ModelSerializer):
+    """model user public serializer"""
+
+    class Meta:
+        model = User
+        fields = (
+            "first_name",
+            "last_name",
+        )

@@ -66,6 +66,7 @@ APP_API = [
     "socialNetworks",
     "phases",
     "improvies",
+    "bookMarks",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API

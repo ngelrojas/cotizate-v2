@@ -49,6 +49,7 @@ class CampaingsHeader(viewsets.ModelViewSet):
                 "category": request.data.get("category"),
                 "city": request.data.get("city"),
                 "qty_day": request.data.get("qty_day"),
+                "qty_day_left": request.data.get("qty_day"),
                 "amount": request.data.get("amount"),
                 "role": request.data.get("role"),
                 "code_campaing": code,

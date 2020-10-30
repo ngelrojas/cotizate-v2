@@ -1,5 +1,6 @@
 from django.db.models import Q
 from core.campaing import CampaingHeader
+from core.campaing import CampaingBody
 
 
 class CampaingHeaderQuery:
@@ -24,3 +25,12 @@ class CampaingHeaderQuery:
     def get_last_id(request):
         """get last campaing header from current user"""
         return CampaingHeader.objects.filter(user=request.user).last()
+
+
+class CampaingPublicQuery:
+    """campaing query public"""
+
+    @staticmethod
+    def get_list_cp(status_campaing):
+        """get list public campaing"""
+        return CampaingBody.objects.filter(status=status_campaing).order_by("-id")

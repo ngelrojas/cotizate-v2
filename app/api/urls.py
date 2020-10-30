@@ -67,4 +67,5 @@ urlpatterns = [
     path("api/v2/", include("socialNetworks.urls")),
     path("api/v2/", include("phases.urls")),
     path("api/v2/", include("improvies.urls")),
+    path("api/v2/", include("bookMarks.urls")),
 ]
