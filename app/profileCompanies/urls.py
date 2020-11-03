@@ -7,7 +7,7 @@ app_name = "profile-company"
 urlpatterns = [
     path(
         "profile/company",
-        CompanyView.as_view({"post": "create"}),
+        CompanyView.as_view({"get": "list", "post": "create"}),
         name="profile-company",
     ),
     path(

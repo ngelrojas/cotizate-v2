@@ -6,11 +6,6 @@ from core.currency import Currency
 from core.city import City
 
 
-def user_directory_path(instance, filename):
-    """campaing id"""
-    return f"campaing/{instance.user.id}/{filename}"
-
-
 class CampaingHeader(models.Model):
     """model campaing header"""
 
@@ -48,7 +43,7 @@ class CampaingBody(models.Model):
 
     title = models.CharField(max_length=200)
     video_main = models.CharField(max_length=250)
-    imagen_main = models.FileField(upload_to=user_directory_path)
+    imagen_main = models.TextField()
     slug = AutoSlugField(populate_from="title", always_update=True)
     excerpt = models.CharField(max_length=250)
     description = models.TextField()

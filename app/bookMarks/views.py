@@ -45,7 +45,7 @@ class BookMarkView(viewsets.ModelViewSet):
     def retrieve(self, request, pk):
         """retrieve bookmarked to current user and campaing"""
         try:
-            current_like = BookMarkQuery.get_retrieve(pk)
+            current_like = BookMarkQuery.get_retrieve(request, pk)
             serializer = self.serializer_class(current_like)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -56,7 +56,7 @@ class BookMarkView(viewsets.ModelViewSet):
     def update(self, request, pk):
         """update like to current user and campaing"""
         try:
-            current_like = BookMarkQuery.get_retrieve(pk)
+            current_like = BookMarkQuery.get_retrieve(request, pk)
             serializer = self.serializer_class(
                 current_like, data=request.data, partial=True
             )

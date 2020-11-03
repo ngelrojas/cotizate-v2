@@ -165,11 +165,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
+ASSETS_DIR = os.path.join(os.path.dirname(BASE_DIR), "assets")
 STATIC_URL = "/staticfiles/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-MEDIA_URL = "/campaing/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "campaing")
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(ASSETS_DIR, "mediafiles")
 
 # CORS AND STUFF
 # CORS_ALLOW_CREDENTIALS = True

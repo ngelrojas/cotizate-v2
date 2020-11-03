@@ -32,5 +32,14 @@ class CampaingPublicQuery:
 
     @staticmethod
     def get_list_cp(status_campaing):
-        """get list public campaing"""
+        """get list public campaings using status"""
         return CampaingBody.objects.filter(status=status_campaing).order_by("-id")
+
+    @staticmethod
+    def detail_campaing(the_slug):
+        """rules:
+        - searching campaing using slug
+        - camaping is public
+        """
+        status_camp_public = 5
+        return CampaingBody.objects.get(slug=the_slug, status=status_camp_public)

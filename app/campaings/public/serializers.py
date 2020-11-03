@@ -17,15 +17,43 @@ class CampaingPublicSerializer(serializers.ModelSerializer):
         fields = (
             "id",
             "title",
-            "video_main",
+            # "video_main",
             "imagen_main",
             "slug",
             "excerpt",
+            # "description",
+            # "created_at",
+            # "updated_at",
+            # "public_at",
+            # "ended_at",
+            # "status",
+            "header",
+            "currency",
+            # "short_url",
+            "slogan_campaing",
+        )
+        read_only_fields = ("id",)
+
+
+class CampaingDetailSerializer(serializers.ModelSerializer):
+    """campaing public serializer"""
+
+    header = CHDetailSerializer()
+
+    class Meta:
+        model = CampaingBody
+        fields = (
+            "id",
+            "title",
+            "video_main",
+            # "imagen_main",
+            "slug",
+            # "excerpt",
             "description",
-            "created_at",
-            "updated_at",
+            # "created_at",
+            # "updated_at",
             "public_at",
-            "ended_at",
+            # "ended_at",
             "status",
             "header",
             "currency",

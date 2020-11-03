@@ -3,6 +3,9 @@ from rest_framework import status
 from rest_framework.response import Response
 from api.cotizate import ProfileComplete
 from core.profileCompany import ProfileCompany
+from core.queries.profilesQuery import ProfilesQuery
+from core.country import Country
+from core.city import City
 from .serializers import CompanySerializer
 
 
@@ -12,19 +15,30 @@ class CompanyView(viewsets.ModelViewSet):
     serializer_class = CompanySerializer
     queryset = ProfileCompany.objects.all()
 
+    def list(self, request):
+        """all companies about the current user"""
+        try:
+            list_company = ProfileCompany.objects.filter(user=request.user)
+            serializer = self.serializer_class(list_company, many=True)
+            return Response({"data": serializer}, status=status.HTTP_200_OK)
+        except Exception as err:
+            return Response(
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+            )
+
     def create(self, request):
         """create personal company"""
         try:
-            send_data = {}
-            send_data = request.data
-            send_data.update(request.user)
-            serializer = self.serializer_class(data=send_data)
-            if serializer.is_valid(raise_exception=True):
-                pa = serializer.save()
-                return Response(
-                    {"data": pa.id, "msg": "profile association created."},
-                    status=status.HTTP_201_CREATED,
-                )
+            countries = Country.objects.get(id=request.data.get("countries"))
+            cities = City.objects.get(id=request.data.get("cities"))
+            prof_company = ProfilesQuery.saving_profile_company(
+                request, countries, cities
+            )
+            # prof_company = request.data
+            return Response(
+                {"data": prof_company, "msg": "profile company created."},
+                status=status.HTTP_201_CREATED,
+            )
         except ProfileCompany.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST

@@ -21,7 +21,7 @@ class ProfileComplete:
         pass
 
     def currentProfile(self, profile, request):
-        pro = profile.objects.get(id=request.user.id)
+        pro = profile.objects.get(user=request.user)
         return pro
 
     def isComplete(self, profile, request):

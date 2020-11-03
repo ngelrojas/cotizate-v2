@@ -11,9 +11,9 @@ class BookMarkQuery:
         return BookMark.objects.filter(user=current_user, marked=True)
 
     @staticmethod
-    def get_retrieve(pk):
+    def get_retrieve(request, pid):
         """get list all about the user marked=true"""
-        return BookMark.objects.get(id=pk)
+        return BookMark.objects.get(user=request.user, id=pid)
 
     @classmethod
     def saving_bookmark(cls, request, camp_header):
