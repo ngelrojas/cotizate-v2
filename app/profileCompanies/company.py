@@ -29,8 +29,8 @@ class CompanyView(viewsets.ModelViewSet):
     def create(self, request):
         """create personal company"""
         try:
-            countries = Country.objects.get(id=request.data.get("countries"))
-            cities = City.objects.get(id=request.data.get("cities"))
+            countries = Country.objects.get(id=int(request.data.get("countries")))
+            cities = City.objects.get(id=int(request.data.get("cities")))
             prof_company = ProfilesQuery.saving_profile_company(
                 request, countries, cities
             )

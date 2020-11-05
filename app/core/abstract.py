@@ -14,6 +14,10 @@ class AbstractProfile(models.Model):
     description = models.TextField(blank=True, null=True)
     representative = models.BooleanField(default=False)
     complete = models.BooleanField(default=False)
+    rs_facebook = models.CharField(max_length=350, blank=True, null=True)
+    rs_twitter = models.CharField(max_length=350, blank=True, null=True)
+    rs_linkedin = models.CharField(max_length=350, blank=True, null=True)
+    rs_another = models.CharField(max_length=350, blank=True, null=True)
 
     class Meta:
         abstract = True

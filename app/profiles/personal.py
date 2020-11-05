@@ -3,6 +3,9 @@ from rest_framework import status
 from rest_framework.response import Response
 from api.cotizate import ProfileComplete
 from core.profile import PersonalProfile as PerPF
+from core.country import Country
+from core.city import City
+from core.queries.profilesQuery import ProfilesQuery
 from .serializers import PersonalSerializer
 
 
@@ -15,16 +18,15 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def create(self, request):
         """create personal profile"""
         try:
-            send_data = {}
-            send_data = request.data
-            send_data.update(request.user)
-            serializer = self.serializer_class(data=send_data)
-            if serializer.is_valid(raise_exception=True):
-                pp = serializer.save()
-                return Response(
-                    {"data": pp.id, "msg": "personal profile created."},
-                    status=status.HTTP_201_CREATED,
-                )
+            countries = Country.objects.get(id=int(request.data.get("countries")))
+            cities = City.objects.get(id=int(request.data.get("cities")))
+            prof_personal = ProfilesQuery.saving_profile_personal(
+                request, countries, cities
+            )
+            return Response(
+                {"data": prof_personal, "msg": "personal profile created."},
+                status=status.HTTP_201_CREATED,
+            )
         except PerPF.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
