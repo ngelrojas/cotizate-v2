@@ -27,7 +27,7 @@ class PersonalProfileView(viewsets.ModelViewSet):
                 {"data": prof_personal, "msg": "personal profile created."},
                 status=status.HTTP_201_CREATED,
             )
-        except PerPF.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
             )

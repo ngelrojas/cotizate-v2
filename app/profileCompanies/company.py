@@ -34,7 +34,6 @@ class CompanyView(viewsets.ModelViewSet):
             prof_company = ProfilesQuery.saving_profile_company(
                 request, countries, cities
             )
-            # prof_company = request.data
             return Response(
                 {"data": prof_company, "msg": "profile company created."},
                 status=status.HTTP_201_CREATED,
