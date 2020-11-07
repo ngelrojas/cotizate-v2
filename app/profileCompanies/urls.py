@@ -12,7 +12,7 @@ urlpatterns = [
     ),
     path(
         "profile/company/<int:pk>",
-        CompanyView.as_view({"get": "retrieve", "put": "update", "delete": "delete"}),
+        CompanyView.as_view({"get": "retrieve", "put": "update"}),
         name="profile-company-detail",
     ),
 ]

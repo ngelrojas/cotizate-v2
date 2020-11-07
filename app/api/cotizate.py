@@ -29,19 +29,30 @@ class ProfileComplete:
         profile = self.currentProfile(profile, request)
         return profile.complete
 
-    def update_profile(self, profile, request):
+    def update_profile(self, profile, request, country, city):
         """
         update complete field to True
         return True means is updated recently
         return False means was updated
         """
-        is_complete = self.isComplete(profile, request)
-        if not is_complete:
-            prof = self.currentProfile(profile, request)
-            prof.complete = True
-            prof.save()
-            return True
-        return False
+        prof = self.currentProfile(profile, request)
+        prof.cinit = request.data.get("cinit")
+        prof.address = request.data.get("address")
+        prof.number_address = request.data.get("number_address")
+        prof.neightbordhood = request.data.get("neightbordhood")
+        prof.cellphone = request.data.get("cellphone")
+        prof.telephone = request.data.get("telephone")
+        prof.description = request.data.get("description")
+        prof.representative = request.data.get("representative")
+        prof.complete = True
+        prof.current_position = request.data.get("current_position")
+        prof.headline = request.data.get("headline")
+        prof.birthdate = request.data.get("birthdate")
+        prof.countries = country
+        prof.cities = city
+        prof.photo = request.data.get("photo")
+        prof.save()
+        return True
 
 
 class HelperCompany:

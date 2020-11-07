@@ -20,7 +20,7 @@ class CompanyView(viewsets.ModelViewSet):
         try:
             list_company = ProfileCompany.objects.filter(user=request.user)
             serializer = self.serializer_class(list_company, many=True)
-            return Response({"data": serializer}, status=status.HTTP_200_OK)
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
@@ -29,9 +29,10 @@ class CompanyView(viewsets.ModelViewSet):
     def create(self, request):
         """create personal company"""
         try:
+            prof_create_company = ProfilesQuery()
             countries = Country.objects.get(id=int(request.data.get("countries")))
             cities = City.objects.get(id=int(request.data.get("cities")))
-            prof_company = ProfilesQuery.saving_profile_company(
+            prof_company = prof_create_company.saving_profile_company(
                 request, countries, cities
             )
             return Response(
@@ -43,10 +44,10 @@ class CompanyView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
             )
 
-    def retrieve(self, pk):
+    def retrieve(self, request, pk=None):
         """retrieve profile company current user"""
         try:
-            current_profile = ProfileCompany.objects.get(user=pk)
+            current_profile = ProfileCompany.objects.get(id=pk, user=request.user)
             serializer = self.serializer_class(current_profile)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except ProfileCompany.DoesNotExist as err:
@@ -54,25 +55,19 @@ class CompanyView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
-    def update(self, request, pk):
+    def update(self, request, pk=None):
         """update profile company current user"""
         try:
-            current_profile = ProfileCompany.objects.get(user=pk)
-            serializer = self.serializer_class(
-                current_profile, data=request.data, partial=True
-            )
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                pro_complete = ProfileComplete()
-                complete = pro_complete.update_profile(ProfileCompany, request)
-                return Response(
-                    {"data": complete, "msg": "profile updated."},
-                    status=status.HTTP_200_OK,
-                )
+            prof_comp = ProfilesQuery()
+            countries = Country.objects.get(id=int(request.data.get("countries")))
+            cities = City.objects.get(id=int(request.data.get("cities")))
+            complete = prof_comp.update_profile_company(pk, request, countries, cities)
+
             return Response(
-                {"data": False, "msg": "something wrong happend"},
-                status=status.HTTP_404_NOT_FOUND,
+                {"data": complete, "msg": "profile updated."},
+                status=status.HTTP_200_OK,
             )
+
         except ProfileCompany.DoesNotExist as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST

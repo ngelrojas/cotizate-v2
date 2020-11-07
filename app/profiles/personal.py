@@ -43,24 +43,17 @@ class PersonalProfileView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
-    def update(self, request, pk):
+    def update(self, request, pk=None):
         """update profile current user"""
         try:
-            current_profile = PerPF.objects.get(user=pk)
-            serializer = self.serializer_class(
-                current_profile, data=request.data, partial=True
-            )
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                pro_complete = ProfileComplete()
-                complete = pro_complete.update_profile(PerPF, request)
-                return Response(
-                    {"data": complete, "msg": "profile updated."},
-                    status=status.HTTP_200_OK,
-                )
+            pro_complete = ProfileComplete()
+            countries = Country.objects.get(id=int(request.data.get("countries")))
+            cities = City.objects.get(id=int(request.data.get("cities")))
+            complete = pro_complete.update_profile(PerPF, request, countries, cities)
+
             return Response(
-                {"data": False, "msg": "something wrong happend"},
-                status=status.HTTP_404_NOT_FOUND,
+                {"data": complete, "msg": "profile updated."},
+                status=status.HTTP_200_OK,
             )
         except PerPF.DoesNotExist as err:
             return Response(
