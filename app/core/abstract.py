@@ -12,7 +12,6 @@ class AbstractProfile(models.Model):
     cellphone = models.CharField(max_length=50)
     telephone = models.CharField(max_length=50)
     description = models.TextField(blank=True, null=True)
-    representative = models.BooleanField(default=False)
     complete = models.BooleanField(default=False)
     rs_facebook = models.CharField(max_length=350, blank=True, null=True)
     rs_twitter = models.CharField(max_length=350, blank=True, null=True)

@@ -4,6 +4,8 @@ from core.user import User
 from core.category import Category
 from core.currency import Currency
 from core.city import City
+from core.profile import Profile
+from core.profileCompany import ProfileCompany
 
 
 class CampaingHeader(models.Model):
@@ -53,6 +55,8 @@ class CampaingBody(models.Model):
     ended_at = models.DateTimeField(null=True, blank=True)
     status = models.PositiveSmallIntegerField(choices=STATUS_CAMPAING, default=2)
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    profile_ca = models.ManyToManyField(ProfileCompany, blank=True)
     currency = models.ForeignKey(Currency, on_delete=models.CASCADE)
     short_url = models.CharField(max_length=100, null=True, blank=True)
     slogan_campaing = models.CharField(max_length=200, null=True, blank=True)

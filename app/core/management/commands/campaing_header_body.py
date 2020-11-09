@@ -4,6 +4,7 @@ from core.category import Category
 from core.campaing import CampaingHeader
 from core.campaing import CampaingBody
 from core.user import User
+from core.profile import PersonalProfile
 from core.currency import Currency
 from core.city import City
 
@@ -33,6 +34,10 @@ class Command(BaseCommand):
                 jhon = User.objects.get(first_name="jhon")
                 mery = User.objects.get(first_name="mery")
                 azumi = User.objects.get(first_name="azumi")
+                # get profiles
+                profile_jhon = PersonalProfile.objects.get(user=jhon)
+                profile_mery = PersonalProfile.objects.get(user=mery)
+                profile_azumi = PersonalProfile.objects.get(user=azumi)
                 # get city
                 la_paz = City.objects.get(code_name="LP")
                 santa_cruz = City.objects.get(code_name="SCZ")
@@ -73,6 +78,8 @@ class Command(BaseCommand):
                     public_at="2020-09-10 00:00:00",
                     status=5,
                     header=first_camp_header,
+                    profile=profile_jhon,
+                    profile_ca=0,
                     currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the campaing.",
@@ -98,6 +105,8 @@ class Command(BaseCommand):
                     public_at="2020-09-10 00:00:00",
                     status=5,
                     header=second_camp_header,
+                    profile=profile_azumi,
+                    profile_ca=0,
                     currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the second campaing.",
@@ -122,6 +131,8 @@ class Command(BaseCommand):
                     public_at="2020-09-10 00:00:00",
                     status=5,
                     header=threeth_camp_header,
+                    profile=profile_mery,
+                    profile_ca=0,
                     currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the second campaing.",

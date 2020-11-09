@@ -9,9 +9,14 @@ from .user import User
 class ProfileCompany(AbstractProfile):
     """profile company"""
 
-    company_name = models.CharField(max_length=100)
+    representative_name = models.CharField(max_length=50, blank=True, null=True)
+    company_name = models.CharField(max_length=100, blank=True, null=True)
+    representative = models.BooleanField(default=False)
+    association_name = models.CharField(max_length=50)
+    heading = models.CharField(max_length=50, blank=True, null=True)
+    email_company = models.EmailField(max_length=250, blank=True, null=True)
     photo = models.TextField(blank=True, null=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    profiles = models.ForeignKey(PersonalProfile, on_delete=models.CASCADE)
     countries = models.ForeignKey(Country, on_delete=models.CASCADE)
     cities = models.ForeignKey(City, on_delete=models.CASCADE)
 
