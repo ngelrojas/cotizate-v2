@@ -29,6 +29,8 @@ class CampaingBodySerializer(serializers.ModelSerializer):
             "ended_at",
             "status",
             "header",
+            "profiles",
+            "profile_ca",
             "currency",
             "short_url",
             "slogan_campaing",

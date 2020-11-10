@@ -12,7 +12,7 @@ class ProfileCompany(AbstractProfile):
     representative_name = models.CharField(max_length=50, blank=True, null=True)
     company_name = models.CharField(max_length=100, blank=True, null=True)
     representative = models.BooleanField(default=False)
-    association_name = models.CharField(max_length=50)
+    association_name = models.CharField(max_length=50, blank=True, null=True)
     heading = models.CharField(max_length=50, blank=True, null=True)
     email_company = models.EmailField(max_length=250, blank=True, null=True)
     photo = models.TextField(blank=True, null=True)

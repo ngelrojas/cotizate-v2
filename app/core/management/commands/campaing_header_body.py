@@ -5,6 +5,7 @@ from core.campaing import CampaingHeader
 from core.campaing import CampaingBody
 from core.user import User
 from core.profile import PersonalProfile
+from core.profileCompany import ProfileCompany
 from core.currency import Currency
 from core.city import City
 
@@ -38,6 +39,11 @@ class Command(BaseCommand):
                 profile_jhon = PersonalProfile.objects.get(user=jhon)
                 profile_mery = PersonalProfile.objects.get(user=mery)
                 profile_azumi = PersonalProfile.objects.get(user=azumi)
+                # profile company
+                profile_company_jhon = ProfileCompany.objects.get(profiles=profile_jhon)
+                profile_company_azumi = ProfileCompany.objects.get(
+                    profiles=profile_azumi
+                )
                 # get city
                 la_paz = City.objects.get(code_name="LP")
                 santa_cruz = City.objects.get(code_name="SCZ")
@@ -69,7 +75,7 @@ class Command(BaseCommand):
                     code_campaing="camp-0001",
                 )
 
-                CampaingBody.objects.create(
+                cp_one = CampaingBody.objects.create(
                     title="first campaing",
                     video_main="https://youtube.com/my-video",
                     imagen_main="some-place/myigmaign.png",
@@ -79,11 +85,11 @@ class Command(BaseCommand):
                     status=5,
                     header=first_camp_header,
                     profile=profile_jhon,
-                    profile_ca=0,
                     currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the campaing.",
                 )
+                cp_one.profile_ca.add(profile_company_jhon)
 
                 second_camp_header = CampaingHeader.objects.create(
                     user=azumi,
@@ -96,7 +102,7 @@ class Command(BaseCommand):
                     code_campaing="camp-0002",
                 )
 
-                CampaingBody.objects.create(
+                cp_two = CampaingBody.objects.create(
                     title="second campaing",
                     video_main="https://youtube.com/my-video",
                     imagen_main="some-place/myigmaign.png",
@@ -106,11 +112,12 @@ class Command(BaseCommand):
                     status=5,
                     header=second_camp_header,
                     profile=profile_azumi,
-                    profile_ca=0,
                     currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the second campaing.",
                 )
+                cp_two.profile_ca.add(profile_company_azumi)
+
                 threeth_camp_header = CampaingHeader.objects.create(
                     user=mery,
                     category=emp,
@@ -132,7 +139,6 @@ class Command(BaseCommand):
                     status=5,
                     header=threeth_camp_header,
                     profile=profile_mery,
-                    profile_ca=0,
                     currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the second campaing.",

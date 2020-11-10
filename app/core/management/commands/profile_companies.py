@@ -50,7 +50,7 @@ class Command(BaseCommand):
                     representative_name="representative",
                     company_name="my company name",
                     representative=True,
-                    associtation_name="bom retiro",
+                    association_name="bom retiro",
                     heading="ceo no more",
                     email_company="company@email.com",
                     photo="my photo.png",
@@ -64,7 +64,7 @@ class Command(BaseCommand):
                     representative_name="representative",
                     company_name="my company name",
                     representative=True,
-                    associtation_name="bom retiro",
+                    association_name="bom retiro",
                     heading="ceo no more",
                     email_company="company@email.com",
                     photo="my photo.png",
@@ -73,6 +73,6 @@ class Command(BaseCommand):
                     countries=bolivia,
                     cities=santa_cruz,
                 )
-                self.success("users, profiles created")
+                self.success("profiles company/assosiation created")
             except Exception as err:
-                self.error(f"please providde email and password {err}")
+                self.error(f"{err}")

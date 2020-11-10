@@ -9,6 +9,7 @@ class ProfilesQuery:
     def saving_profile_company(cls, request, country, city):
         """save company profile"""
         try:
+            profile_per = PersonalProfile.objects.get(user=request.user)
             ProfileCompany.objects.create(
                 cinit=request.data.get("cinit"),
                 address=request.data.get("address"),
@@ -17,7 +18,9 @@ class ProfilesQuery:
                 cellphone=request.data.get("cellphone"),
                 telephone=request.data.get("telephone"),
                 description=request.data.get("description"),
-                representative=request.data.get("representative"),
+                representative=True,
+                representative_name=request.data.get("representative_name"),
+                association_name=request.data.get("association_name"),
                 complete=True,
                 company_name=request.data.get("company_name"),
                 photo=request.data.get("photo"),
@@ -25,7 +28,7 @@ class ProfilesQuery:
                 rs_twitter=request.data.get("rs_twitter"),
                 rs_linkedin=request.data.get("rs_linkedin"),
                 rs_another=request.data.get("rs_another"),
-                user=request.user,
+                profiles=profile_per,
                 countries=country,
                 cities=city,
             )
@@ -36,21 +39,23 @@ class ProfilesQuery:
     @classmethod
     def update_profile_company(cls, pk, request, country, city):
         """update current company profile"""
-        prof_comp = ProfileCompany.objects.get(id=pk, user=request.user)
-        prof_comp.cinit = request.data.get("cinit")
-        prof_comp.address = request.data.get("address")
-        prof_comp.number_address = request.data.get("number_address")
-        prof_comp.neightbordhood = request.data.get("neightbordhood")
-        prof_comp.cellphone = request.data.get("cellphone")
-        prof_comp.telephone = request.data.get("telephone")
-        prof_comp.description = request.data.get("description")
-        prof_comp.representative = request.data.get("representative")
-        prof_comp.complete = True
-        prof_comp.company_name = request.data.get("company_name")
-        prof_comp.countries = country
-        prof_comp.cities = city
-        prof_comp.save()
-        return True
+        try:
+            profile_per = PersonalProfile.objects.get(user=request.user)
+            prof_comp = ProfileCompany.objects.get(id=pk, profiles=profile_per)
+            prof_comp.cinit = request.data.get("cinit")
+            prof_comp.address = request.data.get("address")
+            prof_comp.number_address = request.data.get("number_address")
+            prof_comp.neightbordhood = request.data.get("neightbordhood")
+            prof_comp.cellphone = request.data.get("cellphone")
+            prof_comp.telephone = request.data.get("telephone")
+            prof_comp.description = request.data.get("description")
+            prof_comp.company_name = request.data.get("company_name")
+            prof_comp.countries = country
+            prof_comp.cities = city
+            prof_comp.save()
+            return True
+        except ProfileCompany.DoesNotExist as err:
+            return err
 
     @classmethod
     def saving_profile_personal(cls, request, country, city):
@@ -64,8 +69,6 @@ class ProfilesQuery:
                 cellphone=request.data.get("cellphone"),
                 telephone=request.data.get("telephone"),
                 description=request.data.get("description"),
-                representative=request.data.get("representative"),
-                complete=request.data.get("complete"),
                 birthdate=request.data.get("birthdate"),
                 photo=request.data.get("photo"),
                 current_position=request.data.get("current_position"),
@@ -81,3 +84,42 @@ class ProfilesQuery:
             return True
         except Exception:
             return False
+
+    @classmethod
+    def update_profile_personal(cls, pk, request, country, city):
+        """save profile personal"""
+        try:
+            profile_per = PersonalProfile.objects.get(id=pk, user=request.user)
+            profile_per.cinit = request.data.get("cinit")
+            profile_per.address = request.data.get("address")
+            profile_per.number_address = request.data.get("number_address")
+            profile_per.neightbordhood = request.data.get("neightbordhood")
+            profile_per.cellphone = request.data.get("cellphone")
+            profile_per.telephone = request.data.get("telephone")
+            profile_per.description = request.data.get("description")
+            profile_per.birthdate = request.data.get("birthdate")
+            profile_per.photo = request.data.get("photo")
+            profile_per.current_position = request.data.get("current_position")
+            profile_per.headline = request.data.get("headline")
+            profile_per.rs_facebook = request.data.get("rs_facebook")
+            profile_per.rs_twitter = request.data.get("rs_twitter")
+            profile_per.rs_linkedin = request.data.get("rs_linkedin")
+            profile_per.rs_another = request.data.get("rs_another")
+            profile_per.countries = country
+            profile_per.cities = city
+            profile_per.save()
+            return True
+        except Exception:
+            return False
+
+
+class ProfileQueryCompany:
+    """profile company query"""
+
+    @staticmethod
+    def last_profile_company(request):
+        """get las profile company current user"""
+        current_profile = PersonalProfile.objects.get(user=request.user)
+        return ProfileCompany.objects.filter(
+            user=request.user, profiles=current_profile
+        ).last()

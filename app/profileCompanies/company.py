@@ -6,6 +6,7 @@ from core.profileCompany import ProfileCompany
 from core.queries.profilesQuery import ProfilesQuery
 from core.country import Country
 from core.city import City
+from core.profile import PersonalProfile
 from .serializers import CompanySerializer
 
 
@@ -18,7 +19,8 @@ class CompanyView(viewsets.ModelViewSet):
     def list(self, request):
         """all companies about the current user"""
         try:
-            list_company = ProfileCompany.objects.filter(user=request.user)
+            profile_per = PersonalProfile.objects.get(user=request.user)
+            list_company = ProfileCompany.objects.filter(profiles=profile_per)
             serializer = self.serializer_class(list_company, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -47,7 +49,8 @@ class CompanyView(viewsets.ModelViewSet):
     def retrieve(self, request, pk=None):
         """retrieve profile company current user"""
         try:
-            current_profile = ProfileCompany.objects.get(id=pk, user=request.user)
+            profile_per = PersonalProfile.objects.get(user=request.user)
+            current_profile = ProfileCompany.objects.get(id=pk, profiles=profile_per)
             serializer = self.serializer_class(current_profile)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except ProfileCompany.DoesNotExist as err:

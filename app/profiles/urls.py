@@ -7,12 +7,14 @@ app_name = "profile"
 urlpatterns = [
     path(
         "profile/personal",
-        PersonalProfileView.as_view({"post": "create"}),
+        PersonalProfileView.as_view({"get": "list", "post": "create"}),
         name="personal",
     ),
     path(
         "profile/personal/<int:pk>",
-        PersonalProfileView.as_view({"get": "retrieve", "put": "update"}),
+        PersonalProfileView.as_view(
+            {"get": "retrieve", "put": "update", "delete": "delete"}
+        ),
         name="personal-detail",
     ),
 ]
