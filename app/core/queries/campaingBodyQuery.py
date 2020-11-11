@@ -1,5 +1,6 @@
 from django.db.models import Q
 from core.campaing import CampaingBody
+from core.campaing import CampaingHeader
 
 
 class CampaingBodyQuery:
@@ -19,6 +20,7 @@ class CampaingBodyQuery:
     @staticmethod
     def retrieve_cb(pk, header_id):
         """retrieve current campaing body"""
+        # current_header = CampaingHeader.objects.get(id=header_id)
         return CampaingBody.objects.get(id=pk, header=header_id)
 
     @staticmethod
@@ -32,7 +34,14 @@ class CampaingBodyQuery:
         return camp
 
     @classmethod
-    def save_campaing(cls, request, camp_header, current_currency):
+    def save_campaing(
+        cls,
+        request,
+        camp_header,
+        current_currency,
+        current_profile,
+        current_profile_company,
+    ):
         camp = CampaingBody.objects.create(
             title=request.data.get("title"),
             video_main=request.data.get("video_main"),
@@ -41,10 +50,38 @@ class CampaingBodyQuery:
             description=request.data.get("description"),
             public_at=request.data.get("public_at"),
             header=camp_header,
+            profile=current_profile,
             currency=current_currency,
             short_url=request.data.get("short_url"),
             slogan_campaing=request.data.get("slogan_campaing"),
         )
+        camp.profile_ca.add(current_profile_company)
+        return camp
+
+    @classmethod
+    def update_campaing(
+        cls,
+        request,
+        camp_header,
+        current_currency,
+        current_profile,
+        current_profile_company,
+        pk,
+    ):
+        camp = CampaingBody.objects.get(id=pk)
+        camp.title = request.data.get("title")
+        camp.video_main = request.data.get("video_main")
+        camp.imagen_main = request.data.get("imagen_main")
+        camp.excerpt = request.data.get("excerpt")
+        camp.description = request.data.get("description")
+        camp.public_at = request.data.get("public_at")
+        camp.header = camp_header
+        camp.profile = current_profile
+        camp.currency = current_currency
+        camp.short_url = request.data.get("short_url")
+        camp.slogan_campaing = request.data.get("slogan_campaing")
+        camp.profile_ca.add(current_profile_company)
+        camp.save()
         return camp
 
     @staticmethod

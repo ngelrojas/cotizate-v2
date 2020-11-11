@@ -117,9 +117,9 @@ class ProfileQueryCompany:
     """profile company query"""
 
     @staticmethod
-    def last_profile_company(request):
-        """get las profile company current user"""
-        current_profile = PersonalProfile.objects.get(user=request.user)
-        return ProfileCompany.objects.filter(
-            user=request.user, profiles=current_profile
-        ).last()
+    def get_profile_company(current_profiles):
+        """get profile company"""
+        try:
+            return ProfileCompany.objects.get(profiles=current_profiles)
+        except Exception:
+            return 0

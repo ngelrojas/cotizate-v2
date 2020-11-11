@@ -1,17 +1,20 @@
 from rest_framework import serializers
 from core.campaing import CampaingBody
+from core.campaing import CampaingHeader
 
-# from core.tag import Tag
-# from users.serializers import UserSerializer
-# from categories.serializers import CategorySerializer
-# from tags.serializers import TagSerializer
-# from currencies.serializers import CurrencySerializer
+from profiles.serializers import PersonalSerializer
+
+# from profileCompanies.serializers import ProfileCompanySerializer
+from currencies.serializers import CurrencySerializer
 
 
 class CampaingBodySerializer(serializers.ModelSerializer):
     """campaing serializer"""
 
-    # tags = serializers.PrimaryKeyRelatedField(many=True, queryset=Tag.objects.all())
+    header = CampaingHeader()
+    profile = PersonalSerializer()
+    # profile_ca = ProfileCompanySerializer()
+    currency = CurrencySerializer()
 
     class Meta:
         model = CampaingBody
@@ -29,42 +32,10 @@ class CampaingBodySerializer(serializers.ModelSerializer):
             "ended_at",
             "status",
             "header",
-            "profiles",
+            "profile",
             "profile_ca",
             "currency",
             "short_url",
             "slogan_campaing",
         )
         read_only_fields = ("id",)
-
-
-# class CampaingPublicSerializer(serializers.ModelSerializer):
-# """campaing serializer public"""
-
-# users = UserSerializer()
-# categories = CategorySerializer()
-# tags = TagSerializer(many=True, read_only=True)
-# currencies = CurrencySerializer()
-
-# class Meta:
-# model = Campaing
-# fields = (
-# "id",
-# "title",
-# "video_img",
-# "slug",
-# "excerpt",
-# "description",
-# "created_at",
-# "updated_at",
-# "public_at",
-# "ended_at",
-# "amount",
-# "qty_day",
-# "status",
-# "users",
-# "categories",
-# "tags",
-# "currencies",
-# "profiles",
-# )
