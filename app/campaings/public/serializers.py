@@ -5,6 +5,7 @@ from core.campaing import CampaingBody
 from cities.serializers import CitySerializer
 from categories.serializers import CategorySerializer
 from ..header.serializers import CHDetailSerializer
+from profiles.serializers import PersonalSerializer
 
 
 class CampaingPublicSerializer(serializers.ModelSerializer):
@@ -39,6 +40,7 @@ class CampaingDetailSerializer(serializers.ModelSerializer):
     """campaing public serializer"""
 
     header = CHDetailSerializer()
+    profile = PersonalSerializer()
 
     class Meta:
         model = CampaingBody
@@ -56,6 +58,8 @@ class CampaingDetailSerializer(serializers.ModelSerializer):
             # "ended_at",
             "status",
             "header",
+            "profile",
+            "profile_ca",
             "currency",
             "short_url",
             "slogan_campaing",

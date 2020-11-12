@@ -26,33 +26,11 @@ class CampaingPublic(viewsets.ModelViewSet):
         serializer = self.serializer_class(camp_public, many=True)
         return Response({"data": serializer.data}, status=status.HTTP_200_OK)
 
-    # TODO: check in the postman
     def retrieve(self, request, the_slug):
         """retrieve using slug campaing body"""
         try:
             camp_detail = CampaingPublicQuery.detail_campaing(the_slug)
-            # camp_detail = CampaingBody.objects.get(slug=the_slug, status=5)
             serializer = CampaingDetailSerializer(camp_detail)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
             return Response({"data": f"{err}"}, status=status.HTTP_400_BAD_REQUEST)
-
-
-# class CampaingCompleted(viewsets.ModelViewSet):
-#     """
-#     show all campaing public completed
-#     """
-#     serializer_class = CampaingPublicSerializer
-#     queryset = Campaing.get_completed_campaings()
-#     filter_backends = [filters.SearchFilter]
-#     search_fields = ['title', ]
-
-
-# class CampaingTerminated(viewsets.ModelViewSet):
-#     """
-#     show all campaing public terminated
-#     """
-#     serializer_class = CampaingPublicSerializer
-#     queryset = Campaing.get_terminated_campaings()
-#     filter_backends = [filters.SearchFilter]
-#     search_fields = ['title', ]

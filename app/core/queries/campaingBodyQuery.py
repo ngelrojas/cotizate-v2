@@ -26,12 +26,13 @@ class CampaingBodyQuery:
     @staticmethod
     def delete_cb(pk, header_id):
         """update status to deleted=9"""
-        camp = CampaingBody.objects.exclude(
-            Q(status=5) | Q(status=6) | Q(status=7) | Q(status=8)
-        ).get(id=pk, header=header_id)
-        camp.status = 9
-        camp.save()
-        return camp
+        try:
+            camp = CampaingBody.objects.get(id=pk, header=header_id)
+            camp.status = 9
+            camp.save()
+            return True
+        except Exception:
+            return False
 
     @classmethod
     def save_campaing(

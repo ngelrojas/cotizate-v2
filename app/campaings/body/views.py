@@ -48,7 +48,7 @@ class CampaingsBody(viewsets.ModelViewSet):
                 {"data": False, "mgs": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def update(self, request, pk):
+    def update(self, request, pk=None):
         """update campaing body using header_id and pk=campaing_body"""
         try:
             CampHeaderComp.updating_campaing(request, pk)
@@ -61,15 +61,15 @@ class CampaingsBody(viewsets.ModelViewSet):
                 {"data": False, "mgs": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def destroy(self, request, pk):
+    def destroy(self, request, pk=None):
         """delete campaing body using current header campaing"""
         try:
-            CampBQ.delete_cb(pk, request.data.get("header_id"))
+            current_campaing = CampBQ.delete_cb(pk, request.data.get("header_id"))
             return Response(
-                {"data": True, "msg": "campaing deleted."},
+                {"data": current_campaing, "msg": "campaing deleted."},
                 status=status.HTTP_204_NO_CONTENT,
             )
-        except CampaingBody.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "mgs": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
