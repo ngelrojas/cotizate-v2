@@ -1,3 +1,4 @@
+from django.core.files.storage import FileSystemStorage
 from core.profileCompany import ProfileCompany
 from core.profile import PersonalProfile
 
