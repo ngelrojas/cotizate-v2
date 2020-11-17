@@ -10,7 +10,7 @@ class ProfilesQuery:
     def saving_profile_company(cls, request, country, city):
         """save company profile"""
         try:
-            profile_per = PersonalProfile.objects.get(user=request.user)
+            profile_per = PersonalProfile.objects.filter(user=request.user).last()
             ProfileCompany.objects.create(
                 cinit=request.data.get("cinit"),
                 address=request.data.get("address"),
@@ -20,15 +20,17 @@ class ProfilesQuery:
                 telephone=request.data.get("telephone"),
                 description=request.data.get("description"),
                 representative=True,
-                representative_name=request.data.get("representative_name"),
                 association_name=request.data.get("association_name"),
+                heading=request.data.get("heading"),
                 complete=True,
                 company_name=request.data.get("company_name"),
+                email_company=request.data.get("email_company"),
                 photo=request.data.get("photo"),
                 rs_facebook=request.data.get("rs_facebook"),
                 rs_twitter=request.data.get("rs_twitter"),
                 rs_linkedin=request.data.get("rs_linkedin"),
                 rs_another=request.data.get("rs_another"),
+                type_institution=request.data.get("type_institution"),
                 profiles=profile_per,
                 countries=country,
                 cities=city,
