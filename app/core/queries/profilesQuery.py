@@ -30,13 +30,13 @@ class ProfilesQuery:
                 rs_twitter=request.data.get("rs_twitter"),
                 rs_linkedin=request.data.get("rs_linkedin"),
                 rs_another=request.data.get("rs_another"),
-                type_institution=request.data.get("type_institution"),
+                institution_type=request.data.get("type_institution"),
                 profiles=profile_per,
                 countries=country,
                 cities=city,
             )
             return True
-        except ProfileCompany.DoesNotExist as err:
+        except Exception as err:
             return err
 
     @classmethod

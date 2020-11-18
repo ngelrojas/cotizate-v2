@@ -41,7 +41,7 @@ class CompanyView(viewsets.ModelViewSet):
                 {"data": prof_company, "msg": "profile company created."},
                 status=status.HTTP_201_CREATED,
             )
-        except ProfileCompany.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
             )
