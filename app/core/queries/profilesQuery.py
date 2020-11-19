@@ -123,6 +123,6 @@ class ProfileQueryCompany:
     def get_profile_company(current_profiles):
         """get profile company"""
         try:
-            return ProfileCompany.objects.get(profiles=current_profiles)
+            return ProfileCompany.objects.filter(profiles=current_profiles).last()
         except Exception:
             return 0
