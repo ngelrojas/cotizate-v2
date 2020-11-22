@@ -5,7 +5,8 @@ from core.campaing import CampaingHeader
 from core.reward import Reward
 from core.queries.rewardQuery import RewardQuery
 from .serializers import RewardSerializer
-from .componentReward.compReward import CompReward
+
+# from .componentReward.compReward import CompReward
 
 
 class RewardView(viewsets.ViewSet):
@@ -33,15 +34,12 @@ class RewardView(viewsets.ViewSet):
     def create(self, request):
         """create reward"""
         try:
-            # data_reward = CompReward.save_array_data(request, self.serializer_class)
-            serializer = self.serializer_class(data=request.data)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response(
-                    {"data": "reward saved."},
-                    status=status.HTTP_201_CREATED,
-                )
-        except Reward.DoesNotExist as err:
+            RewardQuery.saving_rewards(request)
+            return Response(
+                {"data": "reward created."},
+                status=status.HTTP_201_CREATED,
+            )
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
