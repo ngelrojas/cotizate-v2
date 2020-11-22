@@ -14,7 +14,7 @@ class CampHeaderComp:
         """create a campaing"""
         camp_header = CampHQ.get_campch_id(request.data.get("header"))
         current_currency = CurrencyQuery.get_currency(request.data.get("currency"))
-        current_profile = PersonalProfile.objects.get(user=request.user)
+        current_profile = PersonalProfile.objects.filter(user=request.user).last()
         current_profile_company = ProfileQueryCompany.get_profile_company(
             current_profile
         )

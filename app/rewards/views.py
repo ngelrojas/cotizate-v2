@@ -1,10 +1,12 @@
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
+from core.campaing import CampaingHeader
 from core.reward import Reward
 from core.queries.rewardQuery import RewardQuery
 from .serializers import RewardSerializer
-from .componentReward.compReward import CompReward
+
+# from .componentReward.compReward import CompReward
 
 
 class RewardView(viewsets.ViewSet):
@@ -17,29 +19,14 @@ class RewardView(viewsets.ViewSet):
     serializer_class = RewardSerializer
     queryset = Reward.objects.all()
 
-    def list(self, request):
-        """
-        list all rewards
-        about the current campaing
-        """
-        try:
-            current_list_reward = RewardQuery.get_list_reward(
-                request.data.get("header")
-            )
-            serializer = self.serializer_class(current_list_reward, many=True)
-            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
-        except Reward.DoesNotExist as err:
-            return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
-            )
-
     def retrieve(self, request, pk):
         """retrieve reward current campaing_header_id, campaing_id"""
         try:
-            current_reward = RewardQuery.retrieve_reward(pk, request.data.get("header"))
-            serializer = self.serializer_class(current_reward)
+            reward_header = CampaingHeader.objects.get(id=pk)
+            list_reward = Reward.objects.filter(header=reward_header)
+            serializer = self.serializer_class(list_reward, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
-        except Reward.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
@@ -47,15 +34,12 @@ class RewardView(viewsets.ViewSet):
     def create(self, request):
         """create reward"""
         try:
-            # data_reward = CompReward.save_array_data(request, self.serializer_class)
-            serializer = self.serializer_class(data=request.data)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response(
-                    {"data": "reward saved."},
-                    status=status.HTTP_201_CREATED,
-                )
-        except Reward.DoesNotExist as err:
+            RewardQuery.saving_rewards(request)
+            return Response(
+                {"data": "reward created."},
+                status=status.HTTP_201_CREATED,
+            )
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
