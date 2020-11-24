@@ -58,7 +58,7 @@ class Command(BaseCommand):
                     description="my description",
                     countries=bolivia,
                     cities=la_paz,
-                    type_institution=1,
+                    institution_type=1,
                 )
                 #
                 ProfileCompany.objects.create(
@@ -73,7 +73,7 @@ class Command(BaseCommand):
                     description="my description",
                     countries=bolivia,
                     cities=santa_cruz,
-                    type_institution=1,
+                    institution_type=1,
                 )
                 self.success("profiles company/assosiation created")
             except Exception as err:

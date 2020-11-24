@@ -56,7 +56,9 @@ class CampaingBody(models.Model):
     status = models.PositiveSmallIntegerField(choices=STATUS_CAMPAING, default=2)
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
     profile = models.ForeignKey(PersonalProfile, on_delete=models.CASCADE)
-    profile_ca = models.ManyToManyField(ProfileCompany, blank=True)
+    profile_ca = models.ForeignKey(
+        ProfileCompany, on_delete=models.CASCADE, blank=True, null=True
+    )
     currency = models.ForeignKey(Currency, on_delete=models.CASCADE)
     short_url = models.CharField(max_length=100, null=True, blank=True)
     slogan_campaing = models.CharField(max_length=200, null=True, blank=True)

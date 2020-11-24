@@ -88,8 +88,8 @@ class Command(BaseCommand):
                     currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the campaing.",
+                    profile_ca=profile_company_jhon,
                 )
-                cp_one.profile_ca.add(profile_company_jhon)
 
                 second_camp_header = CampaingHeader.objects.create(
                     user=azumi,
@@ -115,8 +115,8 @@ class Command(BaseCommand):
                     currency=bo,
                     short_url="http://shorttener.com",
                     slogan_campaing="this is a slogan the second campaing.",
+                    profile_ca=profile_company_azumi,
                 )
-                cp_two.profile_ca.add(profile_company_azumi)
 
                 threeth_camp_header = CampaingHeader.objects.create(
                     user=mery,
