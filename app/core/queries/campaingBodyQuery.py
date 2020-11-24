@@ -43,21 +43,24 @@ class CampaingBodyQuery:
         current_profile,
         current_profile_company,
     ):
-        camp = CampaingBody.objects.create(
-            title=request.data.get("title"),
-            video_main=request.data.get("video_main"),
-            imagen_main=request.data.get("imagen_main"),
-            excerpt=request.data.get("excerpt"),
-            description=request.data.get("description"),
-            public_at=request.data.get("public_at"),
-            header=camp_header,
-            profile=current_profile,
-            currency=current_currency,
-            short_url=request.data.get("short_url"),
-            slogan_campaing=request.data.get("slogan_campaing"),
-        )
-        camp.profile_ca.add(current_profile_company)
-        return camp
+        try:
+            CampaingBody.objects.create(
+                title=request.data.get("title"),
+                video_main=request.data.get("video_main"),
+                imagen_main=request.data.get("imagen_main"),
+                excerpt=request.data.get("excerpt"),
+                description=request.data.get("description"),
+                public_at=request.data.get("public_at"),
+                header=camp_header,
+                profile=current_profile,
+                currency=current_currency,
+                short_url=request.data.get("short_url"),
+                slogan_campaing=request.data.get("slogan_campaing"),
+                profile_ca=current_profile_company,
+            )
+            return True
+        except Exception:
+            return True
 
     @classmethod
     def update_campaing(
