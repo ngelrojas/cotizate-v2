@@ -125,4 +125,4 @@ class ProfileQueryCompany:
         try:
             return ProfileCompany.objects.filter(profiles=current_profiles).last()
         except Exception:
-            return None
+            return 0
