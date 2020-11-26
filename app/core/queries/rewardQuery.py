@@ -29,6 +29,7 @@ class RewardQuery:
                 amount=request.data.get("amount"),
                 expected_delivery=request.data.get("expected_delivery"),
                 header=header_id,
+                user=0,
                 all_cities=request.data.get("all_cities"),
                 pick_up_locally=request.data.get("pick_up_locally"),
             )
