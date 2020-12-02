@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if ["$DATABASE" = "postgres"]
+if ["$DATABASE" = "cotizate_db"]
 then
     echo "WAITING FOR POSTGRES..."
 
