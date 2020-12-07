@@ -1,0 +1,281 @@
+[05/Dec/2020 21:38:05.332]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 21:38:05.370]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 21:38:05.405]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 21:38:05.441]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 21:38:20.811]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 21:38:37.511]WARNING [django.request:230] Not Found: /favicon.ico
+[05/Dec/2020 21:38:55.305]ERROR [django.request:230] Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/dist-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "9.vps.confiared.com" (2803:1920::4:a08) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "9.vps.confiared.com" (45.225.75.2) and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/admin/sites.py", line 410, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/decorators/debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/generic/edit.py", line 141, in post
+    if form.is_valid():
+  File "/usr/local/lib/python3.7/dist-packages/django/forms/forms.py", line 177, in is_valid
+    return self.is_bound and not self.errors
+  File "/usr/local/lib/python3.7/dist-packages/django/forms/forms.py", line 172, in errors
+    self.full_clean()
+  File "/usr/local/lib/python3.7/dist-packages/django/forms/forms.py", line 375, in full_clean
+    self._clean_form()
+  File "/usr/local/lib/python3.7/dist-packages/django/forms/forms.py", line 402, in _clean_form
+    cleaned_data = self.clean()
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/forms.py", line 215, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/base_user.py", line 45, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/query.py", line 425, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/query.py", line 269, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/dist-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/dist-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "9.vps.confiared.com" (2803:1920::4:a08) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "9.vps.confiared.com" (45.225.75.2) and accepting
+	TCP/IP connections on port 5432?
+
+[05/Dec/2020 21:47:38.624]ERROR [django.security.DisallowedHost:90] Invalid HTTP_HOST header: '9.vps.confiared.com:16610'. You may need to add '9.vps.confiared.com' to ALLOWED_HOSTS.
+[05/Dec/2020 21:47:38.827]WARNING [django.request:230] Bad Request: /admin/login/
+[05/Dec/2020 21:49:13.157]ERROR [django.request:230] Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/dist-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "45.225.75.2" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/admin/sites.py", line 410, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/decorators/debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/views/generic/edit.py", line 141, in post
+    if form.is_valid():
+  File "/usr/local/lib/python3.7/dist-packages/django/forms/forms.py", line 177, in is_valid
+    return self.is_bound and not self.errors
+  File "/usr/local/lib/python3.7/dist-packages/django/forms/forms.py", line 172, in errors
+    self.full_clean()
+  File "/usr/local/lib/python3.7/dist-packages/django/forms/forms.py", line 375, in full_clean
+    self._clean_form()
+  File "/usr/local/lib/python3.7/dist-packages/django/forms/forms.py", line 402, in _clean_form
+    cleaned_data = self.clean()
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/forms.py", line 215, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/usr/local/lib/python3.7/dist-packages/django/contrib/auth/base_user.py", line 45, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/query.py", line 425, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/query.py", line 269, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/dist-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.7/dist-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/django/db/backends/postgresql/base.py", line 187, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.7/dist-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "45.225.75.2" and accepting
+	TCP/IP connections on port 5432?
+
+[05/Dec/2020 21:52:59.227]ERROR [django.security.DisallowedHost:90] Invalid HTTP_HOST header: '9.vps.confiared.com:16610'. You may need to add '9.vps.confiared.com' to ALLOWED_HOSTS.
+[05/Dec/2020 21:52:59.428]WARNING [django.request:230] Bad Request: /admin/login/
+[05/Dec/2020 22:08:18.837]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:08:18.873]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:08:18.908]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:08:18.944]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:08:34.284]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 22:09:15.066]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:09:15.102]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:09:15.136]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:09:15.172]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 22:09:15.207]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:09:48.789]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:09:48.825]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:09:49.755]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:09:49.792]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:10:23.263]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 22:10:23.797]WARNING [django.request:230] Not Found: /favicon.ico
+[05/Dec/2020 22:15:23.656]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:15:24.224]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:15:24.258]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:15:24.294]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:15:39.785]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 22:15:40.709]WARNING [django.request:230] Not Found: /favicon.ico
+[05/Dec/2020 22:15:53.220]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:15:53.918]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:15:53.959]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:15:53.994]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:16:04.733]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:16:05.388]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:16:05.422]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:16:05.459]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:16:20.744]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 22:19:45.289]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:19:45.870]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:19:45.904]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:19:45.941]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:20:01.361]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 22:20:02.328]WARNING [django.request:230] Not Found: /favicon.ico
+[05/Dec/2020 22:20:04.961]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:20:04.996]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:20:36.422]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:20:36.458]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:20:36.493]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 22:21:32.033]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:21:32.656]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:22:04.302]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:22:04.339]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:22:04.373]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 22:22:08.814]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[05/Dec/2020 22:22:40.843]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[05/Dec/2020 22:22:40.878]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[05/Dec/2020 22:22:40.914]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
+[05/Dec/2020 22:22:41.062]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[05/Dec/2020 22:22:41.984]WARNING [django.request:230] Not Found: /favicon.ico

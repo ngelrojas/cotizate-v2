@@ -28,9 +28,9 @@ X_FRAME_OPTIONS = "Deny"
 SECRET_KEY = config("SECRET_KEY", default="SECRET")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = int(config("DEBUG", default=0))
+DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = config("ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=lambda v: [s.strip() for s in v.split(',')])
 
 
 # Application definition
@@ -113,7 +113,7 @@ DATABASES = {
         "NAME": config("SQL_DATABASE"),
         "USER": config("SQL_USER", "user"),
         "PASSWORD": config("SQL_PASSWORD", "password"),
-        "HOST": config("SQL_HOST", "localhost"),
+        "HOST": config("SQL_HOST", "45.225.75.2"),
         "PORT": config("SQL_PORT", "5432"),
     }
 }
