@@ -28,3 +28,12 @@ in all .env put your data, to connection postgresql
 #### run mode production in the file below
 
 -   [doc to production](https://github.com/ngelrojas/cotizate-v2/blob/master/PRODUCTION.md)
+
+#### use cotizate.supervisor
+- copy and change name using mv cotizate.supervisor in etc/supervisor/conf.d/cotizate.conf
+- and using the command below
+- supervisorctl reread
+- supervisorctl update
+- supervisorctl
+- supervisor> start cotizateback # start service
+- supervisor> tail cotizateback stderr # check errors 
