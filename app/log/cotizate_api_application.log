@@ -191,3 +191,13 @@
 [07/Dec/2020 20:11:28.854]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
 [07/Dec/2020 20:11:28.891]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
 [07/Dec/2020 20:11:44.309]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[07/Dec/2020 20:14:20.471]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[07/Dec/2020 20:14:21.054]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[07/Dec/2020 20:14:21.089]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
+[07/Dec/2020 20:14:21.125]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[07/Dec/2020 20:14:36.406]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[07/Dec/2020 23:16:27.642]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[07/Dec/2020 23:16:28.229]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[07/Dec/2020 23:16:28.267]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
+[07/Dec/2020 23:16:28.304]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[07/Dec/2020 23:16:43.724]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
