@@ -30,7 +30,9 @@ SECRET_KEY = config("SECRET_KEY", default="SECRET")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=lambda v: [s.strip() for s in v.split(',')])
+ALLOWED_HOSTS = config(
+    "ALLOWED_HOSTS", cast=lambda v: [s.strip() for s in v.split(",")]
+)
 
 
 # Application definition
@@ -179,14 +181,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
-    "http://34.121.170.29",
+    "http://8.vps.confiared.com",
 ]
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
-    "http://34.121.170.29",
+    "http://8.vps.confiared.com",
 ]
 
 # CORS_ORIGIN_REGEX_WHITELIST = (
@@ -202,7 +204,7 @@ CSRF_COOKIE_NAME = "csrftoken"
 CSRF_TRUSTED_ORIGINS = (
     "localhost:3000",
     "cotizate.com",
-    "34.121.170.29",
+    "8.vps.confiared.com",
 )
 
 CORS_ALLOW_HEADERS = default_headers + (
