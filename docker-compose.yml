@@ -1,64 +1,68 @@
 version: '3.7'
 
 services:
+    api:
+        build: ./app
+        command: python manage.py runserver --settings=api.settings.development 0.0.0.0:8000
+        volumes:
+            - ./app/:/usr/src/app/
+        ports:
+            - 8000:8000
+        #env_file:
+            #- ./.env
+        environment:
+            - SQL_HOST=db
+            - SQL_DATABASE=${SQL_DATABASE}
+            - SQL_USER=${SQL_USER}
+            - SQL_PASSWORD=${SQL_PASSWORD}
+        depends_on:
+            - db
+            - broker
     db:
         image: postgres:12.0-alpine
         volumes:
             - postgres_data:/var/lib/postgresql/data/
-        env_file:
-            - ./.env.prod.db
-    api:
-        build: 
-            context: ./app
-            dockerfile: Dockerfile.prod
-        command: gunicorn api.wsgi:application --bind 0.0.0.0:8000
-        volumes:
-            - static_volume:/home/app/api/api/staticfiles
-            - media_volume:/home/app/api/api/mediafiles
-        expose:
-            - 8000
-        env_file:
-            - ./.env.prod
-        depends_on:
-            - db
-            - broker
-    nginx:
-        build: ./nginx
-        volumes:
-            - static_volume:/home/app/api/staticfiles
-            - media_volume:/home/app/api/api/mediafiles
-        ports:
-            - 8000:80
-        depends_on:
-            - api
+        environment:
+            - POSTGRES_DB=${SQL_DATABASE}
+            - POSTGRES_USER=${SQL_USER}
+            - POSTGRES_PASSWORD=${SQL_PASSWORD}
 
     worker:
         build: ./app
         restart: 'no'
-        env_file:
-            - ./.env.prod.rabbitmq
+        environment:
+            - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+            - CELERY_BROKER=${CELERY_BROKER}
+            - FLOWER_BROKER=${FLOWER_BROKER}
         command: celery worker --app=api.celery --concurrency=1 --loglevel=INFO
         volumes:
             - ./app/:/usr/src/app/
         depends_on:
             - broker
+
     flower:
         image: zoomeranalytics/flower:0.9.1-4.0.2
         restart: 'no'
-        env_file:
-            - ./.env.prod.rabbitmq
+        environment:
+            - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+            - CELERY_BROKER=${CELERY_BROKER}
+            - FLOWER_BROKER=${FLOWER_BROKER}
         ports:
             - 5555:5555
         depends_on:
             - broker
     broker:
         image: rabbitmq:3
-        env_file:
-            - ./.env.prod.rabbitmq
+        environment:
+            - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+            - CELERY_BROKER=${CELERY_BROKER}
+            - FLOWER_BROKER=${FLOWER_BROKER}
         ports:
             - 5672:5672
+ 
 
 volumes:
     postgres_data:
-    static_volume:
-    media_volume:
