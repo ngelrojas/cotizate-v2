@@ -1,6 +1,8 @@
 from django.db.models import Q
 from core.campaing import CampaingHeader
 from core.campaing import CampaingBody
+from core.user import User
+from core.profile import PersonalProfile
 
 
 class CampaingHeaderQuery:
@@ -43,3 +45,24 @@ class CampaingPublicQuery:
         """
         status_camp_public = 5
         return CampaingBody.objects.get(slug=the_slug, status=status_camp_public)
+
+
+class CampaingPrivateQuery:
+    """campaing private query"""
+
+    @staticmethod
+    def get_list_camp_header(request):
+        current_header = CampaingHeader.objects.filter(user=request.user)
+        return current_header
+
+    @staticmethod
+    def list_camps(list_header, pk):
+        list_camp = []
+        try:
+            for header_camp in list_header:
+                list_camp.append(
+                    CampaingBody.objects.get(header=header_camp, status=pk)
+                )
+            return list_camp
+        except:
+            return list_camp

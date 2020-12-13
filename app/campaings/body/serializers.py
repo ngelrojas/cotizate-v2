@@ -6,6 +6,7 @@ from profiles.serializers import PersonalSerializer
 
 # from profileCompanies.serializers import ProfileCompanySerializer
 from currencies.serializers import CurrencySerializer
+from ..header.serializers import CHDetailSerializer
 
 
 class CampaingBodySerializer(serializers.ModelSerializer):

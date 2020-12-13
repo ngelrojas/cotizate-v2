@@ -5,8 +5,10 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from core.campaing import CampaingBody
 from core.queries.campaingBodyQuery import CampaingBodyQuery as CampBQ
+from core.queries.campaingQuery import CampaingPrivateQuery as CampPBQ
 from core.currency import Currency
 from .serializers import CampaingBodySerializer
+from ..public.serializers import CampaingPublicSerializer
 from ..component.CmpHeader import CampHeaderComp
 
 
@@ -22,6 +24,18 @@ class CampaingsBody(viewsets.ModelViewSet):
     queryset = CampaingBody.objects.all()
     permission_classes = (IsAuthenticated,)
 
+    def list(self, request, pk):
+        try:
+            list_header = CampPBQ.get_list_camp_header(request)
+            list_camp = []
+            list_camp = CampPBQ.list_camps(list_header, pk)
+            serializer = self.serializer_class(list_camp, many=True)
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+        except Exception as err:
+            return Response(
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+            )
+
     def create(self, request):
         """create campaing body current user"""
         try:
@@ -33,7 +47,7 @@ class CampaingsBody(viewsets.ModelViewSet):
 
         except Exception as err:
             return Response(
-                {"data": False, "mgs": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
     def retrieve(self, request, pk=None):
