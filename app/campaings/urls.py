@@ -21,7 +21,14 @@ urlpatterns = [
         name="campaing-header-detail",
     ),
     path(
-        "campaing-body", CampaingsBody.as_view({"post": "create"}), name="campaing-body"
+        "campaing-private/<int:pk>",
+        CampaingsBody.as_view({"get": "list"}),
+        name="campaing-private",
+    ),
+    path(
+        "campaing-body",
+        CampaingsBody.as_view({"post": "create"}),
+        name="campaing-body",
     ),
     path(
         "campaing-body/<int:pk>",
