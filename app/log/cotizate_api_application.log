@@ -1,234 +1,293 @@
-[07/Dec/2020 01:09:37.510]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:09:37.548]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:09:37.583]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:09:37.619]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
-[07/Dec/2020 01:09:37.653]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:10:31.325]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:10:31.965]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:10:32.001]WARNING [django.request:230] Not Found: /staticfiles/admin/css/login.css
-[07/Dec/2020 01:10:32.038]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:10:47.321]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:10:48.256]WARNING [django.request:230] Not Found: /favicon.ico
-[07/Dec/2020 01:11:01.902]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:11:02.582]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[07/Dec/2020 01:11:02.616]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:11:02.653]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:11:18.144]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:11:55.058]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:11:55.639]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:11:55.674]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[07/Dec/2020 01:11:55.710]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:12:27.351]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[07/Dec/2020 01:12:27.388]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[07/Dec/2020 01:12:28.125]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:12:28.160]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:12:28.196]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:12:28.231]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:12:59.935]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:12:59.970]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:13:00.625]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:13:00.956]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:13:01.567]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:13:33.211]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:13:33.904]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:13:33.941]WARNING [django.request:230] Not Found: /staticfiles/admin/img/search.svg
-[07/Dec/2020 01:13:34.235]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
-[07/Dec/2020 01:13:34.836]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:13:50.614]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:14:31.756]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:14:31.792]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:14:31.827]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:14:31.864]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
-[07/Dec/2020 01:15:04.285]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
-[07/Dec/2020 01:15:04.320]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[07/Dec/2020 01:15:04.363]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
-[07/Dec/2020 01:15:04.398]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[07/Dec/2020 01:15:04.550]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:15:36.783]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:15:36.820]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:15:36.855]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:15:36.891]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:15:37.117]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:16:02.415]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
-[07/Dec/2020 01:16:03.346]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:16:03.380]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[07/Dec/2020 01:16:19.820]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
-[07/Dec/2020 01:16:20.842]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:16:21.869]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:16:22.891]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:16:23.918]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:16:40.298]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:16:41.428]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:16:42.065]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:16:42.548]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
-[07/Dec/2020 01:17:11.330]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:17:11.366]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:17:11.401]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[07/Dec/2020 01:17:11.496]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:17:43.073]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[07/Dec/2020 01:17:43.759]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:17:43.796]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[07/Dec/2020 01:17:43.831]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:17:43.868]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:18:15.532]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:18:16.266]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:18:16.301]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:18:16.337]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:18:17.270]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:18:48.790]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:18:48.826]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:18:49.727]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:18:49.806]WARNING [django.request:230] Not Found: /staticfiles/admin/img/search.svg
-[07/Dec/2020 01:18:50.754]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:19:22.089]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:19:23.119]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:19:23.156]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
-[07/Dec/2020 01:19:23.191]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-no.svg
-[07/Dec/2020 01:20:11.556]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:20:12.151]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:20:12.186]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
-[07/Dec/2020 01:20:12.222]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:20:43.725]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[07/Dec/2020 01:20:44.015]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
-[07/Dec/2020 01:20:44.494]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[07/Dec/2020 01:20:44.530]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
-[07/Dec/2020 01:20:44.662]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:21:16.494]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:21:17.090]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:21:17.125]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:21:17.161]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:21:18.078]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:22:24.402]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
-[07/Dec/2020 01:22:24.437]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:22:24.474]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:22:24.810]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:22:25.411]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
-[07/Dec/2020 01:23:40.253]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:23:40.290]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[07/Dec/2020 01:23:40.325]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:23:40.418]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:24:12.197]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[07/Dec/2020 01:24:12.647]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[07/Dec/2020 01:24:12.683]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:24:12.718]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:24:12.895]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:24:28.574]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:24:45.210]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:24:45.475]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:24:46.129]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:24:46.411]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:24:46.446]WARNING [django.request:230] Not Found: /staticfiles/admin/img/search.svg
-[07/Dec/2020 01:25:18.325]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
-[07/Dec/2020 01:25:19.279]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:25:50.706]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:25:50.742]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
-[07/Dec/2020 01:25:50.777]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:25:51.664]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[07/Dec/2020 01:26:23.237]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
-[07/Dec/2020 01:26:23.272]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[07/Dec/2020 01:26:23.574]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
-[07/Dec/2020 01:26:23.990]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:26:24.191]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:26:55.745]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:26:56.038]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:26:56.547]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:27:07.102]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:27:07.139]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
-[07/Dec/2020 01:27:07.174]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:27:17.968]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:27:18.004]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[07/Dec/2020 01:27:18.038]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:27:18.080]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:27:47.032]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[07/Dec/2020 01:27:48.058]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[07/Dec/2020 01:27:49.079]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:27:49.797]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:27:50.272]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:28:24.614]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:28:24.650]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:28:24.686]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:28:25.638]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:28:25.673]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:28:58.153]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:28:58.187]WARNING [django.request:230] Not Found: /staticfiles/admin/img/search.svg
-[07/Dec/2020 01:28:58.224]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
-[07/Dec/2020 01:28:59.117]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:32:03.697]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 01:32:04.297]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[07/Dec/2020 01:32:04.332]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 01:32:04.425]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 01:32:36.012]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[07/Dec/2020 01:32:36.046]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[07/Dec/2020 01:32:36.769]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:32:36.804]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:32:36.840]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:32:36.875]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[07/Dec/2020 01:33:08.573]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:33:08.607]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:33:09.280]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[07/Dec/2020 01:33:09.593]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 01:33:10.210]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[07/Dec/2020 01:33:41.852]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[07/Dec/2020 01:33:42.556]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[07/Dec/2020 01:33:42.595]WARNING [django.request:230] Not Found: /staticfiles/admin/img/search.svg
-[07/Dec/2020 01:33:42.876]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
-[07/Dec/2020 01:33:43.485]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[07/Dec/2020 01:34:15.844]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
-[07/Dec/2020 01:34:15.880]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 12:50:30.291]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 12:50:30.851]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 12:50:30.885]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[07/Dec/2020 12:50:30.927]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 12:50:46.401]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 12:50:47.329]WARNING [django.request:230] Not Found: /favicon.ico
-[07/Dec/2020 13:11:48.015]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 13:11:48.572]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 13:11:48.607]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[07/Dec/2020 13:11:48.643]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 13:12:04.073]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 20:11:28.240]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 20:11:28.820]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[07/Dec/2020 20:11:28.854]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 20:11:28.891]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 20:11:44.309]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 20:14:20.471]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 20:14:21.054]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 20:14:21.089]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[07/Dec/2020 20:14:21.125]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 20:14:36.406]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[07/Dec/2020 23:16:27.642]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[07/Dec/2020 23:16:28.229]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[07/Dec/2020 23:16:28.267]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[07/Dec/2020 23:16:28.304]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[07/Dec/2020 23:16:43.724]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[08/Dec/2020 01:10:34.602]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[08/Dec/2020 01:10:35.172]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[08/Dec/2020 01:10:35.206]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[08/Dec/2020 01:10:35.243]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[08/Dec/2020 01:10:50.651]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[08/Dec/2020 01:20:04.187]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[08/Dec/2020 01:20:04.775]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[08/Dec/2020 01:20:04.810]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[08/Dec/2020 01:20:04.846]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[08/Dec/2020 01:20:04.880]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[08/Dec/2020 01:21:12.242]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[08/Dec/2020 01:21:12.832]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[08/Dec/2020 01:21:12.868]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[08/Dec/2020 01:21:12.905]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[08/Dec/2020 01:21:28.319]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[08/Dec/2020 01:21:53.471]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[08/Dec/2020 01:21:54.136]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[08/Dec/2020 01:21:54.170]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[08/Dec/2020 01:21:54.207]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[08/Dec/2020 01:22:09.592]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[08/Dec/2020 01:22:10.507]WARNING [django.request:230] Not Found: /favicon.ico
-[08/Dec/2020 01:22:14.504]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[08/Dec/2020 01:22:14.540]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[08/Dec/2020 01:22:45.886]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[08/Dec/2020 01:22:45.923]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[08/Dec/2020 01:22:46.252]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[08/Dec/2020 01:22:47.192]WARNING [django.request:230] Not Found: /favicon.ico
-[08/Dec/2020 02:17:10.364]WARNING [django.request:230] Not Found: /api/v2/
-[08/Dec/2020 02:17:44.175]WARNING [django.request:230] Not Found: /api/v2/
-[08/Dec/2020 02:17:44.684]WARNING [django.request:230] Not Found: /favicon.ico
-[08/Dec/2020 02:24:39.220]WARNING [django.request:230] Not Found: /api/v2/
+[11/Dec/2020 15:42:39.202]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[11/Dec/2020 15:42:39.241]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
+[11/Dec/2020 15:42:39.275]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[11/Dec/2020 15:42:39.318]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[11/Dec/2020 15:43:31.498]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
+[11/Dec/2020 15:43:31.535]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[11/Dec/2020 15:43:31.569]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[11/Dec/2020 15:43:32.425]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[11/Dec/2020 15:44:04.063]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[11/Dec/2020 15:44:05.050]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[11/Dec/2020 15:44:05.091]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[11/Dec/2020 15:44:05.125]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[11/Dec/2020 15:44:06.106]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[11/Dec/2020 15:44:21.480]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[11/Dec/2020 15:45:12.362]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[11/Dec/2020 15:45:12.397]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[11/Dec/2020 15:45:12.701]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[11/Dec/2020 15:45:13.625]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[11/Dec/2020 15:45:13.967]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[11/Dec/2020 15:45:30.253]WARNING [django.request:230] Not Found: /favicon.ico
+[12/Dec/2020 13:51:15.372]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 13:51:16.048]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 13:51:16.082]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
+[12/Dec/2020 13:51:16.119]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 13:51:16.153]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 13:51:44.973]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 13:51:45.009]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 13:51:45.044]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
+[12/Dec/2020 13:52:16.662]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 13:52:17.429]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 13:52:17.466]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 13:52:17.682]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 13:52:49.926]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 13:52:49.962]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 13:52:49.996]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 13:52:50.966]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 13:53:27.315]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 13:53:27.352]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 13:53:27.657]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 13:53:28.579]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 13:53:28.972]WARNING [django.request:230] Not Found: /favicon.ico
+[12/Dec/2020 13:54:24.602]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 13:54:24.638]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 13:54:24.673]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
+[12/Dec/2020 13:54:24.710]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 13:54:57.115]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 13:54:57.152]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
+[12/Dec/2020 13:54:57.186]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 13:54:57.223]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
+[12/Dec/2020 13:54:57.434]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 13:55:29.621]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 13:55:29.657]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 13:55:29.691]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 13:55:29.730]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 13:55:30.710]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 13:55:46.690]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 13:55:46.724]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
+[12/Dec/2020 13:55:47.020]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 13:56:02.968]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 13:56:35.435]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
+[12/Dec/2020 13:56:35.471]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 13:56:41.355]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-addlink.svg
+[12/Dec/2020 13:56:41.391]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-changelink.svg
+[12/Dec/2020 13:56:51.793]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
+[12/Dec/2020 13:58:10.345]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 13:58:10.381]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
+[12/Dec/2020 13:58:10.416]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 13:58:41.884]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 13:58:42.205]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 13:58:42.636]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 13:58:42.815]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 13:59:47.920]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 13:59:47.957]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 13:59:47.991]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 14:00:20.994]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 14:00:21.029]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 14:00:21.411]WARNING [django.request:230] Not Found: /favicon.ico
+[12/Dec/2020 14:00:39.377]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 14:00:39.964]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 14:00:39.999]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 14:00:40.036]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
+[12/Dec/2020 14:01:11.628]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 14:01:11.911]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
+[12/Dec/2020 14:01:12.392]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
+[12/Dec/2020 14:01:12.427]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 14:01:12.463]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 14:01:44.151]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 14:01:44.403]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 14:01:44.638]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 14:01:44.989]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 14:01:45.024]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 14:02:01.371]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
+[12/Dec/2020 14:02:02.398]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 14:02:02.434]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
+[12/Dec/2020 14:02:03.421]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 14:02:17.447]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 14:02:33.830]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 14:02:34.857]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 14:02:35.885]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 14:02:35.920]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 14:02:35.957]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-changelink.svg
+[12/Dec/2020 14:03:08.438]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 14:03:08.476]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-addlink.svg
+[12/Dec/2020 14:03:08.510]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
+[12/Dec/2020 14:03:09.466]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
+[12/Dec/2020 14:04:21.362]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 14:04:21.399]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
+[12/Dec/2020 14:04:21.434]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 14:04:22.380]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 14:04:53.894]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 14:04:54.838]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 14:04:54.874]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 14:04:54.909]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 14:05:11.328]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 14:05:29.970]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 14:05:30.008]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 14:05:30.043]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 14:05:30.991]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 14:05:31.026]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 14:11:55.231]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 14:11:55.816]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
+[12/Dec/2020 14:11:55.850]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 14:11:55.887]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 14:12:27.760]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 14:12:27.797]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
+[12/Dec/2020 14:12:28.237]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 14:12:28.272]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 14:12:28.307]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
+[12/Dec/2020 14:12:28.342]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 14:13:00.323]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 14:13:00.357]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 14:13:00.740]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 14:13:00.774]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 14:13:01.341]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 14:13:33.292]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 14:13:33.806]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
+[12/Dec/2020 14:13:33.843]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 14:13:34.211]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 14:13:34.827]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 14:14:06.335]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 14:14:06.575]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 14:14:07.302]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
+[12/Dec/2020 14:14:07.339]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 14:14:07.589]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-changelink.svg
+[12/Dec/2020 14:14:23.781]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-addlink.svg
+[12/Dec/2020 14:14:39.854]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
+[12/Dec/2020 14:15:10.943]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 14:15:10.979]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 14:15:11.014]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
+[12/Dec/2020 14:15:11.050]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 14:15:42.832]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 14:15:43.294]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 14:15:43.329]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 14:15:43.468]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 14:15:59.213]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 14:16:15.906]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 14:16:17.141]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 14:16:17.175]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 14:16:18.061]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 14:16:18.097]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 18:37:49.021]WARNING [django.request:230] Bad Request: /api/v2/auth
+[12/Dec/2020 18:37:54.494]WARNING [django.request:230] Bad Request: /api/v2/auth
+[12/Dec/2020 18:41:58.892]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 18:43:05.454]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 18:43:05.491]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
+[12/Dec/2020 18:43:05.527]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 18:43:06.407]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 18:43:07.425]WARNING [django.request:230] Not Found: /favicon.ico
+[12/Dec/2020 18:43:48.105]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 18:43:48.700]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 18:43:48.735]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 18:43:48.771]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
+[12/Dec/2020 18:44:20.650]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 18:44:20.685]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 18:44:21.110]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 18:44:21.144]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 18:44:21.181]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 18:44:37.027]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 18:44:53.113]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 18:44:53.411]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 18:44:54.366]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 18:45:10.830]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 18:45:26.897]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 18:45:27.155]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 18:45:27.823]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 18:45:56.364]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 18:46:00.284]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
+[12/Dec/2020 18:46:00.320]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-no.svg
+[12/Dec/2020 18:46:10.924]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 18:46:11.508]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 18:46:11.542]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
+[12/Dec/2020 18:46:11.634]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 18:46:43.198]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 18:46:43.498]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
+[12/Dec/2020 18:46:44.021]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 18:46:44.056]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
+[12/Dec/2020 18:46:44.092]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 18:46:44.127]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 18:47:15.729]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 18:47:16.061]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 18:47:16.477]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 18:47:16.515]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
+[12/Dec/2020 18:47:16.549]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 18:47:49.036]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 18:47:49.070]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
+[12/Dec/2020 18:47:49.108]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 18:47:50.162]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
+[12/Dec/2020 18:47:50.198]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 18:48:18.130]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 18:48:18.166]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 18:48:18.200]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
+[12/Dec/2020 18:48:18.292]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 18:51:27.647]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 18:51:27.684]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 18:51:28.686]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 18:51:28.722]WARNING [django.request:230] Not Found: /staticfiles/admin/img/search.svg
+[12/Dec/2020 18:51:28.757]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 18:51:29.710]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
+[12/Dec/2020 18:52:26.508]WARNING [django.request:230] Not Found: /api/v2/reward/0
+[12/Dec/2020 18:52:27.438]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[12/Dec/2020 18:52:51.887]WARNING [django.request:230] Not Found: /api/v2/reward/0
+[12/Dec/2020 18:55:29.281]WARNING [django.request:230] Not Found: /api/v2/reward/0
+[12/Dec/2020 18:55:29.911]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[12/Dec/2020 19:05:27.213]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
+[12/Dec/2020 19:05:27.796]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
+[12/Dec/2020 19:05:27.830]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
+[12/Dec/2020 19:05:28.218]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 19:05:28.920]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
+[12/Dec/2020 19:06:00.838]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
+[12/Dec/2020 19:06:01.268]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
+[12/Dec/2020 19:06:01.303]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
+[12/Dec/2020 19:06:01.778]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
+[12/Dec/2020 19:06:02.182]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
+[12/Dec/2020 19:06:17.726]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
+[12/Dec/2020 19:06:34.041]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
+[12/Dec/2020 19:06:34.324]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
+[12/Dec/2020 19:06:35.035]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
+[12/Dec/2020 20:43:18.008]WARNING [django.request:230] Unauthorized: /api/v2/city
+[12/Dec/2020 20:43:18.018]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[12/Dec/2020 20:43:18.028]WARNING [django.request:230] Unauthorized: /api/v2/category
+[12/Dec/2020 20:43:18.037]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[12/Dec/2020 20:43:18.048]WARNING [django.request:230] Unauthorized: /api/v2/phases/0
+[12/Dec/2020 20:43:18.058]WARNING [django.request:230] Unauthorized: /api/v2/reward/0
+[12/Dec/2020 20:43:18.892]WARNING [django.request:230] Unauthorized: /api/v2/profile/personal/0
+[12/Dec/2020 20:43:18.905]WARNING [django.request:230] Unauthorized: /api/v2/city
+[12/Dec/2020 20:43:18.922]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[12/Dec/2020 20:43:30.348]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 01:50:44.633]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 01:50:51.799]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 01:51:15.492]WARNING [django.request:230] Unauthorized: /api/v2/category
+[13/Dec/2020 01:51:15.503]WARNING [django.request:230] Unauthorized: /api/v2/phases/0
+[13/Dec/2020 01:51:15.513]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 02:01:10.664]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 02:23:46.283]WARNING [django.request:230] Not Found: /api/v2/category/tecnologia
+[13/Dec/2020 02:36:27.006]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 02:36:27.016]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[13/Dec/2020 02:36:27.026]WARNING [django.request:230] Unauthorized: /api/v2/category
+[13/Dec/2020 02:36:27.037]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 02:36:27.049]WARNING [django.request:230] Unauthorized: /api/v2/phases/0
+[13/Dec/2020 02:36:27.891]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[13/Dec/2020 02:36:27.902]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 02:44:11.640]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 03:53:34.943]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 03:54:36.046]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 03:54:36.334]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 03:54:41.107]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 03:54:41.116]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 03:54:41.126]WARNING [django.request:230] Unauthorized: /api/v2/reward/0
+[13/Dec/2020 03:54:41.136]WARNING [django.request:230] Unauthorized: /api/v2/profile/personal/0
+[13/Dec/2020 03:55:04.823]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 03:55:05.705]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 04:13:19.878]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 04:13:19.900]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 04:53:46.364]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 04:53:46.374]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[13/Dec/2020 04:53:46.384]WARNING [django.request:230] Unauthorized: /api/v2/category
+[13/Dec/2020 04:53:46.398]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 04:53:47.241]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 04:53:47.252]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[13/Dec/2020 04:54:13.776]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 04:59:04.549]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 04:59:04.568]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 05:06:54.857]WARNING [django.request:230] Unauthorized: /api/v2/category
+[13/Dec/2020 05:06:54.879]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 05:16:07.846]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 05:16:27.802]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 05:16:39.809]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 05:16:39.843]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 11:37:09.546]WARNING [django.request:230] Not Found: /api/v2/reward/0
+[13/Dec/2020 11:37:20.785]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[13/Dec/2020 13:21:13.251]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[13/Dec/2020 14:17:26.784]WARNING [django.request:230] Unauthorized: /api/v2/city
+[13/Dec/2020 14:17:27.666]WARNING [django.request:230] Unauthorized: /api/v2/profile/personal/0
