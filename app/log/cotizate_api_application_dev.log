@@ -1012,6 +1012,7 @@ NameError: name 'Response' is not defined
 [13/Dec/2020 02:22:50.500]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
 [13/Dec/2020 02:23:11.439]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
 [13/Dec/2020 02:24:02.984]INFO [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 200 2563
+<<<<<<< HEAD
 [13/Dec/2020 11:40:20.448]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
 [13/Dec/2020 14:48:55.574]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
 [13/Dec/2020 14:48:55.575]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
