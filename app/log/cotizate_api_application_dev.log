@@ -1012,3 +1012,414 @@ NameError: name 'Response' is not defined
 [13/Dec/2020 02:22:50.500]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
 [13/Dec/2020 02:23:11.439]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
 [13/Dec/2020 02:24:02.984]INFO [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 200 2563
+[13/Dec/2020 11:40:20.448]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 14:48:55.574]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 14:48:55.575]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 14:48:55.577]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 14:48:55.578]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 14:48:55.580]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 14:48:55.580]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 14:48:55.581]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 14:49:07.941]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[13/Dec/2020 14:49:08.153]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 14:49:08.180]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[13/Dec/2020 14:49:08.185]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 14:49:08.186]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 14:49:08.538]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 14:49:08.540]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 14:49:08.545]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 14:49:08.546]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 14:49:08.546]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 14:49:08.552]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 14:49:08.553]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 14:49:08.565]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 14:53:29.045]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 14:54:15.410]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 14:57:19.723]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 14:57:19.734]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 14:58:34.255]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 14:58:34.256]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 14:58:34.263]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 14:58:34.269]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 14:58:34.270]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 14:58:34.270]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 14:58:34.271]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 14:58:43.893]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 14:58:43.948]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 14:58:43.949]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 14:58:44.550]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 14:58:44.559]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 14:58:44.555]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 14:58:44.561]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 14:58:44.562]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 14:58:44.564]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 14:58:44.570]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 14:58:44.597]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 14:58:49.151]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 14:58:55.831]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 16:28:32.005]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 16:28:56.574]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[13/Dec/2020 17:46:30.346]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 17:46:30.351]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 17:46:30.352]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 17:46:30.359]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 17:46:30.364]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 17:46:30.365]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 17:46:30.366]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 17:46:51.092]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[13/Dec/2020 17:46:51.236]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 17:46:51.262]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[13/Dec/2020 17:46:51.265]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 17:46:51.266]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 17:46:51.685]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 17:46:51.686]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 17:46:51.689]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 17:46:51.690]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 17:46:51.691]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 17:46:51.691]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 17:46:51.694]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 17:46:51.700]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 17:46:55.536]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 17:46:58.690]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 17:49:13.910]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 17:49:13.914]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 17:49:13.919]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 17:49:13.920]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 17:49:13.921]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 17:49:13.925]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 17:49:13.926]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 17:49:34.415]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 17:49:34.437]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 17:49:34.438]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 17:49:34.771]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 17:49:34.773]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 17:49:34.775]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 17:49:34.780]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 17:49:34.781]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 17:49:34.781]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 17:49:34.782]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 17:49:34.788]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 17:51:05.369]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 17:51:08.372]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 18:33:28.884]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 18:33:28.888]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 18:33:28.893]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 18:33:28.893]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 18:33:28.893]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 18:33:28.901]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 18:33:28.903]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 18:33:39.623]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 18:33:39.672]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 18:33:39.673]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 18:33:40.208]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 18:33:40.210]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 18:33:40.215]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 18:33:40.222]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 18:33:40.222]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 18:33:40.222]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 18:33:40.224]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 18:33:40.231]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 18:33:43.799]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 18:33:47.055]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 18:46:07.165]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 18:46:07.169]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 18:46:07.174]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 18:46:07.175]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 18:46:07.176]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 18:46:07.182]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 18:46:07.183]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 18:46:20.289]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 18:46:20.314]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 18:46:20.314]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 18:46:20.894]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 18:46:20.896]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 18:46:20.899]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 18:46:20.908]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 18:46:20.909]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 18:46:20.909]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 18:46:20.910]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 18:46:20.924]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 18:46:23.397]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 18:46:26.108]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 19:06:46.412]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 19:06:46.421]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 20:17:22.497]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 20:17:43.996]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[13/Dec/2020 20:17:44.271]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 20:17:44.330]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[13/Dec/2020 20:17:44.336]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 20:17:44.337]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 20:17:45.291]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 20:17:45.292]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 20:17:45.297]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 20:17:45.302]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 20:17:45.312]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 20:17:45.313]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 20:17:45.314]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 20:17:45.331]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 20:17:48.684]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 20:17:52.328]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 20:28:33.905]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 20:28:33.914]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:13:52.289]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 23:13:52.292]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 23:13:52.298]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 23:13:52.299]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 23:13:52.299]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 23:13:52.300]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 23:13:52.300]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 23:14:00.759]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[13/Dec/2020 23:14:00.965]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 23:14:00.994]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[13/Dec/2020 23:14:00.997]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 23:14:00.997]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 23:14:01.276]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 23:14:01.278]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 23:14:01.281]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 23:14:01.285]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 23:14:01.285]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 23:14:01.286]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 23:14:01.290]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 23:14:01.294]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:14:06.048]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:14:09.068]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:21:30.800]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:21:30.812]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:22:04.218]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 23:22:04.223]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 23:22:04.226]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 23:22:04.230]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 23:22:04.234]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 23:22:04.234]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 23:22:04.238]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 23:22:59.322]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 23:22:59.348]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 23:22:59.348]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 23:22:59.756]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 23:22:59.758]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 23:22:59.759]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 23:22:59.761]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 23:22:59.764]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 23:22:59.764]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 23:22:59.764]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 23:22:59.771]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:23:03.579]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:23:06.257]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:30:48.689]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:30:48.704]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:52:51.004]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 23:52:51.007]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 23:52:51.008]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 23:52:51.020]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 23:52:51.023]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 23:52:51.023]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 23:52:51.025]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 23:53:00.619]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 23:53:00.674]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 23:53:00.675]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 23:53:01.202]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 23:53:01.206]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 23:53:01.207]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 23:53:01.210]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 23:53:01.220]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 23:53:01.221]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 23:53:01.223]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 23:53:01.230]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:53:04.114]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:53:08.097]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:58:26.386]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 23:58:26.402]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 00:06:00.336]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 00:06:00.337]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 00:06:00.342]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 00:06:00.359]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 00:06:00.364]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 00:06:00.365]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 00:06:00.365]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 00:06:10.491]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 00:06:10.532]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Dec/2020 00:06:10.533]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Dec/2020 00:06:11.041]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 00:06:11.044]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 00:06:11.048]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 00:06:11.058]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 00:06:11.059]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 00:06:11.061]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 00:06:11.061]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 00:06:11.069]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 00:06:14.391]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 00:06:18.112]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 00:29:46.900]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 00:29:46.901]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 00:29:46.905]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 00:29:46.908]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 00:29:46.910]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 00:29:46.919]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 00:29:46.920]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 00:29:57.058]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 00:29:57.101]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Dec/2020 00:29:57.102]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Dec/2020 00:29:57.639]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 00:29:57.644]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 00:29:57.648]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 00:29:57.654]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 00:29:57.655]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 00:29:57.656]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 00:29:57.664]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 00:29:57.668]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 00:30:20.060]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 00:30:24.783]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:05:07.980]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:05:07.988]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:05:07.992]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:05:07.998]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:05:08.000]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:05:08.000]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:05:08.001]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:05:18.554]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 01:05:18.601]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Dec/2020 01:05:18.602]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Dec/2020 01:05:19.161]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:05:19.164]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:05:19.169]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:05:19.171]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:05:19.185]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:05:19.186]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:05:19.187]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:05:19.203]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:05:22.660]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:05:25.201]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:18:10.770]WARNING [django.request:224] Unauthorized: /api/v2/campaing-private/5
+[14/Dec/2020 01:18:10.770]WARNING [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 401 35
+[14/Dec/2020 01:18:42.514]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 01:19:04.686]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[14/Dec/2020 01:19:09.746]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[14/Dec/2020 01:22:30.319]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:22:30.324]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:22:30.330]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:22:30.332]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:22:30.333]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:22:30.333]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:22:30.334]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:22:40.855]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[14/Dec/2020 01:22:41.153]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 01:22:41.214]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[14/Dec/2020 01:22:41.221]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Dec/2020 01:22:41.222]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Dec/2020 01:22:41.767]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:22:41.771]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:22:41.774]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:22:41.780]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:22:41.781]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:22:41.781]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:22:41.787]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:22:41.795]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:22:44.432]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:22:47.355]INFO [django.server:157] "OPTIONS /api/v2/campaing-private/5 HTTP/1.1" 200 0
+[14/Dec/2020 01:22:47.369]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:22:47.405]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[14/Dec/2020 01:40:54.638]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:40:54.643]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:40:54.651]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:40:54.652]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:40:54.652]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:40:54.653]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:40:54.655]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:41:02.587]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 01:41:02.638]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Dec/2020 01:41:02.639]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Dec/2020 01:41:03.164]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:41:03.166]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:41:03.169]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:41:03.174]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:41:03.175]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:41:03.176]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:41:03.181]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:41:03.187]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:41:06.013]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:41:09.692]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:41:09.715]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[14/Dec/2020 01:49:46.421]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:49:46.422]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:49:46.426]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:49:46.435]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:49:46.442]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:49:46.439]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:49:46.443]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:49:54.518]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 01:49:54.565]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Dec/2020 01:49:54.566]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Dec/2020 01:49:55.133]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:49:55.134]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:49:55.144]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:49:55.149]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:49:55.149]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:49:55.149]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:49:55.151]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:49:55.170]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:49:57.862]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:50:00.344]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:50:00.382]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[14/Dec/2020 01:57:25.218]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:57:25.219]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:57:25.225]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:57:25.229]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:57:25.231]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:57:25.235]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:57:25.242]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:57:33.669]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 01:57:33.718]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Dec/2020 01:57:33.719]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Dec/2020 01:57:34.289]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 01:57:34.298]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 01:57:34.301]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 01:57:34.303]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 01:57:34.306]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 01:57:34.306]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 01:57:34.311]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 01:57:34.318]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:57:36.869]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:57:39.306]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 01:57:39.331]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[14/Dec/2020 02:04:42.788]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 02:04:42.794]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 02:04:42.799]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 02:04:42.802]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 02:04:42.804]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 02:04:42.808]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 02:04:42.809]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 02:04:52.003]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 02:04:52.043]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Dec/2020 02:04:52.043]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Dec/2020 02:04:52.608]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 02:04:52.611]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 02:04:52.623]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 02:04:52.625]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 02:04:52.625]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 02:04:52.626]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 02:04:52.627]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 02:04:52.647]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 02:04:55.752]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 02:04:58.594]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 02:04:58.627]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[14/Dec/2020 02:16:08.104]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 02:16:08.105]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 02:16:08.111]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 02:16:08.113]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 02:16:08.118]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 02:16:08.129]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 02:16:08.130]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 02:16:19.509]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[14/Dec/2020 02:16:19.540]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[14/Dec/2020 02:16:19.540]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[14/Dec/2020 02:16:20.214]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[14/Dec/2020 02:16:20.216]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[14/Dec/2020 02:16:20.220]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[14/Dec/2020 02:16:20.230]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[14/Dec/2020 02:16:20.230]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[14/Dec/2020 02:16:20.232]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[14/Dec/2020 02:16:20.233]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[14/Dec/2020 02:16:20.244]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 02:16:23.031]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 02:16:25.266]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[14/Dec/2020 02:16:25.291]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
