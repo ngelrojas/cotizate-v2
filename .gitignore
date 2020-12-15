@@ -1,7 +1,7 @@
 /app/staticfiles/
 /app/api/staticfiles/
 /app/api/settings/conf_email.py
-/app/log/
+/app/log
 /app/api/settings/__pycache__/
 .env
 .env.prod
