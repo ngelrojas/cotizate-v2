@@ -1,293 +1,198 @@
-[11/Dec/2020 15:42:39.202]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[11/Dec/2020 15:42:39.241]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[11/Dec/2020 15:42:39.275]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[11/Dec/2020 15:42:39.318]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[11/Dec/2020 15:43:31.498]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[11/Dec/2020 15:43:31.535]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[11/Dec/2020 15:43:31.569]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[11/Dec/2020 15:43:32.425]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[11/Dec/2020 15:44:04.063]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[11/Dec/2020 15:44:05.050]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[11/Dec/2020 15:44:05.091]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[11/Dec/2020 15:44:05.125]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[11/Dec/2020 15:44:06.106]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[11/Dec/2020 15:44:21.480]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[11/Dec/2020 15:45:12.362]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[11/Dec/2020 15:45:12.397]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[11/Dec/2020 15:45:12.701]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[11/Dec/2020 15:45:13.625]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[11/Dec/2020 15:45:13.967]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[11/Dec/2020 15:45:30.253]WARNING [django.request:230] Not Found: /favicon.ico
-[12/Dec/2020 13:51:15.372]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 13:51:16.048]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 13:51:16.082]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[12/Dec/2020 13:51:16.119]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 13:51:16.153]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 13:51:44.973]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 13:51:45.009]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 13:51:45.044]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[12/Dec/2020 13:52:16.662]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 13:52:17.429]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 13:52:17.466]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 13:52:17.682]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 13:52:49.926]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 13:52:49.962]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 13:52:49.996]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 13:52:50.966]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 13:53:27.315]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 13:53:27.352]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 13:53:27.657]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 13:53:28.579]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 13:53:28.972]WARNING [django.request:230] Not Found: /favicon.ico
-[12/Dec/2020 13:54:24.602]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 13:54:24.638]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 13:54:24.673]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
-[12/Dec/2020 13:54:24.710]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 13:54:57.115]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 13:54:57.152]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
-[12/Dec/2020 13:54:57.186]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 13:54:57.223]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
-[12/Dec/2020 13:54:57.434]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 13:55:29.621]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 13:55:29.657]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 13:55:29.691]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 13:55:29.730]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 13:55:30.710]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 13:55:46.690]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 13:55:46.724]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
-[12/Dec/2020 13:55:47.020]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 13:56:02.968]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 13:56:35.435]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
-[12/Dec/2020 13:56:35.471]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 13:56:41.355]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-addlink.svg
-[12/Dec/2020 13:56:41.391]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-changelink.svg
-[12/Dec/2020 13:56:51.793]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
-[12/Dec/2020 13:58:10.345]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 13:58:10.381]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[12/Dec/2020 13:58:10.416]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 13:58:41.884]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 13:58:42.205]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 13:58:42.636]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 13:58:42.815]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 13:59:47.920]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 13:59:47.957]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 13:59:47.991]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 14:00:20.994]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 14:00:21.029]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 14:00:21.411]WARNING [django.request:230] Not Found: /favicon.ico
-[12/Dec/2020 14:00:39.377]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 14:00:39.964]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 14:00:39.999]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 14:00:40.036]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
-[12/Dec/2020 14:01:11.628]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 14:01:11.911]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
-[12/Dec/2020 14:01:12.392]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
-[12/Dec/2020 14:01:12.427]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 14:01:12.463]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 14:01:44.151]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 14:01:44.403]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 14:01:44.638]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 14:01:44.989]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 14:01:45.024]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 14:02:01.371]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
-[12/Dec/2020 14:02:02.398]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 14:02:02.434]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
-[12/Dec/2020 14:02:03.421]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 14:02:17.447]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 14:02:33.830]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 14:02:34.857]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 14:02:35.885]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 14:02:35.920]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 14:02:35.957]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-changelink.svg
-[12/Dec/2020 14:03:08.438]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 14:03:08.476]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-addlink.svg
-[12/Dec/2020 14:03:08.510]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
-[12/Dec/2020 14:03:09.466]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
-[12/Dec/2020 14:04:21.362]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 14:04:21.399]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[12/Dec/2020 14:04:21.434]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 14:04:22.380]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 14:04:53.894]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 14:04:54.838]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 14:04:54.874]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 14:04:54.909]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 14:05:11.328]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 14:05:29.970]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 14:05:30.008]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 14:05:30.043]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 14:05:30.991]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 14:05:31.026]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 14:11:55.231]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 14:11:55.816]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
-[12/Dec/2020 14:11:55.850]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 14:11:55.887]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 14:12:27.760]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 14:12:27.797]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
-[12/Dec/2020 14:12:28.237]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 14:12:28.272]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 14:12:28.307]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
-[12/Dec/2020 14:12:28.342]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 14:13:00.323]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 14:13:00.357]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 14:13:00.740]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 14:13:00.774]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 14:13:01.341]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 14:13:33.292]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 14:13:33.806]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
-[12/Dec/2020 14:13:33.843]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 14:13:34.211]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 14:13:34.827]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 14:14:06.335]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 14:14:06.575]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 14:14:07.302]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
-[12/Dec/2020 14:14:07.339]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 14:14:07.589]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-changelink.svg
-[12/Dec/2020 14:14:23.781]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-addlink.svg
-[12/Dec/2020 14:14:39.854]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
-[12/Dec/2020 14:15:10.943]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 14:15:10.979]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 14:15:11.014]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[12/Dec/2020 14:15:11.050]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 14:15:42.832]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 14:15:43.294]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 14:15:43.329]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 14:15:43.468]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 14:15:59.213]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 14:16:15.906]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 14:16:17.141]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 14:16:17.175]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 14:16:18.061]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 14:16:18.097]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 18:37:49.021]WARNING [django.request:230] Bad Request: /api/v2/auth
-[12/Dec/2020 18:37:54.494]WARNING [django.request:230] Bad Request: /api/v2/auth
-[12/Dec/2020 18:41:58.892]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 18:43:05.454]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 18:43:05.491]WARNING [django.request:230] Not Found: /staticfiles/admin/css/dashboard.css
-[12/Dec/2020 18:43:05.527]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 18:43:06.407]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 18:43:07.425]WARNING [django.request:230] Not Found: /favicon.ico
-[12/Dec/2020 18:43:48.105]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 18:43:48.700]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 18:43:48.735]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 18:43:48.771]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[12/Dec/2020 18:44:20.650]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 18:44:20.685]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 18:44:21.110]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 18:44:21.144]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 18:44:21.181]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 18:44:37.027]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 18:44:53.113]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 18:44:53.411]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 18:44:54.366]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 18:45:10.830]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 18:45:26.897]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 18:45:27.155]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 18:45:27.823]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 18:45:56.364]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 18:46:00.284]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
-[12/Dec/2020 18:46:00.320]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-no.svg
-[12/Dec/2020 18:46:10.924]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 18:46:11.508]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 18:46:11.542]WARNING [django.request:230] Not Found: /staticfiles/admin/css/forms.css
-[12/Dec/2020 18:46:11.634]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 18:46:43.198]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 18:46:43.498]WARNING [django.request:230] Not Found: /staticfiles/admin/js/calendar.js
-[12/Dec/2020 18:46:44.021]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 18:46:44.056]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/DateTimeShortcuts.js
-[12/Dec/2020 18:46:44.092]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 18:46:44.127]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 18:47:15.729]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 18:47:16.061]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 18:47:16.477]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 18:47:16.515]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
-[12/Dec/2020 18:47:16.549]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 18:47:49.036]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 18:47:49.070]WARNING [django.request:230] Not Found: /staticfiles/admin/js/change_form.js
-[12/Dec/2020 18:47:49.108]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 18:47:50.162]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate_init.js
-[12/Dec/2020 18:47:50.198]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 18:48:18.130]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 18:48:18.166]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 18:48:18.200]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[12/Dec/2020 18:48:18.292]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 18:51:27.647]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 18:51:27.684]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 18:51:28.686]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 18:51:28.722]WARNING [django.request:230] Not Found: /staticfiles/admin/img/search.svg
-[12/Dec/2020 18:51:28.757]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 18:51:29.710]WARNING [django.request:230] Not Found: /staticfiles/admin/img/icon-yes.svg
-[12/Dec/2020 18:52:26.508]WARNING [django.request:230] Not Found: /api/v2/reward/0
-[12/Dec/2020 18:52:27.438]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
-[12/Dec/2020 18:52:51.887]WARNING [django.request:230] Not Found: /api/v2/reward/0
-[12/Dec/2020 18:55:29.281]WARNING [django.request:230] Not Found: /api/v2/reward/0
-[12/Dec/2020 18:55:29.911]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
-[12/Dec/2020 19:05:27.213]WARNING [django.request:230] Not Found: /staticfiles/admin/css/base.css
-[12/Dec/2020 19:05:27.796]WARNING [django.request:230] Not Found: /staticfiles/admin/css/changelists.css
-[12/Dec/2020 19:05:27.830]WARNING [django.request:230] Not Found: /staticfiles/admin/css/nav_sidebar.css
-[12/Dec/2020 19:05:28.218]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 19:05:28.920]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/jquery/jquery.js
-[12/Dec/2020 19:06:00.838]WARNING [django.request:230] Not Found: /staticfiles/admin/js/jquery.init.js
-[12/Dec/2020 19:06:01.268]WARNING [django.request:230] Not Found: /staticfiles/admin/js/core.js
-[12/Dec/2020 19:06:01.303]WARNING [django.request:230] Not Found: /staticfiles/admin/js/admin/RelatedObjectLookups.js
-[12/Dec/2020 19:06:01.778]WARNING [django.request:230] Not Found: /staticfiles/admin/js/actions.js
-[12/Dec/2020 19:06:02.182]WARNING [django.request:230] Not Found: /staticfiles/admin/js/urlify.js
-[12/Dec/2020 19:06:17.726]WARNING [django.request:230] Not Found: /staticfiles/admin/js/prepopulate.js
-[12/Dec/2020 19:06:34.041]WARNING [django.request:230] Not Found: /staticfiles/admin/js/vendor/xregexp/xregexp.js
-[12/Dec/2020 19:06:34.324]WARNING [django.request:230] Not Found: /staticfiles/admin/js/nav_sidebar.js
-[12/Dec/2020 19:06:35.035]WARNING [django.request:230] Not Found: /staticfiles/admin/css/responsive.css
-[12/Dec/2020 20:43:18.008]WARNING [django.request:230] Unauthorized: /api/v2/city
-[12/Dec/2020 20:43:18.018]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[12/Dec/2020 20:43:18.028]WARNING [django.request:230] Unauthorized: /api/v2/category
-[12/Dec/2020 20:43:18.037]WARNING [django.request:230] Unauthorized: /api/v2/user/25
-[12/Dec/2020 20:43:18.048]WARNING [django.request:230] Unauthorized: /api/v2/phases/0
-[12/Dec/2020 20:43:18.058]WARNING [django.request:230] Unauthorized: /api/v2/reward/0
-[12/Dec/2020 20:43:18.892]WARNING [django.request:230] Unauthorized: /api/v2/profile/personal/0
-[12/Dec/2020 20:43:18.905]WARNING [django.request:230] Unauthorized: /api/v2/city
-[12/Dec/2020 20:43:18.922]WARNING [django.request:230] Unauthorized: /api/v2/user/25
-[12/Dec/2020 20:43:30.348]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 01:50:44.633]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 01:50:51.799]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 01:51:15.492]WARNING [django.request:230] Unauthorized: /api/v2/category
-[13/Dec/2020 01:51:15.503]WARNING [django.request:230] Unauthorized: /api/v2/phases/0
-[13/Dec/2020 01:51:15.513]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 02:01:10.664]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 02:23:46.283]WARNING [django.request:230] Not Found: /api/v2/category/tecnologia
-[13/Dec/2020 02:36:27.006]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 02:36:27.016]WARNING [django.request:230] Unauthorized: /api/v2/user/25
-[13/Dec/2020 02:36:27.026]WARNING [django.request:230] Unauthorized: /api/v2/category
-[13/Dec/2020 02:36:27.037]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 02:36:27.049]WARNING [django.request:230] Unauthorized: /api/v2/phases/0
-[13/Dec/2020 02:36:27.891]WARNING [django.request:230] Unauthorized: /api/v2/user/25
-[13/Dec/2020 02:36:27.902]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 02:44:11.640]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 03:53:34.943]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 03:54:36.046]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 03:54:36.334]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 03:54:41.107]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 03:54:41.116]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 03:54:41.126]WARNING [django.request:230] Unauthorized: /api/v2/reward/0
-[13/Dec/2020 03:54:41.136]WARNING [django.request:230] Unauthorized: /api/v2/profile/personal/0
-[13/Dec/2020 03:55:04.823]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 03:55:05.705]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 04:13:19.878]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 04:13:19.900]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 04:53:46.364]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 04:53:46.374]WARNING [django.request:230] Unauthorized: /api/v2/user/25
-[13/Dec/2020 04:53:46.384]WARNING [django.request:230] Unauthorized: /api/v2/category
-[13/Dec/2020 04:53:46.398]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 04:53:47.241]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 04:53:47.252]WARNING [django.request:230] Unauthorized: /api/v2/user/25
-[13/Dec/2020 04:54:13.776]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 04:59:04.549]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 04:59:04.568]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 05:06:54.857]WARNING [django.request:230] Unauthorized: /api/v2/category
-[13/Dec/2020 05:06:54.879]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 05:16:07.846]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 05:16:27.802]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 05:16:39.809]WARNING [django.request:230] Unauthorized: /api/v2/campaing-header-last
-[13/Dec/2020 05:16:39.843]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 11:37:09.546]WARNING [django.request:230] Not Found: /api/v2/reward/0
-[13/Dec/2020 11:37:20.785]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
-[13/Dec/2020 13:21:13.251]WARNING [django.request:230] Unauthorized: /api/v2/user/25
-[13/Dec/2020 14:17:26.784]WARNING [django.request:230] Unauthorized: /api/v2/city
-[13/Dec/2020 14:17:27.666]WARNING [django.request:230] Unauthorized: /api/v2/profile/personal/0
+[19/Dec/2020 19:37:40.455]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
+[19/Dec/2020 19:38:12.719]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:38:12.765]WARNING [django.request:224] Bad Request: /admin
+[19/Dec/2020 19:38:12.768]WARNING [django.server:157] "GET /admin HTTP/1.1" 400 74183
+[19/Dec/2020 19:38:12.955]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:38:12.995]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:38:12.996]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74044
+[19/Dec/2020 19:39:29.553]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:39:29.584]WARNING [django.request:224] Bad Request: /admin
+[19/Dec/2020 19:39:29.584]WARNING [django.server:157] "GET /admin HTTP/1.1" 400 74320
+[19/Dec/2020 19:39:29.740]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:39:29.777]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:39:29.778]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74309
+[19/Dec/2020 19:40:28.936]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
+[19/Dec/2020 19:40:33.644]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:40:33.677]WARNING [django.request:224] Bad Request: /admin
+[19/Dec/2020 19:40:33.677]WARNING [django.server:157] "GET /admin HTTP/1.1" 400 74300
+[19/Dec/2020 19:40:33.822]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:40:33.900]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:40:33.900]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74289
+[19/Dec/2020 19:40:34.690]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:40:34.734]WARNING [django.request:224] Bad Request: /admin
+[19/Dec/2020 19:40:34.735]WARNING [django.server:157] "GET /admin HTTP/1.1" 400 74300
+[19/Dec/2020 19:40:34.861]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:40:34.901]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:40:34.902]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74289
+[19/Dec/2020 19:40:35.657]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:40:35.693]WARNING [django.request:224] Bad Request: /admin
+[19/Dec/2020 19:40:35.693]WARNING [django.server:157] "GET /admin HTTP/1.1" 400 74300
+[19/Dec/2020 19:40:35.808]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:40:35.845]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:40:35.845]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74289
+[19/Dec/2020 19:40:44.433]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:40:44.464]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:40:44.464]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74174
+[19/Dec/2020 19:40:44.613]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:40:44.654]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:40:44.655]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74025
+[19/Dec/2020 19:42:27.119]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:42:27.155]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:42:27.155]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74311
+[19/Dec/2020 19:42:27.285]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:42:27.322]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:42:27.323]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74290
+[19/Dec/2020 19:42:28.167]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:42:28.201]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:42:28.201]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74311
+[19/Dec/2020 19:42:28.324]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:42:28.360]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:42:28.360]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74290
+[19/Dec/2020 19:42:28.821]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:42:28.864]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:42:28.864]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74311
+[19/Dec/2020 19:42:28.984]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:42:29.021]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:42:29.022]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74290
+[19/Dec/2020 19:43:02.064]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:43:02.095]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:43:02.095]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74311
+[19/Dec/2020 19:43:02.260]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:43:02.297]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:43:02.298]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74290
+[19/Dec/2020 19:43:02.943]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:43:02.975]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:43:02.976]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74311
+[19/Dec/2020 19:43:03.095]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:43:03.132]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:43:03.133]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74290
+[19/Dec/2020 19:43:03.612]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:43:03.645]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:43:03.646]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74311
+[19/Dec/2020 19:43:03.762]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:43:03.797]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:43:03.797]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74290
+[19/Dec/2020 19:43:04.195]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:43:04.227]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:43:04.227]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74311
+[19/Dec/2020 19:43:04.347]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:43:04.388]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:43:04.389]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74290
+[19/Dec/2020 19:47:14.866]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:47:14.903]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:47:14.903]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74311
+[19/Dec/2020 19:47:15.051]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:47:15.089]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:47:15.089]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74290
+[19/Dec/2020 19:47:16.180]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:47:16.213]WARNING [django.request:224] Bad Request: /admin/
+[19/Dec/2020 19:47:16.214]WARNING [django.server:157] "GET /admin/ HTTP/1.1" 400 74311
+[19/Dec/2020 19:47:16.337]ERROR [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[19/Dec/2020 19:47:16.374]WARNING [django.request:224] Bad Request: /favicon.ico
+[19/Dec/2020 19:47:16.374]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 400 74290
+[19/Dec/2020 19:47:22.911]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
+[19/Dec/2020 19:47:27.583]INFO [django.server:157] "GET /admin/ HTTP/1.1" 302 0
+[19/Dec/2020 19:47:27.613]INFO [django.server:157] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2216
+[19/Dec/2020 19:47:27.650]INFO [django.server:157] "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 1185
+[19/Dec/2020 19:47:27.651]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 16307
+[19/Dec/2020 19:47:27.651]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18339
+[19/Dec/2020 19:47:27.651]INFO [django.server:157] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+[19/Dec/2020 19:47:27.678]INFO [django.server:157] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[19/Dec/2020 19:47:27.702]INFO [django.server:157] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 200 423
+[19/Dec/2020 19:47:27.803]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[19/Dec/2020 19:47:27.805]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[19/Dec/2020 19:47:27.816]WARNING [django.request:224] Not Found: /favicon.ico
+[19/Dec/2020 19:47:27.816]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 3895
+[19/Dec/2020 19:47:37.295]INFO [django.server:157] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[19/Dec/2020 19:47:37.328]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 12680
+[19/Dec/2020 19:47:37.347]INFO [django.server:157] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 200 380
+[19/Dec/2020 19:47:37.373]INFO [django.server:157] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[19/Dec/2020 19:47:37.373]INFO [django.server:157] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[19/Dec/2020 19:47:37.384]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[19/Dec/2020 19:47:44.268]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[19/Dec/2020 19:47:44.311]INFO [django.server:157] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6281
+[19/Dec/2020 19:47:44.311]INFO [django.server:157] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 200 347
+[19/Dec/2020 19:47:44.312]INFO [django.server:157] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
+[19/Dec/2020 19:47:44.312]INFO [django.server:157] "GET /staticfiles/admin/js/core.js HTTP/1.1" 200 5418
+[19/Dec/2020 19:47:44.319]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 200 8632
+[19/Dec/2020 19:47:44.322]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 200 6783
+[19/Dec/2020 19:47:44.323]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[19/Dec/2020 19:47:44.326]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:47:44.327]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[19/Dec/2020 19:47:44.328]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[19/Dec/2020 19:47:44.393]INFO [django.server:157] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[19/Dec/2020 19:47:47.134]INFO [django.server:157] "GET /admin/core/campaingheader/1/change/ HTTP/1.1" 200 19111
+[19/Dec/2020 19:47:47.164]INFO [django.server:157] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 200 8423
+[19/Dec/2020 19:47:47.178]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:47:47.203]INFO [django.server:157] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 200 10592
+[19/Dec/2020 19:47:47.204]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[19/Dec/2020 19:47:47.215]INFO [django.server:157] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 200 606
+[19/Dec/2020 19:47:51.936]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[19/Dec/2020 19:47:51.967]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:47:54.183]INFO [django.server:157] "GET /admin/core/campaingheader/2/change/ HTTP/1.1" 200 19111
+[19/Dec/2020 19:47:54.213]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:47:57.374]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[19/Dec/2020 19:47:57.419]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:47:58.954]INFO [django.server:157] "GET /admin/core/campaingheader/25/change/ HTTP/1.1" 200 19115
+[19/Dec/2020 19:47:58.994]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:48:05.489]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18444
+[19/Dec/2020 19:48:05.527]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:48:07.017]INFO [django.server:157] "GET /admin/core/campaingbody/25/change/ HTTP/1.1" 200 24554
+[19/Dec/2020 19:48:07.045]INFO [django.server:157] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 200 7788
+[19/Dec/2020 19:48:07.047]INFO [django.server:157] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19750
+[19/Dec/2020 19:48:07.059]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:48:07.210]INFO [django.server:157] "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[19/Dec/2020 19:48:07.211]INFO [django.server:157] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[19/Dec/2020 19:48:44.512]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[19/Dec/2020 19:48:44.578]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:48:46.389]INFO [django.server:157] "GET /admin/core/campaingheader/22/change/ HTTP/1.1" 200 19115
+[19/Dec/2020 19:48:46.428]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:48:55.216]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[19/Dec/2020 19:48:55.265]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:48:56.791]INFO [django.server:157] "GET /admin/core/campaingheader/14/change/ HTTP/1.1" 200 19115
+[19/Dec/2020 19:48:56.825]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:49:02.668]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[19/Dec/2020 19:49:02.705]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:51:55.581]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
+[19/Dec/2020 19:51:59.711]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 302 0
+[19/Dec/2020 19:51:59.735]INFO [django.server:157] "GET /admin/login/?next=/admin/core/campaingheader/ HTTP/1.1" 200 2256
+[19/Dec/2020 19:52:04.997]INFO [django.server:157] "POST /admin/login/?next=/admin/core/campaingheader/ HTTP/1.1" 302 0
+[19/Dec/2020 19:52:05.075]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[19/Dec/2020 19:52:05.110]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:52:07.808]INFO [django.server:157] "GET /admin/core/campaingheader/25/change/ HTTP/1.1" 200 19115
+[19/Dec/2020 19:52:07.849]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:52:10.390]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[19/Dec/2020 19:52:10.430]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:52:12.670]INFO [django.server:157] "GET /admin/core/campaingheader/14/change/ HTTP/1.1" 200 19115
+[19/Dec/2020 19:52:12.704]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:52:14.645]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[19/Dec/2020 19:52:14.680]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:52:20.999]INFO [django.server:157] "GET /admin/core/category/ HTTP/1.1" 200 13253
+[19/Dec/2020 19:52:21.039]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:52:24.042]INFO [django.server:157] "GET /admin/core/category/3/change/ HTTP/1.1" 200 13979
+[19/Dec/2020 19:52:24.079]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:53:06.706]INFO [django.server:157] "GET /admin/core/personalprofile/ HTTP/1.1" 200 12704
+[19/Dec/2020 19:53:06.771]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:53:12.345]INFO [django.server:157] "GET /admin/core/like/ HTTP/1.1" 200 12565
+[19/Dec/2020 19:53:12.385]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:53:15.791]INFO [django.server:157] "GET /admin/core/phase/ HTTP/1.1" 200 17524
+[19/Dec/2020 19:53:15.826]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:53:21.591]INFO [django.server:157] "GET /admin/core/reward/ HTTP/1.1" 200 17642
+[19/Dec/2020 19:53:21.624]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:53:27.435]INFO [django.server:157] "GET /admin/core/reward/25/change/ HTTP/1.1" 200 18419
+[19/Dec/2020 19:53:27.467]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 19:53:34.663]INFO [django.server:157] "GET /admin/core/reward/ HTTP/1.1" 200 17642
+[19/Dec/2020 19:53:34.698]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 20:03:52.799]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18444
+[19/Dec/2020 20:03:52.865]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 20:04:39.134]INFO [django.server:157] "GET /admin/core/reward/ HTTP/1.1" 200 17642
+[19/Dec/2020 20:04:39.201]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 20:04:45.086]INFO [django.server:157] "GET /admin/core/reward/1/change/ HTTP/1.1" 200 18417
+[19/Dec/2020 20:04:45.133]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 20:04:50.237]INFO [django.server:157] "GET /admin/core/reward/ HTTP/1.1" 200 17642
+[19/Dec/2020 20:04:50.286]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[19/Dec/2020 20:10:00.762]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/core/campaing.py changed, reloading.
+[19/Dec/2020 20:10:01.160]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
+[19/Dec/2020 20:10:32.338]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/core/campaing.py changed, reloading.
+[19/Dec/2020 20:10:32.727]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
+[19/Dec/2020 20:18:03.175]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader

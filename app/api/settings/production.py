@@ -115,7 +115,7 @@ DATABASES = {
         "NAME": config("SQL_DATABASE"),
         "USER": config("SQL_USER", "user"),
         "PASSWORD": config("SQL_PASSWORD", "password"),
-        "HOST": config("SQL_HOST", "45.225.75.2"),
+        "HOST": config("SQL_HOST", "9.vps.confiared.com"),
         "PORT": config("SQL_PORT", "5432"),
     }
 }

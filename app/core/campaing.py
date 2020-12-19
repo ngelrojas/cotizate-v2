@@ -43,6 +43,12 @@ class CampaingBody(models.Model):
         (9, "deleted"),
     )
 
+    FLAG_CAMPAING = (
+        (1, "recent"),
+        (2, "featured"),
+        (3, "finished"),
+    )
+
     title = models.CharField(max_length=200)
     video_main = models.CharField(max_length=250)
     imagen_main = models.CharField(max_length=1000)
@@ -54,6 +60,7 @@ class CampaingBody(models.Model):
     public_at = models.DateTimeField(null=True, blank=True)
     ended_at = models.DateTimeField(null=True, blank=True)
     status = models.PositiveSmallIntegerField(choices=STATUS_CAMPAING, default=2)
+    flag = models.PositiveSmallIntegerField(choices=FLAG_CAMPAING, default=1)
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
     profile = models.ForeignKey(PersonalProfile, on_delete=models.CASCADE)
     profile_ca = models.ForeignKey(
