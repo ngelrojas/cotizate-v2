@@ -12,6 +12,7 @@
 .env.rabbitmq
 .env.prod.rabbitmq
 /app/.env
+/env
 git-detect.sh
 TODO.md
 
