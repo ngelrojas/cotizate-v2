@@ -31,73 +31,16 @@ class Command(BaseCommand):
             cbb = City.objects.get(code_name="CBB")
             oru = City.objects.get(code_name="OR")
             tj = City.objects.get(code_name="TJ")
-            # get campaings
-            camp_one = CampaingHeader.objects.get(id=1)
-            camp_two = CampaingHeader.objects.get(id=2)
-            camp_three = CampaingHeader.objects.get(id=3)
             # create rewards
-            reward_one = Reward.objects.create(
-                title="fist reward to campaing one",
-                description="description to campaing one",
-                amount=50,
-                expected_delivery="2020-09-10 00:00:00",
-                header=camp_one,
-                user=0,
-            )
-            reward_one.cities.add(lp, scz, cbb, oru, tj)
-            reward_two = Reward.objects.create(
-                title="second reward to campaing one",
-                description="description to campaing one",
-                amount=65,
-                expected_delivery="2020-09-10 00:00:00",
-                header=camp_one,
-                user=0,
-            )
-            reward_two.cities.add(lp, scz)
-            reward_three = Reward.objects.create(
-                title="threedth reward to campaing two",
-                description="description to campaing two",
-                amount=70,
-                expected_delivery="2020-09-10 00:00:00",
-                header=camp_one,
-                user=0,
-            )
-            reward_three.cities.add(oru, tj)
-            reward_four = Reward.objects.create(
-                title="fourth reward to campaing two",
-                description="description to campaing second",
-                amount=50,
-                expected_delivery="2020-09-10 00:00:00",
-                header=camp_two,
-                user=0,
-            )
-            reward_four.cities.add(cbb, oru)
-            reward_five = Reward.objects.create(
-                title="fiveth reward to campaing three",
-                description="description to campaing three",
-                amount=50,
-                expected_delivery="2020-09-10 00:00:00",
-                header=camp_two,
-                user=0,
-            )
-            reward_five.cities.add(cbb, oru)
-            reward_six = Reward.objects.create(
-                title="second reward to campaing three",
-                description="description to campaing three",
-                amount=60,
-                expected_delivery="2020-09-10 00:00:00",
-                header=camp_three,
-                user=0,
-            )
-            reward_six.cities.add(tj)
-            Reward.objects.create(
-                title="sixth reward to campaing three",
-                description="description to campaing three",
-                amount=60,
-                expected_delivery="2020-09-10 00:00:00",
-                header=camp_three,
-                user=0,
-                all_cities=True,
-                pick_up_locally=True,
-            )
+            for num_i in range(1, 26):
+                reward = Reward.objects.create(
+                    title=f"{num_i} reward to campaing",
+                    description="description to campaing one",
+                    amount=500,
+                    expected_delivery="2020-09-10 00:00:00",
+                    header=CampaingHeader.objects.get(id=num_i),
+                    user=0,
+                )
+                reward.cities.add(lp, scz, cbb, oru, tj)
+
             self.success("rewards created")

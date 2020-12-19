@@ -3,12 +3,16 @@
 /app/api/settings/conf_email.py
 /app/log/
 /app/api/settings/__pycache__/
+/app/*/__pycache__/*.pyc
+/app/*/*/__pycache__/*.pyc
 .env
 .env.prod
 .env.prod.db
 .env.prod.pgadmin
 .env.rabbitmq
 .env.prod.rabbitmq
+/app/.env
+env
 git-detect.sh
 TODO.md
 

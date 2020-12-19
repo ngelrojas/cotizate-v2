@@ -24,45 +24,13 @@ class Command(BaseCommand):
         )
 
         with transaction.atomic():
-            # get campaings
-            camp_one = CampaingHeader.objects.get(id=1)
-            camp_two = CampaingHeader.objects.get(id=2)
-            camp_three = CampaingHeader.objects.get(id=3)
-            # create rewards
-            Phase.objects.create(
-                title="fist phase to campaing one",
-                description="description to phase one",
-                amount=50,
-                header=camp_one,
-            )
-            Phase.objects.create(
-                title="second phase to campaing one",
-                description="description to phase second",
-                amount=50,
-                header=camp_one,
-            )
-            Phase.objects.create(
-                title="fist phase to campaing one",
-                description="description to phase one",
-                amount=50,
-                header=camp_two,
-            )
-            Phase.objects.create(
-                title="second phase to campaing one",
-                description="description to phase second",
-                amount=50,
-                header=camp_two,
-            )
-            Phase.objects.create(
-                title="fist phase to campaing one",
-                description="description to phase one",
-                amount=50,
-                header=camp_three,
-            )
-            Phase.objects.create(
-                title="second phase to campaing one",
-                description="description to phase second",
-                amount=50,
-                header=camp_three,
-            )
+            # create phases
+            for num_i in range(1, 26):
+
+                Phase.objects.create(
+                    title=f"the {num_i} phase to campaing",
+                    description="description to phase one",
+                    amount=500,
+                    header=CampaingHeader.objects.get(id=num_i),
+                )
             self.success("phases created")
