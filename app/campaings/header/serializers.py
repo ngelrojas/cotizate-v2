@@ -22,6 +22,9 @@ class CampaingHeaderSerializer(serializers.ModelSerializer):
             "city",
             "qty_day",
             "amount",
+            "amount_reached",
+            "percent_reached",
+            "qty_day_left",
             "role",
             "code_campaing",
         )

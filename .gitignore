@@ -5,6 +5,7 @@
 /app/api/settings/__pycache__/
 /app/*/__pycache__/*.pyc
 /app/*/*/__pycache__/*.pyc
+/app/core/management/commands/__pycache__/*.pyc
 .env
 .env.prod
 .env.prod.db

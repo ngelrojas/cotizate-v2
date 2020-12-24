@@ -10,4 +10,9 @@ urlpatterns = [
         views.CategoryView.as_view({"get": "retrieve"}),
         name="category-detail",
     ),
+    path(
+        "category/<slug:the_slug>/<str:search_name>",
+        views.CategorySearch.as_view({"get": "retrieve"}),
+        name="category-detail-search",
+    ),
 ]
