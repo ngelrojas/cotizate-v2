@@ -1,13 +1,14 @@
 import json
-from django.core.serializers import serializer
+from django.http import JsonResponse
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework import filters
+from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
-from django.http import JsonResponse
 from .serializers import CategorySerializer
 from core.category import Category
+from core.campaing import CampaingBody
 from core.queries.categoryQuery import CategoryQuery
 from core.queries.campaingQuery import CampaingPrivateQuery
 from campaings.body.serializers import CampaingBodySerializer
@@ -43,33 +44,35 @@ class CategoryView(viewsets.ModelViewSet):
             )
 
 
-class CategorySearch(viewsets.ModelViewSet):
+class CategorySearch(ListAPIView):
     """
-    list
-        - list all categories
-    retrieve
-        - get a category
+    list:
+        - relationship between category and campaing
+        - searching in a category and title from campaing
     """
 
-    serializer_class = CategorySerializer
-    queryset = Category.objects.all()
+    serializer_class = CampaingBodySearch
+    queryset = CampaingBody.objects.all()
     permission_classes = (AllowAny,)
-    filter_backends = [filters.SearchFilter]
-    search_fields = [
-        "name",
-    ]
 
-    # TODO: fix this problem, not JSON encapsulated
-    def retrieve(self, request, the_slug, search_name):
+    def list(self, request, the_slug, search_name):
         try:
             list_header = CategoryQuery.get_list_camp_header(the_slug)
-            list_camp = []
-            list_camp = CampaingPrivateQuery.list_search_camps(list_header, search_name)
-            print(list_camp)
-            data = {}
-            data["data"] = serializer("json", list_camp)
-            # serializer = CampaingBodySearch(list_camp, many=True)
-            return Response(data)
+            public = 5
+            resp_list_camps = []
+
+            for header_camp in list_header:
+
+                camp = CampaingBody.objects.filter(
+                    header=header_camp, title__icontains=search_name, status=public
+                )
+
+                if camp:
+                    serializer = CampaingBodySearch(camp, many=True)
+                    resp_list_camps.append(serializer.data)
+
+            return Response({"data": resp_list_camps}, status=status.HTTP_200_OK)
+
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND

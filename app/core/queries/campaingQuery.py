@@ -69,20 +69,3 @@ class CampaingPrivateQuery:
             return list_camp
         except:
             return list_camp
-
-    @staticmethod
-    def list_search_camps(list_header, search_name):
-        list_camps = []
-        public = 5
-        try:
-            for header_camp in list_header:
-                list_camps.append(
-                    CampaingBody.objects.filter(
-                        header=header_camp,
-                        title__icontains=search_name,
-                        status=public
-                    )
-                )
-                return list_camps
-        except:
-            return list_camps

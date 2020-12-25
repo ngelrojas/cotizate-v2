@@ -12,7 +12,7 @@ urlpatterns = [
     ),
     path(
         "category/<slug:the_slug>/<str:search_name>",
-        views.CategorySearch.as_view({"get": "retrieve"}),
+        views.CategorySearch.as_view(),
         name="category-detail-search",
     ),
 ]
