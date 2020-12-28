@@ -10,7 +10,7 @@ from core.currency import Currency
 from .serializers import CampaingBodySerializer
 from ..public.serializers import CampaingPublicSerializer
 from ..component.CmpHeader import CampHeaderComp
-
+import pdb
 
 class CampaingsBody(viewsets.ModelViewSet):
     """Campaing
@@ -39,12 +39,20 @@ class CampaingsBody(viewsets.ModelViewSet):
     def create(self, request):
         """create campaing body current user"""
         try:
-            CampHeaderComp.saving_campaing(request)
-            return Response(
-                {"data": True, "msg": "campaing body saved."},
-                status=status.HTTP_201_CREATED,
-            )
+            print(request.data)
+            pdb.set_trace()
+            return Response({"data": "ok"})
+            # resp = CampHeaderComp.saving_campaing(request)
+            # if resp:
+            #     return Response(
+            #         {"data": True, "msg": "campaing body saved."},
+            #         status=status.HTTP_201_CREATED,
+            #     )
 
+            # return Response(
+            #         {"data": False, "msg": f"{resp}"},
+            #         status=status.HTTP_400_BAD_REQUEST,
+            #     )
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST

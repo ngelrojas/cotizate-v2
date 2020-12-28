@@ -47,7 +47,7 @@ class CampaingBodyQuery:
             CampaingBody.objects.create(
                 title=request.data.get("title"),
                 video_main=request.data.get("video_main"),
-                imagen_main=request.data.get("imagen_main"),
+                imagen_main=request.FILES["imagen_main"],
                 excerpt=request.data.get("excerpt"),
                 description=request.data.get("description"),
                 public_at=request.data.get("public_at"),
@@ -58,9 +58,9 @@ class CampaingBodyQuery:
                 slogan_campaing=request.data.get("slogan_campaing"),
                 profile_ca=current_profile_company,
             )
-            return True
+            return False
         except Exception:
-            return True
+            return False
 
     @classmethod
     def update_campaing(
