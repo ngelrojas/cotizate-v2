@@ -14,7 +14,7 @@ import pdb
 
 class CampaingsBody(viewsets.ModelViewSet):
     """Campaing
-    - list: list campaing to current user
+    - list: list campaing to current userq
     - create: create campaing to current user
     - retrieve: retrieve campaing to current user and ID campaing
     - update: update campaing to current user and ID campaing
@@ -35,7 +35,7 @@ class CampaingsBody(viewsets.ModelViewSet):
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
-
+    # TODO: FIX THIS COMMENTS
     def create(self, request):
         """create campaing body current user"""
         try:
