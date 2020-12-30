@@ -11,7 +11,7 @@ urlpatterns = [
         name="profile-company",
     ),
     path(
-        "profile/company/<int:pk>",
+        "profile/company/<int:pk>/<int:pc>",
         CompanyView.as_view({"get": "retrieve", "put": "update"}),
         name="profile-company-detail",
     ),

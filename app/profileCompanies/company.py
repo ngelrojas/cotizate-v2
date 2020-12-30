@@ -46,11 +46,15 @@ class CompanyView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
             )
 
-    def retrieve(self, request, pk=None):
-        """retrieve profile company current user"""
+    def retrieve(self, request, pk=None, pc=None):
+        """
+        retrieve profile company current user
+        pk is the ID current profile user
+        pc is the ID the profile company the current user
+        """
         try:
-            profile_per = PersonalProfile.objects.get(user=request.user)
-            current_profile = ProfileCompany.objects.get(id=pk, profiles=profile_per)
+            profile_per = PersonalProfile.objects.get(id=pk)
+            current_profile = ProfileCompany.objects.get(id=pc, profiles=profile_per)
             serializer = self.serializer_class(current_profile)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except ProfileCompany.DoesNotExist as err:
