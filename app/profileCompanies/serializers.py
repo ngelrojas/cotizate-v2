@@ -13,6 +13,18 @@ class CompanySerializer(serializers.ModelSerializer):
     class Meta:
         model = ProfileCompany
         fields = (
+            "cinit",
+            "address",
+            "number_address",
+            "neightbordhood",
+            "cellphone",
+            "telephone",
+            "description",
+            "complete",
+            "rs_facebook",
+            "rs_twitter",
+            "rs_linkedin",
+            "rs_another",
             "representative_name",
             "company_name",
             "representative",
@@ -23,6 +35,7 @@ class CompanySerializer(serializers.ModelSerializer):
             "profiles",
             "countries",
             "cities",
+            "institution_type",
         )
         read_only_fields = ("id",)
 
