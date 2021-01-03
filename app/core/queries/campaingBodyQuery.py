@@ -72,10 +72,11 @@ class CampaingBodyQuery:
         current_profile_company,
         pk,
     ):
+        """pk=campaing body ID"""
         camp = CampaingBody.objects.get(id=pk)
         camp.title = request.data.get("title")
         camp.video_main = request.data.get("video_main")
-        camp.imagen_main = request.data.get("imagen_main")
+        camp.imagen_main = request.FILES["imagen_main"]
         camp.excerpt = request.data.get("excerpt")
         camp.description = request.data.get("description")
         camp.public_at = request.data.get("public_at")

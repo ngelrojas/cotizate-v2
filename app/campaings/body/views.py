@@ -10,7 +10,7 @@ from core.currency import Currency
 from .serializers import CampaingBodySerializer
 from ..public.serializers import CampaingPublicSerializer
 from ..component.CmpHeader import CampHeaderComp
-import pdb
+
 
 class CampaingsBody(viewsets.ModelViewSet):
     """Campaing
@@ -25,12 +25,21 @@ class CampaingsBody(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated,)
 
     def list(self, request, pk):
+        """pk=status campaing"""
         try:
-            list_header = CampPBQ.get_list_camp_header(request)
             list_camp = []
-            list_camp = CampPBQ.list_camps(list_header, pk)
-            serializer = self.serializer_class(list_camp, many=True)
-            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+            resp_camp = []
+            list_header = CampPBQ.get_list_camp_header(request)                
+
+            for header_camp in list_header:
+                
+                camp = CampaingBody.objects.filter(header_id=header_camp, status=pk)
+
+                if camp:
+                    serializer = self.serializer_class(camp, many=True)
+                    resp_camp.extend(serializer.data)
+            
+            return Response({"data": resp_camp}, status=status.HTTP_200_OK)
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
@@ -39,20 +48,17 @@ class CampaingsBody(viewsets.ModelViewSet):
     def create(self, request):
         """create campaing body current user"""
         try:
-            print(request.data)
-            pdb.set_trace()
-            return Response({"data": "ok"})
-            # resp = CampHeaderComp.saving_campaing(request)
-            # if resp:
-            #     return Response(
-            #         {"data": True, "msg": "campaing body saved."},
-            #         status=status.HTTP_201_CREATED,
-            #     )
+            resp = CampHeaderComp.saving_campaing(request)
+            if resp:
+                return Response(
+                    {"data": True, "msg": "campaing body saved."},
+                    status=status.HTTP_201_CREATED,
+                )
 
-            # return Response(
-            #         {"data": False, "msg": f"{resp}"},
-            #         status=status.HTTP_400_BAD_REQUEST,
-            #     )
+            return Response(
+                    {"data": False, "msg": f"{resp}"},
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
