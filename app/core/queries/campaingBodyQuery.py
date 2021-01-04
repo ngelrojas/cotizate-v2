@@ -76,7 +76,8 @@ class CampaingBodyQuery:
         camp = CampaingBody.objects.get(id=pk)
         camp.title = request.data.get("title")
         camp.video_main = request.data.get("video_main")
-        camp.imagen_main = request.FILES["imagen_main"]
+        if request.FILES:
+            camp.imagen_main = request.FILES["imagen_main"]
         camp.excerpt = request.data.get("excerpt")
         camp.description = request.data.get("description")
         camp.public_at = request.data.get("public_at")
@@ -85,7 +86,8 @@ class CampaingBodyQuery:
         camp.currency = current_currency
         camp.short_url = request.data.get("short_url")
         camp.slogan_campaing = request.data.get("slogan_campaing")
-        camp.profile_ca.add(current_profile_company)
+        if current_profile_company:
+            camp.profile_ca.add(current_profile_company)
         camp.save()
         return camp
 
