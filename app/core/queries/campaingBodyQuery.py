@@ -44,10 +44,12 @@ class CampaingBodyQuery:
         current_profile_company,
     ):
         try:
+            img_main = request.FILES["imagen_main"] if request.FILES else ""
+
             CampaingBody.objects.create(
                 title=request.data.get("title"),
                 video_main=request.data.get("video_main"),
-                imagen_main=request.FILES["imagen_main"],
+                imagen_main=img_main,
                 excerpt=request.data.get("excerpt"),
                 description=request.data.get("description"),
                 public_at=request.data.get("public_at"),

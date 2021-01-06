@@ -29,22 +29,22 @@ class CampaingsBody(viewsets.ModelViewSet):
         try:
             list_camp = []
             resp_camp = []
-            list_header = CampPBQ.get_list_camp_header(request)                
+            list_header = CampPBQ.get_list_camp_header(request)
 
             for header_camp in list_header:
-                
+
                 camp = CampaingBody.objects.filter(header_id=header_camp, status=pk)
 
                 if camp:
                     serializer = self.serializer_class(camp, many=True)
                     resp_camp.extend(serializer.data)
-            
+
             return Response({"data": resp_camp}, status=status.HTTP_200_OK)
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
-    # TODO: FIX THIS COMMENTS
+
     def create(self, request):
         """create campaing body current user"""
         try:
@@ -56,9 +56,9 @@ class CampaingsBody(viewsets.ModelViewSet):
                 )
 
             return Response(
-                    {"data": False, "msg": f"{resp}"},
-                    status=status.HTTP_400_BAD_REQUEST,
-                )
+                {"data": False, "msg": f"{resp}"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
