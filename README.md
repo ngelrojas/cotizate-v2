@@ -30,7 +30,7 @@ in all .env put your data, to connection postgresql
 -   [doc to production](https://github.com/ngelrojas/cotizate-v2/blob/master/PRODUCTION.md)
 
 #### use cotizate.supervisor
-- copy and change name using mv cotizate.supervisor in etc/supervisor/conf.d/cotizate.conf
+- copy and change name using mv cotizate.supervisor in etc/supervisor/conf.d/cotizateback.conf
 - and using the command below
 - supervisorctl reread
 - supervisorctl update
