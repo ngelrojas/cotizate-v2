@@ -16,7 +16,7 @@ class ProfileCompany(AbstractProfile):
     association_name = models.CharField(max_length=50, blank=True, null=True)
     heading = models.CharField(max_length=50, blank=True, null=True)
     email_company = models.EmailField(max_length=250, blank=True, null=True)
-    photo = models.CharField(max_length=1000, blank=True, null=True)
+    photo = models.ImageField(upload_to="companies/", blank=True, null=True)
     profiles = models.ForeignKey(PersonalProfile, on_delete=models.CASCADE)
     countries = models.ForeignKey(Country, on_delete=models.CASCADE)
     cities = models.ForeignKey(City, on_delete=models.CASCADE)
