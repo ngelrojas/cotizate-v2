@@ -30,10 +30,10 @@ class PhaseView(viewsets.ViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
-    def retrieve(self, request, pk):
+    def retrieve(self, request, pk, he):
         """retrieve phase current campaing_header_id, campaing_id"""
         try:
-            current_phase = PhaseQuery.retrieve_phase(pk, request.data.get("header"))
+            current_phase = PhaseQuery.retrieve_phase(pk, he)
             serializer = self.serializer_class(current_phase)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Phase.DoesNotExist as err:

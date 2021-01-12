@@ -7,7 +7,7 @@ app_name = "phase"
 urlpatterns = [
     path("phase", PhaseView.as_view({"get": "list", "post": "create"}), name="phase"),
     path(
-        "phase/<int:pk>",
+        "phase/<int:pk>/<int:he>",
         PhaseView.as_view({"get": "retrieve", "put": "update", "delete": "delete"}),
         name="phase-detail",
     ),
