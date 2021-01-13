@@ -56,10 +56,10 @@ class PhaseView(viewsets.ViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
-    def update(self, request, pk):
+    def update(self, request, pk, he):
         """update reward"""
         try:
-            current_phase = PhaseQuery.retrieve_phase(pk, request.data.get("header"))
+            current_phase = PhaseQuery.retrieve_phase(pk, he)
             serializer = self.serializer_class(current_phase, data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
@@ -72,11 +72,11 @@ class PhaseView(viewsets.ViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
-    def delete(self, request, pk):
+    def delete(self, request, pk, he):
         """delete reward"""
         try:
 
-            current_phase = PhaseQuery.retrieve_phase(pk, request.data.get("header"))
+            current_phase = PhaseQuery.retrieve_phase(pk, he)
             current_phase.delete()
             return Response(
                 {"data": " phase deleted."},
