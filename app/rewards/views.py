@@ -77,3 +77,29 @@ class RewardView(viewsets.ViewSet):
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
+
+
+class RewardrView(viewsets.ViewSet):
+    """
+    retrieve:
+        - list all rewards
+        about the current campaing
+    """
+
+    serializer_class = RewardSerializer
+    queryset = Reward.objects.all()
+
+    def retrieve(self, request, pk):
+        """
+        retrieve reward
+        - headerId = pk
+        """
+        try:
+            # reward_header = CampaingHeader.objects.get(id=pk)
+            list_reward = Reward.objects.get(id=pk)
+            serializer = self.serializer_class(list_reward)
+            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+        except Exception as err:
+            return Response(
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+            )
