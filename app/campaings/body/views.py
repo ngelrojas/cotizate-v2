@@ -84,7 +84,7 @@ class CampaingsBody(viewsets.ModelViewSet):
                 {"data": True, "msg": "campaing body updated."},
                 status=status.HTTP_200_OK,
             )
-        except CampaingBody.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "mgs": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )

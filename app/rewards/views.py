@@ -48,8 +48,6 @@ class RewardView(viewsets.ViewSet):
         """update reward"""
         try:
             current_reward = RewardQuery.retrieve_reward(pk, request.data.get("header"))
-            # data_send = request.data.copy()
-            # data_send["user"] = request.user.id
             serializer = self.serializer_class(current_reward, data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()

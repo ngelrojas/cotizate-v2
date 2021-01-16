@@ -46,7 +46,7 @@ class CampaingBodyQuery:
         try:
             img_main = request.FILES["imagen_main"] if request.FILES else ""
 
-            CampaingBody.objects.create(
+            resp = CampaingBody.objects.create(
                 title=request.data.get("title"),
                 video_main=request.data.get("video_main"),
                 imagen_main=img_main,
@@ -60,9 +60,9 @@ class CampaingBodyQuery:
                 slogan_campaing=request.data.get("slogan_campaing"),
                 profile_ca=current_profile_company,
             )
-            return False
-        except Exception:
-            return False
+            return resp
+        except Exception as err:
+            return err
 
     @classmethod
     def update_campaing(
@@ -89,7 +89,7 @@ class CampaingBodyQuery:
         camp.short_url = request.data.get("short_url")
         camp.slogan_campaing = request.data.get("slogan_campaing")
         if current_profile_company:
-            camp.profile_ca.add(current_profile_company)
+            camp.profile_ca = current_profile_company
         camp.save()
         return camp
 
