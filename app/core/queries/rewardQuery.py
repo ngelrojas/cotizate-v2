@@ -35,7 +35,6 @@ class RewardQuery:
             )
             for city in request.data.get("cities"):
                 rewards.cities.add(city)
-
-            return True
-        except Exception:
-            return False
+            return rewards
+        except Exception as e:
+            return e

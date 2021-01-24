@@ -21,6 +21,7 @@ class ProfileCompany(AbstractProfile):
     countries = models.ForeignKey(Country, on_delete=models.CASCADE)
     cities = models.ForeignKey(City, on_delete=models.CASCADE)
     institution_type = models.PositiveSmallIntegerField(choices=TYPE_INST, default=1)
+    header = models.IntegerField(default=0)
 
     def __str__(self):
         return self.company_name

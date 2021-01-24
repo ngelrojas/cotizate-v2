@@ -53,7 +53,7 @@ class CampaingBody(models.Model):
     video_main = models.CharField(max_length=250)
     imagen_main = models.ImageField(upload_to="campaings/", blank=True, null=True)
     slug = AutoSlugField(populate_from="title", always_update=True)
-    excerpt = models.CharField(max_length=250)
+    excerpt = models.CharField(max_length=500)
     description = models.TextField()
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(null=True, blank=True)
