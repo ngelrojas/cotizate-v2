@@ -47,7 +47,8 @@ class RewardView(viewsets.ViewSet):
     def update(self, request, pk):
         """update reward"""
         try:
-            current_reward = RewardQuery.retrieve_reward(pk, request.data.get("header"))
+            # current_reward = RewardQuery.retrieve_reward(pk, request.data.get("header"))
+            current_reward = Reward.objects.get(id=pk, header=request.data.get("header"))
             serializer = self.serializer_class(current_reward, data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
@@ -63,9 +64,7 @@ class RewardView(viewsets.ViewSet):
     def delete(self, request, pk):
         """delete reward"""
         try:
-            current_reward = RewardQuery.retrieve_reward(
-                request.data.get("header_id"), pk
-            )
+            current_reward = Reward.objects.get(id=pk)
             current_reward.delete()
             return Response(
                 {"data": True, "msg": "reward deleted."},

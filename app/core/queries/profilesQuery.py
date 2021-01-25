@@ -34,18 +34,20 @@ class ProfilesQuery:
                 profiles=profile_per,
                 countries=country,
                 cities=city,
+                header=request.data.get("header"),
             )
             return True
         except Exception as err:
             return err
 
     @classmethod
-    def update_profile_company(cls, pk, request, country, city):
+    def update_profile_company(cls, pk, pc, request, country, city):
         """update current company profile"""
         try:
-            profile_per = PersonalProfile.objects.get(user=request.user)
-            prof_comp = ProfileCompany.objects.get(id=pk, profiles=profile_per)
+            # profile_per = PersonalProfile.objects.get(id=pk)
+            prof_comp = ProfileCompany.objects.get(id=pc, profiles=pk)
             prof_comp.cinit = request.data.get("cinit")
+            prof_comp.heading = request.data.get("heading")
             prof_comp.address = request.data.get("address")
             prof_comp.number_address = request.data.get("number_address")
             prof_comp.neightbordhood = request.data.get("neightbordhood")
@@ -53,8 +55,14 @@ class ProfilesQuery:
             prof_comp.telephone = request.data.get("telephone")
             prof_comp.description = request.data.get("description")
             prof_comp.company_name = request.data.get("company_name")
+            prof_comp.email_company = request.data.get("email_company")
             prof_comp.countries = country
             prof_comp.cities = city
+            prof_comp.rs_facebook = request.data.get("rs_facebook")
+            prof_comp.rs_twitter = request.data.get("rs_twitter")
+            prof_comp.rs_linkedin = request.data.get("rs_linkedin")
+            prof_comp.rs_another = request.data.get("rs_another")
+            prof_comp.institution_type = request.data.get("institution_type")
             prof_comp.save()
             return True
         except ProfileCompany.DoesNotExist as err:
@@ -83,6 +91,7 @@ class ProfilesQuery:
                 user=request.user,
                 countries=country,
                 cities=city,
+                header=request.data.get("header"),
             )
             return True
         except Exception:

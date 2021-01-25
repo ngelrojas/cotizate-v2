@@ -36,6 +36,7 @@ class CompanySerializer(serializers.ModelSerializer):
             "countries",
             "cities",
             "institution_type",
+            "header",
         )
         read_only_fields = ("id",)
 

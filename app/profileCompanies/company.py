@@ -62,13 +62,13 @@ class CompanyView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
-    def update(self, request, pk=None):
+    def update(self, request, pk=None, pc=None):
         """update profile company current user"""
         try:
             prof_comp = ProfilesQuery()
             countries = Country.objects.get(id=int(request.data.get("countries")))
             cities = City.objects.get(id=int(request.data.get("cities")))
-            complete = prof_comp.update_profile_company(pk, request, countries, cities)
+            complete = prof_comp.update_profile_company(pk, pc, request, countries, cities)
 
             return Response(
                 {"data": complete, "msg": "profile updated."},
