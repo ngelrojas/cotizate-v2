@@ -8,8 +8,8 @@ urlpatterns = [
     path('comment', views.CommentView.as_view({
         'get': 'list',
         'post': 'create'}), name='comment'),
-    path('comments', views.CommentPublicView.as_view({
-        'get': 'list'}), name='comment'),
+    path('comments/<int:pk>', views.CommentPublicView.as_view({
+        'get': 'retrieve'}), name='comment-list'),
     path('answer', views_ans.CommentResponseView.as_view({
         'get': 'list',
         'post': 'create'}), name='answer'),

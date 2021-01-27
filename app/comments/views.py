@@ -11,7 +11,6 @@ class CommentView(viewsets.ModelViewSet):
     private
     create comment registers users
     """
-
     serializer_class = CommentSerializer
     queryset = Comment.objects.all()
 
@@ -54,21 +53,21 @@ class CommentPublicView(viewsets.ModelViewSet):
     """
     public comments
     """
-
     serializer_class = CommentSerializer
     queryset = Comment.objects.all()
 
-    def list(self, request):
-        """list all comment by campaing"""
+    def retrieve(self, request, pk=None):
+        """
+            list all comment by campaing
+            pk = campaing id
+        """
         try:
-            queryset = Comment.get_all_comment_by_campaings_slug(
-                self, request.data.get("campaing")
-            )
+            queryset = Comment.objects.filter(campaings=pk)
             serializer = self.serializer_class(queryset, many=True)
             return Response(
-                {"data": serializer.data, "msg": "ok"}, status=status.HTTP_200_OK
+                {"data": serializer.data}, status=status.HTTP_200_OK
             )
-        except Comment.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
