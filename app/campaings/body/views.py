@@ -48,7 +48,9 @@ class CampaingsBody(viewsets.ModelViewSet):
     def create(self, request):
         """create campaing body current user"""
         try:
-            resp = CampHeaderComp.saving_campaing(request)
+            # resp = CampHeaderComp.saving_campaing(request)
+            resp = request.data.get("title")
+            print(request.FILES["imagen_main"])
             if resp:
                 return Response(
                     {"data": True, "msg": "campaing body saved."},
