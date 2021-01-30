@@ -22,6 +22,12 @@
 ```python
     production.DEFAULT_FROM_EMAIL
 ```
+### run celery without docker
+- inside the path cotizate-v2/app/ run command below
+
+```python
+    celery --app=api.celery worker -l INFO
+```
 
 #### Change file serializers.py to production, module USERS
 
