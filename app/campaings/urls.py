@@ -2,6 +2,7 @@ from django.urls import path
 from .header.views import CampaingsHeader
 from .header.helpers import HelperHeader
 from .body.views import CampaingsBody
+from .body.views import CampaingStatus
 from .body.helpers import HelperBody
 from .public.views import CampaingPublic
 
@@ -56,5 +57,10 @@ urlpatterns = [
         "campaing-public-detail/<slug:the_slug>",
         CampaingPublic.as_view({"get": "retrieve"}),
         name="campaing-public-detail",
+    ),
+    path(
+        "campaing-status/<int:pk>",
+        CampaingStatus.as_view({"put": "update"}),
+        name="campaing-status-detail",
     ),
 ]

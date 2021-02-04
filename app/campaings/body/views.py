@@ -3,6 +3,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.parsers import MultiPartParser, FormParser
 from core.campaing import CampaingBody
 from core.queries.campaingBodyQuery import CampaingBodyQuery as CampBQ
 from core.queries.campaingQuery import CampaingPrivateQuery as CampPBQ
@@ -19,7 +20,7 @@ class CampaingsBody(viewsets.ModelViewSet):
     - retrieve: retrieve campaing to current user and ID campaing
     - update: update campaing to current user and ID campaing
     """
-
+    parser_classes = (MultiPartParser, FormParser,)
     serializer_class = CampaingBodySerializer
     queryset = CampaingBody.objects.all()
     permission_classes = (IsAuthenticated,)
@@ -99,6 +100,37 @@ class CampaingsBody(viewsets.ModelViewSet):
                 {"data": current_campaing, "msg": "campaing deleted."},
                 status=status.HTTP_204_NO_CONTENT,
             )
+        except Exception as err:
+            return Response(
+                {"data": False, "mgs": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+            )
+
+
+class CampaingStatus(viewsets.ModelViewSet):
+    """
+        update status campaings
+    """
+    serializer_class = CampaingBodySerializer
+    queryset = CampaingBody.objects.all()
+    permission_classes = (IsAuthenticated,)
+
+    def update(self, request, pk=None):
+        """
+            update status from current user
+            @params request: user
+            @params pk: campaing.id 
+        """
+        try:
+            # CampHeaderComp.updating_campaing(request, pk)
+            campaing_obj = CampaingBody.objects.get(id=pk)
+            campaing_obj.status = 3
+            campaing_obj.save()
+            
+            return Response(
+                {"data": True, "msg": "campaing status updated."},
+                status=status.HTTP_200_OK,
+            )
+
         except Exception as err:
             return Response(
                 {"data": False, "mgs": f"{err}"}, status=status.HTTP_400_BAD_REQUEST

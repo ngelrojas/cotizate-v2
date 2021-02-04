@@ -211,6 +211,9 @@ CORS_ALLOW_HEADERS = default_headers + (
     "x-xsrf-token",
     "HTTP_X_XSRF_TOKEN",
     "X-ACCESS_TOKEN",
+    "content-type",
+    "accept",
+    "authorization",
 )
 
 # custom User
@@ -262,12 +265,12 @@ LOGGING = {
 }
 # config email
 EMAIL_USE_TLS = config("EMAILUSETLS")
-EMAIL_USE_SSL = config("EMAILUSESSL")
+# EMAIL_USE_SSL = config("EMAILUSESSL")
 EMAIL_HOST = config("EMAILHOST")
 EMAIL_PORT = config("EMAILPORT")
 EMAIL_HOST_USER = config("EMAILHOSTUSER")
 EMAIL_HOST_PASSWORD = config("EMAILHOSTPASSWORD")
-EMAIL_BACKEND = config("EMAILBACKEND")
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend" 
 DEFAULT_FROM_EMAIL = config("DEFAULTFROMEMAIL")
 URL_PRODUCTION = config("URLPRODUCTION")
 
