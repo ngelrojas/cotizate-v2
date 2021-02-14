@@ -70,6 +70,7 @@ APP_API = [
     "phases",
     "improvies",
     "bookMarks",
+    "uploads",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
@@ -270,7 +271,7 @@ EMAIL_HOST = config("EMAILHOST")
 EMAIL_PORT = config("EMAILPORT")
 EMAIL_HOST_USER = config("EMAILHOSTUSER")
 EMAIL_HOST_PASSWORD = config("EMAILHOSTPASSWORD")
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend" 
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 DEFAULT_FROM_EMAIL = config("DEFAULTFROMEMAIL")
 URL_PRODUCTION = config("URLPRODUCTION")
 

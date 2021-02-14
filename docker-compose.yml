@@ -5,11 +5,12 @@ services:
         build: ./app
         command: python manage.py runserver --settings=api.settings.development 0.0.0.0:8000
         volumes:
-            - ./app/:/usr/src/app/
+          - static_volume:/home/app/api/api/staticfiles
+          - media_volume:/home/app/api/api/mediafiles
         ports:
             - 8000:8000
         #env_file:
-            #- ./.env
+        #    - ./.env
         environment:
             - SQL_HOST=db
             - SQL_DATABASE=${SQL_DATABASE}
@@ -62,7 +63,8 @@ services:
             - FLOWER_BROKER=${FLOWER_BROKER}
         ports:
             - 5672:5672
- 
 
 volumes:
     postgres_data:
+    static_volume:
+    media_volume:

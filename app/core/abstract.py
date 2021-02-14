@@ -28,8 +28,10 @@ class AbstractItem(models.Model):
     name = models.CharField(max_length=20)
     slug = AutoSlugField(populate_from="name", always_update=True)
     description = models.CharField(max_length=500)
-    img_banner = models.ImageField(upload_to="banners/", blank=True, null=True)
-    img_icon = models.ImageField(upload_to="icons/", blank=True, null=True)
+    # img_banner = models.ImageField(upload_to="banners/", blank=True, null=True)
+    # img_icon = models.ImageField(upload_to="icons/", blank=True, null=True)
+    img_banner = models.CharField(max_length=250, blank=True, null=True)
+    img_icon = models.CharField(max_length=250, blank=True, null=True)
 
     class Meta:
         abstract = True

@@ -14,6 +14,7 @@ import os
 import datetime
 from corsheaders.defaults import default_methods
 from corsheaders.defaults import default_headers
+from decouple import config
 from .conf_email import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -24,12 +25,14 @@ X_FRAME_OPTIONS = "Deny"
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "ehw=syy5pgag^4q!#bg*eevzvr!6uwtdzn9)s_-jv0%pj@7!9g"
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 1
+DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = config(
+    "ALLOWED_HOSTS", cast=lambda v: [s.strip() for s in v.split(",")]
+)
 
 
 # Application definition
@@ -67,12 +70,13 @@ APP_API = [
     "phases",
     "improvies",
     "bookMarks",
+    "uploads",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
 
 MIDDLEWARE = [
-    "api.cors.CorsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -108,23 +112,24 @@ WSGI_APPLICATION = "api.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.postgresql"),
-        "NAME": os.environ.get("SQL_DATABASE"),
-        "USER": os.environ.get("SQL_USER", "user"),
-        "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
-        "HOST": os.environ.get("SQL_HOST", "localhost"),
-        "PORT": os.environ.get("SQL_PORT", "5432"),
+        "ENGINE": config("SQL_ENGINE"),
+        "NAME": config("SQL_DATABASE"),
+        "USER": config("SQL_USER", "user"),
+        "PASSWORD": config("SQL_PASSWORD", "password"),
+        "HOST": config("SQL_HOST", "9.vps.confiared.com"),
+        "PORT": config("SQL_PORT", "5432"),
     }
 }
 
 # dictionary REST_FRAMEWORK
 REST_FRAMEWORK = {
-    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_jwt.authentication.JSONWebTokenAuthentication",
         "rest_framework.authentication.SessionAuthentication",
         "rest_framework.authentication.BasicAuthentication",
     ),
+    # "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
     "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
 }
 
@@ -163,29 +168,53 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
 STATIC_URL = "/staticfiles/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-MEDIA_ROOT = os.path.join(BASE_DIR, "..", "app/media")
+MEDIA_URL = "/mediafiles/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
 # CORS AND STUFF
-CORS_ALLOW_CREDENTIALS = False
+# CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = list(default_methods)
 
-CORS_ORIGIN_WHITELIST = [
+CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "http://cotizate.com",
+    "http://www.cotizate.com",
+    "http://8.vps.confiared.com",
 ]
 
-CORS_ORIGIN_REGEX_WHITELIST = ("http://localhost:3000",)
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000",
+    "http://cotizate.com",
+    "http://www.cotizate.com",
+    "http://8.vps.confiared.com",
+]
+
+# CORS_ORIGIN_REGEX_WHITELIST = (
+# "http://localhost:3000",
+# "http://cotizate.com",
+# "http://www.cotizate.com",
+# "http://34.71.45.26",
+# "http://35.226.118.27",
+# )
+
 CSRF_COOKIE_NAME = "csrftoken"
 
-CSRF_TRUSTED_ORIGINS = ("localhost:3000",)
+CSRF_TRUSTED_ORIGINS = (
+    "localhost:3000",
+    "cotizate.com",
+    "8.vps.confiared.com",
+)
 
 CORS_ALLOW_HEADERS = default_headers + (
     "x-xsrf-token",
     "HTTP_X_XSRF_TOKEN",
     "X-ACCESS_TOKEN",
+    "content-type",
+    "accept",
+    "authorization",
 )
 
 # custom User
@@ -193,14 +222,11 @@ AUTH_USER_MODEL = "core.user"
 
 # config jwt
 JWT_AUTH = {
-    "JWT_ENCODE_HANDLER": "rest_framework_jwt.utils.jwt_encode_handler",
-    "JWT_DECODE_HANDLER": "rest_framework_jwt.utils.jwt_decode_handler",
-    "JWT_PAYLOAD_HANDLER": "rest_framework_jwt.utils.jwt_payload_handler",
-    "JWT_PAYLOAD_GET_USER_ID_HANDLER": "rest_framework_jwt.utils.jwt_get_user_id_from_payload_handler",
-    "JWT_RESPONSE_PAYLOAD_HANDLER": "rest_framework_jwt.utils.jwt_response_payload_handler",
+    "JWT_SECRET_KEY": SECRET_KEY,
+    "JWT_VERIFY_EXPIRATION": True,
     "JWT_EXPIRATION_DELTA": datetime.timedelta(seconds=4300),
     "JWT_ALLOW_REFRESH": False,
-    "JWT_REFRESH_EXPIRATION_DELTA": datetime.timedelta(days=7),
+    "JWT_REFRESH_EXPIRATION_DELTA": datetime.timedelta(days=1),
     "JWT_AUTH_HEADER_PREFIX": "Bearer",
     "JWT_AUTH_COOKIE": None,
 }
@@ -219,7 +245,7 @@ LOGGING = {
         "file": {
             "level": "INFO",
             "class": "logging.handlers.TimedRotatingFileHandler",
-            "filename": "log/cotizate_api_application_dev.log",
+            "filename": "log/cotizate_api_application.log",
             "when": "D",
             "interval": 1,
             "backupCount": 40,
@@ -238,14 +264,15 @@ LOGGING = {
         },
     },
 }
-
 # config email
-EMAIL_USE_TLS = EMAILUSETLS
-EMAIL_USE_SSL = EMAILUSESSL
-EMAIL_HOST = EMAILHOST
-EMAIL_PORT = EMAILPORT
-EMAIL_HOST_USER = EMAILHOSTUSER
-EMAIL_HOST_PASSWORD = EMAILHOSTPASSWORD
-EMAIL_BACKEND = EMAILBACKEND
-DEFAULT_FROM_EMAIL = DEFAULTFROMEMAIL
-URL_PRODUCTION = URLPRODUCTION
+EMAIL_USE_TLS = config("EMAILUSETLS")
+# EMAIL_USE_SSL = config("EMAILUSESSL")
+EMAIL_HOST = config("EMAILHOST")
+EMAIL_PORT = config("EMAILPORT")
+EMAIL_HOST_USER = config("EMAILHOSTUSER")
+EMAIL_HOST_PASSWORD = config("EMAILHOSTPASSWORD")
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+DEFAULT_FROM_EMAIL = config("DEFAULTFROMEMAIL")
+URL_PRODUCTION = config("URLPRODUCTION")
+
+CELERY_BROKER_URL = "amqp://localhost"

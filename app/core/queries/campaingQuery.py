@@ -1,8 +1,11 @@
+import logging
 from django.db.models import Q
 from core.campaing import CampaingHeader
 from core.campaing import CampaingBody
 from core.user import User
 from core.profile import PersonalProfile
+
+logger = logging.getLogger(__name__)
 
 
 class CampaingHeaderQuery:
@@ -67,5 +70,6 @@ class CampaingPrivateQuery:
                     CampaingBody.objects.get(header=header_camp, status=pk)
                 )
             return list_camp
-        except:
+        except Exception as err:
+            logger.info("list campaing error is {}".format(err))
             return list_camp

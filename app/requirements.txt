@@ -13,4 +13,3 @@ django-autoslug
 django-filter
 python-decouple
 packaging
-Pillow

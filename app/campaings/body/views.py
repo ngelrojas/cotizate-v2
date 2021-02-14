@@ -20,7 +20,11 @@ class CampaingsBody(viewsets.ModelViewSet):
     - retrieve: retrieve campaing to current user and ID campaing
     - update: update campaing to current user and ID campaing
     """
-    parser_classes = (MultiPartParser, FormParser,)
+
+    parser_classes = (
+        MultiPartParser,
+        FormParser,
+    )
     serializer_class = CampaingBodySerializer
     queryset = CampaingBody.objects.all()
     permission_classes = (IsAuthenticated,)
@@ -28,7 +32,6 @@ class CampaingsBody(viewsets.ModelViewSet):
     def list(self, request, pk):
         """pk=status campaing"""
         try:
-            list_camp = []
             resp_camp = []
             list_header = CampPBQ.get_list_camp_header(request)
 
@@ -108,24 +111,25 @@ class CampaingsBody(viewsets.ModelViewSet):
 
 class CampaingStatus(viewsets.ModelViewSet):
     """
-        update status campaings
+    update status campaings
     """
+
     serializer_class = CampaingBodySerializer
     queryset = CampaingBody.objects.all()
     permission_classes = (IsAuthenticated,)
 
     def update(self, request, pk=None):
         """
-            update status from current user
-            @params request: user
-            @params pk: campaing.id 
+        update status from current user
+        @params request: user
+        @params pk: campaing.id
         """
         try:
             # CampHeaderComp.updating_campaing(request, pk)
             campaing_obj = CampaingBody.objects.get(id=pk)
             campaing_obj.status = 3
             campaing_obj.save()
-            
+
             return Response(
                 {"data": True, "msg": "campaing status updated."},
                 status=status.HTTP_200_OK,

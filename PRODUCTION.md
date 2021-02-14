@@ -60,11 +60,15 @@
 ```
 
 ```python
-    docker-compose -f docker-compose.prod.yml exec api python manage.py county_city
+    docker-compose -f docker-compose.prod.yml exec api python manage.py country_city
 ```
 
 ```python
     docker-compose -f docker-compose.prod.yml exec api python manage.py users
+```
+
+```python
+    docker-compose -f docker-compose.prod.yml exec api python manage.py profile_companies
 ```
 
 ```python

@@ -2,12 +2,14 @@ from __future__ import absolute_import
 from __future__ import unicode_literals
 from celery import Celery, shared_task
 from core.email import CotizateSendEmail
+
 from api.settings import production
+
+# from api.settings import development
 import os
 
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings.development")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings.production")
-# app = Celery("api", broker="pyamqp://rabbitmq_user:admin2020@broker//")
+app = Celery("api", broker="pyamqp://rabbitmq_user:admin2020@broker//")
 
 app = Celery("api")
 

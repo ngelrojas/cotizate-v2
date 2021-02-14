@@ -21,3 +21,4 @@ from core.socialNetwork import SocialNetworkPC
 from core.phase import Phase
 from core.improve import Improve
 from core.bookMark import BookMark
+from core.upload import Upload
