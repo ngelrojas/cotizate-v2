@@ -37,7 +37,6 @@ services:
         env_file:
             - .env
         command: celery -A api.celery worker -l INFO 
-        #command: celery worker --app=api.celery --concurrency=1 --loglevel=INFO
         volumes:
             - ./app/:/usr/src/app/
         depends_on:

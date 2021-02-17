@@ -94,8 +94,8 @@ class ProfilesQuery:
                 header=request.data.get("header"),
             )
             return True
-        except Exception:
-            return False
+        except Exception as e:
+            return e
 
     @classmethod
     def update_profile_personal(cls, pk, request, country, city):

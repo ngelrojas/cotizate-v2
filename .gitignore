@@ -6,7 +6,7 @@
 /app/*/__pycache__/*.pyc
 /app/*/*/__pycache__/*.pyc
 /app/core/management/commands/__pycache__/*.pyc
-/app/api/mediafiles/campaings/
+/app/api/mediafiles/
 .env
 .env.prod
 .env.prod.db

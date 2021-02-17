@@ -3,7 +3,6 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.parsers import MultiPartParser, FormParser
 from core.campaing import CampaingBody
 from core.queries.campaingBodyQuery import CampaingBodyQuery as CampBQ
 from core.queries.campaingQuery import CampaingPrivateQuery as CampPBQ
@@ -21,10 +20,6 @@ class CampaingsBody(viewsets.ModelViewSet):
     - update: update campaing to current user and ID campaing
     """
 
-    parser_classes = (
-        MultiPartParser,
-        FormParser,
-    )
     serializer_class = CampaingBodySerializer
     queryset = CampaingBody.objects.all()
     permission_classes = (IsAuthenticated,)
@@ -52,19 +47,13 @@ class CampaingsBody(viewsets.ModelViewSet):
     def create(self, request):
         """create campaing body current user"""
         try:
-            # resp = CampHeaderComp.saving_campaing(request)
-            resp = request.data.get("title")
-            print(request.FILES["imagen_main"])
+            resp = CampHeaderComp.saving_campaing(request)
             if resp:
                 return Response(
                     {"data": True, "msg": "campaing body saved."},
                     status=status.HTTP_201_CREATED,
                 )
 
-            return Response(
-                {"data": False, "msg": f"{resp}"},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST

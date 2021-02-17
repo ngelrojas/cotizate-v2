@@ -36,7 +36,7 @@ services:
             - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
             - CELERY_BROKER=${CELERY_BROKER}
             - FLOWER_BROKER=${FLOWER_BROKER}
-        command: celery worker --app=api.celery --concurrency=1 --loglevel=INFO
+        command: celery -A api.celery worker -l INFO 
         volumes:
             - ./app/:/usr/src/app/
         depends_on:
