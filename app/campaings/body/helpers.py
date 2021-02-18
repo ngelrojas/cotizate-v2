@@ -19,7 +19,7 @@ class HelperBody(viewsets.ModelViewSet):
     def retrieve(self, request, pk):
         """get last campaing body"""
         try:
-            current_campaingh = CampBQ.retrieve_campaing_body(pk)
+            current_campaingh = CampaingBody.objects.get(id=pk)
             serializer = self.serializer_class(current_campaingh)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except CampaingBody.DoesNotExist as err:

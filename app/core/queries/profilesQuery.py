@@ -50,6 +50,7 @@ class ProfilesQuery:
             prof_comp.heading = request.data.get("heading")
             prof_comp.address = request.data.get("address")
             prof_comp.number_address = request.data.get("number_address")
+            prof_comp.photo = request.data.get("photo")
             prof_comp.neightbordhood = request.data.get("neightbordhood")
             prof_comp.cellphone = request.data.get("cellphone")
             prof_comp.telephone = request.data.get("telephone")
@@ -63,6 +64,7 @@ class ProfilesQuery:
             prof_comp.rs_linkedin = request.data.get("rs_linkedin")
             prof_comp.rs_another = request.data.get("rs_another")
             prof_comp.institution_type = request.data.get("institution_type")
+            prof_comp.header = request.data.get("header")
             prof_comp.save()
             return True
         except ProfileCompany.DoesNotExist as err:
