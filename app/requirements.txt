@@ -13,3 +13,5 @@ django-autoslug
 django-filter
 python-decouple
 packaging
+pyDes
+pycrypto

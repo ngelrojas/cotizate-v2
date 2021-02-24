@@ -8,12 +8,12 @@ class LikeQuery:
     @staticmethod
     def get_all(current_user):
         """get list all about the user like=true"""
-        return Like.objects.filter(user=current_user, liked=True)
+        return Like.objects.filter(user=current_user)
 
     @staticmethod
     def get_retrieve(pk):
         """get list all about the user like=true"""
-        return Like.objects.get(id=pk)
+        return Like.objects.get(header=pk)
 
     @classmethod
     def saving_likes(cls, request, camp_header):
