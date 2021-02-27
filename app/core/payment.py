@@ -6,8 +6,14 @@ from core.user import User
 class Payment(models.Model):
     """model payment"""
 
-    TYPE_PAY = ((1, "credit"), (2, "debit"), (3, "cash"))
-    STATUS_PAY = ((1, "pending"), (2, "complete"), (3, "rejected"))
+    TYPE_PAY = ((1, "TigoMoney"),
+                (2, "PuntoPagoFacil"), 
+                (3, "TarjetaDebito/Credito-Enlace"), 
+                (4, "TransferenciaBancosQR"), 
+                (5, "BCP-RAPIDO-SEGURO"),
+                (6, "LINKSER"))
+    STATUS_PAY = ((1, "pending/in-process"), (2, "paid"), (3, "reversed"), (4, "canceled"))
+    COIN = ((1, "BOB"), (2, "USD"))
 
     total_amount = models.DecimalField(max_digits=12, decimal_places=3)
     title_campaing = models.CharField(max_length=200)
@@ -20,6 +26,9 @@ class Payment(models.Model):
     status_pay = models.IntegerField(choices=STATUS_PAY)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    encrypted_parameter = models.TextField(default='0')
+    commerce_id = models.TextField(default='0')
+    coin = models.IntegerField(choices=COIN, default=1)
 
     def __str__(self):
         return self.name
