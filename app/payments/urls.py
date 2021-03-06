@@ -5,7 +5,9 @@ app_name = "payment"
 
 urlpatterns = [
     path("payment", views.PaymentView.as_view({"post": "create"}), name="payment"),
-    path("payment-recived", paids.PaidCallback.as_view(
-            {"post": "create"}), name="payment-recived"
+    path(
+        "payment-recived",
+        paids.PaidCallback.as_view({"post": "create"}),
+        name="payment-recived",
     ),
 ]

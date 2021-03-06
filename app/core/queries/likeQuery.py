@@ -16,7 +16,7 @@ class LikeQuery:
         """get list all about the user like=true"""
         try:
             return Like.objects.get(header=pk)
-        except Exception as e:
+        except:
             return False
 
     @classmethod
@@ -41,5 +41,5 @@ class LikeQuery:
                 user=request.user, header=camp, liked=request.data.get("liked")
             )
             return liked
-        except Exception as e:
+        except:
             return False
