@@ -13,6 +13,8 @@ from users.serializers import UserPublicSerializer
 class CampaingHeaderSerializer(serializers.ModelSerializer):
     """campaing header serializer"""
 
+    category = CategorySerializer()
+
     class Meta:
         model = CampaingHeader
         fields = (

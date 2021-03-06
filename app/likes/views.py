@@ -52,16 +52,32 @@ class LikeView(viewsets.ModelViewSet):
             )
 
     def update(self, request, pk):
-        """update like to current user and campaing"""
+        """
+        update like to current user and campaing
+        pk = header campaing
+        """
         try:
             current_like = LikeQuery.get_retrieve(pk)
-            serializer = self.serializer_class(
-                current_like, data=request.data, partial=True
+            if current_like:
+                serializer = self.serializer_class(
+                    current_like, data=request.data, partial=True
+                )
+                if serializer.is_valid(raise_exception=True):
+                    serializer.save()
+                    return Response({"data": "update like."}, status=status.HTTP_200_OK)
+            liked = LikeQuery.create_likes(request, pk)
+            if liked:
+                return Response(
+                    {"data": True, "msg": "create like."},
+                    status=status.HTTP_201_CREATED,
+                )
+            return Response(
+                {"data": False, "msg": "campaing not exists"},
+                status=status.HTTP_400_BAD_REQUEST,
             )
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response({"data": "update like."}, status=status.HTTP_200_OK)
+
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+                {"data": False, "msg": f"{err}"},
+                status=status.HTTP_400_BAD_REQUEST,
             )
