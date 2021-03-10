@@ -13,19 +13,21 @@ class PaidCallback(viewsets.ModelViewSet):
     serializer_class = PaymentSerializer
     queryset = Payment.objects.all()
 
-    def create(self, request):
+    def update(self, request):
         """recived data"""
         try:
-            form_paid = Payment.objects.get(
-                company_payment_id=request.data.get("PedidoID")
-            )
+            form_paid = Payment.objects.get(header=request.data.get("PedidoID"))
             form_paid.updated_at = (
                 request.data.get("Fecha") + " " + request.data.get("Hora")
             )
-            form_paid.status_pay = request.data.get("Estado")
+            form_paid.status_pay = int(request.data.get("MetodoPago"))
             form_paid.save()
 
-            return Response({"data": "paid completed."}, status=status.HTTP_200_OK)
+            return Response(
+                {"data": True, "msg": "pay completed."}, status=status.HTTP_200_OK
+            )
 
         except Exception as e:
-            return Response({"error": f"{e}"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {"data": False, "msg": f"{e}"}, status=status.HTTP_400_BAD_REQUEST
+            )

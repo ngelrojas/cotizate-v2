@@ -20,22 +20,19 @@ class Payment(models.Model):
         (3, "reversed"),
         (4, "canceled"),
     )
-    COIN = ((1, "BOB"), (2, "USD"))
+    COIN = ((1, "USD"), (2, "BOB"))
 
     total_amount = models.DecimalField(max_digits=12, decimal_places=3)
-    title_campaing = models.CharField(max_length=200)
-    number_card = models.CharField(max_length=20)
-    company_payment_name = models.CharField(max_length=100)
-    company_payment_id = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(blank=True, null=True)
-    type_pay = models.IntegerField(choices=TYPE_PAY)
-    status_pay = models.IntegerField(choices=STATUS_PAY)
+    type_pay = models.IntegerField(choices=TYPE_PAY, default=1)
+    status_pay = models.IntegerField(choices=STATUS_PAY, default=1)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
     encrypted_parameter = models.TextField(default="0")
     commerce_id = models.TextField(default="0")
-    coin = models.IntegerField(choices=COIN, default=1)
+    coin = models.IntegerField(choices=COIN, default=2)
+    transaction_id = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.name
+        return self.user.first_name
