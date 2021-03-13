@@ -16,7 +16,10 @@ class PaidCallback(viewsets.ModelViewSet):
     def update(self, request):
         """recived data"""
         try:
-            form_paid = Payment.objects.get(header=request.data.get("PedidoID"))
+            form_paid = Payment.objects.get(
+                header=request.data.get("PedidoID"),
+                status_pay=request.data.get("MetodoPago"),
+            )
             form_paid.updated_at = (
                 request.data.get("Fecha") + " " + request.data.get("Hora")
             )

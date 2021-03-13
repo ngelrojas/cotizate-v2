@@ -23,6 +23,8 @@ class PaymentView(viewsets.ModelViewSet):
                     {"data": True, "msg": "pay saved."}, status=status.HTTP_200_OK
                 )
 
-            return Response({"data": False}, status=status.HTTP_404_NOT_FOUND)
+            return Response(
+                {"data": False, "msg": f"{resp}"}, status=status.HTTP_404_NOT_FOUND
+            )
         except Exception as e:
             return Response({"error": f"{e}"}, status=status.HTTP_400_BAD_REQUEST)
