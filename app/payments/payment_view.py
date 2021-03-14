@@ -18,7 +18,7 @@ class PaymentView(viewsets.ModelViewSet):
         """recived data"""
         try:
             resp = HelperPay.saving_payment(self, request)
-            if resp == True:
+            if resp is True:
                 return Response(
                     {"data": True, "msg": "pay saved."}, status=status.HTTP_200_OK
                 )
