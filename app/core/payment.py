@@ -35,4 +35,12 @@ class Payment(models.Model):
     transaction_id = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.user.first_name
+        return (
+            self.user.first_name
+            + " | "
+            + "transaction created: "
+            + str(self.created_at)
+            + " |  "
+            + "transaction update: "
+            + str(self.updated_at)
+        )
