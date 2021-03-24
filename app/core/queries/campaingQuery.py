@@ -31,6 +31,23 @@ class CampaingHeaderQuery:
         """get last campaing header from current user"""
         return CampaingHeader.objects.filter(user=request.user).last()
 
+    def create_header(self, data_header):
+        """save header"""
+        try:
+            CampaingHeader.objects.create(
+                user=data_header["user"],
+                category=data_header["category"],
+                city=data_header["city"],
+                qty_day=data_header["qty_day"],
+                qty_day_left=data_header["qty_day_left"],
+                amount=data_header["amount"],
+                role=data_header["role"],
+                code_campaing=data_header["code_campaing"],
+            )
+            return True
+        except:
+            return False
+
 
 class CampaingPublicQuery:
     """campaing query public"""

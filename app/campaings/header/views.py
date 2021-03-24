@@ -7,6 +7,8 @@ from rest_framework.permissions import IsAuthenticated
 from core.campaing import CampaingHeader
 from core.queries.campaingQuery import CampaingHeaderQuery as CampHQ
 from core.profile import PersonalProfile
+from core.category import Category
+from core.city import City
 from .serializers import CampaingHeaderSerializer
 from .serializers import CHDetailSerializer
 
@@ -37,35 +39,41 @@ class CampaingsHeader(viewsets.ModelViewSet):
     def create(self, request):
         """create campaing to current user"""
         try:
-            code_cotizate = "cotizate"
-            possible_characters = string.digits
-            attempt_this = "".join(
-                random.choice(possible_characters) for i in range(len(code_cotizate))
-            )
-            code = f"CAMP{attempt_this}{request.user.id}"
+
+            category = Category.objects.get(id=request.data.get("category"))
+            city = City.objects.get(id=request.data.get("city"))
+            qty_day = request.data.get("qty_day")
+            role = request.data.get("role")
+            str_cat = str(category.id)
+            str_ci = str(city.id)
+            str_q = str(qty_day)
+            str_r = str(role)
+            amount = float(request.data.get("amount"))
+            code = f"CAMP{str_cat}{str_ci}{str_q}{str_r}{str(request.user.id)}"
 
             send_data = {
-                "user": request.user.id,
-                "category": request.data.get("category"),
-                "city": request.data.get("city"),
-                "qty_day": request.data.get("qty_day"),
+                "user": request.user,
+                "category": category,
+                "city": city,
+                "qty_day": qty_day,
                 "qty_day_left": request.data.get("qty_day"),
-                "amount": request.data.get("amount"),
-                "role": request.data.get("role"),
+                "amount": amount,
+                "role": role,
                 "code_campaing": code,
             }
 
-            serializer = self.get_serializer(data=send_data)
-            serializer.is_valid(raise_exception=True)
-            self.perform_create(serializer)
-            headers = self.get_success_headers(serializer.data)
+            resp_header = CampHQ.create_header(self, send_data)
+
+            if resp_header is True:
+                return Response(
+                    {"data": "header is created"}, status=status.HTTP_201_CREATED
+                )
 
             return Response(
-                {"data": serializer.data},
-                status=status.HTTP_201_CREATED,
-                headers=headers,
+                {"data": False, "msg": f"{resp_header}"},
+                status=status.HTTP_400_BAD_REQUEST,
             )
-        except CampaingHeader.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
