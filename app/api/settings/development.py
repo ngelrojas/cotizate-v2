@@ -182,14 +182,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
-    "http://8.vps.confiared.com",
+    "http://165.227.203.226:9002/",
 ]
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
-    "http://8.vps.confiared.com",
+    "http://165.227.203.226:9002/",
 ]
 
 # CORS_ORIGIN_REGEX_WHITELIST = (
@@ -205,7 +205,7 @@ CSRF_COOKIE_NAME = "csrftoken"
 CSRF_TRUSTED_ORIGINS = (
     "localhost:3000",
     "cotizate.com",
-    "8.vps.confiared.com",
+    "165.227.203.226:9002/",
 )
 
 CORS_ALLOW_HEADERS = default_headers + (
