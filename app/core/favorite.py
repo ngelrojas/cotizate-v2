@@ -7,6 +7,6 @@ class Favorite(models.Model):
     users = models.IntegerField(default=0)
     campaings = models.IntegerField(default=0)
 
-    def get_retrieve_favorite(self, request, pk):
-        current_fav = Favorite.objects.get(users=request.user.id, id=pk)
+    def get_retrieve_favorite(self, pk):
+        current_fav = Favorite.objects.get(id=pk)
         return current_fav

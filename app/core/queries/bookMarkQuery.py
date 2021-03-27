@@ -1,5 +1,6 @@
 # from django.db.models import Q
 from core.bookMark import BookMark
+from core.campaing import CampaingHeader
 
 
 class BookMarkQuery:
@@ -11,16 +12,20 @@ class BookMarkQuery:
         return BookMark.objects.filter(user=current_user, marked=True)
 
     @staticmethod
-    def get_retrieve(request, pid):
+    def get_retrieve(pid):
         """get list all about the user marked=true"""
-        return BookMark.objects.get(user=request.user, id=pid)
+        return BookMark.objects.get(header=pid)
 
     @classmethod
-    def saving_bookmark(cls, request, camp_header):
+    def saving_bookmark(cls, request, pk):
         """save book marked naturally"""
-        bookmark = BookMark.objects.create(
-            user=request.user,
-            header=camp_header,
-            marked=request.data.get("marked"),
-        )
-        return bookmark
+        try:
+            header = CampaingHeader.objects.get(id=pk)
+            bookmark = BookMark.objects.create(
+                user=request.user,
+                header=header,
+                marked=request.data.get("marked"),
+            )
+            return bookmark
+        except:
+            return False

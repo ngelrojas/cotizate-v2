@@ -49,7 +49,7 @@ class FavoriteView(viewsets.ModelViewSet):
     def retrieve(self, request, pk):
         """retrieve favorite to current user and campaing"""
         try:
-            current_fav = Favorite.get_retrieve_favorite(self, request, pk)
+            current_fav = Favorite.get_retrieve_favorite(self, pk)
             serializer = self.serializer_class(current_fav)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Favorite.DoesNotExist as err:
@@ -60,7 +60,7 @@ class FavoriteView(viewsets.ModelViewSet):
     def update(self, request, pk):
         """update favorite to current user and campaing"""
         try:
-            current_fav = Favorite.get_retrieve_favorite(self, request, pk)
+            current_fav = Favorite.get_retrieve_favorite(self, pk)
             serializer = self.serializer_class(
                 current_fav, data=request.data, partial=True
             )

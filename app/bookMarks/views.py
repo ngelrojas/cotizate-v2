@@ -45,7 +45,7 @@ class BookMarkView(viewsets.ModelViewSet):
     def retrieve(self, request, pk):
         """retrieve bookmarked to current user and campaing"""
         try:
-            current_like = BookMarkQuery.get_retrieve(request, pk)
+            current_like = BookMarkQuery.get_retrieve(pk)
             serializer = self.serializer_class(current_like)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -56,15 +56,26 @@ class BookMarkView(viewsets.ModelViewSet):
     def update(self, request, pk):
         """update like to current user and campaing"""
         try:
-            current_like = BookMarkQuery.get_retrieve(request, pk)
-            serializer = self.serializer_class(
-                current_like, data=request.data, partial=True
-            )
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response(
-                    {"data": "update book marked."}, status=status.HTTP_200_OK
+            current_marked = BookMarkQuery.get_retrieve(pk)
+            if current_marked:
+                serializer = self.serializer_class(
+                    current_marked, data=request.data, partial=True
                 )
+                if serializer.is_valid(raise_exception=True):
+                    serializer.save()
+                    return Response(
+                        {"data": "update book marked."}, status=status.HTTP_200_OK
+                    )
+            marked = BookMarkQuery.saving_bookmark(request, pk)
+            if marked:
+                return Response(
+                    {"data": True, "msg": "marked created."},
+                    status=status.HTTP_201_CREATED,
+                )
+            return Response(
+                {"data": False, "msg": "campaing not exists."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
