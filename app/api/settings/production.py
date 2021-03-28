@@ -71,6 +71,7 @@ APP_API = [
     "improvies",
     "bookMarks",
     "uploads",
+    "updatings",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
@@ -116,7 +117,7 @@ DATABASES = {
         "NAME": config("SQL_DATABASE"),
         "USER": config("SQL_USER", "user"),
         "PASSWORD": config("SQL_PASSWORD", "password"),
-        "HOST": config("SQL_HOST", "9.vps.confiared.com"),
+        "HOST": config("SQL_HOST", "localhost"),
         "PORT": config("SQL_PORT", "5432"),
     }
 }
@@ -182,14 +183,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
-    "http://165.227.203.226:9002/",
+    "http://165.227.203.226:9002",
 ]
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
-    "http://165.227.203.226:9002/",
+    "http://165.227.203.226:9002",
 ]
 
 # CORS_ORIGIN_REGEX_WHITELIST = (
@@ -205,7 +206,7 @@ CSRF_COOKIE_NAME = "csrftoken"
 CSRF_TRUSTED_ORIGINS = (
     "localhost:3000",
     "cotizate.com",
-    "165.227.203.226:9002/",
+    "165.227.203.226:9002",
 )
 
 CORS_ALLOW_HEADERS = default_headers + (

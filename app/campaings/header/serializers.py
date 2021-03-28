@@ -10,6 +10,17 @@ from users.serializers import UserPublicSerializer
 # from categories.serializers import CategorySerializer
 
 
+class CampaingHeaderUp(serializers.ModelSerializer):
+    """serializer for alterations"""
+
+    class Meta:
+        model = CampaingHeader
+        fields = (
+            "id",
+            "code_campaing",
+        )
+
+
 class CampaingHeaderSerializer(serializers.ModelSerializer):
     """campaing header serializer"""
 

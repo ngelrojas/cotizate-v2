@@ -22,3 +22,4 @@ from core.phase import Phase
 from core.improve import Improve
 from core.bookMark import BookMark
 from core.upload import Upload
+from core.updating import Updating
