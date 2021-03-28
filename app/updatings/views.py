@@ -27,9 +27,9 @@ class UpdatingView(viewsets.ModelViewSet):
 
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
 
-        except Exception as err:
+        except Exception as e:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+                {"data": False, "msg": f"{e}"}, status=status.HTTP_404_NOT_FOUND
             )
 
     def create(self, request):
@@ -44,9 +44,9 @@ class UpdatingView(viewsets.ModelViewSet):
                     {"data": True, "msg": "updating created."},
                     status=status.HTTP_201_CREATED,
                 )
-        except Exception as err:
+        except Exception as e:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+                {"data": False, "msg": f"{e}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
     def update(self, request, pk):
@@ -61,7 +61,7 @@ class UpdatingView(viewsets.ModelViewSet):
                 )
         except Exception as e:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+                {"data": False, "msg": f"{e}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
     def delete(self, request, pk):
@@ -75,5 +75,5 @@ class UpdatingView(viewsets.ModelViewSet):
             )
         except Exception as e:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+                {"data": False, "msg": f"{e}"}, status=status.HTTP_400_BAD_REQUEST
             )
