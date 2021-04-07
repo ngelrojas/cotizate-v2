@@ -69,7 +69,7 @@ APP_API = [
     "socialNetworks",
     "phases",
     "improvies",
-    "bookMarks",
+    "bookmarks",
     "uploads",
     "updatings",
 ]
@@ -192,14 +192,6 @@ CORS_ORIGIN_WHITELIST = [
     "http://www.cotizate.com",
     "http://165.227.203.226:9002",
 ]
-
-# CORS_ORIGIN_REGEX_WHITELIST = (
-# "http://localhost:3000",
-# "http://cotizate.com",
-# "http://www.cotizate.com",
-# "http://34.71.45.26",
-# "http://35.226.118.27",
-# )
 
 CSRF_COOKIE_NAME = "csrftoken"
 

@@ -69,7 +69,7 @@ urlpatterns = [
     path("api/v2/", include("socialNetworks.urls")),
     path("api/v2/", include("phases.urls")),
     path("api/v2/", include("improvies.urls")),
-    path("api/v2/", include("bookMarks.urls")),
+    path("api/v2/", include("bookmarks.urls")),
     path("api/v2/", include("uploads.urls")),
     path("api/v2/", include("updatings.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

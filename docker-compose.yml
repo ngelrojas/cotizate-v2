@@ -2,20 +2,23 @@ version: '3.7'
 
 services:
     api:
-        build: ./app
-        command: python manage.py runserver --settings=api.settings.development 0.0.0.0:8000
+        build:  
+            context: ./app
+            dockerfile: Dockerfile.prod
+        command: python manage.py runserver --settings=api.settings.production 0.0.0.0:1337
+              #command: gunicorn api.wsgi:application --bind 0.0.0.0:1337
         volumes:
           - static_volume:/home/app/api/api/staticfiles
           - media_volume:/home/app/api/api/mediafiles
         ports:
-            - 8000:8000
-        #env_file:
-        #    - ./.env
-        environment:
-            - SQL_HOST=db
-            - SQL_DATABASE=${SQL_DATABASE}
-            - SQL_USER=${SQL_USER}
-            - SQL_PASSWORD=${SQL_PASSWORD}
+            - 1337:1337
+        env_file:
+            - ./.env
+        # environment:
+        #    - SQL_HOST=db
+        #    - SQL_DATABASE=${SQL_DATABASE}
+        #    - SQL_USER=${SQL_USER}
+        #    - SQL_PASSWORD=${SQL_PASSWORD}
         depends_on:
             - db
             - broker
@@ -25,19 +28,23 @@ services:
             - postgres_data:/var/lib/postgresql/data/
         ports:
           - 5432:5432
-        environment:
-            - POSTGRES_DB=${SQL_DATABASE}
-            - POSTGRES_USER=${SQL_USER}
-            - POSTGRES_PASSWORD=${SQL_PASSWORD}
+        env_file:
+          - .env
+        # environment:
+        #    - POSTGRES_DB=${SQL_DATABASE}
+        #    - POSTGRES_USER=${SQL_USER}
+        #    - POSTGRES_PASSWORD=${SQL_PASSWORD}
 
     worker:
         build: ./app
         restart: 'no'
-        environment:
-            - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
-            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
-            - CELERY_BROKER=${CELERY_BROKER}
-            - FLOWER_BROKER=${FLOWER_BROKER}
+        env_file:
+          - .env
+        # environment:
+        #    - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+        #    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+        #    - CELERY_BROKER=${CELERY_BROKER}
+        #    - FLOWER_BROKER=${FLOWER_BROKER}
         command: celery -A api.celery worker -l INFO 
         volumes:
             - ./app/:/usr/src/app/
@@ -47,22 +54,26 @@ services:
     flower:
         image: zoomeranalytics/flower:0.9.1-4.0.2
         restart: 'no'
-        environment:
-            - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
-            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
-            - CELERY_BROKER=${CELERY_BROKER}
-            - FLOWER_BROKER=${FLOWER_BROKER}
+        env_file:
+          - .env
+        # environment:
+        #    - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+        #    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+        #    - CELERY_BROKER=${CELERY_BROKER}
+        #    - FLOWER_BROKER=${FLOWER_BROKER}
         ports:
             - 5555:5555
         depends_on:
             - broker
     broker:
         image: rabbitmq:3
-        environment:
-            - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
-            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
-            - CELERY_BROKER=${CELERY_BROKER}
-            - FLOWER_BROKER=${FLOWER_BROKER}
+        env_file:
+          - .env
+        # environment:
+        #    - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+        #    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+        #    - CELERY_BROKER=${CELERY_BROKER}
+        #    - FLOWER_BROKER=${FLOWER_BROKER}
         ports:
             - 5672:5672
 
