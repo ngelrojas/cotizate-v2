@@ -14,7 +14,10 @@ class BookMarkQuery:
     @staticmethod
     def get_retrieve(pid):
         """get list all about the user marked=true"""
-        return BookMark.objects.get(header=pid)
+        try:
+            return BookMark.objects.get(header=pid)
+        except:
+            return False
 
     @classmethod
     def saving_bookmark(cls, request, pk):

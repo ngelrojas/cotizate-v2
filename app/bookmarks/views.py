@@ -54,7 +54,7 @@ class BookMarkView(viewsets.ModelViewSet):
             )
 
     def update(self, request, pk):
-        """update like to current user and campaing"""
+        """update bookmarked to current user and campaing"""
         try:
             current_marked = BookMarkQuery.get_retrieve(pk)
             if current_marked:
@@ -73,7 +73,7 @@ class BookMarkView(viewsets.ModelViewSet):
                     status=status.HTTP_201_CREATED,
                 )
             return Response(
-                {"data": False, "msg": "campaing not exists."},
+                {"data": False, "msg": f"{marked}"},
                 status=status.HTTP_400_BAD_REQUEST,
             )
         except Exception as err:

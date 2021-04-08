@@ -20,17 +20,7 @@ class LikeQuery:
             return False
 
     @classmethod
-    def saving_likes(cls, request, camp_header):
-        """save like naturally"""
-        like = Like.objects.create(
-            user=request.user,
-            header=camp_header,
-            liked=request.data.get("liked"),
-        )
-        return like
-
-    @classmethod
-    def create_likes(cls, request, pk):
+    def saving_likes(cls, request, pk):
         """
         - create like form current user
         return boolean

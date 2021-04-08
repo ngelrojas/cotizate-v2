@@ -29,17 +29,6 @@ class LikeView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def create(self, request):
-        """create like to current user and campaing"""
-        try:
-            camp_header = CampaingHeader.objects.get(id=request.data.get("header"))
-            LikeQuery.saving_likes(request, camp_header)
-            return Response({"data": "like created."}, status=status.HTTP_201_CREATED)
-        except Exception as err:
-            return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
-            )
-
     def retrieve(self, request, pk):
         """retrieve like to current user and campaing"""
         try:
@@ -65,14 +54,16 @@ class LikeView(viewsets.ModelViewSet):
                 if serializer.is_valid(raise_exception=True):
                     serializer.save()
                     return Response({"data": "update like."}, status=status.HTTP_200_OK)
-            liked = LikeQuery.create_likes(request, pk)
+
+            liked = LikeQuery.saving_likes(request, pk)
             if liked:
                 return Response(
                     {"data": True, "msg": "create like."},
                     status=status.HTTP_201_CREATED,
                 )
+
             return Response(
-                {"data": False, "msg": "campaing not exists"},
+                {"data": False, "msg": f"{liked}"},
                 status=status.HTTP_400_BAD_REQUEST,
             )
 

@@ -10,8 +10,5 @@ class LikeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Like
-        fields = (
-            "id",
-            "liked",
-        )
+        fields = ("liked",)
         read_only_fields = ("id",)
