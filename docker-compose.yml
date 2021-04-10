@@ -9,7 +9,6 @@ services:
               #command: gunicorn api.wsgi:application --bind 0.0.0.0:1337
         volumes:
           - static_volume:/home/app/api/api/staticfiles
-          - media_volume:/home/app/api/api/mediafiles
         ports:
             - 1337:8000
         env_file:
@@ -80,4 +79,3 @@ services:
 volumes:
     postgres_data:
     static_volume:
-    media_volume:
