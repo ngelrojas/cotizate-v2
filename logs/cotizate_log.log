@@ -30597,3 +30597,315 @@ Running migrations:
 [tasks]
   . api.celery.send_email_module
 
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@28577e8f0323 v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:36:27
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7f1066583100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@d7942365a005 v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:36:37
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7f66469f4100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@1a5927c84b10 v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:36:48
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7fa69e2d7100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@3bee97a326cf v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:37:00
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7f77852f4100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@d6ca0af79bee v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:37:46
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7fb84aee0100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@5288dc74e89a v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:37:56
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7f70ef01f100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@04525d29d470 v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:38:06
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7f192df01100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@410b7a9abf9c v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:38:17
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7fbdefb48100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@3bfb669fa7f4 v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:41:21
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7fc09545c100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@0542cf2a2fc8 v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:41:31
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7f9340f71100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@8959b0711ba0 v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:41:41
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7f3896875100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@1af4e60db758 v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:41:49
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7f0ccbfc1100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
+No changes detected
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Running migrations:
+  No migrations to apply.
+ 
+ -------------- celery@7ce11afff769 v5.0.5 (singularity)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-65-generic-x86_64-with 2021-04-10 21:42:01
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         api:0x7fd76c283100
+- ** ---------- .> transport:   amqp://rabbitmq_user:**@broker:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . api.celery.send_email_module
+
