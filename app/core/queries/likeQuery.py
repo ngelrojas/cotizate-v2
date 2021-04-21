@@ -15,7 +15,8 @@ class LikeQuery:
     def get_retrieve(pk):
         """get list all about the user like=true"""
         try:
-            return Like.objects.get(header=pk)
+            header_pk = CampaingHeader.objects.get(id=pk)
+            return Like.objects.get(header=header_pk)
         except:
             return False
 
