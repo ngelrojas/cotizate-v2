@@ -72,6 +72,7 @@ APP_API = [
     "bookmarks",
     "uploads",
     "updatings",
+    "denounces",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API
