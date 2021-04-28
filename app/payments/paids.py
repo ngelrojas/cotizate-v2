@@ -13,7 +13,7 @@ class PaidCallback(viewsets.ModelViewSet):
     serializer_class = PaymentSerializer
     queryset = Payment.objects.all()
 
-    def update(self, request):
+    def create(self, request):
         """recived data"""
         try:
             form_paid = Payment.objects.get(

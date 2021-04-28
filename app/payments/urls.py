@@ -8,7 +8,7 @@ urlpatterns = [
     path("payment", PaymentView.as_view({"post": "create"}), name="payment"),
     path(
         "payment-recived",
-        paids.PaidCallback.as_view({"put": "update"}),
+        paids.PaidCallback.as_view({"post": "create"}),
         name="payment-recived",
     ),
 ]
