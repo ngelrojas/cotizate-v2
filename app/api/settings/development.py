@@ -72,6 +72,7 @@ APP_API = [
     "bookmarks",
     "uploads",
     "updatings",
+    "followers",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API

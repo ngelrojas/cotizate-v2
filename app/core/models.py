@@ -25,3 +25,4 @@ from core.upload import Upload
 from core.updating import Updating
 from core.denounce import Denounce
 from core.denounce import DenounceText
+from core.follower import Follower
