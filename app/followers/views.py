@@ -25,13 +25,13 @@ class FollowerView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def retrieve(self, request, pk):
+    def retrieve(self, request, pk, follow):
         """
         following = pk
         - following is id current user
         """
         try:
-            current_follow = Follower.objects.get(following=pk)
+            current_follow = Follower.objects.get(follower=pk, following=follow)
             serializer = self.serializer_class(current_follow)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -39,16 +39,14 @@ class FollowerView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def update(self, request, pk):
+    def update(self, request, pk, follow):
         """
-        follower = current user
-        following = campaing user
+        follower = current user = pk
+        following = campaing user = follow
         status = True or False
         """
         try:
-            current_follow = Follower.objects.get(
-                following=pk, follower=request.data.get("follower")
-            )
+            current_follow = Follower.objects.get(follower=pk, following=follow)
             serializer = self.serializer_class(
                 current_follow, data=request.data, partial=True
             )
