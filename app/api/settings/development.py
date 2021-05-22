@@ -73,6 +73,7 @@ APP_API = [
     "uploads",
     "updatings",
     "followers",
+    "contacts",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API

@@ -25,4 +25,6 @@ from core.upload import Upload
 from core.updating import Updating
 from core.denounce import Denounce
 from core.denounce import DenounceText
+from core.denounce import DenouncePublic
 from core.follower import Follower
+from core.contact import Contact

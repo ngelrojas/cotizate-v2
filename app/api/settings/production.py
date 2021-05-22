@@ -74,6 +74,7 @@ APP_API = [
     "updatings",
     "denounces",
     "followers",
+    "contacts",
 ]
 
 INSTALLED_APPS = APP_LOCAL + APP_THRIDPARTY + APP_API

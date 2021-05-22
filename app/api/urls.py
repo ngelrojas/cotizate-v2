@@ -74,6 +74,7 @@ urlpatterns = [
     path("api/v2/", include("updatings.urls")),
     path("api/v2/", include("denounces.urls")),
     path("api/v2/", include("followers.urls")),
+    path("api/v2/", include("contacts.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # use this part in production using gunicorn
 urlpatterns += staticfiles_urlpatterns()

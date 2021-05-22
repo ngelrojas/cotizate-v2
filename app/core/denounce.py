@@ -26,3 +26,16 @@ class Denounce(models.Model):
 
     def __str__(self):
         return self.denouncetxt.title
+
+
+class DenouncePublic(models.Model):
+    """
+    denounces public
+    """
+
+    first_name = models.CharField(max_length=300)
+    last_name = models.CharField(max_length=300)
+    email = models.EmailField(max_length=255)
+    denouncetxt = models.ForeignKey(DenounceText, on_delete=models.CASCADE)
+    campaings = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    comment = models.CharField(max_length=600)
