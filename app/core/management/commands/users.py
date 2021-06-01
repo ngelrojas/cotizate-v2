@@ -35,7 +35,7 @@ class Command(BaseCommand):
                 country = Country.objects.get(name="Bolivia")
                 lp = City.objects.get(id=1)
                 scz = City.objects.get(id=2)
-                User.objects.create_superuser("admin@cotizate.com", "admin2020")
+                User.objects.create_superuser("admin@cotizate.com", "admin2021")
                 self.success("admin user created successfully.")
                 #
                 jhon = User.objects.create_user(

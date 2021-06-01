@@ -1,0 +1,56 @@
+[
+    {
+        "model": "core.profileCompany.py",
+        "pk": 1,
+        "fields":{
+            "representative_name":"representative",
+            "company_name": "my company name",
+            "representative": true,
+            "association_name": "bom retiro",
+            "heading": "ceo no more",
+            "email_company": "company@email.com",
+            "photo": "my photo.png",
+            "profiles":1,
+            "description": "my description",
+            "countries": 1,
+            "cities": 1,
+            "institution_type": 1       
+        }
+    },
+    {
+        "model": "core.profileCompany.py",
+        "pk": 2,
+        "fields":{
+            "representative_name":"representative",
+            "company_name": "my company name",
+            "representative": true,
+            "association_name": "bom retiro",
+            "heading": "ceo no more",
+            "email_company": "company@email.com",
+            "photo": "my photo.png",
+            "profiles": 2,
+            "description": "my description",
+            "countries": 1,
+            "cities": 2,
+            "institution_type": 1       
+        }
+    },
+    {
+        "model": "core.profileCompany.py",
+        "pk": 3,
+        "fields":{
+            "representative_name":"representative",
+            "company_name": "my company name",
+            "representative": true,
+            "association_name": "bom retiro",
+            "heading": "ceo no more",
+            "email_company": "company@email.com",
+            "photo": "my photo.png",
+            "profiles": 3,
+            "description": "my description",
+            "countries": 1,
+            "cities": 3,
+            "institution_type": 1       
+        }
+    }
+]

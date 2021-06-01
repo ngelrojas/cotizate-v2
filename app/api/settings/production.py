@@ -272,3 +272,5 @@ DEFAULT_FROM_EMAIL = config("DEFAULTFROMEMAIL")
 URL_PRODUCTION = config("URLPRODUCTION")
 
 CELERY_BROKER_URL = "amqp://localhost"
+
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"

@@ -1,0 +1,68 @@
+[
+    {
+        "model": "core.category",
+        "pk": 1,
+        "fields": {
+            "name": "Cultura",
+            "slug": "cultura",
+            "description": "cultura",
+            "img_banner": "http://165.227.203.226:9000/mediafiles/banner-cotizate-teatro.png",
+            "img_icon": "http://165.227.203.226:9000/mediafiles/artes.png" 
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 2,
+        "fields": {
+            "name": "Tecnologia",
+            "slug": "tecnologia",
+            "description": "tecnologia",
+            "img_banner": "http://165.227.203.226:9000/mediafiles/banner-cotizate-tecnologia.png",
+            "img_icon": "http://165.227.203.226:9000/mediafiles/tecnologia.png" 
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 3,
+        "fields": {
+            "name": "Empredurismo",
+            "slug": "empredurismo",
+            "description": "empredurismo",
+            "img_banner": "http://165.227.203.226:9000/mediafiles/banner-cotizate-emprendedor.png",
+            "img_icon": "http://165.227.203.226:9000/mediafiles/ecologico.png" 
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 4,
+        "fields": {
+            "name": "Musica",
+            "slug": "musica",
+            "description": "musica",
+            "img_banner": "http://165.227.203.226:9000/mediafiles/banner-cotizate-musica.png",
+            "img_icon": "http://165.227.203.226:9000/mediafiles/musica.png" 
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 5,
+        "fields": {
+            "name": "Games",
+            "slug": "games",
+            "description": "games",
+            "img_banner": "http://165.227.203.226:9000/mediafiles/banner-cotizate-tecnologia.png",
+            "img_icon": "http://165.227.203.226:9000/mediafiles/games.png" 
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 6,
+        "fields": {
+            "name": "Fotografia",
+            "slug": "fotografia",
+            "description": "fotografia",
+            "img_banner": "http://165.227.203.226:9000/mediafiles/banner-cotizate-fotografia-e-videos.png",
+            "img_icon": "http://165.227.203.226:9000/mediafiles/fotografia.png" 
+        }
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "model": "core.city",
+        "pk": 1,
+        "fields":{
+            "name": "La Paz",
+            "short_name": "Lp",
+            "description": "La Paz",
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 2,
+        "fields":{
+            "name": "Santa Cruz de la Sierra",
+            "short_name": "SC",
+            "description": "Santa Cruz de la Sierra", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 3,
+        "fields":{
+            "name": "Cochabamba",
+            "short_name": "CBB",
+            "description": "Cochabamba", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 4,
+        "fields":{
+            "name": "Chuquisaca",
+            "short_name": "Sucre",
+            "description": "Chuquisaca ciudad Blanca", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 5,
+        "fields":{
+            "name": "Oruro",
+            "short_name": "Oruro",
+            "description": "Oruro", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 6,
+        "fields":{
+            "name": "Potosi",
+            "short_name": "Pt",
+            "description": "Potosi", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 7,
+        "fields":{
+            "name": "Tarija",
+            "short_name": "Tarija",
+            "description": "Tarija", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 8,
+        "fields":{
+            "name": "Pando",
+            "short_name": "Pando",
+            "description": "Pando", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 9,
+        "fields":{
+            "name": "Beni",
+            "short_name": "Beni",
+            "description": "Beni", 
+            "countries": 1
+        }
+
+    }
+]

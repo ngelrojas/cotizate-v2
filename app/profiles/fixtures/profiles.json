@@ -1,0 +1,65 @@
+[
+    {
+        "model": "core.profile",
+        "pk": 1,
+        "fields":{
+            "cinit": "98989898",
+            "address": "some place",
+            "number_address": "#123",
+            "neightbordhood":"bom retiro",
+            "countries": 1,
+            "cities": 1,
+            "cellphone": "98377732",
+            "telephone": "7373238828",
+            "description": "my description",
+            "complete": true,
+            "current_position": "Manager",
+            "headlin": "CEO",
+            "birthdate": "2000-10-10",
+            "photo": "http://someplace",
+            "user": 2
+        }
+    },
+    {
+        "model": "core.personalprofile",
+        "pk": 2,
+        "fields":{
+            "cinit": "98989898",
+            "address": "some place",
+            "number_address": "#123",
+            "neightbordhood":"bom retiro",
+            "countries": 1,
+            "cities": 2,
+            "cellphone": "98377732",
+            "telephone": "7373238828",
+            "description": "my description",
+            "complete": true,
+            "current_position": "Manager",
+            "headlin": "CEO",
+            "birthdate": "2000-10-10",
+            "photo": "http://someplace",
+            "user": 3
+        }
+    },
+    {
+        "model": "core.personalprofile",
+        "pk": 3,
+        "fields":{
+            "cinit": "98989898",
+            "address": "some place",
+            "number_address": "#123",
+            "neightbordhood":"bom retiro",
+            "countries": 1,
+            "cities": 3,
+            "cellphone": "98377732",
+            "telephone": "7373238828",
+            "description": "my description",
+            "complete": true,
+            "current_position": "Manager",
+            "headlin": "CEO",
+            "birthdate": "2000-10-10",
+            "photo": "http://someplace",
+            "user": 4
+        }
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "model": "core.currency",
+        "pk": 1,
+        "fields":{
+            "name": "Boliviano",
+            "symbol": "$BO"
+        }
+    }
+]

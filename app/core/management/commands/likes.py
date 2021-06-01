@@ -3,6 +3,7 @@ from django.db import transaction
 from core.campaing import CampaingHeader
 from core.like import Like
 from core.user import User
+from core.denounce import DenounceText
 
 
 class Command(BaseCommand):
@@ -38,3 +39,16 @@ class Command(BaseCommand):
             Like.objects.create(user=mery, header=camp_one, liked=True)
             Like.objects.create(user=azumi, header=camp_two, liked=True)
             self.success("likes created")
+            DenounceText.objects.create(
+                title="Este proyecto no respeta las reglas",
+                description="- Contiene contenido prohibido de esenas de sexo y desnudo sin autorización",
+            )
+            DenounceText.objects.create(
+                title="Este proyecto infringe propiedad intelectual",
+                description="- Este proyecto infringe derechos de autor",
+            )
+            DenounceText.objects.create(
+                title="Recompensa",
+                description="- Apoye y no resivi mi recompensa",
+            )
+            self.success("denounces titles created")

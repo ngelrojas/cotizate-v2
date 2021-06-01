@@ -5,6 +5,8 @@ from core.profileCompany import ProfileCompany
 from core.profile import PersonalProfile
 from core.country import Country
 from core.city import City
+from core.currency import Currency
+from core.category import Category
 
 
 class Command(BaseCommand):
@@ -75,6 +77,31 @@ class Command(BaseCommand):
                     cities=santa_cruz,
                     institution_type=1,
                 )
-                self.success("profiles company/assosiation created")
+                self.success("profile company created")
+                # currency
+                Currency.objects.create(name="Boliviano", symbol="$BO")
+                Currency.objects.create(name="Dolar EEUU", symbol="$USD")
+                self.success("currency created")
+                # category
+                Category.objects.create(
+                    name="Cultura", description="description this category"
+                )
+                Category.objects.create(
+                    name="Tecnologia", description="description this category"
+                )
+                Category.objects.create(
+                    name="Emprendedurismo", description="description this category"
+                )
+                Category.objects.create(
+                    name="Musica", description="description this category"
+                )
+                Category.objects.create(
+                    name="Games", description="description this category"
+                )
+                Category.objects.create(
+                    name="Fotografia", description="description this category"
+                )
+
+                self.success("category created")
             except Exception as err:
                 self.error(f"{err}")

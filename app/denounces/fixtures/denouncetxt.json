@@ -1,0 +1,26 @@
+[
+    {
+        "model": "core.denounces.DenounceText",
+        "pk": 1,
+        "fields": {
+            "title": "Este proyecto no respeta las reglas",
+            "description": "- Contiene contenido prohibido de esenas de sexo y desnudo sin autorización"
+        } 
+    },
+    {
+        "model": "core.denounces.DenounceText",
+        "pk": 2,
+        "fields": {
+            "title": "Este proyecto infringe propiedad intelectual",
+            "description": "- Este proyecto infringe derechos de autor"
+        } 
+    },
+    {
+        "model": "core.denounces.DenounceText",
+        "pk": 3,
+        "fields": {
+            "title": "Recompensa",
+            "description": "- Apoye y no resivi mi recompensa"
+        } 
+    }
+]

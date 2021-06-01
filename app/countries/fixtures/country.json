@@ -1,0 +1,13 @@
+[
+    {
+        "model": "core.country",
+        "pk": 1,
+        "fields": {
+            "name": "Bolivia",
+            "short_name": "Bo",
+            "code_name": "Bo",
+            "description": "bolivia"
+        }
+    }
+]
+

@@ -1,0 +1,103 @@
+[
+    {
+        "model": "core.user",
+        "pk": 2,
+        "fields":{
+            "email": "jhon@yopmail.com",
+            "password": "me123456",
+            "first_name": "Jhon",
+            "last_name": "Doe",
+            "is_active": true
+        }
+
+    },
+    {
+        "model": "core.user",
+        "pk": 3,
+        "fields":{
+            "email": "mery@yopmail.com",
+            "password": "me123456",
+            "first_name": "Mery",
+            "last_name": "Smith",
+            "is_active": true
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 3,
+        "fields":{
+            "name": "Cochabamba",
+            "short_name": "CBB",
+            "description": "Cochabamba", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 4,
+        "fields":{
+            "name": "Chuquisaca",
+            "short_name": "Sucre",
+            "description": "Chuquisaca ciudad Blanca", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 5,
+        "fields":{
+            "name": "Oruro",
+            "short_name": "Oruro",
+            "description": "Oruro", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 6,
+        "fields":{
+            "name": "Potosi",
+            "short_name": "Pt",
+            "description": "Potosi", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 7,
+        "fields":{
+            "name": "Tarija",
+            "short_name": "Tarija",
+            "description": "Tarija", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 8,
+        "fields":{
+            "name": "Pando",
+            "short_name": "Pando",
+            "description": "Pando", 
+            "countries": 1
+        }
+
+    },
+    {
+        "model": "core.city",
+        "pk": 9,
+        "fields":{
+            "name": "Beni",
+            "short_name": "Beni",
+            "description": "Beni", 
+            "countries": 1
+        }
+
+    }
+]
