@@ -1,0 +1,1037 @@
+[08/Feb/2021 21:11:46.225]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
+[08/Feb/2021 21:51:42.993]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 21:51:42.993]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 21:51:42.998]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 21:51:43.153]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 6968
+[08/Feb/2021 21:53:04.339]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 21:53:04.361]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 21:53:04.369]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 21:53:04.485]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 6968
+[08/Feb/2021 21:53:33.335]INFO [django.server:157] "GET /admin HTTP/1.1" 301 0
+[08/Feb/2021 21:53:33.444]INFO [django.server:157] "GET /admin/ HTTP/1.1" 302 0
+[08/Feb/2021 21:53:33.494]INFO [django.server:157] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2216
+[08/Feb/2021 21:53:33.532]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 16307
+[08/Feb/2021 21:53:33.535]INFO [django.server:157] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+[08/Feb/2021 21:53:33.545]INFO [django.server:157] "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 1185
+[08/Feb/2021 21:53:33.546]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18344
+[08/Feb/2021 21:53:33.557]INFO [django.server:157] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[08/Feb/2021 21:53:33.583]INFO [django.server:157] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 200 423
+[08/Feb/2021 21:53:33.602]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:53:33.603]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:53:33.643]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:53:33.643]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:53:33.644]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[08/Feb/2021 21:53:33.645]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[08/Feb/2021 21:53:34.618]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:53:34.620]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:53:50.381]INFO [django.server:157] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2387
+[08/Feb/2021 21:53:50.421]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:53:50.422]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:53:50.437]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[08/Feb/2021 21:53:51.472]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:53:51.473]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:53:57.913]INFO [django.server:157] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[08/Feb/2021 21:53:57.957]INFO [django.server:157] "GET /admin/ HTTP/1.1" 200 12680
+[08/Feb/2021 21:53:58.026]INFO [django.server:157] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 200 380
+[08/Feb/2021 21:53:58.034]INFO [django.server:157] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[08/Feb/2021 21:53:58.034]INFO [django.server:157] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[08/Feb/2021 21:53:58.073]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:53:58.074]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:53:59.090]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:53:59.091]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:54:02.074]INFO [django.server:157] "GET /admin/core/user/ HTTP/1.1" 200 14295
+[08/Feb/2021 21:54:02.113]INFO [django.server:157] "GET /staticfiles/admin/js/core.js HTTP/1.1" 200 5418
+[08/Feb/2021 21:54:02.115]INFO [django.server:157] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6302
+[08/Feb/2021 21:54:02.117]INFO [django.server:157] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 200 347
+[08/Feb/2021 21:54:02.127]INFO [django.server:157] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
+[08/Feb/2021 21:54:02.129]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:54:02.130]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[08/Feb/2021 21:54:02.131]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 200 6783
+[08/Feb/2021 21:54:02.132]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 200 8632
+[08/Feb/2021 21:54:02.133]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[08/Feb/2021 21:54:02.134]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[08/Feb/2021 21:54:02.147]INFO [django.server:157] "GET /staticfiles/admin/img/search.svg HTTP/1.1" 200 458
+[08/Feb/2021 21:54:02.174]INFO [django.server:157] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[08/Feb/2021 21:54:02.191]INFO [django.server:157] "GET /staticfiles/admin/img/icon-no.svg HTTP/1.1" 200 560
+[08/Feb/2021 21:54:02.230]INFO [django.server:157] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[08/Feb/2021 21:54:02.277]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:54:02.277]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:54:03.318]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:54:03.319]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:54:06.791]INFO [django.server:157] "GET /admin/core/user/2/change/ HTTP/1.1" 200 17136
+[08/Feb/2021 21:54:06.818]INFO [django.server:157] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 200 8423
+[08/Feb/2021 21:54:06.828]INFO [django.server:157] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 200 7788
+[08/Feb/2021 21:54:06.828]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[08/Feb/2021 21:54:06.828]INFO [django.server:157] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 200 10592
+[08/Feb/2021 21:54:06.829]INFO [django.server:157] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19750
+[08/Feb/2021 21:54:06.835]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:54:06.852]INFO [django.server:157] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 200 606
+[08/Feb/2021 21:54:06.948]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:54:06.952]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:54:06.953]INFO [django.server:157] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[08/Feb/2021 21:54:06.953]INFO [django.server:157] "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[08/Feb/2021 21:54:07.964]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:54:07.964]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:54:12.413]INFO [django.server:157] "POST /admin/core/user/2/change/ HTTP/1.1" 302 0
+[08/Feb/2021 21:54:12.503]INFO [django.server:157] "GET /admin/core/user/ HTTP/1.1" 200 14499
+[08/Feb/2021 21:54:12.605]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:54:12.691]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:54:12.692]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:54:13.739]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:54:13.740]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:55:17.076]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[08/Feb/2021 21:55:17.121]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:55:17.201]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:55:17.202]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:55:18.248]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:55:18.249]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:55:21.691]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18444
+[08/Feb/2021 21:55:21.730]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:55:21.852]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:55:21.853]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:55:22.880]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:55:22.881]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:55:28.585]INFO [django.server:157] "GET /admin/core/campaingbody/1/change/ HTTP/1.1" 200 25338
+[08/Feb/2021 21:55:28.616]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:55:28.733]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:55:28.733]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:55:29.773]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:55:29.775]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:18.654]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[08/Feb/2021 21:56:18.690]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:56:18.752]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:18.752]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:19.798]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:19.799]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:21.470]INFO [django.server:157] "GET /admin/core/campaingheader/1/change/ HTTP/1.1" 200 19111
+[08/Feb/2021 21:56:21.528]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:56:21.669]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:21.670]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:22.678]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:22.678]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:31.273]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[08/Feb/2021 21:56:31.314]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:56:31.391]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:31.391]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:32.448]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:32.450]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:34.664]INFO [django.server:157] "GET /admin/core/campaingheader/2/change/ HTTP/1.1" 200 19111
+[08/Feb/2021 21:56:34.704]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:56:34.782]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:34.782]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:35.813]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:35.814]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:43.195]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18444
+[08/Feb/2021 21:56:43.244]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:56:43.425]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:43.426]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:44.479]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:44.480]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:46.163]INFO [django.server:157] "GET /admin/core/campaingbody/2/change/ HTTP/1.1" 200 25338
+[08/Feb/2021 21:56:46.202]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:56:46.296]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:46.296]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:47.334]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:47.336]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:52.138]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[08/Feb/2021 21:56:52.172]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:56:52.237]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:52.238]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:53.295]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:53.296]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:55.145]INFO [django.server:157] "GET /admin/core/campaingheader/3/change/ HTTP/1.1" 200 19111
+[08/Feb/2021 21:56:55.183]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:56:55.298]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:55.299]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:56:56.324]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:56:56.325]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:00.536]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[08/Feb/2021 21:57:00.574]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:00.653]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:00.654]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:01.678]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:01.679]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:15.248]INFO [django.server:157] "GET /admin/core/campaingheader/3/change/ HTTP/1.1" 200 19111
+[08/Feb/2021 21:57:15.285]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:15.351]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:15.351]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:16.402]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:16.404]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:17.789]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[08/Feb/2021 21:57:17.823]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:17.939]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:17.941]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:18.968]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:18.969]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:21.598]INFO [django.server:157] "GET /admin/core/campaingheader/4/change/ HTTP/1.1" 200 19111
+[08/Feb/2021 21:57:21.637]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:21.729]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:21.729]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:22.738]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:22.738]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:25.252]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[08/Feb/2021 21:57:25.291]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:25.355]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:25.355]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:26.398]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:26.399]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:28.191]INFO [django.server:157] "GET /admin/core/campaingheader/5/change/ HTTP/1.1" 200 19111
+[08/Feb/2021 21:57:28.232]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:28.381]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:28.381]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:29.408]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:29.410]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:30.276]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 17287
+[08/Feb/2021 21:57:30.315]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:30.389]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:30.390]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:31.294]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18444
+[08/Feb/2021 21:57:31.329]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:31.392]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:31.393]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:32.440]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:32.441]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:34.557]INFO [django.server:157] "GET /admin/core/campaingbody/2/change/ HTTP/1.1" 200 25338
+[08/Feb/2021 21:57:34.598]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:34.731]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:34.732]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:35.769]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:35.771]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:39.074]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18444
+[08/Feb/2021 21:57:39.117]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:39.183]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:39.184]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:40.213]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:40.213]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:41.763]INFO [django.server:157] "GET /admin/core/campaingbody/1/change/ HTTP/1.1" 200 25338
+[08/Feb/2021 21:57:41.813]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:41.927]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:41.928]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:42.980]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:42.981]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:47.718]INFO [django.server:157] "POST /admin/core/campaingbody/1/change/ HTTP/1.1" 302 0
+[08/Feb/2021 21:57:47.838]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[08/Feb/2021 21:57:47.999]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:48.082]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:48.083]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:49.148]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:49.151]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:50.379]INFO [django.server:157] "GET /admin/core/campaingbody/2/change/ HTTP/1.1" 200 25338
+[08/Feb/2021 21:57:50.415]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:50.505]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:50.505]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:51.526]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:51.527]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:57:58.748]INFO [django.server:157] "POST /admin/core/campaingbody/2/change/ HTTP/1.1" 302 0
+[08/Feb/2021 21:57:58.904]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[08/Feb/2021 21:57:58.960]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:57:59.077]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:57:59.077]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:58:00.123]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:58:00.124]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:58:03.202]INFO [django.server:157] "GET /admin/core/campaingbody/3/change/ HTTP/1.1" 200 25338
+[08/Feb/2021 21:58:03.243]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:58:03.366]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:58:03.367]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:58:04.416]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:58:04.418]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:58:10.265]INFO [django.server:157] "POST /admin/core/campaingbody/3/change/ HTTP/1.1" 302 0
+[08/Feb/2021 21:58:10.373]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[08/Feb/2021 21:58:10.416]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[08/Feb/2021 21:58:10.584]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:58:10.584]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 21:58:11.634]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 21:58:11.636]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 22:00:32.059]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:00:32.060]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:00:32.063]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:00:32.122]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:00:41.630]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:00:41.631]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:00:41.633]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:00:41.688]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:03:00.389]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:03:00.394]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:03:00.396]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:03:00.515]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:11:25.543]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:11:25.544]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:11:25.548]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:11:25.608]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:12:04.286]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:12:04.287]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:12:04.293]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:12:04.397]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:14:28.379]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:14:28.396]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:14:28.408]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:14:28.479]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:16:08.255]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:16:08.255]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:16:08.262]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:16:08.338]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:18:02.646]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:18:02.649]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:18:02.658]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:18:02.729]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:20:09.236]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:20:09.237]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:20:09.255]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:20:09.335]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:22:42.625]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:22:42.630]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:22:42.643]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:22:42.716]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:24:14.532]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:24:14.533]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:24:14.537]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:24:14.588]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:24:40.920]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:24:40.926]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:24:40.934]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:24:41.021]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:28:24.125]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:28:24.137]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:28:24.140]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:28:24.220]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:31:10.190]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:31:10.206]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:31:10.215]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:31:10.277]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:33:16.147]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:33:16.152]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:33:16.162]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:33:16.244]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:35:13.165]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:35:13.180]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:35:13.182]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:35:13.274]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:36:51.568]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:36:51.572]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:36:51.572]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:36:51.658]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:39:40.500]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:39:40.526]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:39:40.534]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:39:40.633]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:41:03.002]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:41:03.027]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:41:03.028]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:41:03.096]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:42:12.674]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:42:12.683]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:42:12.689]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:42:12.779]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:50:06.951]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:50:06.968]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:50:06.969]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:50:07.067]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:52:14.670]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:52:14.682]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:52:14.684]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:52:14.779]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:54:04.634]WARNING [django.request:230] Not Found: /api/v2/phases
+[08/Feb/2021 22:54:04.635]WARNING [django.server:157] "GET /api/v2/phases HTTP/1.1" 404 12867
+[08/Feb/2021 22:54:04.791]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 22:54:04.793]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 22:54:04.823]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 22:54:04.824]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 22:54:05.798]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 22:54:05.798]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 22:54:16.256]INFO [django.server:157] "GET /api/v2/phase HTTP/1.1" 200 12104
+[08/Feb/2021 22:54:16.292]INFO [django.server:157] "GET /staticfiles/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[08/Feb/2021 22:54:16.293]INFO [django.server:157] "GET /staticfiles/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[08/Feb/2021 22:54:16.295]INFO [django.server:157] "GET /staticfiles/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[08/Feb/2021 22:54:16.298]INFO [django.server:157] "GET /staticfiles/rest_framework/css/default.css HTTP/1.1" 200 1131
+[08/Feb/2021 22:54:16.325]INFO [django.server:157] "GET /staticfiles/rest_framework/js/default.js HTTP/1.1" 200 1268
+[08/Feb/2021 22:54:16.334]INFO [django.server:157] "GET /staticfiles/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[08/Feb/2021 22:54:16.334]INFO [django.server:157] "GET /staticfiles/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+[08/Feb/2021 22:54:16.341]INFO [django.server:157] "GET /staticfiles/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[08/Feb/2021 22:54:16.342]INFO [django.server:157] "GET /staticfiles/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[08/Feb/2021 22:54:16.343]INFO [django.server:157] "GET /staticfiles/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+[08/Feb/2021 22:54:16.344]INFO [django.server:157] "GET /staticfiles/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[08/Feb/2021 22:54:16.470]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 22:54:16.470]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 22:54:17.547]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 22:54:17.549]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 22:54:19.549]INFO [django.server:157] "GET /api/v2/phase HTTP/1.1" 200 12104
+[08/Feb/2021 22:54:19.729]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 22:54:19.730]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 22:54:20.782]WARNING [django.request:230] Not Found: /favicon.ico
+[08/Feb/2021 22:54:20.783]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[08/Feb/2021 22:55:58.986]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:55:58.989]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:55:59.008]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:55:59.090]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:57:38.836]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:57:38.843]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:57:38.844]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:57:38.947]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 22:58:55.439]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 22:58:55.442]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 22:58:55.450]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 22:58:55.524]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:00:16.830]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:00:16.840]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:00:16.841]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:00:16.966]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:03:29.590]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:03:29.591]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:03:29.596]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:03:29.696]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:05:37.585]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:05:37.604]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:05:37.605]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:05:37.655]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:08:24.043]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:08:24.053]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:08:24.060]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:08:24.162]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:11:04.002]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:11:04.018]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:11:04.018]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:11:04.096]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:16:52.623]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:16:52.631]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:16:52.642]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:16:52.692]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:19:09.229]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:19:09.230]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:19:09.235]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:19:09.314]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:20:28.036]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:20:28.037]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:20:28.063]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:20:28.112]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:24:03.948]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:24:03.949]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:24:03.966]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:24:04.029]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:42:51.579]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:42:51.584]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:42:51.599]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:42:51.668]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:44:28.739]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:44:28.740]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:44:28.754]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:44:28.837]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:46:18.714]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:46:18.743]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:46:18.743]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:46:18.812]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:49:02.859]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:49:02.860]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:49:02.878]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:49:02.950]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:52:42.773]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:52:42.774]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:52:42.789]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:52:42.864]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[08/Feb/2021 23:55:05.584]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[08/Feb/2021 23:55:05.585]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[08/Feb/2021 23:55:05.606]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[08/Feb/2021 23:55:05.680]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:04:48.031]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:04:48.032]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:04:48.037]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:04:48.127]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:06:31.882]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:06:31.886]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:06:31.889]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:06:31.976]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:09:13.170]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:09:13.175]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:09:13.194]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:09:13.276]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:10:28.401]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:10:28.418]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:10:28.427]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:10:28.503]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:12:46.541]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:12:46.552]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:12:46.565]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:12:46.637]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:14:01.300]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:14:01.312]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:14:01.317]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:14:01.431]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:16:29.392]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:16:29.395]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:16:29.418]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:16:29.488]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:18:16.593]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:18:16.593]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:18:16.603]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:18:16.680]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:19:56.634]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:19:56.635]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:19:56.644]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:19:56.732]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:21:21.919]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:21:21.922]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:21:21.948]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:21:22.018]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:27:27.521]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:27:27.532]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:27:27.532]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:27:27.626]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:39:26.899]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:39:26.905]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:39:26.918]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:39:26.990]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:40:32.355]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:40:32.357]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:40:32.365]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:40:32.449]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:40:36.507]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[09/Feb/2021 00:40:36.513]WARNING [django.request:230] Bad Request: /api/v2/auth
+[09/Feb/2021 00:40:36.514]WARNING [django.server:157] "POST /api/v2/auth HTTP/1.1" 400 86
+[09/Feb/2021 00:40:42.107]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[09/Feb/2021 00:40:42.155]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[09/Feb/2021 00:40:42.160]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[09/Feb/2021 00:40:42.161]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[09/Feb/2021 00:40:42.821]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:40:42.828]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:40:42.829]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:40:42.866]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:40:42.943]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3986
+[09/Feb/2021 00:40:53.574]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:40:57.510]INFO [django.server:157] "OPTIONS /api/v2/campaing-private/2 HTTP/1.1" 200 0
+[09/Feb/2021 00:40:57.531]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:40:57.612]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 7675
+[09/Feb/2021 00:40:57.684]WARNING [django.request:230] Not Found: /mediafiles/campaing_one.png
+[09/Feb/2021 00:40:57.684]WARNING [django.server:157] "GET /mediafiles/campaing_one.png HTTP/1.1" 404 1835
+[09/Feb/2021 00:41:14.875]INFO [django.server:157] "OPTIONS /api/v2/campaing-private/3 HTTP/1.1" 200 0
+[09/Feb/2021 00:41:14.900]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:41:14.908]INFO [django.server:157] "GET /api/v2/campaing-private/3 HTTP/1.1" 200 11
+[09/Feb/2021 00:41:18.068]INFO [django.server:157] "OPTIONS /api/v2/campaing-private/4 HTTP/1.1" 200 0
+[09/Feb/2021 00:41:18.085]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:41:18.110]INFO [django.server:157] "GET /api/v2/campaing-private/4 HTTP/1.1" 200 11
+[09/Feb/2021 00:41:21.006]INFO [django.server:157] "OPTIONS /api/v2/campaing-private/5 HTTP/1.1" 200 0
+[09/Feb/2021 00:41:21.017]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:41:21.130]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 10134
+[09/Feb/2021 00:41:21.221]WARNING [django.request:230] Not Found: /mediafiles/campaing_one.png
+[09/Feb/2021 00:41:21.221]WARNING [django.server:157] "GET /mediafiles/campaing_one.png HTTP/1.1" 404 1835
+[09/Feb/2021 00:41:27.454]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:41:27.539]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 7675
+[09/Feb/2021 00:41:27.572]WARNING [django.request:230] Not Found: /mediafiles/campaing_one.png
+[09/Feb/2021 00:41:27.573]WARNING [django.server:157] "GET /mediafiles/campaing_one.png HTTP/1.1" 404 1835
+[09/Feb/2021 00:41:33.201]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18444
+[09/Feb/2021 00:41:33.268]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.289]INFO [django.server:157] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.298]INFO [django.server:157] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.300]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.305]INFO [django.server:157] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.305]INFO [django.server:157] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.306]INFO [django.server:157] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.307]INFO [django.server:157] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.312]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.314]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:41:33.315]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.315]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.317]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.317]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.328]INFO [django.server:157] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.369]INFO [django.server:157] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.381]INFO [django.server:157] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.485]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.485]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.485]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[09/Feb/2021 00:41:33.500]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:41:33.501]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:41:34.530]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:41:34.531]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:41:36.515]INFO [django.server:157] "GET /admin/core/campaingbody/1/change/ HTTP/1.1" 200 25350
+[09/Feb/2021 00:41:36.545]INFO [django.server:157] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:36.548]INFO [django.server:157] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+[09/Feb/2021 00:41:36.548]INFO [django.server:157] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:36.559]INFO [django.server:157] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+[09/Feb/2021 00:41:36.562]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:41:36.606]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:36.635]INFO [django.server:157] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[09/Feb/2021 00:41:36.663]INFO [django.server:157] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
+[09/Feb/2021 00:41:36.723]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:41:36.724]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:41:36.737]INFO [django.server:157] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[09/Feb/2021 00:41:36.737]INFO [django.server:157] "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[09/Feb/2021 00:41:37.756]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:41:37.757]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:00.061]INFO [django.server:157] "POST /admin/core/campaingbody/1/change/ HTTP/1.1" 302 0
+[09/Feb/2021 00:44:00.167]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[09/Feb/2021 00:44:00.255]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:44:00.296]INFO [django.server:157] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[09/Feb/2021 00:44:00.348]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:00.348]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:01.400]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:01.401]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:03.210]INFO [django.server:157] "GET /admin/core/campaingbody/2/change/ HTTP/1.1" 200 25350
+[09/Feb/2021 00:44:03.249]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:44:03.462]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:03.465]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:04.519]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:04.520]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:10.667]INFO [django.server:157] "POST /admin/core/campaingbody/2/change/ HTTP/1.1" 302 0
+[09/Feb/2021 00:44:10.776]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[09/Feb/2021 00:44:10.822]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:44:10.922]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:10.923]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:11.962]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:11.963]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:13.742]INFO [django.server:157] "GET /admin/core/campaingbody/3/change/ HTTP/1.1" 200 25350
+[09/Feb/2021 00:44:13.792]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:44:13.930]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:13.930]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:14.977]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:14.978]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:21.092]INFO [django.server:157] "POST /admin/core/campaingbody/3/change/ HTTP/1.1" 302 0
+[09/Feb/2021 00:44:21.190]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[09/Feb/2021 00:44:21.224]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:44:21.302]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:21.302]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:22.353]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:22.354]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:25.954]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:44:25.983]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:44:26.074]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 7702
+[09/Feb/2021 00:44:26.191]INFO [django.server:157] "GET /mediafiles/campaings/images_two.png HTTP/1.1" 200 42335
+[09/Feb/2021 00:44:26.192]INFO [django.server:157] "GET /mediafiles/campaings/images_one.png HTTP/1.1" 200 33357
+[09/Feb/2021 00:44:26.193]INFO [django.server:157] "GET /mediafiles/campaings/images_three.jpeg HTTP/1.1" 200 319110
+[09/Feb/2021 00:44:37.732]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:44:37.833]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 10134
+[09/Feb/2021 00:44:37.861]WARNING [django.request:230] Not Found: /mediafiles/campaing_one.png
+[09/Feb/2021 00:44:37.862]WARNING [django.server:157] "GET /mediafiles/campaing_one.png HTTP/1.1" 404 1835
+[09/Feb/2021 00:44:48.693]INFO [django.server:157] "GET /admin/core/campaingbody/4/change/ HTTP/1.1" 200 25338
+[09/Feb/2021 00:44:48.730]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:44:48.842]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:48.842]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:49.890]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:49.891]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:56.173]INFO [django.server:157] "POST /admin/core/campaingbody/4/change/ HTTP/1.1" 302 0
+[09/Feb/2021 00:44:56.280]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[09/Feb/2021 00:44:56.458]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:44:56.545]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:56.546]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:57.607]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:57.608]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:44:59.679]INFO [django.server:157] "GET /admin/core/campaingbody/5/change/ HTTP/1.1" 200 25338
+[09/Feb/2021 00:44:59.727]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:44:59.845]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:44:59.845]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:00.893]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:00.895]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:07.130]INFO [django.server:157] "POST /admin/core/campaingbody/5/change/ HTTP/1.1" 302 0
+[09/Feb/2021 00:45:07.242]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[09/Feb/2021 00:45:07.280]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:45:07.397]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:07.398]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:08.428]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:08.429]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:10.209]INFO [django.server:157] "GET /admin/core/campaingbody/6/change/ HTTP/1.1" 200 25338
+[09/Feb/2021 00:45:10.242]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:45:10.348]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:10.349]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:11.383]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:11.385]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:17.793]INFO [django.server:157] "POST /admin/core/campaingbody/6/change/ HTTP/1.1" 302 0
+[09/Feb/2021 00:45:17.978]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[09/Feb/2021 00:45:18.025]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:45:18.131]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:18.132]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:19.163]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:19.164]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:25.111]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:45:25.144]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:45:25.253]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 10257
+[09/Feb/2021 00:45:25.354]WARNING [django.request:230] Not Found: /mediafiles/campaing_one.png
+[09/Feb/2021 00:45:25.354]WARNING [django.server:157] "GET /mediafiles/campaing_one.png HTTP/1.1" 404 1835
+[09/Feb/2021 00:45:25.355]INFO [django.server:157] "GET /mediafiles/campaings/images_one_v0RYwHg.png HTTP/1.1" 200 33357
+[09/Feb/2021 00:45:25.356]INFO [django.server:157] "GET /mediafiles/campaings/images_two_xdlmk6L.png HTTP/1.1" 200 42335
+[09/Feb/2021 00:45:25.358]INFO [django.server:157] "GET /mediafiles/campaings/images_three_m52deSr.jpeg HTTP/1.1" 200 319110
+[09/Feb/2021 00:45:30.184]INFO [django.server:157] "GET /admin/core/campaingbody/7/change/ HTTP/1.1" 200 25338
+[09/Feb/2021 00:45:30.227]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:45:30.367]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:30.367]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:31.405]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:31.407]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:37.221]INFO [django.server:157] "POST /admin/core/campaingbody/7/change/ HTTP/1.1" 302 0
+[09/Feb/2021 00:45:37.336]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[09/Feb/2021 00:45:37.373]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:45:37.456]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:37.457]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:38.502]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:45:38.503]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:45:41.452]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:45:41.486]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:45:41.596]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 10300
+[09/Feb/2021 00:45:41.657]INFO [django.server:157] "GET /mediafiles/campaings/images_one_v0RYwHg.png HTTP/1.1" 304 0
+[09/Feb/2021 00:45:41.686]INFO [django.server:157] "GET /mediafiles/campaings/images_three_m52deSr.jpeg HTTP/1.1" 304 0
+[09/Feb/2021 00:45:41.686]INFO [django.server:157] "GET /mediafiles/campaings/images_two_xdlmk6L.png HTTP/1.1" 304 0
+[09/Feb/2021 00:45:41.693]INFO [django.server:157] "GET /mediafiles/campaings/images_three_qO6KUVV.jpeg HTTP/1.1" 200 319110
+[09/Feb/2021 00:46:39.896]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:46:39.987]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 7702
+[09/Feb/2021 00:46:40.022]INFO [django.server:157] "GET /mediafiles/campaings/images_one.png HTTP/1.1" 304 0
+[09/Feb/2021 00:46:40.023]INFO [django.server:157] "GET /mediafiles/campaings/images_three.jpeg HTTP/1.1" 304 0
+[09/Feb/2021 00:46:40.023]INFO [django.server:157] "GET /mediafiles/campaings/images_two.png HTTP/1.1" 304 0
+[09/Feb/2021 00:46:53.380]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:46:53.396]INFO [django.server:157] "GET /api/v2/campaing-private/3 HTTP/1.1" 200 11
+[09/Feb/2021 00:47:01.321]INFO [django.server:157] "GET /admin/core/campaingbody/5/change/ HTTP/1.1" 200 25388
+[09/Feb/2021 00:47:01.360]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:47:01.482]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:47:01.482]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:47:02.519]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:47:02.521]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:47:08.664]INFO [django.server:157] "POST /admin/core/campaingbody/5/change/ HTTP/1.1" 302 0
+[09/Feb/2021 00:47:08.797]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18699
+[09/Feb/2021 00:47:08.834]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:47:08.895]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:47:08.896]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:47:09.964]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:47:09.965]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:47:12.462]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:47:12.498]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:47:12.511]INFO [django.server:157] "GET /api/v2/campaing-private/3 HTTP/1.1" 200 2584
+[09/Feb/2021 00:47:12.647]INFO [django.server:157] "GET /mediafiles/campaings/images_three_m52deSr.jpeg HTTP/1.1" 304 0
+[09/Feb/2021 00:48:01.352]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:48:01.438]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 7702
+[09/Feb/2021 00:48:01.468]INFO [django.server:157] "GET /mediafiles/campaings/images_three.jpeg HTTP/1.1" 304 0
+[09/Feb/2021 00:48:01.469]INFO [django.server:157] "GET /mediafiles/campaings/images_two.png HTTP/1.1" 304 0
+[09/Feb/2021 00:48:01.469]INFO [django.server:157] "GET /mediafiles/campaings/images_one.png HTTP/1.1" 304 0
+[09/Feb/2021 00:48:03.164]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.164]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.168]INFO [django.server:157] "OPTIONS /api/v2/category HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.169]INFO [django.server:157] "OPTIONS /api/v2/reward/3 HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.173]INFO [django.server:157] "OPTIONS /api/v2/campaing-header-last HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.175]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.175]INFO [django.server:157] "OPTIONS /api/v2/campaing-body-last/3 HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.181]INFO [django.server:157] "OPTIONS /api/v2/phases/3 HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.194]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/0 HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.207]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:48:03.242]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:48:03.248]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:48:03.273]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:48:03.298]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:48:03.298]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:48:03.299]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:48:03.299]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:48:03.304]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:48:03.312]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:48:03.335]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:48:03.335]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:48:03.345]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:48:03.356]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:48:03.373]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:48:03.385]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:48:03.385]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:48:03.385]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:48:03.398]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:48:03.400]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:48:03.411]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:48:03.423]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:48:03.488]INFO [django.server:157] "OPTIONS /api/v2/profile/company/1/1 HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.518]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:48:03.522]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:48:03.535]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:48:03.543]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:48:03.546]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:48:03.555]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:48:03.559]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:48:03.594]INFO [django.server:157] "GET /api/v2/profile/company/1/1 HTTP/1.1" 200 1332
+[09/Feb/2021 00:48:03.596]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:48:03.657]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/1 HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.668]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/1 HTTP/1.1" 200 0
+[09/Feb/2021 00:48:03.679]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:48:03.680]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:48:03.684]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:48:03.749]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:48:03.770]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:48:03.775]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 00:48:03.776]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:48:03.779]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:48:03.828]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:48:03.851]WARNING [django.request:230] Not Found: /mediafiles/my photo.png
+[09/Feb/2021 00:48:03.859]WARNING [django.server:157] "GET /mediafiles/my%20photo.png HTTP/1.1" 404 1825
+[09/Feb/2021 00:48:03.866]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:48:03.871]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 00:48:03.874]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:49:01.149]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:49:26.461]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:49:30.859]INFO [django.server:157] "OPTIONS /api/v2/phase/3/3 HTTP/1.1" 200 0
+[09/Feb/2021 00:49:30.876]INFO [django.server:157] "GET /api/v2/phase/3/3 HTTP/1.1" 200 122
+[09/Feb/2021 00:49:38.570]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:49:38.584]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:49:41.170]INFO [django.server:157] "OPTIONS /api/v2/rewardr/3 HTTP/1.1" 200 0
+[09/Feb/2021 00:49:41.207]INFO [django.server:157] "GET /api/v2/rewardr/3 HTTP/1.1" 200 238
+[09/Feb/2021 00:49:44.989]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:49:45.008]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:51:22.664]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:53:08.807]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:53:08.821]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:53:08.859]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:53:08.861]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:53:08.873]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:53:08.887]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:53:08.921]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:53:08.927]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:53:08.929]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:53:08.967]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:53:08.969]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:53:08.984]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:53:09.030]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:53:09.141]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:53:09.152]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:53:09.154]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:53:09.159]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:53:09.166]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:53:09.174]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:53:09.181]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:53:09.189]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:53:09.193]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:53:09.212]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:53:09.222]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:53:09.244]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:53:09.245]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:53:09.255]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:53:09.255]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:53:09.270]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:53:09.315]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:53:09.333]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:53:09.337]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:53:09.346]INFO [django.server:157] "GET /api/v2/profile/company/1/1 HTTP/1.1" 200 1332
+[09/Feb/2021 00:53:09.349]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:53:09.387]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:53:09.473]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:53:09.476]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:53:09.481]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:53:09.516]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:53:09.516]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 00:53:09.559]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:53:09.578]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:53:09.610]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:53:09.612]WARNING [django.request:230] Not Found: /mediafiles/my photo.png
+[09/Feb/2021 00:53:09.616]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:53:09.617]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 00:53:09.618]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:53:09.620]WARNING [django.server:157] "GET /mediafiles/my%20photo.png HTTP/1.1" 404 1825
+[09/Feb/2021 00:53:13.239]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:53:22.227]INFO [django.server:157] "GET /admin/core/campaingbody/3/change/ HTTP/1.1" 200 25372
+[09/Feb/2021 00:53:22.275]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[09/Feb/2021 00:53:22.422]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:53:22.423]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:53:23.504]WARNING [django.request:230] Not Found: /favicon.ico
+[09/Feb/2021 00:53:23.506]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
+[09/Feb/2021 00:54:13.355]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:54:13.363]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:54:13.364]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:54:13.439]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3031
+[09/Feb/2021 00:54:20.345]WARNING [django.request:230] Bad Request: /api/v2/auth
+[09/Feb/2021 00:54:20.345]WARNING [django.server:157] "POST /api/v2/auth HTTP/1.1" 400 86
+[09/Feb/2021 00:54:32.741]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[09/Feb/2021 00:54:32.770]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[09/Feb/2021 00:54:32.770]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[09/Feb/2021 00:54:33.282]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:54:33.292]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 00:54:33.297]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 00:54:33.299]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:54:33.323]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3031
+[09/Feb/2021 00:54:37.639]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:54:40.490]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:54:40.561]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 7702
+[09/Feb/2021 00:54:40.660]INFO [django.server:157] "GET /mediafiles/campaings/images_two.png HTTP/1.1" 304 0
+[09/Feb/2021 00:54:40.660]INFO [django.server:157] "GET /mediafiles/campaings/images_three.jpeg HTTP/1.1" 304 0
+[09/Feb/2021 00:54:40.664]INFO [django.server:157] "GET /mediafiles/campaings/images_one.png HTTP/1.1" 304 0
+[09/Feb/2021 00:54:42.557]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:54:42.575]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:54:42.577]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:54:42.597]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:54:42.611]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:54:42.613]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:54:42.613]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:54:42.617]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 00:54:42.650]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:54:42.688]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:54:42.688]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:54:42.700]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:54:42.711]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:54:42.714]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:54:42.731]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:54:42.734]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:54:42.772]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:54:42.787]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:54:42.796]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:54:42.796]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:54:42.809]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:54:42.813]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:54:42.814]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:54:42.857]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 00:54:42.867]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 00:54:42.872]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:54:42.891]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:54:42.908]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:54:42.948]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 00:54:43.015]INFO [django.server:157] "GET /api/v2/profile/company/1/1 HTTP/1.1" 200 1332
+[09/Feb/2021 00:54:43.046]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:54:43.049]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:54:43.054]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:54:43.058]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:54:43.083]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:54:43.098]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 00:54:43.110]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:54:43.216]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:54:43.239]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:54:43.257]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 00:54:43.262]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 00:54:43.264]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:54:43.269]WARNING [django.request:230] Not Found: /mediafiles/my photo.png
+[09/Feb/2021 00:54:43.271]WARNING [django.server:157] "GET /mediafiles/my%20photo.png HTTP/1.1" 404 1825
+[09/Feb/2021 00:54:43.294]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:54:46.288]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 00:55:02.007]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:55:05.737]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:55:05.755]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:55:09.560]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 00:55:47.160]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 00:55:47.184]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 00:55:53.206]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 01:03:29.698]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:03:29.700]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 01:03:29.720]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 01:03:29.775]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 01:03:29.775]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 01:03:29.782]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:03:29.788]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 01:03:29.797]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 01:03:29.803]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:03:29.860]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:03:29.917]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 01:03:29.926]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 01:03:29.943]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 01:03:29.953]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 01:03:29.960]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 01:03:29.962]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 01:03:29.985]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:03:30.004]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 01:03:30.137]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 01:03:30.145]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 01:03:30.147]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 01:03:30.169]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 01:03:30.175]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:03:30.184]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 01:03:30.186]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 01:03:30.186]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 01:03:30.204]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 01:03:30.214]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 01:03:30.227]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:03:30.236]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 01:03:30.500]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 01:03:30.510]INFO [django.server:157] "GET /api/v2/profile/company/1/1 HTTP/1.1" 200 1332
+[09/Feb/2021 01:03:30.514]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 01:03:30.565]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 01:03:30.611]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 01:03:30.761]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 01:03:30.815]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 01:03:30.852]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:03:30.877]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 01:03:30.889]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 01:03:30.930]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 01:03:30.933]INFO [django.server:157] "GET /api/v2/reward/3 HTTP/1.1" 200 240
+[09/Feb/2021 01:03:30.934]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:03:30.983]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 01:03:30.998]INFO [django.server:157] "GET /api/v2/campaing-body-last/3 HTTP/1.1" 200 2574
+[09/Feb/2021 01:03:31.170]WARNING [django.request:230] Not Found: /mediafiles/my photo.png
+[09/Feb/2021 01:03:31.171]WARNING [django.server:157] "GET /mediafiles/my%20photo.png HTTP/1.1" 404 1825
+[09/Feb/2021 01:03:35.234]INFO [django.server:157] "GET /mediafiles/campaings/images_three.jpeg HTTP/1.1" 304 0
+[09/Feb/2021 01:03:35.285]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:03:40.795]INFO [django.server:157] "GET /api/v2/phases/3 HTTP/1.1" 200 124
+[09/Feb/2021 01:04:11.217]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 01:04:11.233]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 01:04:11.233]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 01:04:11.298]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3031
+[09/Feb/2021 01:04:14.912]WARNING [django.request:230] Bad Request: /api/v2/auth
+[09/Feb/2021 01:04:14.913]WARNING [django.server:157] "POST /api/v2/auth HTTP/1.1" 400 86
+[09/Feb/2021 01:04:33.969]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[09/Feb/2021 01:04:33.998]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[09/Feb/2021 01:04:33.998]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[09/Feb/2021 01:04:34.506]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 01:04:34.507]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 01:04:34.519]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 01:04:34.524]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:04:34.552]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3031
+[09/Feb/2021 01:04:38.709]INFO [django.server:157] "OPTIONS /api/v2/phases/0 HTTP/1.1" 200 0
+[09/Feb/2021 01:04:38.727]INFO [django.server:157] "OPTIONS /api/v2/reward/0 HTTP/1.1" 200 0
+[09/Feb/2021 01:04:38.743]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:04:38.764]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 01:04:38.784]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 01:04:38.798]WARNING [django.request:230] Not Found: /api/v2/reward/0
+[09/Feb/2021 01:04:38.799]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 01:04:38.799]INFO [django.server:157] "GET /api/v2/phases/0 HTTP/1.1" 200 11
+[09/Feb/2021 01:04:38.812]WARNING [django.server:157] "GET /api/v2/reward/0 HTTP/1.1" 404 68
+[09/Feb/2021 01:04:38.820]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:04:38.826]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:04:38.827]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 01:04:38.865]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 01:04:38.939]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[09/Feb/2021 01:04:39.016]INFO [django.server:157] "OPTIONS /api/v2/phases/7 HTTP/1.1" 200 0
+[09/Feb/2021 01:04:39.016]INFO [django.server:157] "OPTIONS /api/v2/reward/7 HTTP/1.1" 200 0
+[09/Feb/2021 01:04:39.017]INFO [django.server:157] "OPTIONS /api/v2/campaing-body-last/7 HTTP/1.1" 200 0
+[09/Feb/2021 01:04:39.046]WARNING [django.request:230] Not Found: /api/v2/profile/personal/0
+[09/Feb/2021 01:04:39.050]INFO [django.server:157] "GET /api/v2/phases/7 HTTP/1.1" 200 124
+[09/Feb/2021 01:04:39.060]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[09/Feb/2021 01:04:39.061]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:04:39.066]INFO [django.server:157] "GET /api/v2/reward/7 HTTP/1.1" 200 240
+[09/Feb/2021 01:04:39.087]INFO [django.server:157] "GET /api/v2/campaing-body-last/7 HTTP/1.1" 200 2582
+[09/Feb/2021 01:04:39.159]INFO [django.server:157] "GET /api/v2/phases/7 HTTP/1.1" 200 124
+[09/Feb/2021 01:04:39.195]INFO [django.server:157] "GET /api/v2/reward/7 HTTP/1.1" 200 240
+[09/Feb/2021 01:04:39.206]INFO [django.server:157] "GET /api/v2/phases/7 HTTP/1.1" 200 124
+[09/Feb/2021 01:04:39.207]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 01:04:39.221]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:04:39.251]INFO [django.server:157] "GET /api/v2/campaing-body-last/7 HTTP/1.1" 200 2582
+[09/Feb/2021 01:04:39.285]INFO [django.server:157] "GET /api/v2/reward/7 HTTP/1.1" 200 240
+[09/Feb/2021 01:04:39.319]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 01:04:39.342]INFO [django.server:157] "GET /api/v2/phases/7 HTTP/1.1" 200 124
+[09/Feb/2021 01:04:39.348]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:04:39.351]INFO [django.server:157] "GET /api/v2/reward/7 HTTP/1.1" 200 240
+[09/Feb/2021 01:04:39.366]INFO [django.server:157] "GET /api/v2/campaing-body-last/7 HTTP/1.1" 200 2582
+[09/Feb/2021 01:04:39.387]INFO [django.server:157] "GET /api/v2/phases/7 HTTP/1.1" 200 124
+[09/Feb/2021 01:04:39.398]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 01:04:39.453]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:04:39.467]INFO [django.server:157] "GET /api/v2/campaing-body-last/7 HTTP/1.1" 200 2582
+[09/Feb/2021 01:04:39.467]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 823
+[09/Feb/2021 01:04:39.467]INFO [django.server:157] "GET /api/v2/reward/7 HTTP/1.1" 200 240
+[09/Feb/2021 01:04:39.500]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 574
+[09/Feb/2021 01:04:39.521]INFO [django.server:157] "GET /api/v2/campaing-body-last/7 HTTP/1.1" 200 2582
+[09/Feb/2021 01:04:50.328]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:04:54.555]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:04:54.649]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 7702
+[09/Feb/2021 01:04:54.738]INFO [django.server:157] "GET /mediafiles/campaings/images_two.png HTTP/1.1" 304 0
+[09/Feb/2021 01:04:54.738]INFO [django.server:157] "GET /mediafiles/campaings/images_one.png HTTP/1.1" 304 0
+[09/Feb/2021 01:11:43.917]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 01:11:43.921]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 01:11:43.922]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 01:11:44.023]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3031
+[09/Feb/2021 01:12:41.751]WARNING [django.request:230] Bad Request: /api/v2/auth
+[09/Feb/2021 01:12:41.757]WARNING [django.server:157] "POST /api/v2/auth HTTP/1.1" 400 86
+[09/Feb/2021 01:12:47.820]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[09/Feb/2021 01:12:47.850]WARNING [django.request:230] Unauthorized: /api/v2/user/25
+[09/Feb/2021 01:12:47.850]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[09/Feb/2021 01:12:48.379]INFO [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 200 11
+[09/Feb/2021 01:12:48.380]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 1296
+[09/Feb/2021 01:12:48.380]INFO [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 200 11
+[09/Feb/2021 01:12:48.393]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:12:48.426]INFO [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 200 3031
+[09/Feb/2021 01:12:52.986]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:12:53.062]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 7702
+[09/Feb/2021 01:12:53.148]INFO [django.server:157] "GET /mediafiles/campaings/images_two.png HTTP/1.1" 304 0
+[09/Feb/2021 01:12:53.149]INFO [django.server:157] "GET /mediafiles/campaings/images_three.jpeg HTTP/1.1" 304 0
+[09/Feb/2021 01:12:53.149]INFO [django.server:157] "GET /mediafiles/campaings/images_one.png HTTP/1.1" 304 0
+[09/Feb/2021 01:13:05.128]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:13:05.166]INFO [django.server:157] "GET /api/v2/campaing-private/3 HTTP/1.1" 200 2584
+[09/Feb/2021 01:13:05.193]INFO [django.server:157] "GET /mediafiles/campaings/images_three_m52deSr.jpeg HTTP/1.1" 304 0
+[09/Feb/2021 01:13:19.359]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:13:19.370]INFO [django.server:157] "GET /api/v2/campaing-private/4 HTTP/1.1" 200 11
+[09/Feb/2021 01:13:20.934]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:13:21.019]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 7726
+[09/Feb/2021 01:13:21.049]INFO [django.server:157] "GET /mediafiles/campaings/images_three_qO6KUVV.jpeg HTTP/1.1" 304 0
+[09/Feb/2021 01:13:21.049]INFO [django.server:157] "GET /mediafiles/campaings/images_two_xdlmk6L.png HTTP/1.1" 304 0
+[09/Feb/2021 01:13:21.050]INFO [django.server:157] "GET /mediafiles/campaings/images_one_v0RYwHg.png HTTP/1.1" 304 0
+[09/Feb/2021 01:13:28.602]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[09/Feb/2021 01:13:28.695]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 7702

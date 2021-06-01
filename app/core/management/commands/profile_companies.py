@@ -84,22 +84,40 @@ class Command(BaseCommand):
                 self.success("currency created")
                 # category
                 Category.objects.create(
-                    name="Cultura", description="description this category"
+                    name="Cultura",
+                    description="description this category",
+                    img_banner="http://165.227.203.226:9000/mediafiles/banner-cotizate-teatro.png",
+                    img_icon="http://165.227.203.226:9000/mediafiles/artes.png",
                 )
                 Category.objects.create(
-                    name="Tecnologia", description="description this category"
+                    name="Tecnologia",
+                    description="description this category",
+                    img_banner="http://165.227.203.226:9000/mediafiles/banner-cotizate-tecnologia.png",
+                    img_icon="http://165.227.203.226:9000/mediafiles/tecnologia.png",
                 )
                 Category.objects.create(
-                    name="Emprendedurismo", description="description this category"
+                    name="Emprendedurismo",
+                    description="description this category",
+                    img_banner="http://165.227.203.226:9000/mediafiles/banner-cotizate-emprendedor.png",
+                    img_icon="http://165.227.203.226:9000/mediafiles/ecologico.png",
                 )
                 Category.objects.create(
-                    name="Musica", description="description this category"
+                    name="Musica",
+                    description="description this category",
+                    img_banner="http://165.227.203.226:9000/mediafiles/banner-cotizate-musica.png",
+                    img_icon="http://165.227.203.226:9000/mediafiles/musica.png",
                 )
                 Category.objects.create(
-                    name="Games", description="description this category"
+                    name="Games",
+                    description="description this category",
+                    img_banner="http://165.227.203.226:9000/mediafiles/banner-cotizate-tecnologia.png",
+                    img_icon="http://165.227.203.226:9000/mediafiles/games.png",
                 )
                 Category.objects.create(
-                    name="Fotografia", description="description this category"
+                    name="Fotografia",
+                    description="description this category",
+                    img_banner="http://165.227.203.226:9000/mediafiles/banner-cotizate-fotografia-e-videos.png",
+                    img_icon="http://165.227.203.226:9000/mediafiles/fotografia.png",
                 )
 
                 self.success("category created")

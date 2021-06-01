@@ -1,0 +1,1014 @@
+[12/Dec/2020 21:31:01.389]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[12/Dec/2020 21:31:09.135]WARNING [django.request:224] Unauthorized: /api/v2/campaing-private/2
+[12/Dec/2020 21:31:09.136]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 401 38
+[12/Dec/2020 21:31:12.918]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[12/Dec/2020 21:31:47.569]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 15
+[12/Dec/2020 21:32:14.732]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[12/Dec/2020 21:32:15.671]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[12/Dec/2020 21:32:17.874]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/2
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 28, in list
+    list_camp = CampPBQ.get_list_camp(pk, request)
+  File "/usr/src/app/core/queries/campaingQuery.py", line 55, in get_list_camp
+    current_profile = User.objects.get(user=request.user.id)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1258, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1084, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1481, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: bookmark, campaingheader, comment, deleted, email, first_name, groups, id, is_activate, is_staff, is_superuser, last_login, last_name, like, logentry, password, payment, personalprofile, type_user, user_permissions
+[12/Dec/2020 21:32:17.876]ERROR [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 500 142689
+[12/Dec/2020 21:32:48.112]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/2
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 28, in list
+    list_camp = CampPBQ.get_list_camp(pk, request)
+  File "/usr/src/app/core/queries/campaingQuery.py", line 55, in get_list_camp
+    current_profile = User.objects.get(user=request.user.id)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1258, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1084, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1481, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: bookmark, campaingheader, comment, deleted, email, first_name, groups, id, is_activate, is_staff, is_superuser, last_login, last_name, like, logentry, password, payment, personalprofile, type_user, user_permissions
+[12/Dec/2020 21:32:48.113]ERROR [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 500 142689
+[12/Dec/2020 21:33:59.330]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[12/Dec/2020 21:34:00.271]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[12/Dec/2020 21:34:05.285]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/2
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 28, in list
+    list_camp = CampPBQ.get_list_camp(pk, request)
+  File "/usr/src/app/core/queries/campaingQuery.py", line 56, in get_list_camp
+    return CampaingBody.objects.filter(status=status_camp, profile=current_profile)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1292, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1119, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1100, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "jhon@yopmail.com": Must be "PersonalProfile" instance.
+[12/Dec/2020 21:34:05.286]ERROR [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 500 138401
+[12/Dec/2020 21:35:01.121]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[12/Dec/2020 21:35:02.062]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[12/Dec/2020 21:35:04.159]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 15
+[12/Dec/2020 21:35:52.477]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[12/Dec/2020 21:35:53.432]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[12/Dec/2020 21:35:55.882]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 11
+[12/Dec/2020 21:36:02.115]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 1340
+[12/Dec/2020 21:46:38.343]WARNING [django.request:224] Unauthorized: /api/v2/category
+[12/Dec/2020 21:46:38.350]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[12/Dec/2020 21:46:38.356]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[12/Dec/2020 21:46:38.361]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[12/Dec/2020 21:46:38.361]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[12/Dec/2020 21:46:38.362]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[12/Dec/2020 21:46:38.362]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[12/Dec/2020 21:46:38.364]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[12/Dec/2020 21:47:38.162]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[12/Dec/2020 21:47:38.328]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[12/Dec/2020 21:47:38.351]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[12/Dec/2020 21:47:38.355]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[12/Dec/2020 21:47:38.355]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[12/Dec/2020 21:47:38.728]WARNING [django.request:224] Unauthorized: /api/v2/category
+[12/Dec/2020 21:47:38.730]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[12/Dec/2020 21:47:38.732]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[12/Dec/2020 21:47:38.733]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[12/Dec/2020 21:47:38.734]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[12/Dec/2020 21:47:38.737]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[12/Dec/2020 21:47:38.737]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[12/Dec/2020 21:47:38.737]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[12/Dec/2020 21:47:38.743]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[12/Dec/2020 21:47:56.689]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[12/Dec/2020 21:48:01.233]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.234]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.234]INFO [django.server:157] "OPTIONS /api/v2/category HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.235]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.250]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[12/Dec/2020 21:48:01.250]INFO [django.server:157] "OPTIONS /api/v2/campaing-header-last HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.251]INFO [django.server:157] "OPTIONS /api/v2/reward/0 HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.255]INFO [django.server:157] "OPTIONS /api/v2/phases/0 HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.256]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/0 HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.277]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[12/Dec/2020 21:48:01.280]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[12/Dec/2020 21:48:01.284]WARNING [django.request:224] Not Found: /api/v2/reward/0
+[12/Dec/2020 21:48:01.288]WARNING [django.server:157] "GET /api/v2/reward/0 HTTP/1.1" 404 68
+[12/Dec/2020 21:48:01.300]INFO [django.server:157] "GET /api/v2/phases/0 HTTP/1.1" 200 11
+[12/Dec/2020 21:48:01.301]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[12/Dec/2020 21:48:01.301]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 512
+[12/Dec/2020 21:48:01.309]WARNING [django.request:224] Not Found: /api/v2/profile/personal/0
+[12/Dec/2020 21:48:01.310]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[12/Dec/2020 21:48:01.329]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[12/Dec/2020 21:48:01.361]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[12/Dec/2020 21:48:01.446]INFO [django.server:157] "OPTIONS /api/v2/reward/1 HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.446]INFO [django.server:157] "OPTIONS /api/v2/campaing-body-last/1 HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.448]INFO [django.server:157] "OPTIONS /api/v2/phases/1 HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.462]WARNING [django.request:224] Not Found: /api/v2/profile/personal/0
+[12/Dec/2020 21:48:01.472]INFO [django.server:157] "GET /api/v2/phases/1 HTTP/1.1" 200 247
+[12/Dec/2020 21:48:01.479]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[12/Dec/2020 21:48:01.491]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 512
+[12/Dec/2020 21:48:01.494]INFO [django.server:157] "GET /api/v2/reward/1 HTTP/1.1" 200 712
+[12/Dec/2020 21:48:01.495]INFO [django.server:157] "GET /api/v2/campaing-body-last/1 HTTP/1.1" 200 1338
+[12/Dec/2020 21:48:01.532]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/1 HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.536]WARNING [django.request:224] Not Found: /api/v2/profile/personal/0
+[12/Dec/2020 21:48:01.543]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[12/Dec/2020 21:48:01.544]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/1 HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.546]INFO [django.server:157] "GET /api/v2/reward/1 HTTP/1.1" 200 712
+[12/Dec/2020 21:48:01.547]INFO [django.server:157] "GET /api/v2/phases/1 HTTP/1.1" 200 247
+[12/Dec/2020 21:48:01.567]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/1 HTTP/1.1" 200 0
+[12/Dec/2020 21:48:01.572]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 512
+[12/Dec/2020 21:48:01.585]INFO [django.server:157] "GET /api/v2/campaing-body-last/1 HTTP/1.1" 200 1338
+[12/Dec/2020 21:48:01.590]INFO [django.server:157] "GET /api/v2/phases/1 HTTP/1.1" 200 247
+[12/Dec/2020 21:48:01.597]INFO [django.server:157] "GET /api/v2/reward/1 HTTP/1.1" 200 712
+[12/Dec/2020 21:48:01.608]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 799
+[12/Dec/2020 21:48:01.642]INFO [django.server:157] "GET /api/v2/campaing-body-last/1 HTTP/1.1" 200 1338
+[12/Dec/2020 21:48:01.654]INFO [django.server:157] "GET /api/v2/reward/1 HTTP/1.1" 200 712
+[12/Dec/2020 21:48:01.659]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 799
+[12/Dec/2020 21:48:01.663]INFO [django.server:157] "GET /api/v2/phases/1 HTTP/1.1" 200 247
+[12/Dec/2020 21:48:01.674]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 512
+[12/Dec/2020 21:48:01.697]INFO [django.server:157] "GET /api/v2/phases/1 HTTP/1.1" 200 247
+[12/Dec/2020 21:48:01.697]INFO [django.server:157] "GET /api/v2/campaing-body-last/1 HTTP/1.1" 200 1338
+[12/Dec/2020 21:48:01.717]INFO [django.server:157] "GET /api/v2/profile/personal/1 HTTP/1.1" 200 799
+[12/Dec/2020 21:48:01.732]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 512
+[12/Dec/2020 21:48:01.747]INFO [django.server:157] "GET /api/v2/reward/1 HTTP/1.1" 200 712
+[12/Dec/2020 21:48:01.750]INFO [django.server:157] "GET /api/v2/campaing-body-last/1 HTTP/1.1" 200 1338
+[12/Dec/2020 21:48:01.756]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 512
+[12/Dec/2020 21:48:48.962]INFO [django.server:157] "OPTIONS /api/v2/profile/personal HTTP/1.1" 200 0
+[12/Dec/2020 21:48:48.981]INFO [django.server:157] "POST /api/v2/profile/personal HTTP/1.1" 201 47
+[12/Dec/2020 21:49:37.527]INFO [django.server:157] "OPTIONS /api/v2/campaing-header HTTP/1.1" 200 0
+[12/Dec/2020 21:49:37.543]INFO [django.server:157] "POST /api/v2/campaing-header HTTP/1.1" 201 124
+[12/Dec/2020 21:49:37.632]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[12/Dec/2020 21:51:09.659]INFO [django.server:157] "OPTIONS /api/v2/campaing-body HTTP/1.1" 200 0
+[12/Dec/2020 21:51:09.734]INFO [django.server:157] "POST /api/v2/campaing-body HTTP/1.1" 201 42
+[12/Dec/2020 21:51:09.936]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[12/Dec/2020 21:51:23.145]INFO [django.server:157] "OPTIONS /api/v2/phase HTTP/1.1" 200 0
+[12/Dec/2020 21:51:23.182]INFO [django.server:157] "POST /api/v2/phase HTTP/1.1" 201 23
+[12/Dec/2020 21:51:25.426]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[12/Dec/2020 21:51:25.432]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[12/Dec/2020 21:51:44.328]INFO [django.server:157] "OPTIONS /api/v2/reward HTTP/1.1" 200 0
+[12/Dec/2020 21:51:44.345]INFO [django.server:157] "POST /api/v2/reward HTTP/1.1" 201 26
+[12/Dec/2020 21:51:52.879]WARNING [django.request:224] Not Found: /api/v2/reward/0
+[12/Dec/2020 21:51:52.885]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[12/Dec/2020 21:51:52.887]INFO [django.server:157] "GET /api/v2/phases/0 HTTP/1.1" 200 11
+[12/Dec/2020 21:51:52.887]WARNING [django.server:157] "GET /api/v2/reward/0 HTTP/1.1" 404 68
+[12/Dec/2020 21:51:52.908]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[12/Dec/2020 21:51:52.911]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[12/Dec/2020 21:51:52.919]WARNING [django.request:224] Not Found: /api/v2/profile/personal/0
+[12/Dec/2020 21:51:52.923]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[12/Dec/2020 21:51:52.927]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[12/Dec/2020 21:51:52.933]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[12/Dec/2020 21:51:52.972]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[12/Dec/2020 21:51:52.990]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[12/Dec/2020 21:51:53.022]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[12/Dec/2020 21:51:53.146]INFO [django.server:157] "OPTIONS /api/v2/campaing-body-last/4 HTTP/1.1" 200 0
+[12/Dec/2020 21:51:53.146]INFO [django.server:157] "OPTIONS /api/v2/phases/4 HTTP/1.1" 200 0
+[12/Dec/2020 21:51:53.149]INFO [django.server:157] "OPTIONS /api/v2/reward/4 HTTP/1.1" 200 0
+[12/Dec/2020 21:51:53.175]WARNING [django.request:224] Not Found: /api/v2/profile/personal/0
+[12/Dec/2020 21:51:53.182]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[12/Dec/2020 21:51:53.189]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[12/Dec/2020 21:51:53.189]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[12/Dec/2020 21:51:53.198]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[12/Dec/2020 21:51:53.208]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[12/Dec/2020 21:51:53.382]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/4 HTTP/1.1" 200 0
+[12/Dec/2020 21:51:53.400]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/4 HTTP/1.1" 200 0
+[12/Dec/2020 21:51:53.407]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/4 HTTP/1.1" 200 0
+[12/Dec/2020 21:51:53.418]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[12/Dec/2020 21:51:53.420]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[12/Dec/2020 21:51:53.428]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[12/Dec/2020 21:51:53.438]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[12/Dec/2020 21:51:53.454]INFO [django.server:157] "GET /api/v2/profile/personal/4 HTTP/1.1" 200 756
+[12/Dec/2020 21:51:53.465]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[12/Dec/2020 21:51:53.468]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[12/Dec/2020 21:51:53.488]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[12/Dec/2020 21:51:53.490]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[12/Dec/2020 21:51:53.502]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[12/Dec/2020 21:51:53.527]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[12/Dec/2020 21:51:53.540]INFO [django.server:157] "GET /api/v2/profile/personal/4 HTTP/1.1" 200 756
+[12/Dec/2020 21:51:53.553]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[12/Dec/2020 21:51:53.573]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[12/Dec/2020 21:51:53.579]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[12/Dec/2020 21:51:53.590]INFO [django.server:157] "GET /api/v2/profile/personal/4 HTTP/1.1" 200 756
+[12/Dec/2020 21:51:53.601]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[12/Dec/2020 21:51:53.627]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[12/Dec/2020 21:51:53.630]INFO [django.server:157] "GET /api/v2/profile/personal/4 HTTP/1.1" 200 756
+[12/Dec/2020 21:51:53.641]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[12/Dec/2020 21:52:05.129]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/5
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 28, in list
+    list_camp = CampPBQ.get_list_camp(pk, request)
+  File "/usr/src/app/core/queries/campaingQuery.py", line 56, in get_list_camp
+    current_profile = PersonalProfile.objects.get(user=current_user)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 433, in get
+    raise self.model.MultipleObjectsReturned(
+core.profile.PersonalProfile.MultipleObjectsReturned: get() returned more than one PersonalProfile -- it returned 2!
+[12/Dec/2020 21:52:05.131]ERROR [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 500 102537
+[12/Dec/2020 21:54:37.641]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[12/Dec/2020 21:54:38.703]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[12/Dec/2020 21:54:42.550]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/5
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 30, in list
+    return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1143, in execute_sql
+    sql, params = self.as_sql()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 513, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 430, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/where.py", line 81, in as_sql
+    sql, params = compiler.compile(child)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 430, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/related_lookups.py", line 132, in as_sql
+    return super().as_sql(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 302, in as_sql
+    return super().as_sql(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 181, in as_sql
+    rhs_sql, rhs_params = self.process_rhs(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 284, in process_rhs
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+[12/Dec/2020 21:54:42.556]ERROR [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 500 158079
+[12/Dec/2020 21:54:57.875]WARNING [django.security.SuspiciousSession:131] Session data corrupted
+[12/Dec/2020 21:54:58.013]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 302 0
+[12/Dec/2020 21:54:58.019]WARNING [django.security.SuspiciousSession:131] Session data corrupted
+[12/Dec/2020 21:54:58.040]INFO [django.server:157] "GET /admin/login/?next=/admin/core/campaingbody/ HTTP/1.1" 200 2252
+[12/Dec/2020 21:54:58.063]INFO [django.server:157] "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 1185
+[12/Dec/2020 21:55:04.730]WARNING [django.security.SuspiciousSession:131] Session data corrupted
+[12/Dec/2020 21:55:04.970]INFO [django.server:157] "POST /admin/login/?next=/admin/core/campaingbody/ HTTP/1.1" 302 0
+[12/Dec/2020 21:55:05.038]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 12917
+[12/Dec/2020 21:55:05.066]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 200 6783
+[12/Dec/2020 21:55:05.070]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[12/Dec/2020 21:55:05.074]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[12/Dec/2020 21:55:05.075]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[12/Dec/2020 21:55:05.078]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[12/Dec/2020 21:55:07.640]INFO [django.server:157] "GET /admin/core/campaingbody/4/change/ HTTP/1.1" 200 22844
+[12/Dec/2020 21:55:07.680]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[12/Dec/2020 21:55:17.794]INFO [django.server:157] "POST /admin/core/campaingbody/4/change/ HTTP/1.1" 302 0
+[12/Dec/2020 21:55:17.855]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 13135
+[12/Dec/2020 21:55:17.888]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[12/Dec/2020 21:55:17.971]INFO [django.server:157] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[12/Dec/2020 21:55:25.172]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/5
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 30, in list
+    return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1143, in execute_sql
+    sql, params = self.as_sql()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 513, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 430, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/where.py", line 81, in as_sql
+    sql, params = compiler.compile(child)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 430, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/related_lookups.py", line 132, in as_sql
+    return super().as_sql(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 302, in as_sql
+    return super().as_sql(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 181, in as_sql
+    rhs_sql, rhs_params = self.process_rhs(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 284, in process_rhs
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+[12/Dec/2020 21:55:25.173]ERROR [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 500 158079
+[12/Dec/2020 21:57:38.755]INFO [django.server:157] "GET /admin/core/personalprofile/ HTTP/1.1" 200 12915
+[12/Dec/2020 21:57:38.806]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[12/Dec/2020 21:57:41.021]INFO [django.server:157] "GET /admin/core/personalprofile/1/change/ HTTP/1.1" 200 23368
+[12/Dec/2020 21:57:41.059]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[12/Dec/2020 21:57:58.999]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12889
+[12/Dec/2020 21:57:59.027]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[12/Dec/2020 21:58:02.995]INFO [django.server:157] "GET /admin/core/campaingheader/4/change/ HTTP/1.1" 200 19002
+[12/Dec/2020 21:58:03.026]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[12/Dec/2020 22:07:01.032]INFO [django.server:157] "GET /admin/core/personalprofile/ HTTP/1.1" 200 12915
+[12/Dec/2020 22:07:01.066]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[12/Dec/2020 22:07:02.987]INFO [django.server:157] "GET /admin/core/personalprofile/4/change/ HTTP/1.1" 200 23299
+[12/Dec/2020 22:07:03.021]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[12/Dec/2020 23:52:04.569]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[12/Dec/2020 23:52:06.882]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 00:05:34.969]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Dec/2020 00:05:35.946]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 00:05:51.656]WARNING [django.request:224] Unauthorized: /api/v2/campaing-private/5
+[13/Dec/2020 00:05:51.656]WARNING [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 401 35
+[13/Dec/2020 00:05:56.446]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 00:06:17.613]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/5
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 30, in list
+    return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1143, in execute_sql
+    sql, params = self.as_sql()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 513, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 430, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/where.py", line 81, in as_sql
+    sql, params = compiler.compile(child)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 430, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/related_lookups.py", line 132, in as_sql
+    return super().as_sql(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 302, in as_sql
+    return super().as_sql(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 181, in as_sql
+    rhs_sql, rhs_params = self.process_rhs(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 284, in process_rhs
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+[13/Dec/2020 00:06:17.615]ERROR [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 500 158077
+[13/Dec/2020 00:07:14.809]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Dec/2020 00:07:15.825]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 00:07:19.285]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/5
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 30, in list
+    return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1143, in execute_sql
+    sql, params = self.as_sql()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 513, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 430, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/where.py", line 81, in as_sql
+    sql, params = compiler.compile(child)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 430, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/fields/related_lookups.py", line 132, in as_sql
+    return super().as_sql(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 302, in as_sql
+    return super().as_sql(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 181, in as_sql
+    rhs_sql, rhs_params = self.process_rhs(compiler, connection)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/lookups.py", line 284, in process_rhs
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+[13/Dec/2020 00:07:19.287]ERROR [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 500 158077
+[13/Dec/2020 00:17:39.903]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Dec/2020 00:17:40.928]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 00:29:27.936]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Dec/2020 00:29:28.946]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 00:29:33.698]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Dec/2020 00:29:34.727]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 00:50:35.567]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Dec/2020 00:50:36.584]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 00:50:45.286]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/5
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'CampaingHeader' object has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 30, in list
+    return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `title` on serializer `CampaingBodySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `CampaingHeader` instance.
+Original exception text was: 'CampaingHeader' object has no attribute 'title'.
+[13/Dec/2020 00:50:45.288]ERROR [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 500 152395
+[13/Dec/2020 00:57:58.672]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[13/Dec/2020 00:57:59.682]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 00:58:06.245]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[13/Dec/2020 00:58:59.589]ERROR [django.request:224] Internal Server Error: /api/v2/campaing-private/2
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/body/views.py", line 31, in list
+    list_camp.append(CampaingBody.objects.get(header=header_camp, status=pk))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+core.campaing.CampaingBody.DoesNotExist: CampaingBody matching query does not exist.
+[13/Dec/2020 00:58:59.590]ERROR [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 500 99809
+[13/Dec/2020 00:59:20.559]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[13/Dec/2020 00:59:26.928]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[13/Dec/2020 01:00:12.670]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[13/Dec/2020 01:00:13.633]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:00:17.879]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[13/Dec/2020 01:06:23.810]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[13/Dec/2020 01:06:24.824]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:06:27.521]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[13/Dec/2020 01:06:31.204]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:06:31.204]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:06:45.733]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 12917
+[13/Dec/2020 01:06:45.769]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:06:49.604]INFO [django.server:157] "GET /admin/core/campaingbody/1/change/ HTTP/1.1" 200 22898
+[13/Dec/2020 01:06:49.646]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:06:55.192]INFO [django.server:157] "POST /admin/core/campaingbody/1/change/ HTTP/1.1" 302 0
+[13/Dec/2020 01:06:55.286]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 13136
+[13/Dec/2020 01:06:55.326]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:06:59.628]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:06:59.629]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:07:04.650]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:07:04.651]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:07:05.609]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:07:05.609]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:07:06.468]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:07:06.469]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:07:07.394]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:07:07.394]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:07:32.058]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:07:32.059]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:07:33.122]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:07:33.123]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:07:46.298]INFO [django.server:157] "GET /admin/core/campaingbody/1/change/ HTTP/1.1" 200 22898
+[13/Dec/2020 01:07:46.335]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:07:59.542]INFO [django.server:157] "POST /admin/core/campaingbody/1/change/ HTTP/1.1" 302 0
+[13/Dec/2020 01:07:59.681]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 13136
+[13/Dec/2020 01:07:59.716]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:08:05.525]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:08:05.526]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:08:09.982]WARNING [django.request:224] Not Found: /api/v2/campaing-private/5
+[13/Dec/2020 01:08:09.983]WARNING [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 404 66
+[13/Dec/2020 01:08:15.148]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:08:15.149]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:08:34.989]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Dec/2020 01:08:35.967]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:08:42.847]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[13/Dec/2020 01:08:43.820]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:09:01.089]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[13/Dec/2020 01:09:02.071]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:09:05.427]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:09:05.428]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:09:22.012]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:09:22.012]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:11:00.929]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[13/Dec/2020 01:11:01.921]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:11:06.352]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:11:06.352]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 316
+[13/Dec/2020 01:11:34.019]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[13/Dec/2020 01:11:35.041]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:13:07.013]WARNING [django.request:224] Not Found: /api/v2/campaing-private/2
+[13/Dec/2020 01:13:07.014]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 404 66
+[13/Dec/2020 01:30:36.922]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Dec/2020 01:30:37.907]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:31:22.686]INFO [django.utils.autoreload:236] /usr/src/app/core/queries/campaingQuery.py changed, reloading.
+[13/Dec/2020 01:31:23.663]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:32:06.121]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[13/Dec/2020 01:32:07.131]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:32:15.798]WARNING [django.request:224] Unauthorized: /api/v2/campaing-private/2
+[13/Dec/2020 01:32:15.799]WARNING [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 401 35
+[13/Dec/2020 01:32:19.005]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 01:32:39.650]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 1340
+[13/Dec/2020 01:32:58.364]INFO [django.server:157] "GET /admin/core/campaingbody/1/change/ HTTP/1.1" 200 22898
+[13/Dec/2020 01:32:58.412]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:33:07.722]INFO [django.server:157] "POST /admin/core/campaingbody/1/change/ HTTP/1.1" 302 0
+[13/Dec/2020 01:33:07.799]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 13136
+[13/Dec/2020 01:33:07.839]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:33:14.479]INFO [django.server:157] "GET /api/v2/campaing-private/2 HTTP/1.1" 200 11
+[13/Dec/2020 01:33:19.911]INFO [django.server:157] "GET /api/v2/campaing-private/5 HTTP/1.1" 200 2552
+[13/Dec/2020 01:33:44.593]INFO [django.utils.autoreload:236] /usr/src/app/campaings/body/views.py changed, reloading.
+[13/Dec/2020 01:33:45.582]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:34:38.444]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:34:38.444]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:35:00.680]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:35:00.680]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:35:19.955]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:35:19.956]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:35:25.033]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:35:25.033]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:35:26.051]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:35:26.051]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:36:34.940]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:36:34.941]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:36:35.840]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:36:35.841]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:36:49.431]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:36:49.432]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:38:06.965]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 01:38:07.969]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:38:10.507]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:38:10.508]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:38:11.464]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:38:11.464]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:39:57.738]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 01:39:58.780]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:40:02.317]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:40:02.317]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:40:03.368]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:40:03.368]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:40:04.474]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:40:04.475]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:40:33.347]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.350]INFO [django.server:157] "OPTIONS /api/v2/category HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.350]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.352]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.357]INFO [django.server:157] "OPTIONS /api/v2/reward/0 HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.357]INFO [django.server:157] "OPTIONS /api/v2/phases/0 HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.360]INFO [django.server:157] "OPTIONS /api/v2/campaing-header-last HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.361]INFO [django.server:157] "OPTIONS /api/v2/city HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.361]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.361]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/0 HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.369]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:40:33.377]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 01:40:33.380]WARNING [django.request:224] Unauthorized: /api/v2/city
+[13/Dec/2020 01:40:33.383]WARNING [django.request:224] Unauthorized: /api/v2/phases/0
+[13/Dec/2020 01:40:33.389]WARNING [django.request:224] Unauthorized: /api/v2/reward/0
+[13/Dec/2020 01:40:33.389]INFO [django.server:157] "OPTIONS /api/v2/user/25 HTTP/1.1" 200 0
+[13/Dec/2020 01:40:33.391]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.391]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.392]WARNING [django.server:157] "GET /api/v2/city HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.393]WARNING [django.server:157] "GET /api/v2/phases/0 HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.393]WARNING [django.server:157] "GET /api/v2/reward/0 HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.401]WARNING [django.request:224] Unauthorized: /api/v2/campaing-header-last
+[13/Dec/2020 01:40:33.406]WARNING [django.request:224] Unauthorized: /api/v2/profile/personal/0
+[13/Dec/2020 01:40:33.410]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 01:40:33.414]WARNING [django.request:224] Unauthorized: /api/v2/city
+[13/Dec/2020 01:40:33.416]WARNING [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.417]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.419]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.420]WARNING [django.server:157] "GET /api/v2/city HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.426]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 01:40:33.429]WARNING [django.request:224] Unauthorized: /api/v2/city
+[13/Dec/2020 01:40:33.429]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 35
+[13/Dec/2020 01:40:33.431]WARNING [django.server:157] "GET /api/v2/city HTTP/1.1" 401 35
+[13/Dec/2020 01:40:37.498]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:40:37.500]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 01:40:37.501]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 01:40:37.503]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 01:40:37.504]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 01:40:37.504]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 01:40:37.505]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:40:37.505]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 01:40:45.154]INFO [django.server:157] "OPTIONS /api/v2/auth HTTP/1.1" 200 0
+[13/Dec/2020 01:40:45.330]INFO [django.server:157] "POST /api/v2/auth HTTP/1.1" 200 209
+[13/Dec/2020 01:40:45.354]WARNING [django.request:224] Unauthorized: /api/v2/user/25
+[13/Dec/2020 01:40:45.355]WARNING [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 401 88
+[13/Dec/2020 01:40:45.658]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:40:45.660]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 01:40:45.663]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 01:40:45.667]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 01:40:45.668]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 01:40:45.668]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:40:45.668]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 01:40:45.669]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 01:40:45.673]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 01:40:51.082]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:40:51.083]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:40:51.091]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 01:40:51.094]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 01:40:51.095]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 01:40:51.095]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 01:40:51.099]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 01:40:51.101]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 01:45:10.740]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 01:45:11.906]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:45:16.716]INFO [django.server:157] "GET /admin/core/category/ HTTP/1.1" 200 12632
+[13/Dec/2020 01:45:16.762]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:45:22.231]INFO [django.server:157] "GET /admin/core/category/3/change/ HTTP/1.1" 200 12985
+[13/Dec/2020 01:45:22.280]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:45:47.310]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 01:45:47.313]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:45:47.315]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 01:45:47.316]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:45:47.320]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 01:45:47.325]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 01:45:47.326]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 01:45:47.326]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 01:45:47.345]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 01:48:13.475]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 01:48:14.549]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:48:19.557]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:48:19.558]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:49:09.215]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 01:49:10.401]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:49:14.015]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:49:14.016]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:50:16.508]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 01:50:17.538]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:50:21.185]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:50:21.186]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:50:22.324]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:50:22.325]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:50:23.105]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:50:23.105]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:50:46.215]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 01:50:47.237]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 01:51:25.735]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:51:25.735]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:51:26.635]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:51:26.642]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:51:57.725]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 01:51:57.728]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 01:51:57.758]WARNING [django.request:224] Not Found: /api/v2/reward/0
+[13/Dec/2020 01:51:57.768]INFO [django.server:157] "GET /api/v2/phases/0 HTTP/1.1" 200 11
+[13/Dec/2020 01:51:57.770]INFO [django.server:157] "GET /api/v2/user/25 HTTP/1.1" 200 82
+[13/Dec/2020 01:51:57.771]WARNING [django.server:157] "GET /api/v2/reward/0 HTTP/1.1" 404 68
+[13/Dec/2020 01:51:57.772]WARNING [django.request:224] Not Found: /api/v2/profile/personal/0
+[13/Dec/2020 01:51:57.772]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[13/Dec/2020 01:51:57.776]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[13/Dec/2020 01:51:57.776]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Dec/2020 01:51:57.804]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Dec/2020 01:51:57.834]INFO [django.server:157] "GET /api/v2/city HTTP/1.1" 200 1955
+[13/Dec/2020 01:51:57.960]INFO [django.server:157] "OPTIONS /api/v2/campaing-body-last/4 HTTP/1.1" 200 0
+[13/Dec/2020 01:51:57.960]INFO [django.server:157] "OPTIONS /api/v2/phases/4 HTTP/1.1" 200 0
+[13/Dec/2020 01:51:57.961]INFO [django.server:157] "OPTIONS /api/v2/reward/4 HTTP/1.1" 200 0
+[13/Dec/2020 01:51:57.971]WARNING [django.request:224] Not Found: /api/v2/profile/personal/0
+[13/Dec/2020 01:51:57.984]WARNING [django.server:157] "GET /api/v2/profile/personal/0 HTTP/1.1" 404 69
+[13/Dec/2020 01:51:57.987]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[13/Dec/2020 01:51:58.003]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[13/Dec/2020 01:51:58.006]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[13/Dec/2020 01:51:58.016]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[13/Dec/2020 01:51:58.075]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/4 HTTP/1.1" 200 0
+[13/Dec/2020 01:51:58.092]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[13/Dec/2020 01:51:58.103]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/4 HTTP/1.1" 200 0
+[13/Dec/2020 01:51:58.105]INFO [django.server:157] "OPTIONS /api/v2/profile/personal/4 HTTP/1.1" 200 0
+[13/Dec/2020 01:51:58.118]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[13/Dec/2020 01:51:58.127]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[13/Dec/2020 01:51:58.130]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[13/Dec/2020 01:51:58.154]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[13/Dec/2020 01:51:58.191]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[13/Dec/2020 01:51:58.204]INFO [django.server:157] "GET /api/v2/profile/personal/4 HTTP/1.1" 200 756
+[13/Dec/2020 01:51:58.204]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[13/Dec/2020 01:51:58.227]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[13/Dec/2020 01:51:58.237]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[13/Dec/2020 01:51:58.238]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[13/Dec/2020 01:51:58.265]INFO [django.server:157] "GET /api/v2/profile/personal/4 HTTP/1.1" 200 756
+[13/Dec/2020 01:51:58.277]INFO [django.server:157] "GET /api/v2/phases/4 HTTP/1.1" 200 95
+[13/Dec/2020 01:51:58.306]INFO [django.server:157] "GET /api/v2/reward/4 HTTP/1.1" 200 211
+[13/Dec/2020 01:51:58.309]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[13/Dec/2020 01:51:58.321]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[13/Dec/2020 01:51:58.321]INFO [django.server:157] "GET /api/v2/profile/personal/4 HTTP/1.1" 200 756
+[13/Dec/2020 01:51:58.354]INFO [django.server:157] "GET /api/v2/campaing-header-last HTTP/1.1" 200 552
+[13/Dec/2020 01:51:58.372]INFO [django.server:157] "GET /api/v2/profile/personal/4 HTTP/1.1" 200 756
+[13/Dec/2020 01:51:58.373]INFO [django.server:157] "GET /api/v2/campaing-body-last/4 HTTP/1.1" 200 1220
+[13/Dec/2020 01:52:22.634]WARNING [django.request:224] Unauthorized: /api/v2/category
+[13/Dec/2020 01:52:22.636]WARNING [django.server:157] "GET /api/v2/category HTTP/1.1" 401 58
+[13/Dec/2020 01:52:22.645]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/5
+[13/Dec/2020 01:52:22.649]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/7
+[13/Dec/2020 01:52:22.654]WARNING [django.request:224] Unauthorized: /api/v2/campaing-public/1
+[13/Dec/2020 01:52:22.658]WARNING [django.server:157] "GET /api/v2/campaing-public/5 HTTP/1.1" 401 58
+[13/Dec/2020 01:52:22.658]WARNING [django.server:157] "GET /api/v2/campaing-public/7 HTTP/1.1" 401 58
+[13/Dec/2020 01:52:22.661]WARNING [django.server:157] "GET /api/v2/campaing-public/1 HTTP/1.1" 401 58
+[13/Dec/2020 01:55:39.322]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 12917
+[13/Dec/2020 01:55:39.368]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:55:41.580]INFO [django.server:157] "GET /admin/core/campaingbody/4/change/ HTTP/1.1" 200 22844
+[13/Dec/2020 01:55:41.628]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:55:51.849]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12889
+[13/Dec/2020 01:55:51.886]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 01:55:53.853]INFO [django.server:157] "GET /admin/core/campaingheader/4/change/ HTTP/1.1" 200 19002
+[13/Dec/2020 01:55:53.898]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:01:53.019]INFO [django.server:157] "GET /admin/core/category/ HTTP/1.1" 200 12632
+[13/Dec/2020 02:01:53.071]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:01:55.206]INFO [django.server:157] "GET /admin/core/category/3/change/ HTTP/1.1" 200 12985
+[13/Dec/2020 02:01:55.260]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:11:51.690]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 02:11:52.767]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 02:15:03.245]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 02:15:04.247]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 02:15:57.824]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 02:15:59.029]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 02:15:59.964]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12889
+[13/Dec/2020 02:16:00.037]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:16:00.039]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[13/Dec/2020 02:16:00.042]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[13/Dec/2020 02:16:00.242]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[13/Dec/2020 02:16:00.243]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[13/Dec/2020 02:16:00.244]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[13/Dec/2020 02:16:09.895]INFO [django.server:157] "GET /admin/core/campaingheader/4/change/ HTTP/1.1" 200 19002
+[13/Dec/2020 02:16:09.943]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:16:34.420]WARNING [django.request:224] Unauthorized: /api/v2/category/tecnologia
+[13/Dec/2020 02:16:34.421]WARNING [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 401 58
+[13/Dec/2020 02:16:35.708]WARNING [django.request:224] Unauthorized: /api/v2/category/tecnologia
+[13/Dec/2020 02:16:35.709]WARNING [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 401 58
+[13/Dec/2020 02:16:36.660]WARNING [django.request:224] Unauthorized: /api/v2/category/tecnologia
+[13/Dec/2020 02:16:36.660]WARNING [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 401 58
+[13/Dec/2020 02:16:59.217]INFO [django.utils.autoreload:236] /usr/src/app/categories/urls.py changed, reloading.
+[13/Dec/2020 02:17:00.367]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 02:20:15.409]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 02:20:16.411]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 02:20:20.496]ERROR [django.request:224] Internal Server Error: /api/v2/category/tecnologia
+Traceback (most recent call last):
+  File "/usr/src/app/categories/views.py", line 34, in retrieve
+    return Response({"data": serializer.data}, status=status.HTTP_200_OK)
+NameError: name 'Response' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/categories/views.py", line 36, in retrieve
+    return Response(
+NameError: name 'Response' is not defined
+[13/Dec/2020 02:20:20.498]ERROR [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 500 103876
+[13/Dec/2020 02:20:54.808]INFO [django.utils.autoreload:236] /usr/src/app/categories/views.py changed, reloading.
+[13/Dec/2020 02:20:55.855]INFO [django.utils.autoreload:613] Watching for file changes with StatReloader
+[13/Dec/2020 02:20:56.967]INFO [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 200 2563
+[13/Dec/2020 02:21:33.002]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 12917
+[13/Dec/2020 02:21:33.059]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:21:35.212]INFO [django.server:157] "GET /admin/core/campaingbody/4/change/ HTTP/1.1" 200 22844
+[13/Dec/2020 02:21:35.284]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:21:41.400]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 12917
+[13/Dec/2020 02:21:41.438]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:21:42.957]INFO [django.server:157] "GET /admin/core/campaingbody/1/change/ HTTP/1.1" 200 22898
+[13/Dec/2020 02:21:42.994]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:21:48.646]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 12917
+[13/Dec/2020 02:21:48.697]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:21:53.483]INFO [django.server:157] "GET /admin/core/campaingbody/2/change/ HTTP/1.1" 200 22907
+[13/Dec/2020 02:21:53.529]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:21:57.116]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 12917
+[13/Dec/2020 02:21:57.169]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:21:58.949]INFO [django.server:157] "GET /admin/core/campaingbody/3/change/ HTTP/1.1" 200 22909
+[13/Dec/2020 02:21:58.987]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:04.488]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 12917
+[13/Dec/2020 02:22:04.521]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:06.899]INFO [django.server:157] "GET /admin/core/campaingbody/1/change/ HTTP/1.1" 200 22898
+[13/Dec/2020 02:22:06.944]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:15.720]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12889
+[13/Dec/2020 02:22:15.765]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:18.689]INFO [django.server:157] "GET /admin/core/campaingheader/1/change/ HTTP/1.1" 200 18997
+[13/Dec/2020 02:22:18.734]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:22.935]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12889
+[13/Dec/2020 02:22:22.973]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:24.519]INFO [django.server:157] "GET /admin/core/campaingheader/2/change/ HTTP/1.1" 200 18998
+[13/Dec/2020 02:22:24.579]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:27.436]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12889
+[13/Dec/2020 02:22:27.476]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:29.118]INFO [django.server:157] "GET /admin/core/campaingheader/3/change/ HTTP/1.1" 200 19000
+[13/Dec/2020 02:22:29.161]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:31.750]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12889
+[13/Dec/2020 02:22:31.788]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:33.701]INFO [django.server:157] "GET /admin/core/campaingheader/4/change/ HTTP/1.1" 200 19002
+[13/Dec/2020 02:22:33.742]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:35.959]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12889
+[13/Dec/2020 02:22:35.998]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:47.219]INFO [django.server:157] "GET /admin/core/campaingheader/1/change/ HTTP/1.1" 200 18997
+[13/Dec/2020 02:22:47.258]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:22:50.471]INFO [django.server:157] "GET /admin/core/campaingheader/ HTTP/1.1" 200 12889
+[13/Dec/2020 02:22:50.500]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+[13/Dec/2020 02:23:11.439]INFO [django.server:157] "GET /api/v2/category HTTP/1.1" 200 329
+[13/Dec/2020 02:24:02.984]INFO [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 200 2563

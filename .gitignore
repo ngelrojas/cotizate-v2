@@ -1,7 +1,7 @@
 /app/staticfiles/
 /app/api/staticfiles/
 /app/api/settings/conf_email.py
-/app/log/
+/app/logs/
 /app/api/settings/__pycache__/
 /app/*/__pycache__/*.pyc
 /app/*/*/__pycache__/*.pyc
