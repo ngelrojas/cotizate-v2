@@ -85,6 +85,7 @@ services:
         #    - FLOWER_BROKER=${FLOWER_BROKER}
         ports:
             - 5672:5672
+            - 15672:15672
 
 volumes:
     postgres_data:
