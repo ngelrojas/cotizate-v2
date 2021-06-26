@@ -49,11 +49,6 @@ services:
         restart: 'no'
         env_file:
           - ./.env
-        # environment:
-        #    - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
-        #    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
-        #    - CELERY_BROKER=${CELERY_BROKER}
-        #    - FLOWER_BROKER=${FLOWER_BROKER}
         command: celery -A api.celery worker -l INFO 
         volumes:
             - ./app/:/usr/src/app/
@@ -65,29 +60,29 @@ services:
         restart: 'no'
         env_file:
           - ./.env
-        # environment:
-        #    - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
-        #    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
-        #    - CELERY_BROKER=${CELERY_BROKER}
-        #    - FLOWER_BROKER=${FLOWER_BROKER}
         ports:
             - 5555:5555
         depends_on:
             - broker
     broker:
-        image: rabbitmq:3
+        image: rabbitmq:3-management-alpine
+        container_name: 'rabbitqm_cotizate'
         env_file:
           - .env
-        # environment:
-        #    - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
-        #    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
-        #    - CELERY_BROKER=${CELERY_BROKER}
-        #    - FLOWER_BROKER=${FLOWER_BROKER}
         ports:
             - 5672:5672
             - 15672:15672
+        volumes:
+          - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+          - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+        networks:
+          - rabbitmq_net_cotizate
 
 volumes:
     postgres_data:
     static_volume:
     media_volume:
+
+networks:
+  rabbitmq_net_cotizate:
+    driver: bridge
