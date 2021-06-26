@@ -6,8 +6,6 @@ services:
             context: ./app
             dockerfile: Dockerfile.prod
         command: gunicorn api.wsgi:application --bind 0.0.0.0:8000
-          #python manage.py runserver --settings=api.settings.production 0.0.0.0:8000
-          #command: gunicorn api.wsgi:application --bind 0.0.0.0:1337
         volumes:
           - static_volume:/home/app/api/api/staticfiles
           - media_volume:/home/app/api/api/mediafiles
