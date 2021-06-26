@@ -30,7 +30,7 @@ services:
         ports:
           - 5432:5432
         env_file:
-          - .env
+          - ./.env
         # environment:
         #    - POSTGRES_DB=${SQL_DATABASE}
         #    - POSTGRES_USER=${SQL_USER}
@@ -48,7 +48,7 @@ services:
         build: ./app
         restart: 'no'
         env_file:
-          - .env
+          - ./.env
         # environment:
         #    - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
         #    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
@@ -64,7 +64,7 @@ services:
         image: zoomeranalytics/flower:0.9.1-4.0.2
         restart: 'no'
         env_file:
-          - .env
+          - ./.env
         # environment:
         #    - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
         #    - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
