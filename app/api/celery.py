@@ -9,7 +9,7 @@ from api.settings import production
 import os
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings.production")
-app = Celery("api", broker="pyamqp://rabbitmq_user:admin2020@broker//")
+app = Celery("api", broker="amqp://rabbitmq_user:admin2020@localhost//")
 
 app = Celery("api")
 
