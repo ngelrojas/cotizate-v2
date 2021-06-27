@@ -15,7 +15,7 @@ services:
             - ./.env
         depends_on:
             - db
-            - broker
+            # - broker
     db:
         image: postgres:12.0-alpine
         volumes:
@@ -33,45 +33,59 @@ services:
             - 1337:80
         depends_on:
             - api
-    worker:
-        build: ./app
-        restart: 'no'
-        env_file:
-          - ./.env
-        command: celery -A api.celery worker -l INFO 
-        volumes:
-            - ./app/:/usr/src/app/
-        depends_on:
-            - broker
-
-    flower:
-        image: zoomeranalytics/flower:0.9.1-4.0.2
-        restart: 'no'
-        env_file:
-          - ./.env
-        ports:
-            - 5555:5555
-        depends_on:
-            - broker
-    broker:
-        image: rabbitmq:3-management-alpine
-        container_name: 'rabbitqm_cotizate'
-        env_file:
-          - ./.env
-        ports:
-            - 5672:5672
-            - 15672:15672
-        volumes:
-          - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-          - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
-        networks:
-          - rabbitmq_net_cotizate
+    # broker:
+    #     image: rabbitmq:3-management-alpine
+    #     container_name: 'rabbitqm_cotizate'
+    #     # env_file:
+    #     #   - ./.env
+    #     environment:
+    #        - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+    #        - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+    #        - CELERY_BROKER=${CELERY_BROKER}
+    #        - FLOWER_BROKER=${FLOWER_BROKER}
+    #     ports:
+    #         - 5672:5672
+    #         - 15672:15672
+    #     volumes:
+    #       - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+    #       - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    #     networks:
+    #       - rabbitmq_net_cotizate
+    # worker:
+    #     build: ./app
+    #     restart: 'no'
+    #     # env_file:
+    #     #   - ./.env
+    #     environment:
+    #        - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+    #        - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+    #        - CELERY_BROKER=${CELERY_BROKER}
+    #        - FLOWER_BROKER=${FLOWER_BROKER}
+    #     command: celery -A api.celery worker -l INFO 
+    #     volumes:
+    #         - ./app/:/usr/src/app/
+    #     depends_on:
+    #         - broker
+    # flower:
+    #     image: zoomeranalytics/flower:0.9.1-4.0.2
+    #     restart: 'no'
+    #     # env_file:
+    #     #   - ./.env
+    #     environment:
+    #        - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+    #        - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+    #        - CELERY_BROKER=${CELERY_BROKER}
+    #        - FLOWER_BROKER=${FLOWER_BROKER}
+    #     ports:
+    #         - 5555:5555
+    #     depends_on:
+    #         - broker
 
 volumes:
     postgres_data:
     static_volume:
     media_volume:
 
-networks:
-  rabbitmq_net_cotizate:
-    driver: bridge
+# networks:
+#   rabbitmq_net_cotizate:
+#     driver: bridge

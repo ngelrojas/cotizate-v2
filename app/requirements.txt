@@ -8,7 +8,7 @@ django-cors-headers
 django-smtp-ssl
 djangorestframework-jwt
 Babel
-celery
+Celery
 django-autoslug
 django-filter
 python-decouple
