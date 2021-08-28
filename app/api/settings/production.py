@@ -186,14 +186,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
-    "http://134.122.116.138:9002",
+    "http://167.172.158.153:9002",
 ]
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://cotizate.com",
     "http://www.cotizate.com",
-    "http://134.122.116.138:9002",
+    "http://167.172.158.153:9002",
 ]
 
 CSRF_COOKIE_NAME = "csrftoken"
