@@ -1,13 +1,16 @@
 /app/staticfiles/
 /app/api/staticfiles/
 /app/api/settings/conf_email.py
-/app/logs/
+/app/log/cotizate_api_application.log.*
+/app/log/cotizate_api_application.log
 /app/api/settings/__pycache__/
 /app/*/__pycache__/*.pyc
 /app/*/*/__pycache__/*.pyc
 /app/core/management/commands/__pycache__/*.pyc
 /app/api/mediafiles/
 .env
+.env-db
+.env-broker
 .env.prod
 .env.prod.db
 .env.prod.pgadmin

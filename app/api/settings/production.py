@@ -15,6 +15,7 @@ import datetime
 from corsheaders.defaults import default_methods
 from corsheaders.defaults import default_headers
 from decouple import config
+
 # from .conf_email import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -28,12 +29,11 @@ X_FRAME_OPTIONS = "Deny"
 SECRET_KEY = config("SECRET_KEY", default="SECRET")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", cast=bool)
+DEBUG = config("DEBUG", default=True)
 
 ALLOWED_HOSTS = config(
     "ALLOWED_HOSTS", cast=lambda v: [s.strip() for s in v.split(",")]
 )
-
 
 # Application definition
 APP_LOCAL = [
@@ -271,6 +271,6 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 DEFAULT_FROM_EMAIL = config("DEFAULTFROMEMAIL")
 URL_PRODUCTION = config("URLPRODUCTION")
 
-CELERY_BROKER_URL = "amqp://localhost"
+CELERY_BROKER_URL = config("CELERY_BROKER_URL")
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"

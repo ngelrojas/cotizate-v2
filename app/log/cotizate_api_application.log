@@ -1,74 +1,74 @@
-[10/Feb/2021 22:57:16.579]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[10/Feb/2021 23:13:47.941]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/categories/views.py changed, reloading.
-[10/Feb/2021 23:13:48.417]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[10/Feb/2021 23:15:53.912]INFO [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 200 22977
-[10/Feb/2021 23:33:43.909]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/profiles/serializers.py changed, reloading.
-[10/Feb/2021 23:33:44.401]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[10/Feb/2021 23:34:00.797]INFO [django.server:157] "GET /api/v2/category/tecnologia HTTP/1.1" 200 22077
-[10/Feb/2021 23:36:39.631]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/profiles/serializers.py changed, reloading.
-[10/Feb/2021 23:36:40.109]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[10/Feb/2021 23:39:53.432]INFO [django.server:157] "GET /admin/core/campaingbody/ HTTP/1.1" 200 18444
-[10/Feb/2021 23:39:53.471]INFO [django.server:157] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 16307
-[10/Feb/2021 23:39:53.480]INFO [django.server:157] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
-[10/Feb/2021 23:39:53.499]INFO [django.server:157] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6302
-[10/Feb/2021 23:39:53.502]INFO [django.server:157] "GET /staticfiles/admin/js/core.js HTTP/1.1" 200 5418
-[10/Feb/2021 23:39:53.504]INFO [django.server:157] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
-[10/Feb/2021 23:39:53.505]INFO [django.server:157] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 200 6783
-[10/Feb/2021 23:39:53.509]INFO [django.server:157] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
-[10/Feb/2021 23:39:53.514]INFO [django.server:157] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 200 8632
-[10/Feb/2021 23:39:53.514]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
-[10/Feb/2021 23:39:53.515]INFO [django.server:157] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
-[10/Feb/2021 23:39:53.516]INFO [django.server:157] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18344
-[10/Feb/2021 23:39:53.517]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
-[10/Feb/2021 23:39:53.517]INFO [django.server:157] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
-[10/Feb/2021 23:39:53.519]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
-[10/Feb/2021 23:39:53.528]INFO [django.server:157] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
-[10/Feb/2021 23:39:53.564]INFO [django.server:157] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
-[10/Feb/2021 23:39:53.570]INFO [django.server:157] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
-[10/Feb/2021 23:39:53.668]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
-[10/Feb/2021 23:39:53.668]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
-[10/Feb/2021 23:39:53.669]INFO [django.server:157] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
-[10/Feb/2021 23:39:53.722]WARNING [django.request:230] Not Found: /favicon.ico
-[10/Feb/2021 23:39:53.723]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
-[10/Feb/2021 23:39:53.777]WARNING [django.request:230] Not Found: /favicon.ico
-[10/Feb/2021 23:39:53.777]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
-[10/Feb/2021 23:39:54.774]WARNING [django.request:230] Not Found: /favicon.ico
-[10/Feb/2021 23:39:54.775]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
-[10/Feb/2021 23:40:00.171]INFO [django.server:157] "GET /admin/core/campaingbody/25/change/ HTTP/1.1" 200 25342
-[10/Feb/2021 23:40:00.201]INFO [django.server:157] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 200 7788
-[10/Feb/2021 23:40:00.201]INFO [django.server:157] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19750
-[10/Feb/2021 23:40:00.201]INFO [django.server:157] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 200 8423
-[10/Feb/2021 23:40:00.208]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
-[10/Feb/2021 23:40:00.216]INFO [django.server:157] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
-[10/Feb/2021 23:40:00.224]INFO [django.server:157] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
-[10/Feb/2021 23:40:00.231]INFO [django.server:157] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
-[10/Feb/2021 23:40:00.255]INFO [django.server:157] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 200 10592
-[10/Feb/2021 23:40:00.340]WARNING [django.request:230] Not Found: /favicon.ico
-[10/Feb/2021 23:40:00.340]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
-[10/Feb/2021 23:40:00.350]INFO [django.server:157] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 304 0
-[10/Feb/2021 23:40:00.350]INFO [django.server:157] "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 304 0
-[10/Feb/2021 23:40:01.369]WARNING [django.request:230] Not Found: /favicon.ico
-[10/Feb/2021 23:40:01.369]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
-[11/Feb/2021 00:18:45.070]INFO [django.server:157] "GET /admin/core/campaingbody/25/change/ HTTP/1.1" 200 25342
-[11/Feb/2021 00:18:45.132]INFO [django.server:157] "GET /admin/jsi18n/ HTTP/1.1" 200 3187
-[11/Feb/2021 00:18:45.318]WARNING [django.request:230] Not Found: /favicon.ico
-[11/Feb/2021 00:18:45.318]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
-[11/Feb/2021 00:18:46.360]WARNING [django.request:230] Not Found: /favicon.ico
-[11/Feb/2021 00:18:46.360]WARNING [django.server:157] "GET /favicon.ico HTTP/1.1" 404 4160
-[11/Feb/2021 01:38:02.470]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/core/tag.py changed, reloading.
-[11/Feb/2021 01:38:03.036]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[11/Feb/2021 01:42:05.627]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/core/tag.py changed, reloading.
-[11/Feb/2021 01:42:06.123]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[11/Feb/2021 01:43:54.063]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/core/tag.py changed, reloading.
-[11/Feb/2021 01:43:54.552]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[11/Feb/2021 01:44:21.735]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/core/tag.py changed, reloading.
-[11/Feb/2021 01:44:22.228]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[11/Feb/2021 01:47:03.485]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[11/Feb/2021 01:47:36.908]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/tags/views.py changed, reloading.
-[11/Feb/2021 01:47:37.434]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[11/Feb/2021 01:57:08.101]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/tags/views.py changed, reloading.
-[11/Feb/2021 01:57:08.600]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[11/Feb/2021 01:57:16.280]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/tags/views.py changed, reloading.
-[11/Feb/2021 01:57:16.799]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
-[11/Feb/2021 01:59:16.046]INFO [django.utils.autoreload:240] /home/ngel/Projects/django_lab/cotizate-v2/app/tags/views.py changed, reloading.
-[11/Feb/2021 01:59:16.546]INFO [django.utils.autoreload:617] Watching for file changes with StatReloader
+[19/Sep/2021 14:56:10.242]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[19/Sep/2021 14:58:20.795]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[19/Sep/2021 15:01:59.378]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[19/Sep/2021 15:02:07.046]INFO [django.server:161] "GET /admin/ HTTP/1.1" 302 0
+[19/Sep/2021 15:02:07.168]INFO [django.server:161] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2236
+[19/Sep/2021 15:02:07.538]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 19513
+[19/Sep/2021 15:02:07.543]INFO [django.server:161] "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 939
+[19/Sep/2021 15:02:07.544]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[19/Sep/2021 15:02:07.545]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[19/Sep/2021 15:02:07.551]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18545
+[19/Sep/2021 15:02:07.622]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 200 423
+[19/Sep/2021 15:02:07.683]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[19/Sep/2021 15:02:07.687]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[19/Sep/2021 15:02:07.766]WARNING [django.request:224] Not Found: /favicon.ico
+[19/Sep/2021 15:02:07.769]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[19/Sep/2021 15:05:04.639]INFO [django.server:161] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[19/Sep/2021 15:05:04.767]INFO [django.server:161] "GET /admin/ HTTP/1.1" 200 13408
+[19/Sep/2021 15:05:05.125]INFO [django.server:161] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 200 380
+[19/Sep/2021 15:05:05.199]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[19/Sep/2021 15:05:05.222]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[19/Sep/2021 15:05:05.223]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[19/Sep/2021 15:05:05.276]WARNING [django.request:224] Not Found: /favicon.ico
+[19/Sep/2021 15:05:05.281]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[19/Sep/2021 16:39:03.909]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[19/Sep/2021 16:48:00.559]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[19/Sep/2021 16:49:32.133]INFO [django.server:161] "GET /admin/ HTTP/1.1" 200 13408
+[19/Sep/2021 16:49:32.775]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 19513
+[19/Sep/2021 16:49:32.798]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18545
+[19/Sep/2021 16:49:34.778]WARNING [django.request:224] Not Found: /favicon.ico
+[19/Sep/2021 16:49:39.318]INFO [django.server:161] "GET /admin/core/user/ HTTP/1.1" 200 15165
+[19/Sep/2021 16:49:39.874]INFO [django.server:161] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6874
+[19/Sep/2021 16:49:39.904]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[19/Sep/2021 16:49:39.924]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 200 347
+[19/Sep/2021 16:49:39.925]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Sep/2021 16:49:39.970]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 200 5698
+[19/Sep/2021 16:49:39.986]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[19/Sep/2021 16:49:39.991]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 200 7664
+[19/Sep/2021 16:49:40.018]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 200 7902
+[19/Sep/2021 16:49:40.023]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[19/Sep/2021 16:49:40.042]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[19/Sep/2021 16:49:40.090]INFO [django.server:161] "GET /staticfiles/admin/img/search.svg HTTP/1.1" 200 458
+[19/Sep/2021 16:49:40.097]INFO [django.server:161] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[19/Sep/2021 16:49:40.102]INFO [django.server:161] "GET /staticfiles/admin/img/icon-no.svg HTTP/1.1" 200 560
+[19/Sep/2021 16:49:40.322]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[19/Sep/2021 16:54:01.300]INFO [django.server:161] "GET /admin/core/user/ HTTP/1.1" 302 0
+[19/Sep/2021 16:54:01.407]INFO [django.server:161] "GET /admin/login/?next=/admin/core/user/ HTTP/1.1" 200 2256
+[19/Sep/2021 16:54:01.576]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 19513
+[19/Sep/2021 16:54:01.586]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[19/Sep/2021 16:54:01.595]INFO [django.server:161] "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 939
+[19/Sep/2021 16:54:01.596]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18545
+[19/Sep/2021 16:54:01.644]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[19/Sep/2021 16:54:01.656]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 200 423
+[19/Sep/2021 16:54:02.441]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[19/Sep/2021 16:54:02.444]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[19/Sep/2021 16:54:02.531]WARNING [django.request:224] Not Found: /favicon.ico
+[19/Sep/2021 16:54:02.535]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[19/Sep/2021 16:54:59.031]INFO [django.server:161] "POST /admin/login/?next=/admin/core/user/ HTTP/1.1" 302 0
+[19/Sep/2021 16:54:59.152]INFO [django.server:161] "GET /admin/core/user/ HTTP/1.1" 200 15165
+[19/Sep/2021 16:54:59.216]INFO [django.server:161] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6874
+[19/Sep/2021 16:54:59.242]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[19/Sep/2021 16:54:59.268]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 200 347
+[19/Sep/2021 16:54:59.271]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 200 7664
+[19/Sep/2021 16:54:59.274]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 200 7902
+[19/Sep/2021 16:54:59.289]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 200 5698
+[19/Sep/2021 16:54:59.295]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[19/Sep/2021 16:54:59.298]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[19/Sep/2021 16:54:59.306]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[19/Sep/2021 16:54:59.408]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[19/Sep/2021 16:54:59.493]INFO [django.server:161] "GET /staticfiles/admin/img/search.svg HTTP/1.1" 200 458
+[19/Sep/2021 16:54:59.541]INFO [django.server:161] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[19/Sep/2021 16:54:59.563]INFO [django.server:161] "GET /staticfiles/admin/img/icon-no.svg HTTP/1.1" 200 560
+[19/Sep/2021 16:54:59.614]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[19/Sep/2021 16:54:59.628]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[19/Sep/2021 16:54:59.850]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
