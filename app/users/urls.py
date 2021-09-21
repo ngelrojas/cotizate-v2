@@ -20,14 +20,8 @@ urlpatterns = [
         ),
         name="update",
     ),
-    # re_path(
-    #     r"^activate/(?P<uid>[0-9A-Za-z_\-]+)/"
-    #     "(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})$",
-    #     activation.ActivationAccount.as_view({"put": "update"}),
-    #     name="activation",
-    # ),
     path(
-        "is-activate",
+        "activate",
         activation.ActivationAccount.as_view({"put": "update"}),
         name="activation",
     ),
