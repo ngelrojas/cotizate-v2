@@ -19,8 +19,8 @@ class ActivationAccount(viewsets.ModelViewSet):
     def update(self, request, **kwargs):
         """activate current account user"""
         try:
-            uid = decode_user_id(self.kwargs.get("uid"))
-            token = self.kwargs.get("token")
+            uid = decode_user_id(request.data.get("uid"))
+            token = request.data.get("token")
             user = User.objects.get(id=uid)
             if not user.is_activate and token:
                 user.is_activate = True

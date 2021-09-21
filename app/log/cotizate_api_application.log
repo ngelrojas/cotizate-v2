@@ -72,3 +72,41 @@
 [19/Sep/2021 16:54:59.614]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
 [19/Sep/2021 16:54:59.628]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
 [19/Sep/2021 16:54:59.850]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[20/Sep/2021 23:56:07.268]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:00:01.657]WARNING [django.request:224] Not Found: /api/v2/activate/Ng/c16ug-635bb14e746e3d26892744d15e8ef308
+[21/Sep/2021 00:00:01.658]WARNING [django.server:161] "PUT /api/v2/activate/Ng/c16ug-635bb14e746e3d26892744d15e8ef308 HTTP/1.1" 404 15661
+[21/Sep/2021 00:10:27.437]INFO [django.utils.autoreload:251] /usr/src/app/users/urls.py changed, reloading.
+[21/Sep/2021 00:10:28.911]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:11:37.447]INFO [django.utils.autoreload:251] /usr/src/app/users/urls.py changed, reloading.
+[21/Sep/2021 00:11:38.972]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:11:53.033]INFO [django.utils.autoreload:251] /usr/src/app/users/urls.py changed, reloading.
+[21/Sep/2021 00:11:54.460]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:12:45.934]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:12:54.403]WARNING [django.request:224] Bad Request: /api/v2/is-activate
+[21/Sep/2021 00:12:54.404]WARNING [django.server:161] "PUT /api/v2/is-activate HTTP/1.1" 400 55
+[21/Sep/2021 00:15:36.550]INFO [django.utils.autoreload:251] /usr/src/app/users/activation.py changed, reloading.
+[21/Sep/2021 00:15:38.042]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:17:05.592]INFO [django.utils.autoreload:251] /usr/src/app/users/activation.py changed, reloading.
+[21/Sep/2021 00:17:07.181]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:17:12.331]WARNING [django.request:224] Bad Request: /api/v2/is-activate
+[21/Sep/2021 00:17:12.332]WARNING [django.server:161] "PUT /api/v2/is-activate HTTP/1.1" 400 47
+[21/Sep/2021 00:17:43.460]INFO [django.utils.autoreload:251] /usr/src/app/users/activation.py changed, reloading.
+[21/Sep/2021 00:17:44.953]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:17:49.748]WARNING [django.request:224] Bad Request: /api/v2/is-activate
+[21/Sep/2021 00:17:49.749]WARNING [django.server:161] "PUT /api/v2/is-activate HTTP/1.1" 400 47
+[21/Sep/2021 00:19:32.157]INFO [django.utils.autoreload:251] /usr/src/app/users/activation.py changed, reloading.
+[21/Sep/2021 00:19:33.780]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:19:38.217]WARNING [django.request:224] Bad Request: /api/v2/is-activate
+[21/Sep/2021 00:19:38.218]WARNING [django.server:161] "PUT /api/v2/is-activate HTTP/1.1" 400 231
+[21/Sep/2021 00:19:57.021]INFO [django.utils.autoreload:251] /usr/src/app/users/activation.py changed, reloading.
+[21/Sep/2021 00:19:58.532]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Sep/2021 00:20:04.685]WARNING [django.request:224] Bad Request: /api/v2/is-activate
+[21/Sep/2021 00:20:04.686]WARNING [django.server:161] "PUT /api/v2/is-activate HTTP/1.1" 400 47
+[21/Sep/2021 00:20:25.170]WARNING [django.request:224] Bad Request: /api/v2/is-activate
+[21/Sep/2021 00:20:25.171]WARNING [django.server:161] "PUT /api/v2/is-activate HTTP/1.1" 400 47
+[21/Sep/2021 00:20:36.006]WARNING [django.request:224] Bad Request: /api/v2/is-activate
+[21/Sep/2021 00:20:36.008]WARNING [django.server:161] "PUT /api/v2/is-activate HTTP/1.1" 400 47
+[21/Sep/2021 00:21:02.611]WARNING [django.request:224] Bad Request: /api/v2/is-activate
+[21/Sep/2021 00:21:02.611]WARNING [django.server:161] "PUT /api/v2/is-activate HTTP/1.1" 400 47
+[21/Sep/2021 00:21:33.740]INFO [django.utils.autoreload:251] /usr/src/app/users/activation.py changed, reloading.
+[21/Sep/2021 00:21:35.207]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
