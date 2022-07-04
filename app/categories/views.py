@@ -8,7 +8,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 from .serializers import CategorySerializer
 from core.category import Category
-from core.campaing import CampaingBody
+from core.campaing import Campaing
 from core.queries.categoryQuery import CategoryQuery
 from core.queries.campaingQuery import CampaingPrivateQuery
 from campaings.body.serializers import CampaingBodySerializer
@@ -52,7 +52,7 @@ class CategorySearch(ListAPIView):
     """
 
     serializer_class = CampaingBodySearch
-    queryset = CampaingBody.objects.all()
+    queryset = Campaing.objects.all()
     permission_classes = (AllowAny,)
 
     def list(self, request, the_slug, search_name):
@@ -63,7 +63,7 @@ class CategorySearch(ListAPIView):
 
             for header_camp in list_header:
 
-                camp = CampaingBody.objects.filter(
+                camp = Campaing.objects.filter(
                     header=header_camp, title__icontains=search_name, status=public
                 )
 

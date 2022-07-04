@@ -30,7 +30,7 @@ class SnetWPPView(viewsets.ModelViewSet):
                 {"data": serializer.data, "msg": "list social network."},
                 status=status.HTTP_200_OK,
             )
-        except SocialNetworkPP.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
@@ -45,7 +45,7 @@ class SnetWPPView(viewsets.ModelViewSet):
                     {"data": True, "msg": "social network personal profile created."},
                     status=status.HTTP_201_CREATED,
                 )
-        except SocialNetworkPP.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
@@ -59,7 +59,7 @@ class SnetWPPView(viewsets.ModelViewSet):
                 {"data": serializer.data, "msg": "data successfully"},
                 status=status.HTTP_200_OK,
             )
-        except SocialNetworkPP.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
@@ -73,7 +73,7 @@ class SnetWPPView(viewsets.ModelViewSet):
                 {"data": True, "msg": "personal social network deleted."},
                 status=status.HTTP_204_NO_CONTENT,
             )
-        except SocialNetworkPP.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )

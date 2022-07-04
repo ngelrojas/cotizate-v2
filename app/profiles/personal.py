@@ -29,8 +29,8 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def create(self, request):
         """create personal profile"""
         try:
-            countries = Country.objects.get(id=int(request.data.get("countries")))
-            cities = City.objects.get(id=int(request.data.get("cities")))
+            countries = Country.objects.get(id=request.data.get("countries"))
+            cities = City.objects.get(id=request.data.get("cities"))
             prof_personal = ProfilesQuery.saving_profile_personal(
                 request, countries, cities
             )

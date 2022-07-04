@@ -4,6 +4,9 @@ from .user import User
 from .country import Country
 from .city import City
 
+def nameFile(instance, filename):
+    fdir = str(instance).replace(" ", "_")
+    return "/".join(["images/profiles/personal", fdir, filename])
 
 class PersonalProfile(AbstractProfile):
     """personal profile"""
@@ -11,7 +14,7 @@ class PersonalProfile(AbstractProfile):
     current_position = models.CharField(max_length=50, blank=True, null=True)
     headline = models.CharField(max_length=50, blank=True, null=True)
     birthdate = models.DateField(blank=True, null=True)
-    photo = models.TextField()
+    photo = models.ImageField(upload_to=nameFile, blank=True, null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     countries = models.ForeignKey(Country, on_delete=models.CASCADE)
     cities = models.ForeignKey(City, on_delete=models.CASCADE)

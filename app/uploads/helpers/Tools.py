@@ -1,11 +1,11 @@
 from core.upload import Upload
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 
 
 class Tools:
     def saving_images(self, request, image_url):
         """saving url of image"""
-        camp_id = CampaingHeader.objects.get(id=request.data.get("camp_id"))
+        camp_id = Campaing.objects.get(id=request.data.get("camp_id"))
         created = Upload.objects.get_or_create(
             name=image_url,
             campaings=camp_id,

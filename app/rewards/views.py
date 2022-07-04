@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from core.reward import Reward
 from core.queries.rewardQuery import RewardQuery
 from .serializers import RewardSerializer
@@ -22,7 +22,7 @@ class RewardView(viewsets.ViewSet):
     def retrieve(self, request, pk):
         """retrieve reward current campaing_header_id, campaing_id"""
         try:
-            reward_header = CampaingHeader.objects.get(id=pk)
+            reward_header = Campaing.objects.get(id=pk)
             list_reward = Reward.objects.filter(header=reward_header)
             serializer = self.serializer_class(list_reward, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
@@ -56,7 +56,7 @@ class RewardView(viewsets.ViewSet):
                     {"data": "reward updated."},
                     status=status.HTTP_200_OK,
                 )
-        except Reward.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
@@ -70,7 +70,7 @@ class RewardView(viewsets.ViewSet):
                 {"data": True, "msg": "reward deleted."},
                 status=status.HTTP_204_NO_CONTENT,
             )
-        except Reward.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )

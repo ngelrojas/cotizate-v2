@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from core.bookMark import BookMark
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from core.queries.bookMarkQuery import BookMarkQuery
 from .serializers import BookMarkSerializer
 
@@ -32,7 +32,7 @@ class BookMarkView(viewsets.ModelViewSet):
     def create(self, request):
         """create like to current user and campaing"""
         try:
-            camp_header = CampaingHeader.objects.get(id=request.data.get("header"))
+            camp_header = Campaing.objects.get(id=request.data.get("header"))
             BookMarkQuery.saving_bookmark(request, camp_header)
             return Response(
                 {"data": "book mark created."}, status=status.HTTP_201_CREATED

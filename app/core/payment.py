@@ -1,5 +1,5 @@
 from django.db import models
-from .campaing import CampaingHeader
+from .campaing import Campaing
 from core.user import User
 
 
@@ -28,7 +28,7 @@ class Payment(models.Model):
     type_pay = models.IntegerField(choices=TYPE_PAY, default=1)
     status_pay = models.IntegerField(choices=STATUS_PAY, default=1)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    header = models.ForeignKey(Campaing, on_delete=models.CASCADE)
     encrypted_parameter = models.TextField(default="0")
     commerce_id = models.TextField(default="0")
     coin = models.IntegerField(choices=COIN, default=2)

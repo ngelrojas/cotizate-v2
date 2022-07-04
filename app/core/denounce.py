@@ -1,5 +1,5 @@
 from django.db import models
-from .campaing import CampaingHeader
+from .campaing import Campaing
 
 
 class DenounceText(models.Model):
@@ -22,7 +22,7 @@ class Denounce(models.Model):
     marked = models.BooleanField(default=True)
     comment = models.CharField(max_length=500)
     denouncetxt = models.ForeignKey(DenounceText, on_delete=models.CASCADE)
-    campaings = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    campaings = models.ForeignKey(Campaing, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.denouncetxt.title
@@ -40,5 +40,5 @@ class DenouncePublic(models.Model):
     cellphone = models.CharField(max_length=20)
     accept = models.BooleanField(default=True)
     denouncetxt = models.ForeignKey(DenounceText, on_delete=models.CASCADE)
-    campaings = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    campaings = models.ForeignKey(Campaing, on_delete=models.CASCADE)
     comment = models.CharField(max_length=600)

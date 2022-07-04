@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 from django.db import transaction
 from core.category import Category
 from core.tag import Tag
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from core.comment import Comment
 from core.user import User
 
@@ -32,9 +32,9 @@ class Command(BaseCommand):
             mery = User.objects.get(id=3)
             azumi = User.objects.get(id=4)
             # get campaings
-            camp_one = CampaingHeader.objects.get(id=1)
-            camp_two = CampaingHeader.objects.get(id=2)
-            camp_three = CampaingHeader.objects.get(id=3)
+            camp_one = Campaing.objects.get(id=1)
+            camp_two = Campaing.objects.get(id=2)
+            camp_three = Campaing.objects.get(id=3)
             # create comments
             comment1 = Comment.objects.create(
                 discuss="my first comment to first campaing",

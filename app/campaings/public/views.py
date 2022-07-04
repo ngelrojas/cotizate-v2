@@ -3,7 +3,7 @@ from rest_framework import filters
 from rest_framework import status
 from rest_framework.response import Response
 from core.queries.campaingQuery import CampaingPublicQuery
-from core.campaing import CampaingBody
+from core.campaing import Campaing
 from .serializers import CampaingPublicSerializer
 from .serializers import CampaingDetailSerializer
 

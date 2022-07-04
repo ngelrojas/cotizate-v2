@@ -16,7 +16,7 @@ urlpatterns = [
     path(
         "user/<int:pk>",
         views.UpdateUserView.as_view(
-            {"get": "retrieve", "put": "partial_update", "delete": "destroy"}
+            {"get": "retrieve", "put": "partial_update", "delete": "delete"}
         ),
         name="update",
     ),

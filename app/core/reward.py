@@ -1,5 +1,5 @@
 from django.db import models
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from core.city import City
 
 
@@ -10,7 +10,7 @@ class Reward(models.Model):
     description = models.CharField(max_length=5000)
     amount = models.DecimalField(max_digits=12, decimal_places=2)
     expected_delivery = models.DateTimeField()
-    header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    header = models.ForeignKey(Campaing, on_delete=models.CASCADE)
     user = models.IntegerField(default=0)
     cities = models.ManyToManyField(City, blank=True)
     all_cities = models.BooleanField(default=False)

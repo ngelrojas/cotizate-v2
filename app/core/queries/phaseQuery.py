@@ -1,6 +1,5 @@
 from core.phase import Phase
 from core.user import User
-from core.campaing import CampaingHeader
 
 
 class PhaseQuery:

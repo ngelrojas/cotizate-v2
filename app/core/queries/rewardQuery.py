@@ -1,5 +1,5 @@
 from core.reward import Reward
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 
 
 class RewardQuery:
@@ -8,7 +8,7 @@ class RewardQuery:
     @staticmethod
     def get_list_reward(header_id):
         """get all list rewards about campaing header"""
-        head_id = CampaingHeader.objects.get(id=header_id)
+        head_id = Campaing.objects.get(id=header_id)
         return Reward.objects.filter(header=head_id)
 
     @staticmethod
@@ -22,7 +22,7 @@ class RewardQuery:
         saving rewards
         header"""
         try:
-            header_id = CampaingHeader.objects.get(id=request.data.get("header"))
+            header_id = Campaing.objects.get(id=request.data.get("header"))
             rewards = Reward.objects.create(
                 title=request.data.get("title"),
                 description=request.data.get("description"),

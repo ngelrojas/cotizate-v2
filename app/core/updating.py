@@ -1,11 +1,11 @@
 from django.db import models
-from .campaing import CampaingHeader
+from .campaing import Campaing
 
 
 class Updating(models.Model):
     """updating project"""
 
-    header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    header = models.ForeignKey(Campaing, on_delete=models.CASCADE)
     image_up = models.TextField()
     description = models.TextField()
 

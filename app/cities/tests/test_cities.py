@@ -4,7 +4,7 @@ from django.urls import reverse
 from rest_framework.test import APIClient
 from rest_framework import status
 
-CITY_URL = reverse("city:caties")
+CITY_URL = reverse("city:cities")
 
 
 class CityTests(TestCase):

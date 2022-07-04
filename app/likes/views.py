@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from core.like import Like
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from core.queries.likeQuery import LikeQuery
 from .serializers import LikeSerializer
 

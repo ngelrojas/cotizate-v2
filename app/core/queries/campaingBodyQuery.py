@@ -1,6 +1,5 @@
 from django.db.models import Q
-from core.campaing import CampaingBody
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 
 
 class CampaingBodyQuery:
@@ -13,7 +12,7 @@ class CampaingBodyQuery:
         get all campaing without deleted and archived
         for current campaing header
         """
-        return CampaingBody.objects.filter(header=data_list).exclude(
+        return Campaing.objects.filter(header=data_list).exclude(
             Q(status=8) | Q(status=9)
         )
 
@@ -21,13 +20,13 @@ class CampaingBodyQuery:
     def retrieve_cb(pk, header_id):
         """retrieve current campaing body"""
         # current_header = CampaingHeader.objects.get(id=header_id)
-        return CampaingBody.objects.get(id=pk, header=header_id)
+        return Campaing.objects.get(id=pk, header=header_id)
 
     @staticmethod
     def delete_cb(pk, header_id):
         """update status to deleted=9"""
         try:
-            camp = CampaingBody.objects.get(id=pk, header=header_id)
+            camp = Campaing.objects.get(id=pk, header=header_id)
             camp.status = 9
             camp.save()
             return True
@@ -45,7 +44,7 @@ class CampaingBodyQuery:
     ):
         try:
 
-            resp = CampaingBody.objects.create(
+            resp = Campaing.objects.create(
                 title=request.data.get("title"),
                 video_main=request.data.get("video_main"),
                 imagen_main=request.data.get("imagen_main"),
@@ -74,7 +73,7 @@ class CampaingBodyQuery:
         pk,
     ):
         """pk=campaing body ID"""
-        camp = CampaingBody.objects.get(id=pk)
+        camp = Campaing.objects.get(id=pk)
         camp.title = request.data.get("title")
         camp.video_main = request.data.get("video_main")
         if request.FILES:
@@ -95,4 +94,4 @@ class CampaingBodyQuery:
     @staticmethod
     def retrieve_campaing_body(camp_header_id):
         """return campaing body"""
-        return CampaingBody.objects.get(header=camp_header_id)
+        return Campaing.objects.get(header=camp_header_id)

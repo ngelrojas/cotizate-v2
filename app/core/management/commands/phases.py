@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from core.phase import Phase
 
 
@@ -31,6 +31,6 @@ class Command(BaseCommand):
                     title=f"the {num_i} phase to campaing",
                     description="description to phase one",
                     amount=500,
-                    header=CampaingHeader.objects.get(id=num_i),
+                    header=Campaing.objects.get(id=num_i),
                 )
             self.success("phases created")

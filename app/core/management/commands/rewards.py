@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from core.reward import Reward
 from core.city import City
 
@@ -38,7 +38,7 @@ class Command(BaseCommand):
                     description="description to campaing one",
                     amount=500,
                     expected_delivery="2020-09-10 00:00:00",
-                    header=CampaingHeader.objects.get(id=num_i),
+                    header=Campaing.objects.get(id=num_i),
                     user=0,
                 )
                 reward.cities.add(lp, scz, cbb, oru, tj)

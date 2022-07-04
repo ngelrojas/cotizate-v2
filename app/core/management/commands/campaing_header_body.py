@@ -1,8 +1,7 @@
 from django.core.management.base import BaseCommand
 from django.db import transaction
 from core.category import Category
-from core.campaing import CampaingHeader
-from core.campaing import CampaingBody
+from core.campaing import Campaing
 from core.user import User
 from core.profile import PersonalProfile
 from core.profileCompany import ProfileCompany
@@ -119,9 +118,9 @@ class Command(BaseCommand):
                 Category.objects.get(name="Musica")
                 Category.objects.get(name="Games")
                 Category.objects.get(name="Fotografia")
-                # user Jhon
+                # user Jhon 
                 for num_i in range(1, 8):
-                    CampaingHeader.objects.create(
+                    Campaing.objects.create(
                         user=jhon,
                         category=cultura,
                         city=la_paz,
@@ -130,10 +129,6 @@ class Command(BaseCommand):
                         amount=5000,
                         role=1,
                         code_campaing=f"camp-000{num_i}",
-                    )
-
-                for num_i in range(1, 8):
-                    CampaingBody.objects.create(
                         title=f"Alway Where the Lorem for here, does it comefrom-{num_i}",
                         video_main="https://www.youtube.com/watch?v=fFXSaaBS2kM",
                         imagen_main=img_main,
@@ -142,16 +137,16 @@ class Command(BaseCommand):
                         public_at="2020-09-10 00:00:00",
                         status=5,
                         flag=1,
-                        header=CampaingHeader.objects.get(id=num_i),
                         profile=profile_jhon,
                         currency=bo,
                         short_url="http://shorttener.com",
                         slogan_campaing="this is a slogan the campaing.",
                         profile_ca=profile_company_jhon,
                     )
-                # use mery
+                # use mery 
+
                 for num_i in range(8, 17):
-                    CampaingHeader.objects.create(
+                    Campaing.objects.create(
                         user=mery,
                         category=tecnologia,
                         city=santa_cruz,
@@ -160,10 +155,6 @@ class Command(BaseCommand):
                         amount=5000,
                         role=2,
                         code_campaing=f"camp-000{num_i}",
-                    )
-
-                for num_i in range(8, 17):
-                    CampaingBody.objects.create(
                         title=f"Alway Where the Lorem for here, does it comefrom-{num_i}",
                         video_main="https://www.youtube.com/watch?v=fFXSaaBS2kM",
                         imagen_main=img_main,
@@ -172,15 +163,15 @@ class Command(BaseCommand):
                         public_at="2020-09-10 00:00:00",
                         status=5,
                         flag=2,
-                        header=CampaingHeader.objects.get(id=num_i),
                         profile=profile_mery,
                         currency=bo,
                         short_url="http://shorttener.com",
                         slogan_campaing="this is a slogan the campaing.",
                     )
                 # user azumi
+
                 for num_i in range(17, 26):
-                    CampaingHeader.objects.create(
+                    Campaing.objects.create(
                         user=azumi,
                         category=emp,
                         city=cochabamba,
@@ -189,10 +180,6 @@ class Command(BaseCommand):
                         amount=5000,
                         role=2,
                         code_campaing=f"camp-000{num_i}",
-                    )
-
-                for num_i in range(17, 26):
-                    CampaingBody.objects.create(
                         title=f"Alway Where the Lorem for here, does it comefrom-{num_i}",
                         video_main="https://www.youtube.com/watch?v=fFXSaaBS2kM",
                         imagen_main=img_main,
@@ -201,7 +188,6 @@ class Command(BaseCommand):
                         public_at="2020-09-10 00:00:00",
                         status=5,
                         flag=3,
-                        header=CampaingHeader.objects.get(id=num_i),
                         profile=profile_azumi,
                         currency=bo,
                         short_url="http://shorttener.com",

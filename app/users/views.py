@@ -52,10 +52,10 @@ class UpdateUserView(viewsets.ViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def destroy(self, request, *args, **kwargs):
+    def delete(self, request, *args, **kwargs):
         """update state current user to deleted"""
         try:
-            current_user = self.currentUser(request)
+            current_user = ActiveUser.currentUser(self, request)
             current_user.deleted = True
             current_user.is_activate = False
             current_user.save()

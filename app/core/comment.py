@@ -1,6 +1,5 @@
 from django.db import models
 from .user import User
-from .campaing import CampaingHeader
 
 
 class Comment(models.Model):

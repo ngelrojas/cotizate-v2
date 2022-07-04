@@ -3,7 +3,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from core.campaing import CampaingBody
+from core.campaing import Campaing
 from core.queries.campaingBodyQuery import CampaingBodyQuery as CampBQ
 from core.queries.campaingQuery import CampaingPrivateQuery as CampPBQ
 from core.currency import Currency
@@ -21,7 +21,7 @@ class CampaingsBody(viewsets.ModelViewSet):
     """
 
     serializer_class = CampaingBodySerializer
-    queryset = CampaingBody.objects.all()
+    queryset = Campaing.objects.all()
     permission_classes = (IsAuthenticated,)
 
     def list(self, request, pk):
@@ -32,7 +32,7 @@ class CampaingsBody(viewsets.ModelViewSet):
 
             for header_camp in list_header:
 
-                camp = CampaingBody.objects.filter(header_id=header_camp, status=pk)
+                camp = Campaing.objects.filter(header_id=header_camp, status=pk)
 
                 if camp:
                     serializer = self.serializer_class(camp, many=True)
@@ -104,7 +104,7 @@ class CampaingStatus(viewsets.ModelViewSet):
     """
 
     serializer_class = CampaingBodySerializer
-    queryset = CampaingBody.objects.all()
+    queryset = Campaing.objects.all()
     permission_classes = (IsAuthenticated,)
 
     def update(self, request, pk=None):
@@ -115,7 +115,7 @@ class CampaingStatus(viewsets.ModelViewSet):
         """
         try:
             # CampHeaderComp.updating_campaing(request, pk)
-            campaing_obj = CampaingBody.objects.get(id=pk)
+            campaing_obj = Campaing.objects.get(id=pk)
             campaing_obj.status = 3
             campaing_obj.save()
 

@@ -5,5 +5,7 @@ app_name = 'tag'
 
 urlpatterns = [
     path('tag', views.TagView.as_view({
-        'get': 'list'}), name='tags')
+        'get': 'list'}), 
+         name='tags'
+    )
 ]

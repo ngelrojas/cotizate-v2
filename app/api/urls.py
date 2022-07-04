@@ -1,18 +1,3 @@
-"""api URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path, include, re_path
 from rest_framework import permissions
@@ -52,29 +37,29 @@ urlpatterns = [
     #     name="schema-redoc",
     # ),
     path("admin/", admin.site.urls),
-    path("api/v2/", include("users.urls")),
-    path("api/v2/", include("profiles.urls")),
-    path("api/v2/", include("profileAssociations.urls")),
-    path("api/v2/", include("profileCompanies.urls")),
-    path("api/v2/", include("categories.urls")),
-    path("api/v2/", include("tags.urls")),
-    path("api/v2/", include("campaings.urls")),
-    path("api/v2/", include("payments.urls")),
-    path("api/v2/", include("comments.urls")),
-    path("api/v2/", include("rewards.urls")),
-    path("api/v2/", include("favorites.urls")),
-    path("api/v2/", include("likes.urls")),
-    path("api/v2/", include("countries.urls")),
-    path("api/v2/", include("cities.urls")),
-    path("api/v2/", include("socialNetworks.urls")),
-    path("api/v2/", include("phases.urls")),
-    path("api/v2/", include("improvies.urls")),
-    path("api/v2/", include("bookmarks.urls")),
-    path("api/v2/", include("uploads.urls")),
-    path("api/v2/", include("updatings.urls")),
-    path("api/v2/", include("denounces.urls")),
-    path("api/v2/", include("followers.urls")),
-    path("api/v2/", include("contacts.urls")),
+    path("api/v1/", include("users.urls")),
+    path("api/v1/", include("profiles.urls")),
+    path("api/v1/", include("profileAssociations.urls")),
+    path("api/v1/", include("profileCompanies.urls")),
+    path("api/v1/", include("categories.urls")),
+    path("api/v1/", include("tags.urls")),
+    path("api/v1/", include("campaings.urls")),
+    path("api/v1/", include("payments.urls")),
+    path("api/v1/", include("comments.urls")),
+    path("api/v1/", include("rewards.urls")),
+    path("api/v1/", include("favorites.urls")),
+    path("api/v1/", include("likes.urls")),
+    path("api/v1/", include("countries.urls")),
+    path("api/v1/", include("cities.urls")),
+    path("api/v1/", include("socialNetworks.urls")),
+    path("api/v1/", include("phases.urls")),
+    path("api/v1/", include("improvies.urls")),
+    path("api/v1/", include("bookmarks.urls")),
+    path("api/v1/", include("uploads.urls")),
+    path("api/v1/", include("updatings.urls")),
+    path("api/v1/", include("denounces.urls")),
+    path("api/v1/", include("followers.urls")),
+    path("api/v1/", include("contacts.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # use this part in production using gunicorn
 urlpatterns += staticfiles_urlpatterns()

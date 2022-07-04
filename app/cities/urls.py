@@ -3,4 +3,9 @@ from cities import views
 
 app_name = "city"
 
-urlpatterns = [path("city", views.CityView.as_view({"get": "list"}), name="cities")]
+urlpatterns = [
+    path("city", views.CityView.as_view(
+             {"get": "list"}), 
+         name="cities"
+    )
+]

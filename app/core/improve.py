@@ -1,5 +1,5 @@
 from django.db import models
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 
 
 class Improve(models.Model):
@@ -7,7 +7,7 @@ class Improve(models.Model):
 
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=300)
-    header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
+    header = models.ForeignKey(Campaing, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title

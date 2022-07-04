@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from core.payment import Payment
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from .serializers import PaymentSerializer
 
 
@@ -18,7 +18,7 @@ class PaidCallback(viewsets.ModelViewSet):
         """recived data"""
         try:
             for item in request.data:
-                header_id = CampaingHeader.objects.get(id=item.get("PedidoID"))
+                header_id = Campaing.objects.get(id=item.get("PedidoID"))
                 form_paid = Payment.objects.get(
                     header=header_id,
                     type_pay=item.get("MetodoPago"),

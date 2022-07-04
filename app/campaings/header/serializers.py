@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from cities.serializers import CitySerializer
 from categories.serializers import CategorySerializer
 from users.serializers import UserPublicSerializer
@@ -14,7 +14,7 @@ class CampaingHeaderUp(serializers.ModelSerializer):
     """serializer for alterations"""
 
     class Meta:
-        model = CampaingHeader
+        model = Campaing
         fields = (
             "id",
             "code_campaing",
@@ -27,7 +27,7 @@ class CampaingHeaderSerializer(serializers.ModelSerializer):
     category = CategorySerializer()
 
     class Meta:
-        model = CampaingHeader
+        model = Campaing
         fields = (
             "id",
             "user",
@@ -52,7 +52,7 @@ class CHDetailSerializer(serializers.ModelSerializer):
     user = UserPublicSerializer()
 
     class Meta:
-        model = CampaingHeader
+        model = Campaing
         fields = (
             "id",
             "user",
@@ -66,35 +66,3 @@ class CHDetailSerializer(serializers.ModelSerializer):
             "code_campaing",
         )
         read_only_fields = ("id",)
-
-
-# class CampaingPublicSerializer(serializers.ModelSerializer):
-# """campaing serializer public"""
-
-# users = UserSerializer()
-# categories = CategorySerializer()
-# tags = TagSerializer(many=True, read_only=True)
-# currencies = CurrencySerializer()
-
-# class Meta:
-# model = Campaing
-# fields = (
-# "id",
-# "title",
-# "video_img",
-# "slug",
-# "excerpt",
-# "description",
-# "created_at",
-# "updated_at",
-# "public_at",
-# "ended_at",
-# "amount",
-# "qty_day",
-# "status",
-# "users",
-# "categories",
-# "tags",
-# "currencies",
-# "profiles",
-# )

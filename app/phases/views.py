@@ -25,7 +25,7 @@ class PhaseView(viewsets.ViewSet):
             current_list_phase = PhaseQuery.get_list_phase(request.data.get("header"))
             serializer = self.serializer_class(current_list_phase, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
-        except Phase.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
@@ -36,7 +36,7 @@ class PhaseView(viewsets.ViewSet):
             current_phase = PhaseQuery.retrieve_phase(pk, he)
             serializer = self.serializer_class(current_phase)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
-        except Phase.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
@@ -51,7 +51,7 @@ class PhaseView(viewsets.ViewSet):
                     {"data": "phase saved."},
                     status=status.HTTP_201_CREATED,
                 )
-        except Phase.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
@@ -67,7 +67,7 @@ class PhaseView(viewsets.ViewSet):
                     {"data": "phase updated."},
                     status=status.HTTP_200_OK,
                 )
-        except Phase.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
@@ -82,7 +82,7 @@ class PhaseView(viewsets.ViewSet):
                 {"data": " phase deleted."},
                 status=status.HTTP_204_NO_CONTENT,
             )
-        except Phase.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )

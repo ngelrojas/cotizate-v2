@@ -8,27 +8,7 @@ from core.profile import PersonalProfile
 from core.profileCompany import ProfileCompany
 
 
-class CampaingHeader(models.Model):
-    """model campaing header"""
-
-    ROLE_CAMPAING = ((1, "social cause"), (2, "entrepreneuship"))
-
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    city = models.ForeignKey(City, on_delete=models.CASCADE)
-    qty_day = models.IntegerField(default=0)
-    qty_day_left = models.IntegerField(default=0)
-    amount = models.DecimalField(max_digits=12, decimal_places=2, default=0)
-    amount_reached = models.DecimalField(max_digits=12, decimal_places=2, default=0)
-    percent_reached = models.DecimalField(max_digits=12, decimal_places=2, default=0)
-    role = models.IntegerField(choices=ROLE_CAMPAING, default=2)
-    code_campaing = models.CharField(max_length=250)
-
-    def __str__(self):
-        return str(self.id)
-
-
-class CampaingBody(models.Model):
+class Campaing(models.Model):
     """model campaing body"""
 
     STATUS_CAMPAING = (
@@ -49,6 +29,8 @@ class CampaingBody(models.Model):
         (3, "finished"),
     )
 
+    ROLE_CAMPAING = ((1, "social cause"), (2, "entrepreneuship"))
+
     title = models.CharField(max_length=200)
     video_main = models.CharField(max_length=250)
     imagen_main = models.TextField()
@@ -61,7 +43,6 @@ class CampaingBody(models.Model):
     ended_at = models.DateTimeField(null=True, blank=True)
     status = models.PositiveSmallIntegerField(choices=STATUS_CAMPAING, default=2)
     flag = models.PositiveSmallIntegerField(choices=FLAG_CAMPAING, default=1)
-    header = models.ForeignKey(CampaingHeader, on_delete=models.CASCADE)
     profile = models.ForeignKey(PersonalProfile, on_delete=models.CASCADE)
     profile_ca = models.ForeignKey(
         ProfileCompany, on_delete=models.CASCADE, blank=True, null=True
@@ -69,6 +50,16 @@ class CampaingBody(models.Model):
     currency = models.ForeignKey(Currency, on_delete=models.CASCADE)
     short_url = models.CharField(max_length=100, null=True, blank=True)
     slogan_campaing = models.CharField(max_length=200, null=True, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
+    qty_day = models.IntegerField(default=0)
+    qty_day_left = models.IntegerField(default=0)
+    amount = models.DecimalField(max_digits=12, decimal_places=2, default=0)
+    amount_reached = models.DecimalField(max_digits=12, decimal_places=2, default=0)
+    percent_reached = models.DecimalField(max_digits=12, decimal_places=2, default=0)
+    role = models.IntegerField(choices=ROLE_CAMPAING, default=2)
+    code_campaing = models.CharField(max_length=250)
 
     def __str__(self):
         return self.title

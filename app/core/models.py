@@ -4,8 +4,7 @@ from core.profile import PersonalProfile
 from core.profileAssociation import ProfileAssociation
 from core.profileCompany import ProfileCompany
 from core.category import Category
-from core.campaing import CampaingHeader
-from core.campaing import CampaingBody
+from core.campaing import Campaing
 from core.currency import Currency
 from core.accumulated import Accumulated
 from core.payment import Payment

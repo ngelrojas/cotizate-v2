@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from core.comment import Comment
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from .serializers import CommentSerializer
 
 
@@ -28,7 +28,7 @@ class CommentView(viewsets.ModelViewSet):
         - campaing is public
         """
         try:
-            current_campaing = CampaingHeader.objects.get(
+            current_campaing = Campaing.objects.get(
                 id=request.data.get("campaings"), users=request.user, status=5
             )
             data_send = {
@@ -43,7 +43,7 @@ class CommentView(viewsets.ModelViewSet):
                     {"data": True, "msg": "comment created."},
                     status=status.HTTP_201_CREATED,
                 )
-        except CampaingHeader.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )

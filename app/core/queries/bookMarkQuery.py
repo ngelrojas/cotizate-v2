@@ -1,6 +1,6 @@
 # from django.db.models import Q
 from core.bookMark import BookMark
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 
 
 class BookMarkQuery:
@@ -23,7 +23,7 @@ class BookMarkQuery:
     def saving_bookmark(cls, request, pk):
         """save book marked naturally"""
         try:
-            header = CampaingHeader.objects.get(id=pk)
+            header = Campaing.objects.get(id=pk)
             bookmark = BookMark.objects.create(
                 user=request.user,
                 header=header,

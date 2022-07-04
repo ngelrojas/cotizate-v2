@@ -21,7 +21,38 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
       - ./.env-db
-
+  worker:
+      build: ./app
+      container_name: 'celery_cotizate'
+      restart: always 
+      env_file:
+          - ./.env-broker
+      command: celery -A api.celery worker -l INFO 
+      volumes:
+          - ./app/:/usr/src/app/
+      depends_on:
+          - broker
+  flower:
+      image: zoomeranalytics/flower:0.9.1-4.0.2
+      container_name: 'flower_cotizate'
+      restart: always 
+      env_file:
+          - ./.env-broker
+      ports:
+          - 5555:5555
+      depends_on:
+          - broker
+  broker:
+      image: rabbitmq:3.6-management-alpine
+      hostname: 'cotizatebroker'
+      container_name: 'rabbitmq_cotizate'
+      env_file:
+          - ./.env-broker
+      ports:
+          - 5672:5672
+          - 15672:15672
+      expose:
+        - 5672
 volumes:
   postgres_data:
 

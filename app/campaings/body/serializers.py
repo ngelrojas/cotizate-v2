@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from core.campaing import CampaingBody
+from core.campaing import Campaing
 
 from profiles.serializers import PersonalSerializer
 from campaings.header.serializers import CampaingHeaderSerializer
@@ -18,7 +18,7 @@ class CampaingBodySerializer(serializers.ModelSerializer):
     currency = CurrencySerializer()
 
     class Meta:
-        model = CampaingBody
+        model = Campaing
         fields = (
             "id",
             "title",
@@ -50,7 +50,7 @@ class CampaingBodySearch(serializers.ModelSerializer):
     currency = CurrencySerializer()
 
     class Meta:
-        model = CampaingBody
+        model = Campaing
         fields = (
             "id",
             "title",

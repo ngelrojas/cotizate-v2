@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 from core.bookMark import BookMark
 from core.user import User
 
@@ -30,9 +30,9 @@ class Command(BaseCommand):
             mery = User.objects.get(first_name="mery")
             azumi = User.objects.get(first_name="azumi")
             # get campaings
-            camp_one = CampaingHeader.objects.get(id=1)
-            camp_two = CampaingHeader.objects.get(id=2)
-            camp_three = CampaingHeader.objects.get(id=3)
+            camp_one = Campaing.objects.get(id=1)
+            camp_two = Campaing.objects.get(id=2)
+            camp_three = Campaing.objects.get(id=3)
             # create bookmarked
             BookMark.objects.create(user=jhon, header=camp_three, marked=True)
             BookMark.objects.create(user=mery, header=camp_one, marked=True)

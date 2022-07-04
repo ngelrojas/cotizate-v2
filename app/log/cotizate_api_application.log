@@ -110,3 +110,2435 @@
 [21/Sep/2021 00:21:02.611]WARNING [django.server:161] "PUT /api/v2/is-activate HTTP/1.1" 400 47
 [21/Sep/2021 00:21:33.740]INFO [django.utils.autoreload:251] /usr/src/app/users/activation.py changed, reloading.
 [21/Sep/2021 00:21:35.207]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 15:20:07.635]INFO [django.utils.autoreload:677] Watching for file changes with StatReloader
+[03/Jul/2022 15:22:34.927]INFO [django.utils.autoreload:677] Watching for file changes with StatReloader
+[03/Jul/2022 15:28:16.365]INFO [django.utils.autoreload:677] Watching for file changes with StatReloader
+[03/Jul/2022 15:32:51.096]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 20:00:38.867]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 20:03:44.301]INFO [django.server:161] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2236
+[03/Jul/2022 20:03:44.328]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[03/Jul/2022 20:03:44.329]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 19513
+[03/Jul/2022 20:03:44.331]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18545
+[03/Jul/2022 20:03:44.331]INFO [django.server:161] "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 939
+[03/Jul/2022 20:03:44.353]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 200 423
+[03/Jul/2022 20:03:44.353]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[03/Jul/2022 20:03:44.399]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[03/Jul/2022 20:03:44.399]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[03/Jul/2022 20:03:44.408]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:03:44.408]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:03:44.418]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:03:44.418]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:03:45.421]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:03:45.421]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:03:51.579]INFO [django.server:161] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[03/Jul/2022 20:03:51.605]INFO [django.server:161] "GET /admin/ HTTP/1.1" 200 13408
+[03/Jul/2022 20:03:51.620]INFO [django.server:161] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 200 380
+[03/Jul/2022 20:03:51.641]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:03:51.641]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:03:51.670]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[03/Jul/2022 20:03:51.670]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[03/Jul/2022 20:03:51.712]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[03/Jul/2022 20:03:52.678]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:03:52.678]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:04:46.690]INFO [django.server:161] "GET /admin/core/user/ HTTP/1.1" 200 14781
+[03/Jul/2022 20:04:46.718]INFO [django.server:161] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6874
+[03/Jul/2022 20:04:46.722]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 200 347
+[03/Jul/2022 20:04:46.722]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 200 5698
+[03/Jul/2022 20:04:46.724]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[03/Jul/2022 20:04:46.724]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 200 7664
+[03/Jul/2022 20:04:46.725]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:04:46.726]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[03/Jul/2022 20:04:46.730]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[03/Jul/2022 20:04:46.730]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 200 7902
+[03/Jul/2022 20:04:46.731]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[03/Jul/2022 20:04:46.757]INFO [django.server:161] "GET /staticfiles/admin/img/search.svg HTTP/1.1" 200 458
+[03/Jul/2022 20:04:46.758]INFO [django.server:161] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[03/Jul/2022 20:04:46.763]INFO [django.server:161] "GET /staticfiles/admin/img/icon-no.svg HTTP/1.1" 200 560
+[03/Jul/2022 20:04:46.778]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[03/Jul/2022 20:04:46.789]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:04:46.789]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:04:47.822]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:04:47.822]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:04:50.177]INFO [django.server:161] "GET /admin/core/user/2/change/ HTTP/1.1" 200 17694
+[03/Jul/2022 20:04:50.200]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[03/Jul/2022 20:04:50.200]INFO [django.server:161] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 200 8466
+[03/Jul/2022 20:04:50.203]INFO [django.server:161] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+[03/Jul/2022 20:04:50.204]INFO [django.server:161] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 200 8804
+[03/Jul/2022 20:04:50.204]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:04:50.213]INFO [django.server:161] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 200 11097
+[03/Jul/2022 20:04:50.218]INFO [django.server:161] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 200 606
+[03/Jul/2022 20:04:50.254]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:04:50.255]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:04:50.255]INFO [django.server:161] "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[03/Jul/2022 20:04:50.255]INFO [django.server:161] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[03/Jul/2022 20:04:51.254]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:04:51.254]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:04:57.882]INFO [django.server:161] "POST /admin/core/user/2/change/ HTTP/1.1" 302 0
+[03/Jul/2022 20:04:57.913]INFO [django.server:161] "GET /admin/core/user/ HTTP/1.1" 200 14985
+[03/Jul/2022 20:04:57.934]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:04:57.965]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:04:57.966]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:04:58.973]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:04:58.974]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:05:27.845]WARNING [django.request:224] Bad Request: /api/v1/auth
+[03/Jul/2022 20:05:27.846]WARNING [django.server:161] "POST /api/v1/auth HTTP/1.1" 400 67
+[03/Jul/2022 20:06:07.692]INFO [django.server:161] "POST /api/v1/auth HTTP/1.1" 200 209
+[03/Jul/2022 20:12:29.342]INFO [django.utils.autoreload:251] /usr/src/app/core/profile.py changed, reloading.
+[03/Jul/2022 20:12:30.019]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 20:19:38.499]INFO [django.server:161] "GET /admin/core/personalprofile/ HTTP/1.1" 200 13193
+[03/Jul/2022 20:19:38.532]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:19:38.580]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:19:38.580]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:19:39.581]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:19:39.581]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:19:43.802]INFO [django.server:161] "GET /admin/core/personalprofile/1/change/ HTTP/1.1" 200 24610
+[03/Jul/2022 20:19:43.823]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:19:43.866]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:19:43.867]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:19:44.875]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:19:44.876]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:23:47.507]INFO [django.utils.autoreload:251] /usr/src/app/profiles/urls.py changed, reloading.
+[03/Jul/2022 20:23:48.173]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 20:36:59.294]ERROR [django.request:224] Internal Server Error: /api/v1/profile/personal
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 32, in create
+    countries = Country.objects.get(id=int(request.data.get("countries")))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.country.Country.DoesNotExist: Country matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
+AttributeError: module 'rest_framework.status' has no attribute 'HTT_400_BAD_REQUEST'
+[03/Jul/2022 20:36:59.440]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:36:59.444]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:37:05.900]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:37:05.977]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:37:06.256]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:38:19.927]ERROR [django.request:224] Internal Server Error: /api/v1/profile/personal
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 32, in create
+    countries = Country.objects.get(id=int(request.data.get("countries")))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.country.Country.DoesNotExist: Country matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
+AttributeError: module 'rest_framework.status' has no attribute 'HTT_400_BAD_REQUEST'
+[03/Jul/2022 20:38:20.074]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:38:20.079]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:38:26.545]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:38:26.630]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:38:26.904]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:38:58.943]INFO [django.utils.autoreload:251] /usr/src/app/cities/urls.py changed, reloading.
+[03/Jul/2022 20:38:59.608]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 20:40:59.058]INFO [django.server:161] "GET /admin/core/country/ HTTP/1.1" 200 12685
+[03/Jul/2022 20:40:59.072]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.074]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.074]INFO [django.server:161] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.099]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.102]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.103]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.111]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.111]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:40:59.115]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.117]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.117]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.127]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.130]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.133]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.161]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.178]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.180]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.199]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.207]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.208]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[03/Jul/2022 20:40:59.211]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:40:59.212]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:41:00.218]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:41:00.219]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:41:03.294]INFO [django.server:161] "GET /admin/core/country/1/change/ HTTP/1.1" 200 13943
+[03/Jul/2022 20:41:03.310]INFO [django.server:161] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+[03/Jul/2022 20:41:03.311]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[03/Jul/2022 20:41:03.316]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:41:03.326]INFO [django.server:161] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+[03/Jul/2022 20:41:03.327]INFO [django.server:161] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
+[03/Jul/2022 20:41:03.439]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:41:03.439]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:41:04.447]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:41:04.448]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:46:17.477]INFO [django.server:161] "GET /admin/core/country/ HTTP/1.1" 200 12685
+[03/Jul/2022 20:46:17.526]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:46:17.576]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:46:17.576]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:46:18.924]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:46:18.924]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:46:20.297]INFO [django.server:161] "GET /admin/core/country/1/change/ HTTP/1.1" 200 13943
+[03/Jul/2022 20:46:20.318]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:46:20.356]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:46:20.357]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:46:21.366]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:46:21.366]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:49:29.464]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:49:29.470]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:49:35.940]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:49:36.023]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:49:36.295]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:50:36.907]ERROR [django.request:224] Internal Server Error: /api/v1/profile/personal
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 32, in create
+    countries = Country.objects.get(id=int(request.data.get("countries")))
+ValueError: invalid literal for int() with base 10: 'one'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
+AttributeError: module 'rest_framework.status' has no attribute 'HTT_400_BAD_REQUEST'
+[03/Jul/2022 20:50:37.049]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:50:37.053]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:50:41.962]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:50:42.040]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:50:42.317]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:52:23.797]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[03/Jul/2022 20:52:24.489]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 20:52:31.487]ERROR [django.request:224] Internal Server Error: /api/v1/profile/personal
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 33, in create
+    cities = City.objects.get(id=int(request.data.get("cities")))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.city.City.DoesNotExist: City matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
+AttributeError: module 'rest_framework.status' has no attribute 'HTT_400_BAD_REQUEST'
+[03/Jul/2022 20:52:31.632]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:52:31.636]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:52:38.101]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:52:38.177]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:52:38.455]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:53:30.970]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[03/Jul/2022 20:53:31.642]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 20:53:43.646]ERROR [django.request:224] Internal Server Error: /api/v1/profile/personal
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'one'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 32, in create
+    countries = Country.objects.get(id=request.data.get("countries"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'one'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
+AttributeError: module 'rest_framework.status' has no attribute 'HTT_400_BAD_REQUEST'
+[03/Jul/2022 20:53:43.793]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:53:43.797]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:53:50.250]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:53:50.336]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:53:50.611]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:54:46.367]ERROR [django.request:224] Internal Server Error: /api/v1/profile/personal
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 33, in create
+    cities = City.objects.get(id=request.data.get("cities"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.city.City.DoesNotExist: City matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
+AttributeError: module 'rest_framework.status' has no attribute 'HTT_400_BAD_REQUEST'
+[03/Jul/2022 20:54:46.511]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:54:46.516]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:54:52.976]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:54:53.055]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:54:53.330]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:55:00.122]ERROR [django.request:224] Internal Server Error: /api/v1/profile/personal
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 33, in create
+    cities = City.objects.get(id=request.data.get("cities"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.city.City.DoesNotExist: City matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
+AttributeError: module 'rest_framework.status' has no attribute 'HTT_400_BAD_REQUEST'
+[03/Jul/2022 20:55:00.264]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:55:00.268]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:55:06.721]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:55:06.800]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:55:07.077]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:56:18.668]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:56:18.673]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:56:25.142]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:56:25.226]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:56:25.509]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:56:34.966]INFO [django.server:161] "GET /admin/core/personalprofile/ HTTP/1.1" 200 13193
+[03/Jul/2022 20:56:35.002]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:56:35.047]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:56:35.047]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:56:36.054]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:56:36.055]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:56:36.543]INFO [django.server:161] "GET /admin/core/personalprofile/1/change/ HTTP/1.1" 200 24610
+[03/Jul/2022 20:56:36.562]INFO [django.server:161] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 304 0
+[03/Jul/2022 20:56:36.563]INFO [django.server:161] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[03/Jul/2022 20:56:36.567]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:56:36.576]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[03/Jul/2022 20:56:36.604]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:56:36.605]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:56:36.628]INFO [django.server:161] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[03/Jul/2022 20:56:37.642]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:56:37.643]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:56:57.886]INFO [django.server:161] "GET /admin/core/city/ HTTP/1.1" 200 14279
+[03/Jul/2022 20:56:57.936]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:56:57.991]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:56:57.992]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:56:59.005]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:56:59.006]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:57:00.833]INFO [django.server:161] "GET /admin/core/city/1/change/ HTTP/1.1" 200 15065
+[03/Jul/2022 20:57:00.856]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 20:57:00.907]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:57:00.907]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:57:01.913]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 20:57:01.913]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 20:58:08.224]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:58:08.230]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:58:14.677]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:58:14.759]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:58:15.069]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:58:42.919]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:58:42.924]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:58:49.380]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:58:49.463]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:58:49.739]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:59:01.446]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 20:59:01.451]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 20:59:07.897]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 20:59:07.976]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 20:59:08.256]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:00:58.070]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 21:00:58.075]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 21:01:04.535]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 21:01:04.614]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:01:04.890]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:02:36.199]INFO [django.utils.autoreload:251] /usr/src/app/tags/urls.py changed, reloading.
+[03/Jul/2022 21:02:36.874]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:04:15.130]ERROR [django.request:224] Internal Server Error: /api/v1/tag
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: list() missing 1 required positional argument: 'campId'
+[03/Jul/2022 21:04:15.135]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 21:04:21.577]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 21:04:21.663]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:04:21.936]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:05:35.072]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 21:05:41.504]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 21:05:41.579]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:05:41.853]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:08:14.860]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 21:08:21.323]ERROR [django.request:224] Internal Server Error: /api/v1/user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 30, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 877, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 812, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.9/site-packages/kombu/transport/pyamqp.py", line 201, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/connection.py", line 323, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.9/site-packages/amqp/transport.py", line 172, in _connect
+    entries = socket.getaddrinfo(
+  File "/usr/local/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name does not resolve
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/users/serializers.py", line 40, in create
+    send_email_module.delay(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/usr/local/lib/python3.9/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 177, in publish
+    return _publish(
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 523, in _ensured
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 186, in _publish
+    channel = self.channel
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 209, in _get_channel
+    channel = self._channel = channel()
+  File "/usr/local/lib/python3.9/site-packages/kombu/utils/functional.py", line 32, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/usr/local/lib/python3.9/site-packages/kombu/messaging.py", line 225, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 895, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 433, in _ensure_connection
+    return retry_over_time(
+  File "/usr/local/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.9/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno -2] Name does not resolve
+[03/Jul/2022 21:08:21.398]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:08:21.676]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:09:19.789]WARNING [django.request:224] Method Not Allowed: /api/v1/upload
+[03/Jul/2022 21:09:20.009]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:09:20.290]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:13:37.287]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:13:37.566]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:14:10.538]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:14:10.815]WARNING [django.request:224] Bad Request: /api/v1/user
+[03/Jul/2022 21:30:47.801]INFO [django.utils.autoreload:251] /usr/src/app/core/profileCompany.py changed, reloading.
+[03/Jul/2022 21:30:48.470]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:33:28.204]INFO [django.server:161] "GET /admin/core/profilecompany/ HTTP/1.1" 200 12992
+[03/Jul/2022 21:33:28.228]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.236]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.240]INFO [django.server:161] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.241]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.243]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.244]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.246]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.246]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.247]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 21:33:28.248]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.254]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.254]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.255]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.258]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.261]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.326]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.329]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.329]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.329]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.365]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[03/Jul/2022 21:33:28.377]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 21:33:28.377]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 21:33:29.386]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 21:33:29.387]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 21:33:29.836]INFO [django.server:161] "GET /admin/core/profilecompany/1/change/ HTTP/1.1" 200 26520
+[03/Jul/2022 21:33:29.851]INFO [django.server:161] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+[03/Jul/2022 21:33:29.857]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[03/Jul/2022 21:33:29.858]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:29.867]INFO [django.server:161] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+[03/Jul/2022 21:33:29.867]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[03/Jul/2022 21:33:29.915]INFO [django.server:161] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
+[03/Jul/2022 21:33:29.963]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 21:33:29.963]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 21:33:30.966]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 21:33:30.967]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 21:33:33.853]WARNING [django.request:224] Not Found: /mediafiles/my photo.png
+[03/Jul/2022 21:33:33.853]WARNING [django.server:161] "GET /mediafiles/my%20photo.png HTTP/1.1" 404 4927
+[03/Jul/2022 21:33:33.904]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 21:33:33.905]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 21:33:34.911]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 21:33:34.911]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 21:33:36.838]INFO [django.server:161] "GET /admin/core/profilecompany/1/change/ HTTP/1.1" 200 26520
+[03/Jul/2022 21:33:37.902]WARNING [django.request:224] Not Found: /favicon.ico
+[03/Jul/2022 21:33:37.903]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[03/Jul/2022 21:39:11.085]INFO [django.utils.autoreload:251] /usr/src/app/core/campaing.py changed, reloading.
+[03/Jul/2022 21:39:11.738]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:40:03.355]INFO [django.utils.autoreload:251] /usr/src/app/core/campaing.py changed, reloading.
+[03/Jul/2022 21:40:03.962]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:40:35.376]INFO [django.utils.autoreload:251] /usr/src/app/core/models.py changed, reloading.
+[03/Jul/2022 21:40:36.016]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:41:16.501]INFO [django.utils.autoreload:251] /usr/src/app/core/accumulated.py changed, reloading.
+[03/Jul/2022 21:41:17.123]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:41:43.502]INFO [django.utils.autoreload:251] /usr/src/app/core/payment.py changed, reloading.
+[03/Jul/2022 21:41:44.100]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:42:17.548]INFO [django.utils.autoreload:251] /usr/src/app/core/comment.py changed, reloading.
+[03/Jul/2022 21:42:18.165]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:42:42.540]INFO [django.utils.autoreload:251] /usr/src/app/core/reward.py changed, reloading.
+[03/Jul/2022 21:42:43.142]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:43:11.549]INFO [django.utils.autoreload:251] /usr/src/app/core/like.py changed, reloading.
+[03/Jul/2022 21:43:12.171]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:43:39.549]INFO [django.utils.autoreload:251] /usr/src/app/core/phase.py changed, reloading.
+[03/Jul/2022 21:43:40.175]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:44:07.548]INFO [django.utils.autoreload:251] /usr/src/app/core/improve.py changed, reloading.
+[03/Jul/2022 21:44:08.159]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:44:27.490]INFO [django.utils.autoreload:251] /usr/src/app/core/bookMark.py changed, reloading.
+[03/Jul/2022 21:44:28.117]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:44:46.420]INFO [django.utils.autoreload:251] /usr/src/app/core/upload.py changed, reloading.
+[03/Jul/2022 21:44:47.039]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:45:04.334]INFO [django.utils.autoreload:251] /usr/src/app/core/updating.py changed, reloading.
+[03/Jul/2022 21:45:04.949]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:45:33.366]INFO [django.utils.autoreload:251] /usr/src/app/core/denounce.py changed, reloading.
+[03/Jul/2022 21:45:34.012]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[03/Jul/2022 21:45:56.592]INFO [django.utils.autoreload:251] /usr/src/app/core/admin.py changed, reloading.
+[03/Jul/2022 21:45:57.273]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:06:11.135]INFO [django.utils.autoreload:251] /usr/src/app/categories/views.py changed, reloading.
+[04/Jul/2022 00:06:11.894]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:28:05.727]INFO [django.utils.autoreload:251] /usr/src/app/core/queries/categoryQuery.py changed, reloading.
+[04/Jul/2022 00:28:06.482]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:31:32.869]INFO [django.utils.autoreload:251] /usr/src/app/core/tag.py changed, reloading.
+[04/Jul/2022 00:31:33.642]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:33:18.862]INFO [django.utils.autoreload:251] /usr/src/app/campaings/body/helpers.py changed, reloading.
+[04/Jul/2022 00:33:19.671]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:34:11.011]INFO [django.utils.autoreload:251] /usr/src/app/payments/paids.py changed, reloading.
+[04/Jul/2022 00:34:11.833]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:34:47.882]INFO [django.utils.autoreload:251] /usr/src/app/payments/helper/helperPay.py changed, reloading.
+[04/Jul/2022 00:34:48.668]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:35:18.617]INFO [django.utils.autoreload:251] /usr/src/app/uploads/helpers/Tools.py changed, reloading.
+[04/Jul/2022 00:35:19.395]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:37:23.114]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:46:24.253]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 00:49:04.791]INFO [django.server:161] "GET /admin/ HTTP/1.1" 302 0
+[04/Jul/2022 00:49:04.806]INFO [django.server:161] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2236
+[04/Jul/2022 00:49:04.830]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[04/Jul/2022 00:49:04.830]INFO [django.server:161] "GET /staticfiles/admin/css/login.css HTTP/1.1" 304 0
+[04/Jul/2022 00:49:04.831]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[04/Jul/2022 00:49:04.833]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[04/Jul/2022 00:49:04.846]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[04/Jul/2022 00:49:04.848]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[04/Jul/2022 00:49:04.859]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[04/Jul/2022 00:49:04.859]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[04/Jul/2022 00:49:04.863]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:49:04.863]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:49:05.878]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:49:05.878]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:49:07.762]INFO [django.server:161] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[04/Jul/2022 00:49:07.789]INFO [django.server:161] "GET /admin/ HTTP/1.1" 200 12932
+[04/Jul/2022 00:49:07.800]INFO [django.server:161] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 304 0
+[04/Jul/2022 00:49:07.821]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:49:07.822]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:49:07.850]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[04/Jul/2022 00:49:07.850]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[04/Jul/2022 00:49:07.852]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[04/Jul/2022 00:49:08.861]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:49:08.862]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:49:31.530]WARNING [django.request:224] Unauthorized: /api/v1/user/5
+[04/Jul/2022 00:49:31.530]WARNING [django.server:161] "GET /api/v1/user/5 HTTP/1.1" 401 35
+[04/Jul/2022 00:49:36.266]WARNING [django.request:224] Bad Request: /api/v1/auth
+[04/Jul/2022 00:49:36.266]WARNING [django.server:161] "POST /api/v1/auth HTTP/1.1" 400 55
+[04/Jul/2022 00:49:43.728]WARNING [django.request:224] Unauthorized: /api/v1/user/5
+[04/Jul/2022 00:49:43.728]WARNING [django.server:161] "GET /api/v1/user/5 HTTP/1.1" 401 38
+[04/Jul/2022 00:51:45.326]WARNING [django.request:224] Unauthorized: /api/v1/user/2
+[04/Jul/2022 00:51:45.327]WARNING [django.server:161] "GET /api/v1/user/2 HTTP/1.1" 401 38
+[04/Jul/2022 00:52:21.282]WARNING [django.request:224] Unauthorized: /api/v1/user/2
+[04/Jul/2022 00:52:21.282]WARNING [django.server:161] "GET /api/v1/user/2 HTTP/1.1" 401 38
+[04/Jul/2022 00:53:56.097]INFO [django.server:161] "GET /admin/core/user/ HTTP/1.1" 200 14445
+[04/Jul/2022 00:53:56.127]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.128]INFO [django.server:161] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.130]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.131]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.132]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.134]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.134]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.135]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.136]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.137]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[04/Jul/2022 00:53:56.185]INFO [django.server:161] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.186]INFO [django.server:161] "GET /staticfiles/admin/img/search.svg HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.195]INFO [django.server:161] "GET /staticfiles/admin/img/icon-no.svg HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.203]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[04/Jul/2022 00:53:56.212]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:53:56.213]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:53:57.222]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:53:57.223]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:53:58.776]INFO [django.server:161] "GET /admin/core/user/2/change/ HTTP/1.1" 200 17358
+[04/Jul/2022 00:53:58.794]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:58.794]INFO [django.server:161] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+[04/Jul/2022 00:53:58.795]INFO [django.server:161] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:58.795]INFO [django.server:161] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:58.799]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[04/Jul/2022 00:53:58.809]INFO [django.server:161] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+[04/Jul/2022 00:53:58.809]INFO [django.server:161] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
+[04/Jul/2022 00:53:58.843]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:53:58.843]INFO [django.server:161] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[04/Jul/2022 00:53:58.843]INFO [django.server:161] "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[04/Jul/2022 00:53:58.844]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:53:59.850]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:53:59.851]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:54:03.279]INFO [django.server:161] "POST /admin/core/user/2/change/ HTTP/1.1" 302 0
+[04/Jul/2022 00:54:03.318]INFO [django.server:161] "GET /admin/core/user/ HTTP/1.1" 200 14649
+[04/Jul/2022 00:54:03.342]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[04/Jul/2022 00:54:03.370]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:54:03.371]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:54:04.369]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:54:04.370]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:54:06.210]INFO [django.server:161] "POST /api/v1/auth HTTP/1.1" 200 209
+[04/Jul/2022 00:54:11.422]INFO [django.server:161] "GET /api/v1/user/2 HTTP/1.1" 200 82
+[04/Jul/2022 00:54:23.745]INFO [django.server:161] "GET /api/v1/user/2 HTTP/1.1" 200 82
+[04/Jul/2022 00:54:31.462]INFO [django.server:161] "GET /api/v1/user/6 HTTP/1.1" 200 82
+[04/Jul/2022 00:55:19.769]WARNING [django.request:224] Bad Request: /api/v1/user/2
+[04/Jul/2022 00:55:19.769]WARNING [django.server:161] "PUT /api/v1/user/2 HTTP/1.1" 400 85
+[04/Jul/2022 00:55:41.499]INFO [django.server:161] "GET /admin/core/user/2/change/ HTTP/1.1" 200 17366
+[04/Jul/2022 00:55:41.533]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[04/Jul/2022 00:55:41.576]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:55:41.577]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:55:42.583]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 00:55:42.584]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 00:59:33.932]INFO [django.server:161] "PUT /api/v1/user/2 HTTP/1.1" 200 34
+[04/Jul/2022 00:59:52.278]ERROR [django.request:224] Internal Server Error: /api/v1/user/2
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/users/views.py", line 58, in destroy
+    current_user = self.currentUser(request)
+AttributeError: 'UpdateUserView' object has no attribute 'currentUser'
+[04/Jul/2022 00:59:52.279]ERROR [django.server:161] "DELETE /api/v1/user/2 HTTP/1.1" 500 92932
+[04/Jul/2022 01:01:51.242]INFO [django.utils.autoreload:251] /usr/src/app/users/urls.py changed, reloading.
+[04/Jul/2022 01:01:51.961]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 01:02:05.585]INFO [django.utils.autoreload:251] /usr/src/app/users/views.py changed, reloading.
+[04/Jul/2022 01:02:06.259]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 01:02:49.394]INFO [django.utils.autoreload:251] /usr/src/app/users/views.py changed, reloading.
+[04/Jul/2022 01:02:50.058]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 01:03:00.006]INFO [django.server:161] "DELETE /api/v1/user/2 HTTP/1.1" 204 34
+[04/Jul/2022 01:03:08.320]INFO [django.server:161] "GET /admin/core/user/2/change/ HTTP/1.1" 200 17381
+[04/Jul/2022 01:03:08.352]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[04/Jul/2022 01:03:08.392]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:03:08.392]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 01:03:09.400]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:03:09.400]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 01:03:14.243]INFO [django.server:161] "POST /admin/core/user/2/change/ HTTP/1.1" 302 0
+[04/Jul/2022 01:03:14.280]INFO [django.server:161] "GET /admin/core/user/ HTTP/1.1" 200 14664
+[04/Jul/2022 01:03:14.302]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[04/Jul/2022 01:03:14.339]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:03:14.340]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 01:03:15.341]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:03:15.342]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 01:07:42.794]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 01:08:44.704]INFO [django.server:161] "POST /api/v1/user HTTP/1.1" 201 79
+[04/Jul/2022 01:10:28.660]INFO [django.server:161] "GET /admin/core/user/ HTTP/1.1" 200 14843
+[04/Jul/2022 01:10:28.691]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[04/Jul/2022 01:10:28.750]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:10:28.751]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 01:10:29.759]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:10:29.759]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 01:30:16.060]WARNING [django.request:224] Not Found: /api/v1/recovery-confirm/NQ/c1ee8-c065bc148cee11727fe3329970f55f00
+[04/Jul/2022 01:30:16.060]WARNING [django.server:161] "PUT /api/v1/recovery-confirm/NQ/c1ee8-c065bc148cee11727fe3329970f55f00 HTTP/1.1" 404 15599
+[04/Jul/2022 01:31:53.473]WARNING [django.request:224] Not Found: /api/v1/user/recovery-confirm/NQ/c1ee8-c065bc148cee11727fe3329970f55f00
+[04/Jul/2022 01:31:53.474]WARNING [django.server:161] "PUT /api/v1/user/recovery-confirm/NQ/c1ee8-c065bc148cee11727fe3329970f55f00 HTTP/1.1" 404 15614
+[04/Jul/2022 01:32:19.382]WARNING [django.request:224] Not Found: /api/v1/user/recovery-confirm/NQ/c1ee8-c065bc148cee11727fe3329970f55f00
+[04/Jul/2022 01:32:19.382]WARNING [django.server:161] "PUT /api/v1/user/recovery-confirm/NQ/c1ee8-c065bc148cee11727fe3329970f55f00 HTTP/1.1" 404 15614
+[04/Jul/2022 01:32:35.478]WARNING [django.request:224] Not Found: /api/v1/recovery-confirm/NQ/c1ee8-c065bc148cee11727fe3329970f55f00
+[04/Jul/2022 01:32:35.479]WARNING [django.server:161] "PUT /api/v1/recovery-confirm/NQ/c1ee8-c065bc148cee11727fe3329970f55f00 HTTP/1.1" 404 15599
+[04/Jul/2022 01:35:16.988]WARNING [django.request:224] Not Found: /api/v1/recovery-confirm
+[04/Jul/2022 01:35:16.989]WARNING [django.server:161] "PUT /api/v1/recovery-confirm HTTP/1.1" 404 47
+[04/Jul/2022 01:36:49.430]INFO [django.utils.autoreload:251] /usr/src/app/users/views.py changed, reloading.
+[04/Jul/2022 01:36:50.266]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 01:36:59.476]WARNING [django.request:224] Not Found: /api/v1/recovery-confirm
+[04/Jul/2022 01:36:59.477]WARNING [django.server:161] "PUT /api/v1/recovery-confirm HTTP/1.1" 404 47
+[04/Jul/2022 01:37:37.778]INFO [django.utils.autoreload:251] /usr/src/app/users/views.py changed, reloading.
+[04/Jul/2022 01:37:38.609]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 01:37:45.184]WARNING [django.request:224] Not Found: /api/v1/recovery-confirm
+[04/Jul/2022 01:37:45.185]WARNING [django.server:161] "PUT /api/v1/recovery-confirm HTTP/1.1" 404 47
+[04/Jul/2022 01:38:16.975]INFO [django.utils.autoreload:251] /usr/src/app/users/views.py changed, reloading.
+[04/Jul/2022 01:38:17.762]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 01:38:23.372]INFO [django.utils.autoreload:251] /usr/src/app/users/views.py changed, reloading.
+[04/Jul/2022 01:38:24.165]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 01:38:28.173]INFO [django.server:161] "PUT /api/v1/recovery-confirm HTTP/1.1" 200 39
+[04/Jul/2022 01:38:58.835]INFO [django.server:161] "GET /admin/core/user/5/change/ HTTP/1.1" 200 17209
+[04/Jul/2022 01:38:58.868]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[04/Jul/2022 01:38:58.924]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:38:58.924]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 01:38:59.933]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:38:59.934]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 01:40:01.497]INFO [django.utils.autoreload:251] /usr/src/app/users/views.py changed, reloading.
+[04/Jul/2022 01:40:02.203]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[04/Jul/2022 01:41:08.669]INFO [django.server:161] "PUT /api/v1/activate HTTP/1.1" 200 26
+[04/Jul/2022 01:41:11.867]INFO [django.server:161] "GET /admin/core/user/5/change/ HTTP/1.1" 200 17217
+[04/Jul/2022 01:41:11.903]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[04/Jul/2022 01:41:11.935]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:41:11.936]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831
+[04/Jul/2022 01:41:12.935]WARNING [django.request:224] Not Found: /favicon.ico
+[04/Jul/2022 01:41:12.935]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4831

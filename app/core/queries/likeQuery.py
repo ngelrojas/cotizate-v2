@@ -1,6 +1,6 @@
 # from django.db.models import Q
 from core.like import Like
-from core.campaing import CampaingHeader
+from core.campaing import Campaing
 
 
 class LikeQuery:
@@ -15,7 +15,7 @@ class LikeQuery:
     def get_retrieve(pk):
         """get list all about the user like=true"""
         try:
-            header_pk = CampaingHeader.objects.get(id=pk)
+            header_pk = Campaing.objects.get(id=pk)
             return Like.objects.get(header=header_pk)
         except:
             return False
@@ -27,7 +27,7 @@ class LikeQuery:
         return boolean
         """
         try:
-            camp = CampaingHeader.objects.get(id=pk)
+            camp = Campaing.objects.get(id=pk)
             liked = Like.objects.create(
                 user=request.user, header=camp, liked=request.data.get("liked")
             )

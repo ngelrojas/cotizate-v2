@@ -22,7 +22,7 @@ class RewardPublic(viewsets.ViewSet):
             serializer = self.serializer_class(queryset, many=True)
             return Response({'data': serializer.data},
                             status=status.HTTP_200_OK)
-        except Reward.DoesNotExist as err:
+        except Exception as err:
             return Response({'data': False,
                              'msg': f'{err}'},
                             status=status.HTTP_404_NOT_FOUND)
