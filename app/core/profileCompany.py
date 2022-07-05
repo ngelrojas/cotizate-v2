@@ -1,13 +1,14 @@
 from django.db import models
 from .abstract import AbstractProfile
-from .profile import PersonalProfile
 from .country import Country
 from .city import City
 from .user import User
 
+
 def nameFile(instance, filename):
     fdir = str(instance).replace(" ", "_")
-    return "/".join(["images/profiles/personal", fdir, filename])
+    return "/".join(["images/profiles/company", fdir, filename])
+
 
 class ProfileCompany(AbstractProfile):
     """profile company"""
@@ -20,7 +21,7 @@ class ProfileCompany(AbstractProfile):
     heading = models.CharField(max_length=50, blank=True, null=True)
     email_company = models.EmailField(max_length=250, blank=True, null=True)
     photo = models.ImageField(upload_to=nameFile, blank=True, null=True)
-    profiles = models.ForeignKey(PersonalProfile, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     countries = models.ForeignKey(Country, on_delete=models.CASCADE)
     cities = models.ForeignKey(City, on_delete=models.CASCADE)
     institution_type = models.PositiveSmallIntegerField(choices=TYPE_INST, default=1)

@@ -10,7 +10,6 @@ class ProfilesQuery:
     def saving_profile_company(cls, request, country, city):
         """save company profile"""
         try:
-            profile_per = PersonalProfile.objects.filter(user=request.user).last()
             ProfileCompany.objects.create(
                 cinit=request.data.get("cinit"),
                 address=request.data.get("address"),
@@ -25,32 +24,31 @@ class ProfilesQuery:
                 complete=True,
                 company_name=request.data.get("company_name"),
                 email_company=request.data.get("email_company"),
-                photo=request.data.get("photo"),
+                photo=request.data["photo"],
                 rs_facebook=request.data.get("rs_facebook"),
                 rs_twitter=request.data.get("rs_twitter"),
                 rs_linkedin=request.data.get("rs_linkedin"),
                 rs_another=request.data.get("rs_another"),
-                institution_type=request.data.get("type_institution"),
-                profiles=profile_per,
+                institution_type=request.data.get("institution_type"),
+                user=request.user,
                 countries=country,
                 cities=city,
-                header=request.data.get("header"),
             )
             return True
         except Exception as err:
             return err
 
     @classmethod
-    def update_profile_company(cls, pk, pc, request, country, city):
+    def update_profile_company(cls, pk, request, country, city):
         """update current company profile"""
         try:
-            # profile_per = PersonalProfile.objects.get(id=pk)
-            prof_comp = ProfileCompany.objects.get(id=pc, profiles=pk)
+            prof_comp = ProfileCompany.objects.get(id=pk, user=request.user)
             prof_comp.cinit = request.data.get("cinit")
             prof_comp.heading = request.data.get("heading")
             prof_comp.address = request.data.get("address")
             prof_comp.number_address = request.data.get("number_address")
-            prof_comp.photo = request.data.get("photo")
+            if request.data["photo"]:
+                prof_comp.photo = request.data["photo"]
             prof_comp.neightbordhood = request.data.get("neightbordhood")
             prof_comp.cellphone = request.data.get("cellphone")
             prof_comp.telephone = request.data.get("telephone")
@@ -64,7 +62,6 @@ class ProfilesQuery:
             prof_comp.rs_linkedin = request.data.get("rs_linkedin")
             prof_comp.rs_another = request.data.get("rs_another")
             prof_comp.institution_type = request.data.get("institution_type")
-            prof_comp.header = request.data.get("header")
             prof_comp.save()
             return True
         except ProfileCompany.DoesNotExist as err:
@@ -83,7 +80,7 @@ class ProfilesQuery:
                 telephone=request.data.get("telephone"),
                 description=request.data.get("description"),
                 birthdate=request.data.get("birthdate"),
-                photo=request.data.get("photo"),
+                photo=request.data["photo"],
                 current_position=request.data.get("current_position"),
                 headline=request.data.get("headline"),
                 rs_facebook=request.data.get("rs_facebook"),
@@ -93,7 +90,6 @@ class ProfilesQuery:
                 user=request.user,
                 countries=country,
                 cities=city,
-                header=request.data.get("header"),
             )
             return True
         except Exception as e:
@@ -112,7 +108,8 @@ class ProfilesQuery:
             profile_per.telephone = request.data.get("telephone")
             profile_per.description = request.data.get("description")
             profile_per.birthdate = request.data.get("birthdate")
-            profile_per.photo = request.data.get("photo")
+            if request.data["photo"]:
+                profile_per.photo = request.data["photo"]
             profile_per.current_position = request.data.get("current_position")
             profile_per.headline = request.data.get("headline")
             profile_per.rs_facebook = request.data.get("rs_facebook")

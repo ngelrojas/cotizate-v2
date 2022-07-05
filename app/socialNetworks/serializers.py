@@ -3,7 +3,6 @@ from core.socialNetwork import SocialNetworkPP
 from core.socialNetwork import SocialNetworkPA
 from core.socialNetwork import SocialNetworkPC
 from profiles.serializers import PersonalSerializer
-from profileAssociations.serializers import AssociationSerializer
 from profileCompanies.serializers import CompanySerializer
 
 
@@ -20,7 +19,7 @@ class SocialPPSerializer(serializers.ModelSerializer):
 class SocialPASerializer(serializers.ModelSerializer):
     """social network pa serializers"""
 
-    snet = AssociationSerializer()
+    snet = CompanySerializer()
 
     class Meta:
         model = SocialNetworkPA

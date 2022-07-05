@@ -17,6 +17,7 @@ class AbstractProfile(models.Model):
     rs_twitter = models.CharField(max_length=350, blank=True, null=True)
     rs_linkedin = models.CharField(max_length=350, blank=True, null=True)
     rs_another = models.CharField(max_length=350, blank=True, null=True)
+    delete = models.BooleanField(default=False)
 
     class Meta:
         abstract = True

@@ -4,9 +4,12 @@ from .user import User
 from .country import Country
 from .city import City
 
+
 def nameFile(instance, filename):
+    """save images in personal folder"""
     fdir = str(instance).replace(" ", "_")
     return "/".join(["images/profiles/personal", fdir, filename])
+
 
 class PersonalProfile(AbstractProfile):
     """personal profile"""

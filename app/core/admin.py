@@ -34,7 +34,6 @@ class UserAdmin(BaseUserAdmin):
 admin.site.register(models.User, UserAdmin)
 admin.site.register(models.PersonalProfile)
 admin.site.register(models.ProfileCompany)
-# admin.site.register(models.ProfileAssociation)
 admin.site.register(models.Category)
 admin.site.register(models.Campaing)
 admin.site.register(models.Currency)

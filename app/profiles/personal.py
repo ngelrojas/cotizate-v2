@@ -18,7 +18,7 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def list(self, request):
         """list all personal profiles"""
         try:
-            current_profiles = PerPF.objects.filter(user=request.user)
+            current_profiles = PerPF.objects.filter(user=request.user, delete=False)
             serializer = self.serializer_class(current_profiles, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -46,7 +46,7 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def retrieve(self, request, pk):
         """retrieve profile current user"""
         try:
-            current_profile = PerPF.objects.get(id=pk, user=request.user)
+            current_profile = PerPF.objects.get(id=pk, user=request.user, delete=False)
             serializer = self.serializer_class(current_profile)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -67,7 +67,7 @@ class PersonalProfileView(viewsets.ModelViewSet):
                 {"data": complete, "msg": "personal profile updated."},
                 status=status.HTTP_200_OK,
             )
-        except PerPF.DoesNotExist as err:
+        except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
@@ -75,13 +75,15 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def delete(self, request, pk):
         """delete current personal profile"""
         try:
-            current_profile = PerPF.objects.get(id=pk, user=request.user)
-            current_profile.delete()
+            current_profile = PerPF.objects.get(id=pk, user=request.user, delete=False)
+            current_profile.delete = True
+            current_profile.save()
             return Response(
                 {"data": True, "msg": "personal profile Deleted"},
                 status=status.HTTP_204_NO_CONTENT,
             )
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+                {"data": False, "msg": f"{err}"},
+                status=status.HTTP_404_NOT_FOUND
             )

@@ -55,7 +55,6 @@ APP_API = [
     "core",
     "users",
     "profiles",
-    "profileAssociations",
     "profileCompanies",
     "categories",
     "campaings",

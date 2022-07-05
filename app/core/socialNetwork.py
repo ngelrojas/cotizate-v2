@@ -1,7 +1,6 @@
 from django.db import models
 from .abstract import AbstractSocialNetwork
 from .profile import PersonalProfile
-from .profileAssociation import ProfileAssociation
 from .profileCompany import ProfileCompany
 
 
@@ -17,7 +16,7 @@ class SocialNetworkPP(AbstractSocialNetwork):
 class SocialNetworkPA(AbstractSocialNetwork):
     """social network profile association"""
 
-    snet = models.ForeignKey(ProfileAssociation, on_delete=models.CASCADE)
+    snet = models.ForeignKey(ProfileCompany, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name

@@ -1,6 +1,6 @@
 from rest_framework import serializers
+from users.serializers import UserSerializer
 from core.profileCompany import ProfileCompany
-from profiles.serializers import PersonalSerializer
 from countries.serializers import CountrySerializer
 from cities.serializers import CitySerializer
 
@@ -8,7 +8,9 @@ from cities.serializers import CitySerializer
 class CompanySerializer(serializers.ModelSerializer):
     """profile company serializer"""
 
-    profiles = PersonalSerializer()
+    user = UserSerializer()
+    countries = CountrySerializer()
+    cities = CitySerializer()
 
     class Meta:
         model = ProfileCompany
@@ -32,7 +34,7 @@ class CompanySerializer(serializers.ModelSerializer):
             "heading",
             "email_company",
             "photo",
-            "profiles",
+            "user",
             "countries",
             "cities",
             "institution_type",

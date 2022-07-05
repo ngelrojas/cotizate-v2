@@ -1,7 +1,6 @@
 # from core.tag import Tag
 from core.user import User
 from core.profile import PersonalProfile
-from core.profileAssociation import ProfileAssociation
 from core.profileCompany import ProfileCompany
 from core.category import Category
 from core.campaing import Campaing
