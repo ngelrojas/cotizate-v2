@@ -9,34 +9,29 @@ class ProfilesQuery:
     @classmethod
     def saving_profile_company(cls, request, country, city):
         """save company profile"""
-        try:
-            ProfileCompany.objects.create(
-                cinit=request.data.get("cinit"),
-                address=request.data.get("address"),
-                number_address=request.data.get("number_address"),
-                neightbordhood=request.data.get("neightbordhood"),
-                cellphone=request.data.get("cellphone"),
-                telephone=request.data.get("telephone"),
-                description=request.data.get("description"),
-                representative=True,
-                association_name=request.data.get("association_name"),
-                heading=request.data.get("heading"),
-                complete=True,
-                company_name=request.data.get("company_name"),
-                email_company=request.data.get("email_company"),
-                photo=request.data["photo"],
-                rs_facebook=request.data.get("rs_facebook"),
-                rs_twitter=request.data.get("rs_twitter"),
-                rs_linkedin=request.data.get("rs_linkedin"),
-                rs_another=request.data.get("rs_another"),
-                institution_type=request.data.get("institution_type"),
-                user=request.user,
-                countries=country,
-                cities=city,
-            )
-            return True
-        except Exception as err:
-            return err
+        ProfileCompany.objects.create(
+            cinit=request.data.get("cinit"),
+            address=request.data.get("address"),
+            number_address=request.data.get("number_address"),
+            neightbordhood=request.data.get("neightbordhood"),
+            cellphone=request.data.get("cellphone"),
+            telephone=request.data.get("telephone"),
+            description=request.data.get("description"),
+            representative=request.data.get("representative"),
+            heading=request.data.get("heading"),
+            company_name=request.data.get("company_name"),
+            email_company=request.data.get("email_company"),
+            photo=request.data["photo"],
+            rs_facebook=request.data.get("rs_facebook"),
+            rs_twitter=request.data.get("rs_twitter"),
+            rs_linkedin=request.data.get("rs_linkedin"),
+            rs_another=request.data.get("rs_another"),
+            institution_type=request.data.get("institution_type"),
+            user=request.user,
+            countries=country,
+            cities=city,
+        )
+        return True
 
     @classmethod
     def update_profile_company(cls, pk, request, country, city):

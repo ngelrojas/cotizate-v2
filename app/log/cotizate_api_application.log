@@ -3206,3 +3206,152 @@ TypeError: Object of type IntegrityError is not JSON serializable
 [05/Jul/2022 00:53:29.812]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
 [05/Jul/2022 00:53:31.046]WARNING [django.request:224] Not Found: /favicon.ico
 [05/Jul/2022 00:53:31.047]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 00:49:32.331]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[06/Jul/2022 00:50:43.336]INFO [django.utils.autoreload:251] /usr/src/app/core/profileCompany.py changed, reloading.
+[06/Jul/2022 00:50:44.125]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[06/Jul/2022 00:50:48.609]INFO [django.utils.autoreload:251] /usr/src/app/core/profile.py changed, reloading.
+[06/Jul/2022 00:50:49.368]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[06/Jul/2022 00:50:52.437]INFO [django.server:161] "GET /admin/ HTTP/1.1" 200 14149
+[06/Jul/2022 00:50:52.466]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[06/Jul/2022 00:50:52.467]INFO [django.server:161] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 304 0
+[06/Jul/2022 00:50:52.467]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[06/Jul/2022 00:50:52.469]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 19513
+[06/Jul/2022 00:50:52.485]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[06/Jul/2022 00:50:52.488]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Jul/2022 00:50:52.505]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[06/Jul/2022 00:50:52.510]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 00:50:52.512]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 00:50:52.512]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[06/Jul/2022 00:50:52.613]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[06/Jul/2022 00:50:52.613]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[06/Jul/2022 00:50:52.614]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[06/Jul/2022 00:50:52.644]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 00:50:52.644]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 00:50:53.646]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 00:50:53.646]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:15:58.550]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[06/Jul/2022 20:16:06.347]INFO [django.server:161] "GET /admin/ HTTP/1.1" 200 14149
+[06/Jul/2022 20:16:06.373]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.376]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.377]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.377]INFO [django.server:161] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.409]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.409]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.419]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.421]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.546]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.554]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.554]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Jul/2022 20:16:06.560]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:16:06.560]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:16:06.584]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:16:06.585]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:16:07.575]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:16:07.576]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:16:53.945]INFO [django.server:161] "POST /api/v1/auth HTTP/1.1" 200 209
+[06/Jul/2022 20:17:12.791]INFO [django.server:161] "GET /admin/core/personalprofile/ HTTP/1.1" 200 13068
+[06/Jul/2022 20:17:12.823]INFO [django.server:161] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Jul/2022 20:17:12.827]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Jul/2022 20:17:12.828]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[06/Jul/2022 20:17:12.830]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Jul/2022 20:17:12.831]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[06/Jul/2022 20:17:12.835]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[06/Jul/2022 20:17:12.835]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Jul/2022 20:17:12.837]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Jul/2022 20:17:12.838]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[06/Jul/2022 20:17:12.839]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[06/Jul/2022 20:17:12.924]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Jul/2022 20:17:12.945]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:17:12.945]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:17:13.954]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:17:13.954]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:17:18.268]INFO [django.server:161] "POST /api/v1/user/profile/personal HTTP/1.1" 201 47
+[06/Jul/2022 20:17:23.366]INFO [django.server:161] "GET /admin/core/personalprofile/ HTTP/1.1" 200 13279
+[06/Jul/2022 20:17:23.387]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[06/Jul/2022 20:17:23.441]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:17:23.441]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:17:24.441]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:17:24.441]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:17:40.708]INFO [django.server:161] "GET /admin/core/profilecompany/ HTTP/1.1" 200 12870
+[06/Jul/2022 20:17:40.739]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[06/Jul/2022 20:17:40.795]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:17:40.795]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:17:41.795]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:17:41.795]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:17:43.099]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/company
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+[06/Jul/2022 20:17:43.100]ERROR [django.server:161] "POST /api/v1/user/profile/company HTTP/1.1" 500 104960
+[06/Jul/2022 20:21:15.838]INFO [django.utils.autoreload:251] /usr/src/app/core/queries/profilesQuery.py changed, reloading.
+[06/Jul/2022 20:21:16.571]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[06/Jul/2022 20:21:23.208]WARNING [django.request:224] Bad Request: /api/v1/user/profile/company
+[06/Jul/2022 20:21:23.209]WARNING [django.server:161] "POST /api/v1/user/profile/company HTTP/1.1" 400 93
+[06/Jul/2022 20:22:04.738]WARNING [django.request:224] Bad Request: /api/v1/user/profile/company
+[06/Jul/2022 20:22:04.738]WARNING [django.server:161] "POST /api/v1/user/profile/company HTTP/1.1" 400 93
+[06/Jul/2022 20:22:52.885]INFO [django.server:161] "GET /admin/core/profilecompany/8/change/ HTTP/1.1" 200 25339
+[06/Jul/2022 20:22:52.913]INFO [django.server:161] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+[06/Jul/2022 20:22:52.919]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[06/Jul/2022 20:22:52.934]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[06/Jul/2022 20:22:52.934]INFO [django.server:161] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+[06/Jul/2022 20:22:52.940]INFO [django.server:161] "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
+[06/Jul/2022 20:22:53.011]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:22:53.011]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:22:54.018]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:22:54.019]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:23:19.520]INFO [django.utils.autoreload:251] /usr/src/app/core/queries/profilesQuery.py changed, reloading.
+[06/Jul/2022 20:23:20.329]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[06/Jul/2022 20:24:49.611]INFO [django.utils.autoreload:251] /usr/src/app/core/queries/profilesQuery.py changed, reloading.
+[06/Jul/2022 20:24:50.394]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[06/Jul/2022 20:26:03.655]INFO [django.server:161] "POST /api/v1/user/profile/company HTTP/1.1" 201 46
+[06/Jul/2022 20:26:06.791]INFO [django.server:161] "GET /admin/core/profilecompany/ HTTP/1.1" 200 13084
+[06/Jul/2022 20:26:06.825]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[06/Jul/2022 20:26:06.888]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:06.889]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:26:07.887]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:07.887]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:26:19.965]INFO [django.server:161] "GET /admin/core/profilecompany/9/change/ HTTP/1.1" 200 25331
+[06/Jul/2022 20:26:19.988]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[06/Jul/2022 20:26:20.040]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:20.040]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:26:21.046]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:21.046]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:26:25.567]INFO [django.server:161] "GET /admin/core/profilecompany/ HTTP/1.1" 200 13084
+[06/Jul/2022 20:26:25.589]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[06/Jul/2022 20:26:25.623]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:25.624]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:26:26.631]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:26.632]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:26:26.729]INFO [django.server:161] "GET /admin/core/profilecompany/8/change/ HTTP/1.1" 200 25339
+[06/Jul/2022 20:26:26.750]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[06/Jul/2022 20:26:26.790]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:26.791]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:26:27.805]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:27.806]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:26:29.749]INFO [django.server:161] "GET /admin/core/profilecompany/ HTTP/1.1" 200 13084
+[06/Jul/2022 20:26:29.769]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[06/Jul/2022 20:26:29.800]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:29.800]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724
+[06/Jul/2022 20:26:30.809]WARNING [django.request:224] Not Found: /favicon.ico
+[06/Jul/2022 20:26:30.809]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 4724

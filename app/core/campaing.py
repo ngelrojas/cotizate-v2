@@ -4,23 +4,26 @@ from core.user import User
 from core.category import Category
 from core.currency import Currency
 from core.city import City
-from core.profile import PersonalProfile
-from core.profileCompany import ProfileCompany
+
+
+def nameFile(instance, filename):
+    """save images in personal folder"""
+    fdir = str(instance).replace(" ", "_")
+    return "/".join(["images/campaings", fdir, filename])
 
 
 class Campaing(models.Model):
     """model campaing body"""
 
     STATUS_CAMPAING = (
-        (1, "begin"),
-        (2, "created"),
-        (3, "revised"),
-        (4, "acepted"),
-        (5, "public"),
-        (6, "completed"),
-        (7, "terminated"),
-        (8, "archived"),
-        (9, "deleted"),
+        (1, "created"),
+        (2, "revised"),
+        (3, "acepted"),
+        (4, "public"),
+        (5, "completed"),
+        (6, "terminated"),
+        (7, "archived"),
+        (8, "deleted"),
     )
 
     FLAG_CAMPAING = (
@@ -32,8 +35,8 @@ class Campaing(models.Model):
     ROLE_CAMPAING = ((1, "social cause"), (2, "entrepreneuship"))
 
     title = models.CharField(max_length=200)
-    video_main = models.CharField(max_length=250)
-    imagen_main = models.TextField()
+    video_main = models.CharField(max_length=250, blank=True, null=True)
+    imagen_main = models.ImageField(upload_to=nameFile)
     slug = AutoSlugField(populate_from="title", always_update=True)
     excerpt = models.CharField(max_length=500)
     description = models.TextField()
@@ -43,10 +46,6 @@ class Campaing(models.Model):
     ended_at = models.DateTimeField(null=True, blank=True)
     status = models.PositiveSmallIntegerField(choices=STATUS_CAMPAING, default=2)
     flag = models.PositiveSmallIntegerField(choices=FLAG_CAMPAING, default=1)
-    profile = models.ForeignKey(PersonalProfile, on_delete=models.CASCADE)
-    profile_ca = models.ForeignKey(
-        ProfileCompany, on_delete=models.CASCADE, blank=True, null=True
-    )
     currency = models.ForeignKey(Currency, on_delete=models.CASCADE)
     short_url = models.CharField(max_length=100, null=True, blank=True)
     slogan_campaing = models.CharField(max_length=200, null=True, blank=True)
