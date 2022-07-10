@@ -1,66 +1,19 @@
 from django.urls import path
-from .header.views import CampaingsHeader
-from .header.helpers import HelperHeader
-from .body.views import CampaingsBody
-from .body.views import CampaingStatus
-from .body.helpers import HelperBody
-from .public.views import CampaingPublic
+from .views import CamapingView
 
-app_name = "campaing-app"
+app_name = "campaing"
 
 urlpatterns = [
     path(
-        "campaing-header",
-        CampaingsHeader.as_view({"get": "list", "post": "create"}),
-        name="campaing-header",
+        "user/campaing",
+        CampaingView.as_view({"get": "list", "post": "create"}),
+        name="campaing",
     ),
     path(
-        "campaing-header/<int:pk>",
-        CampaingsHeader.as_view(
-            {"get": "retrieve", "put": "update", "delete": "destroy"}
+        "user/campaing/<int:pk>",
+        CampaingView.as_view(
+            {"get": "retrieve", "put": "update", "delete": "delete"}
         ),
-        name="campaing-header-detail",
-    ),
-    path(
-        "campaing-private/<int:pk>",
-        CampaingsBody.as_view({"get": "list"}),
-        name="campaing-private",
-    ),
-    path(
-        "campaing-body",
-        CampaingsBody.as_view({"post": "create"}),
-        name="campaing-body",
-    ),
-    path(
-        "campaing-body/<int:pk>",
-        CampaingsBody.as_view(
-            {"get": "retrieve", "put": "update", "delete": "destroy"}
-        ),
-        name="campaing-body-detail",
-    ),
-    path(
-        "campaing-body-last/<int:pk>",
-        HelperBody.as_view({"get": "retrieve"}),
-        name="campaing-body-last",
-    ),
-    path(
-        "campaing-header-last",
-        HelperHeader.as_view({"get": "list"}),
-        name="campaing-last",
-    ),
-    path(
-        "campaing-public/<int:pk>",
-        CampaingPublic.as_view({"get": "list"}),
-        name="campaing-public",
-    ),
-    path(
-        "campaing-public-detail/<slug:the_slug>",
-        CampaingPublic.as_view({"get": "retrieve"}),
-        name="campaing-public-detail",
-    ),
-    path(
-        "campaing-status/<int:pk>",
-        CampaingStatus.as_view({"put": "update"}),
-        name="campaing-status-detail",
+        name="campaing-detail",
     ),
 ]
