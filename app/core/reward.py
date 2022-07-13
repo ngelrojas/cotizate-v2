@@ -1,6 +1,8 @@
 from datetime import datetime
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
 from core.campaing import Campaing
+from core.phase import Phase
 from core.city import City
 
 
@@ -11,9 +13,9 @@ class Reward(models.Model):
     description = models.CharField(max_length=5000)
     amount = models.DecimalField(max_digits=12, decimal_places=2)
     expected_delivery = models.DateTimeField()
-    campaing = models.ForeignKey(Campaing, on_delete=models.CASCADE)
-    user = models.IntegerField(default=0)
-    cities = models.ManyToManyField(City, blank=True)
+    campaings = models.ForeignKey(Campaing, on_delete=models.CASCADE)
+    phases = models.ForeignKey(Phase, on_delete=models.CASCADE)
+    cities = ArrayField(models.CharField(max_length=70)) 
     all_cities = models.BooleanField(default=False)
     pick_up_locally = models.BooleanField(default=False)
     delete = models.BooleanField(default=False)
@@ -24,48 +26,52 @@ class Reward(models.Model):
         return self.title
 
     @classmethod
-    def list(cls, request, camp, erase=False):
+    def get_all(cls, request, pk, erase=False):
         return cls.objects.filter(
                 user=request.user,
-                campaing=camp,
-                delete=erase)
+                campaing=pk,
+                delete=erase
+        )
 
     @classmethod
-    def get_reward(cls, request, camp, pk, erase=False):
+    def get_reward(cls, request, pk, erase=False):
         return cls.objects.get(
                 id=pk,
                 user=request.user,
-                campaing=camp,
+                campaings=request.data.get("campaing_id"),
                 delete=erase)
 
     @classmethod
-    def create(cls, request, camp, objcity):
+    def create(cls, request):
         created = cls.objects.create(
                 title=request.data.get("title"),
                 description=request.data.get("description"),
                 amount=request.data.get("amount"),
                 expected_delivery=request.data.get("expected_delivery"),
-                campaing=camp,
-                user=request.user,
-                cities=objcity
+                campaings=request.data.get("campaing_id"),
+                phases=request.data.get("phase_id"),
+                cities=request.data.get("city_id")
         )
         return created.id
 
     @classmethod
-    def updated(cls, request, camp, objcity):
-        updated = cls.get_reward(request, camp, pk)
+    def updated(cls, request, pk):
+        updated = cls.get_reward(request, pk)
         update.title = request.data.get("title")
         update.description = request.data.get("description")
         update.amount = request.data.get("amount")
         update.expected_delivery = request.data.get("expected_delivery")
-        update.cities = objcity
-        update.update_at = datetime.now()
+        if request.data.get("city_id"):
+            update.cities = request.data.get("city_id") 
+        update.update_at = datetime.now().date()
+        update.phase = request.data.get("phase_id") 
+        update.campaings = request.data.get("campaing_id") 
         update.save()
-        return True
+        return updated.id 
 
     @classmethod
-    def erase(cls, request, camp, pk):
-        delete = cls.get_reward(request, camp, pk)
+    def erase(cls, request, pk):
+        delete = cls.get_reward(request, pk)
         delete.delete = True
         delete.save()
         return True

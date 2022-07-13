@@ -14,7 +14,7 @@ class BookMark(models.Model):
         return self.campaing.title
 
     @classmethod
-    def list(cls, campaing, request):
+    def list_bookmark(cls, campaing, request):
         return cls.objects.filter(user=request.user, campaing=campaing)
 
     @classmethod
@@ -27,7 +27,7 @@ class BookMark(models.Model):
         return bookmarked
 
     @classmethod
-    def create(cls, request):
+    def create(cls, request, campaing):
         created = cls.objects.create(
                 user=request.user,
                 campaing=campaing,

@@ -2,7 +2,8 @@ from rest_framework import serializers
 from core.campaing import Campaing
 from cities.serializers import CitySerializer
 from categories.serializers import CategorySerializer
-from user.serializers import UserPublicSerializer
+from users.serializers import UserPublicSerializer
+
 
 class CampaingSerializer(serializers.ModelSerializer):
 

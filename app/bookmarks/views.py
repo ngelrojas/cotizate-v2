@@ -29,19 +29,6 @@ class BookMarkView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def create(self, request):
-        """create like to current user and campaing"""
-        try:
-            camp_header = Campaing.objects.get(id=request.data.get("header"))
-            BookMarkQuery.saving_bookmark(request, camp_header)
-            return Response(
-                {"data": "book mark created."}, status=status.HTTP_201_CREATED
-            )
-        except Exception as err:
-            return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
-            )
-
     def retrieve(self, request, pk):
         """retrieve bookmarked to current user and campaing"""
         try:
@@ -53,30 +40,45 @@ class BookMarkView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def update(self, request, pk):
-        """update bookmarked to current user and campaing"""
+    def create(self, request):
+        """create like to current user and campaing"""
         try:
-            current_marked = BookMarkQuery.get_retrieve(pk)
-            if current_marked:
-                serializer = self.serializer_class(
-                    current_marked, data=request.data, partial=True
-                )
-                if serializer.is_valid(raise_exception=True):
-                    serializer.save()
-                    return Response(
-                        {"data": "update book marked."}, status=status.HTTP_200_OK
-                    )
-            marked = BookMarkQuery.saving_bookmark(request, pk)
-            if marked:
+            campaing = Campaing.objects.get(id=request.data.get("campaing"))
+            created = BookMark.create(request, campaing)
+            if created:
                 return Response(
-                    {"data": True, "msg": "marked created."},
-                    status=status.HTTP_201_CREATED,
+                        {"data": created, "msg": "book mark created"},
+                        status=status.HTTP_201_CREATED
                 )
             return Response(
-                {"data": False, "msg": f"{marked}"},
-                status=status.HTTP_400_BAD_REQUEST,
+                {"data": False},
+                status=status.HTTP_400_BAD_REQUEST
             )
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+            )
+
+
+    def update(self, request, pk):
+        """update bookmarked to current user and campaing"""
+        try:
+            campaing = Campaing.get_campaing_id(
+                    request,
+                    request.data.get("campaing_id")
+            )
+            bookmark = BookMark.update(campaing, request, pk)
+            if bookmark:
+                return Response(
+                        {"data": bookmark, "msg": "bookmark updated"},
+                        status=status.HTTP_200_OK
+                )
+            return Response(
+                    {"data": None, "msg": "something error"},
+                    status=status.HTTP_400_BAD_REQUEST
+            )
+        except Exception as err:
+            return Response(
+                {"data": False, "msg": f"{err}"}, 
+                status=status.HTTP_400_BAD_REQUEST
             )

@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import CamapingView
+from .views import CampaingView
 
 app_name = "campaing"
 

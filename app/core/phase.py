@@ -15,7 +15,7 @@ class Phase(models.Model):
         return self.title
 
     @classmethod
-    def list(cls, campaing, delete=False):
+    def get_all(cls, campaing, delete=False):
         return cls.objects.filter(campaing=campaing, delete=delete) 
 
     @classmethod

@@ -3,7 +3,6 @@ import random
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
-from rest_framework.permissions import isAuthenticated
 from core.campaing import Campaing
 from core.profile import PersonalProfile
 from core.category import Category
@@ -19,7 +18,7 @@ class CampaingView(viewsets.ModelViewSet):
 
     def list(self, request):
         try:
-            list_camp = Campaing.objects.filter(user=request.user, delete=False)
+            list_camp = Campaing.get_all_campaings(request)
             serializer = self.serializer_class(list_camp, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as e:
@@ -76,9 +75,9 @@ class CampaingView(viewsets.ModelViewSet):
 
     def delete(self, request, pk=None):
         try:
-            erase = Campaing.deleted(request, pk)
+            resp = Campaing.erase(request, pk)
             return Reponse(
-                    {"data": erase, "msg": "campaing is deleted"},
+                    {"data": resp, "msg": "campaing is deleted"},
                     status=status.HTTP_204_NO_CONTENT
             )
         except Exception as e:

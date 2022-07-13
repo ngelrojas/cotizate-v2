@@ -84,7 +84,7 @@ class Campaing(models.Model):
             imagen_main = request.data["imagen_main"], 
             excerpt = request.data.get("excerpt"), 
             description = request.data.get("description"),
-            currency = objcurrency  
+            currency = objcurrency,  
             short_url = request.data.get("short_url"), 
             slogan_campaing = request.data.get("slogan_campaing"), 
             user = request.user, 
@@ -125,10 +125,10 @@ class Campaing(models.Model):
 
 
     @classmethod
-    def deleted(cls, request, pk):
-        erase = cls.get_campaing_id(request, pk)
-        erase.status = 8
-        erase.save()
+    def erase(cls, request, pk):
+        deleted = cls.get_campaing_id(request, pk)
+        deleted.status = 8
+        deleted.save()
         return True
 
     # def get_all_completed(self):

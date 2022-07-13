@@ -2,6 +2,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from core.phase import Phase
+from core.campaing import Campaing
 from core.queries.phaseQuery import PhaseQuery
 from .serializers import PhaseSerializer
 
@@ -16,13 +17,14 @@ class PhaseView(viewsets.ViewSet):
     serializer_class = PhaseSerializer
     queryset = Phase.objects.all()
 
-    def list(self, request):
+    def list(self, request, pk):
         """
         list all phases
         about the current campaing
         """
         try:
-            current_list_phase = PhaseQuery.get_list_phase(request.data.get("header"))
+            campaing = Campaing.get_campaing_id(request, pk) 
+            current_list_phase = Phase.get_all(campaing)
             serializer = self.serializer_class(current_list_phase, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -30,10 +32,10 @@ class PhaseView(viewsets.ViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
-    def retrieve(self, request, pk, he):
+    def retrieve(self, request, pk, cp):
         """retrieve phase current campaing_header_id, campaing_id"""
         try:
-            current_phase = PhaseQuery.retrieve_phase(pk, he)
+            current_phase = Phase.get_phase(cp, pk)
             serializer = self.serializer_class(current_phase)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -53,13 +55,14 @@ class PhaseView(viewsets.ViewSet):
                 )
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+                {"data": False, "msg": f"{err}"},
+                status=status.HTTP_404_NOT_FOUND
             )
 
-    def update(self, request, pk, he):
+    def update(self, request, pk, cp):
         """update reward"""
         try:
-            current_phase = PhaseQuery.retrieve_phase(pk, he)
+            current_phase = Phase.update(cp, pk)
             serializer = self.serializer_class(current_phase, data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
@@ -72,14 +75,13 @@ class PhaseView(viewsets.ViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
-    def delete(self, request, pk, he):
+    def delete(self, request, pk, cp):
         """delete reward"""
         try:
 
-            current_phase = PhaseQuery.retrieve_phase(pk, he)
-            current_phase.delete()
+            current_phase = Phase.erase(cp, pk)
             return Response(
-                {"data": " phase deleted."},
+                    {"data": current_phase, "msg": "phase deleted."},
                 status=status.HTTP_204_NO_CONTENT,
             )
         except Exception as err:

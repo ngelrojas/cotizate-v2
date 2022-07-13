@@ -22,8 +22,7 @@ class RewardView(viewsets.ViewSet):
     def retrieve(self, request, pk):
         """retrieve reward current campaing_header_id, campaing_id"""
         try:
-            reward_header = Campaing.objects.get(id=pk)
-            list_reward = Reward.objects.filter(header=reward_header)
+            list_reward = Reward.get_all(request, pk)
             serializer = self.serializer_class(list_reward, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -34,10 +33,10 @@ class RewardView(viewsets.ViewSet):
     def create(self, request):
         """create reward"""
         try:
-            RewardQuery.saving_rewards(request)
+            resp = Reward.create(request)
             return Response(
-                {"data": "reward created."},
-                status=status.HTTP_201_CREATED,
+                    {"data": resp, "msg":"reward created."},
+                    status=status.HTTP_201_CREATED,
             )
         except Exception as err:
             return Response(
@@ -47,8 +46,7 @@ class RewardView(viewsets.ViewSet):
     def update(self, request, pk):
         """update reward"""
         try:
-            # current_reward = RewardQuery.retrieve_reward(pk, request.data.get("header"))
-            current_reward = Reward.objects.get(id=pk, header=request.data.get("header"))
+            current_reward = Reward.updated(request, pk)
             serializer = self.serializer_class(current_reward, data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
@@ -64,10 +62,9 @@ class RewardView(viewsets.ViewSet):
     def delete(self, request, pk):
         """delete reward"""
         try:
-            current_reward = Reward.objects.get(id=pk)
-            current_reward.delete()
+            dele = Reward.erase(request, pk)
             return Response(
-                {"data": True, "msg": "reward deleted."},
+                {"data": dele, "msg": "reward deleted."},
                 status=status.HTTP_204_NO_CONTENT,
             )
         except Exception as err:

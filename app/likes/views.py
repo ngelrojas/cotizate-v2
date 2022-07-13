@@ -21,7 +21,7 @@ class LikeView(viewsets.ModelViewSet):
     def list(self, request):
         """list all like about current user"""
         try:
-            current_like = LikeQuery.get_all(request.user)
+            current_like = Like.get_all(request)
             serializer = self.serializer_class(current_like, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -32,7 +32,7 @@ class LikeView(viewsets.ModelViewSet):
     def retrieve(self, request, pk):
         """retrieve like to current user and campaing"""
         try:
-            current_like = LikeQuery.get_retrieve(pk)
+            current_like = Like.get_like_by_id(request, pk)
             serializer = self.serializer_class(current_like)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -46,7 +46,7 @@ class LikeView(viewsets.ModelViewSet):
         pk = header campaing
         """
         try:
-            current_like = LikeQuery.get_retrieve(pk)
+            current_like = Like.get_like_by_id(request, pk)
             if current_like:
                 serializer = self.serializer_class(
                     current_like, data=request.data, partial=True
@@ -55,7 +55,7 @@ class LikeView(viewsets.ModelViewSet):
                     serializer.save()
                     return Response({"data": "update like."}, status=status.HTTP_200_OK)
 
-            liked = LikeQuery.saving_likes(request, pk)
+            liked = Like.created(request, pk)
             if liked:
                 return Response(
                     {"data": True, "msg": "create like."},

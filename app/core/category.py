@@ -18,8 +18,8 @@ class Category(AbstractItem):
     def create(cls, request):
         created = cls.objects.create(
                 name=request.data.get("name"),
-                description=request.data.get("description")
-                img_banner=request.data["img_banner"]
+                description=request.data.get("description"),
+                img_banner=request.data["img_banner"],
                 img_icon=request.data["img_icon"]
         )
         return created.id
