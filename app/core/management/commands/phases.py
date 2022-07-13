@@ -31,6 +31,6 @@ class Command(BaseCommand):
                     title=f"the {num_i} phase to campaing",
                     description="description to phase one",
                     amount=500,
-                    header=Campaing.objects.get(id=num_i),
+                    campaing=Campaing.objects.get(id=num_i),
                 )
             self.success("phases created")

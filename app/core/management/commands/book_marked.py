@@ -34,7 +34,7 @@ class Command(BaseCommand):
             camp_two = Campaing.objects.get(id=2)
             camp_three = Campaing.objects.get(id=3)
             # create bookmarked
-            BookMark.objects.create(user=jhon, header=camp_three, marked=True)
-            BookMark.objects.create(user=mery, header=camp_one, marked=True)
-            BookMark.objects.create(user=azumi, header=camp_two, marked=True)
+            BookMark.objects.create(user=jhon, campaing=camp_three, marked=True)
+            BookMark.objects.create(user=mery, campaing=camp_one, marked=True)
+            BookMark.objects.create(user=azumi, campaing=camp_two, marked=True)
             self.success("bookmarked created")

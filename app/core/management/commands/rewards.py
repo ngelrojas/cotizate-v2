@@ -3,6 +3,7 @@ from django.db import transaction
 from core.campaing import Campaing
 from core.reward import Reward
 from core.city import City
+from core.phase import Phase
 
 
 class Command(BaseCommand):
@@ -38,9 +39,9 @@ class Command(BaseCommand):
                     description="description to campaing one",
                     amount=500,
                     expected_delivery="2020-09-10 00:00:00",
-                    header=Campaing.objects.get(id=num_i),
-                    user=0,
+                    campaing=Campaing.objects.get(id=num_i),
+                    city=[1,2],
+                    phase=Phase.objects.get(id=1)
                 )
-                reward.cities.add(lp, scz, cbb, oru, tj)
 
             self.success("rewards created")

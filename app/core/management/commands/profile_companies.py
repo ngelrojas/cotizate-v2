@@ -49,14 +49,12 @@ class Command(BaseCommand):
                 bolivia = Country.objects.get(code_name="BO")
 
                 ProfileCompany.objects.create(
-                    representative_name="representative",
                     company_name="my company name",
                     representative=True,
-                    association_name="bom retiro",
                     heading="ceo no more",
                     email_company="company@email.com",
-                    photo="my photo.png",
-                    profiles=profile_jhon,
+                    photo="my_photo.png",
+                    user=jhon,
                     description="my description",
                     countries=bolivia,
                     cities=la_paz,
@@ -64,14 +62,12 @@ class Command(BaseCommand):
                 )
                 #
                 ProfileCompany.objects.create(
-                    representative_name="representative",
                     company_name="my company name",
                     representative=True,
-                    association_name="bom retiro",
                     heading="ceo no more",
                     email_company="company@email.com",
                     photo="my photo.png",
-                    profiles=profile_azumi,
+                    user=azumi,
                     description="my description",
                     countries=bolivia,
                     cities=santa_cruz,

@@ -21,7 +21,6 @@ class PersonalProfile(AbstractProfile):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     countries = models.ForeignKey(Country, on_delete=models.CASCADE)
     cities = models.ForeignKey(City, on_delete=models.CASCADE)
-    header = models.IntegerField(default=0)
 
     def __str__(self):
         return self.user.first_name

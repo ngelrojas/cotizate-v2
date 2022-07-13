@@ -11,3 +11,31 @@
 [13/Jul/2022 01:17:33.553]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
 [13/Jul/2022 01:18:08.532]INFO [django.utils.autoreload:251] /usr/src/app/campaings/urls.py changed, reloading.
 [13/Jul/2022 01:18:09.211]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[13/Jul/2022 23:00:53.747]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[13/Jul/2022 23:01:53.406]INFO [django.utils.autoreload:251] /usr/src/app/core/reward.py changed, reloading.
+[13/Jul/2022 23:01:54.061]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[13/Jul/2022 23:19:38.869]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[13/Jul/2022 23:22:04.896]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[13/Jul/2022 23:27:29.808]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[13/Jul/2022 23:42:20.154]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[13/Jul/2022 23:44:50.677]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[13/Jul/2022 23:47:24.491]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[13/Jul/2022 23:48:12.258]INFO [django.server:161] "GET /admin HTTP/1.1" 301 0
+[13/Jul/2022 23:48:12.322]INFO [django.server:161] "GET /admin/ HTTP/1.1" 302 0
+[13/Jul/2022 23:48:12.649]INFO [django.server:161] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2236
+[13/Jul/2022 23:48:12.711]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[13/Jul/2022 23:48:12.711]INFO [django.server:161] "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 939
+[13/Jul/2022 23:48:12.712]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[13/Jul/2022 23:48:12.713]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 19513
+[13/Jul/2022 23:48:12.713]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18545
+[13/Jul/2022 23:48:12.742]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 200 423
+[13/Jul/2022 23:48:12.764]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[13/Jul/2022 23:48:12.764]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[13/Jul/2022 23:48:12.785]WARNING [django.request:224] Not Found: /favicon.ico
+[13/Jul/2022 23:48:12.786]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3547
+[13/Jul/2022 23:48:35.042]INFO [django.server:161] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[13/Jul/2022 23:48:35.069]INFO [django.server:161] "GET /admin/ HTTP/1.1" 200 8246
+[13/Jul/2022 23:48:35.113]INFO [django.server:161] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 200 380
+[13/Jul/2022 23:48:35.133]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[13/Jul/2022 23:48:35.133]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[13/Jul/2022 23:48:35.133]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184

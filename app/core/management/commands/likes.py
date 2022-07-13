@@ -35,20 +35,7 @@ class Command(BaseCommand):
             camp_two = Campaing.objects.get(id=2)
             camp_three = Campaing.objects.get(id=3)
             # create bookmarked
-            Like.objects.create(user=jhon, header=camp_three, liked=True)
-            Like.objects.create(user=mery, header=camp_one, liked=True)
-            Like.objects.create(user=azumi, header=camp_two, liked=True)
+            Like.objects.create(user=jhon, campaing=camp_three, liked=True)
+            Like.objects.create(user=mery, campaing=camp_one, liked=True)
+            Like.objects.create(user=azumi, campaing=camp_two, liked=True)
             self.success("likes created")
-            DenounceText.objects.create(
-                title="Este proyecto no respeta las reglas",
-                description="- Contiene contenido prohibido de esenas de sexo y desnudo sin autorización",
-            )
-            DenounceText.objects.create(
-                title="Este proyecto infringe propiedad intelectual",
-                description="- Este proyecto infringe derechos de autor",
-            )
-            DenounceText.objects.create(
-                title="Recompensa",
-                description="- Apoye y no resivi mi recompensa",
-            )
-            self.success("denounces titles created")
