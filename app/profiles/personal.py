@@ -18,7 +18,7 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def list(self, request):
         """list all personal profiles"""
         try:
-            current_profiles = PerPF.objects.filter(user=request.user, delete=False)
+            current_profiles = PersonalProfile.get_all(request) 
             serializer = self.serializer_class(current_profiles, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -26,27 +26,10 @@ class PersonalProfileView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-    def create(self, request):
-        """create personal profile"""
-        try:
-            countries = Country.objects.get(id=request.data.get("countries"))
-            cities = City.objects.get(id=request.data.get("cities"))
-            prof_personal = ProfilesQuery.saving_profile_personal(
-                request, countries, cities
-            )
-            return Response(
-                {"data": prof_personal, "msg": "personal profile created."},
-                status=status.HTTP_201_CREATED,
-            )
-        except Exception as err:
-            return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTT_400_BAD_REQUEST
-            )
-
     def retrieve(self, request, pk):
         """retrieve profile current user"""
         try:
-            current_profile = PerPF.objects.get(id=pk, user=request.user, delete=False)
+            current_profile = PersonalProfile.get_by_id(request, pk) 
             serializer = self.serializer_class(current_profile)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -54,14 +37,25 @@ class PersonalProfileView(viewsets.ModelViewSet):
                 {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
             )
 
+    def create(self, request):
+        """create personal profile"""
+        try:
+
+            prof_personal = PersonalProfile.created(request) 
+            return Response(
+                {"data": prof_personal, "msg": "personal profile created."},
+                status=status.HTTP_201_CREATED,
+            )
+        except Exception as err:
+            return Response(
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+            )
+
+
     def update(self, request, pk):
         """update profile current user"""
         try:
-            countries = Country.objects.get(id=int(request.data.get("countries")))
-            cities = City.objects.get(id=int(request.data.get("cities")))
-            complete = ProfilesQuery.update_profile_personal(
-                pk, request, countries, cities
-            )
+            complete = PersonalProfile.updated(request, pk) 
 
             return Response(
                 {"data": complete, "msg": "personal profile updated."},
@@ -75,11 +69,9 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def delete(self, request, pk):
         """delete current personal profile"""
         try:
-            current_profile = PerPF.objects.get(id=pk, user=request.user, delete=False)
-            current_profile.delete = True
-            current_profile.save()
+            erase = PersonalProfile.erase(request, pk)
             return Response(
-                {"data": True, "msg": "personal profile Deleted"},
+                {"data": erase, "msg": "personal profile Deleted"},
                 status=status.HTTP_204_NO_CONTENT,
             )
         except Exception as err:

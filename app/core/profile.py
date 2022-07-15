@@ -24,3 +24,69 @@ class PersonalProfile(AbstractProfile):
 
     def __str__(self):
         return self.user.first_name
+
+    @classmethod
+    def get_all(cls, request):
+        return cls.objects.filter(user=request.user, delete=False)
+
+    @classmethod
+    def get_by_id(cls, request, pk, delete=False):
+        return cls.objects.get(id=pk, user=request.user, delete=delete)
+
+    @classmethod
+    def created(cls, request):
+        created = cls.objects.create(
+            cinit = request.data.get("cinit"), 
+            address = request.data.get("address"),
+            number_address = request.data.get("number_address"), 
+            neightbordhood = request.data.get("neightbordhood"), 
+            cellphone = requests.data.get("cellphone"), 
+            telephone = request.data.get("telephone"), 
+            description = request.data.get("description"), 
+            rs_facebook = request.data.get("rs_facebook"), 
+            rs_twitter = request.data.get("rs_twitter"), 
+            rs_linkedin = request.data.get("rs_linkedin"), 
+            rs_another = request.data.get("rs_another"), 
+            current_position = request.data.get("current_position"), 
+            headline = request.data.get("headline"), 
+            birthdate = request.data.get("birthdate"), 
+            photo = request.data["photo"], 
+            user = request.user, 
+            countries = request.data.get("country_id"), 
+            cities = request.data.get("city_id") 
+        )
+        return created.id
+
+    @classmethod
+    def updated(cls, request, pk):
+        data = cls.get_by_id(request, pk) 
+        data.cinit = request.data.get("cinit"), 
+        data.address = request.data.get("address"),
+        data.number_address = request.data.get("number_address"), 
+        data.neightbordhood = request.data.get("neightbordhood"), 
+        data.cellphone = requests.data.get("cellphone"), 
+        data.telephone = request.data.get("telephone"), 
+        data.description = request.data.get("description"), 
+        data.rs_facebook = request.data.get("rs_facebook"), 
+        data.rs_twitter = request.data.get("rs_twitter"), 
+        data.rs_linkedin = request.data.get("rs_linkedin"), 
+        data.rs_another = request.data.get("rs_another"), 
+        data.current_position = request.data.get("current_position"), 
+        data.headline = request.data.get("headline"), 
+        data.birthdate = request.data.get("birthdate"), 
+        if request.data["photo"]:
+            data.photo = request.data["photo"], 
+        data.countries = request.data.get("country_id"), 
+        data.cities = request.data.get("city_id")
+        data.save()
+        return data.id
+
+    @classmethod
+    def erase(cls, request, pk):
+        data = cls.get_by_id(request, pk)
+        data.delete = True
+        data.save()
+        return True
+    
+
+
