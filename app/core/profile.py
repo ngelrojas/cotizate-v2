@@ -34,13 +34,13 @@ class PersonalProfile(AbstractProfile):
         return cls.objects.get(id=pk, user=request.user, delete=delete)
 
     @classmethod
-    def created(cls, request):
+    def created(cls, request, country, city):
         created = cls.objects.create(
             cinit = request.data.get("cinit"), 
             address = request.data.get("address"),
             number_address = request.data.get("number_address"), 
             neightbordhood = request.data.get("neightbordhood"), 
-            cellphone = requests.data.get("cellphone"), 
+            cellphone = request.data.get("cellphone"), 
             telephone = request.data.get("telephone"), 
             description = request.data.get("description"), 
             rs_facebook = request.data.get("rs_facebook"), 
@@ -52,8 +52,8 @@ class PersonalProfile(AbstractProfile):
             birthdate = request.data.get("birthdate"), 
             photo = request.data["photo"], 
             user = request.user, 
-            countries = request.data.get("country_id"), 
-            cities = request.data.get("city_id") 
+            countries = country, 
+            cities = city 
         )
         return created.id
 

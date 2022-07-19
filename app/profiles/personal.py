@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from api.cotizate import ProfileComplete
-from core.profile import PersonalProfile as PerPF
+from core.profile import PersonalProfile
 from core.country import Country
 from core.city import City
 from core.queries.profilesQuery import ProfilesQuery
@@ -13,7 +13,7 @@ class PersonalProfileView(viewsets.ModelViewSet):
     """create profile current user"""
 
     serializer_class = PersonalSerializer
-    queryset = PerPF.objects.all()
+    queryset = PersonalProfile.objects.all()
 
     def list(self, request):
         """list all personal profiles"""
@@ -39,9 +39,10 @@ class PersonalProfileView(viewsets.ModelViewSet):
 
     def create(self, request):
         """create personal profile"""
-        try:
-
-            prof_personal = PersonalProfile.created(request) 
+        try: 
+            country_se = Country.objects.get(id=request.data.get("country_id"))
+            city_se = City.objects.get(id=request.data.get("city_id"))
+            prof_personal = PersonalProfile.created(request, country_se, city_se) 
             return Response(
                 {"data": prof_personal, "msg": "personal profile created."},
                 status=status.HTTP_201_CREATED,

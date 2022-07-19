@@ -9,6 +9,7 @@ from core.profile import PersonalProfile
 from core.country import Country
 from core.city import City
 
+import pdb
 
 PROFILE_CREATE_URL = reverse('profile:personal')
 PROFILE_DETAIL_URL = reverse('profile:personal-detail', kwargs={'pk': 1})
@@ -45,20 +46,30 @@ class ProfileManagerTests(TestCase):
         )
 
     def test_create_personal_profile(self):
-        """test retrive personal profile"""
+        """test create personal profile"""
         payload = {
-            "cinit": "12132",
-            "address": "some where",
-            "number_address": "12312",
-            "neightbordhood": "somewhre",
-            "cellphone": "3123123",
-            "telephone": "2342343",
-            "description": "some words",
-            "user": self.user,
-            "countries": self.country.id,
-            "cities": self.city.id,
+                "cinit": "cinit", 
+                "address": "address",
+                "number_address":"number_address", 
+                "neightbordhood":"neightbordhood", 
+                "cellphone": "cellphone", 
+                "telephone":  "telephone", 
+                "description":  "description", 
+                "rs_facebook": "rs_facebook", 
+                "rs_twitter":  "rs_twitter", 
+                "rs_linkedin":  "rs_linkedin", 
+                "rs_another":  "rs_another", 
+                "current_position": "current_position", 
+                "headline": "headline", 
+                "birthdate": "2020-03-20", 
+                "photo": "my.png", 
+                "user": self.user, 
+                "countries": 1, 
+                "cities": 1 
         }
-        res = self.client.post(PROFILE_CREATE_URL, payload)
+        pdb.set_trace()
+        res = self.client.post(PROFILE_CREATE_URL, payload) 
+        pdb.set_trace()
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
     #
     # def test_update_personal_profile(self):

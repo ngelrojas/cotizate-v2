@@ -21,4 +21,5 @@ env
 backend
 git-detect.sh
 TODO.md
-
+#IDE
+.vscode/
