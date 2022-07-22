@@ -56,7 +56,9 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def update(self, request, pk):
         """update profile current user"""
         try:
-            complete = PersonalProfile.updated(request, pk) 
+            country_se = Country.objects.get(id=request.data.get("country_id"))
+            city_se = City.objects.get(id=request.data.get("city_id"))
+            complete = PersonalProfile.updated(request, country_se, city_se, pk) 
 
             return Response(
                 {"data": complete, "msg": "personal profile updated."},

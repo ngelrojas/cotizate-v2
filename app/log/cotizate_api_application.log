@@ -92,3 +92,1081 @@
 [19/Jul/2022 00:47:40.221]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal
 [19/Jul/2022 00:54:36.058]WARNING [django.request:224] Bad Request: /api/v1/user
 [19/Jul/2022 00:54:36.341]WARNING [django.request:224] Bad Request: /api/v1/user
+[20/Jul/2022 00:39:18.555]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Jul/2022 00:30:09.426]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Jul/2022 23:46:07.470]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Jul/2022 23:47:57.354]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal
+[21/Jul/2022 23:49:07.039]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal
+[21/Jul/2022 23:49:07.277]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:49:07.573]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:50:56.682]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal
+[21/Jul/2022 23:50:56.917]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:50:57.229]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:52:52.086]INFO [django.utils.autoreload:251] /usr/src/app/profiles/urls.py changed, reloading.
+[21/Jul/2022 23:52:52.841]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Jul/2022 23:53:48.994]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal
+[21/Jul/2022 23:53:49.230]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:53:49.532]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:55:42.508]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[21/Jul/2022 23:55:43.251]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Jul/2022 23:55:50.321]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.country.Country.DoesNotExist: Country matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 51, in create
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[21/Jul/2022 23:55:50.564]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:55:50.861]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:56:54.199]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.country.Country.DoesNotExist: Country matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 51, in create
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[21/Jul/2022 23:56:54.433]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:56:54.729]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:57:37.535]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 43, in create
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.country.Country.DoesNotExist: Country matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 51, in create
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[21/Jul/2022 23:57:37.772]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:57:38.068]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:58:39.881]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[21/Jul/2022 23:58:40.630]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[21/Jul/2022 23:58:55.135]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal
+[21/Jul/2022 23:58:55.371]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:58:55.665]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:59:39.820]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal
+[21/Jul/2022 23:59:40.061]WARNING [django.request:224] Bad Request: /api/v1/user
+[21/Jul/2022 23:59:40.361]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:01:43.350]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:01:43.690]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:03:35.689]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:03:35.926]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:03:36.227]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:04:48.098]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:04:48.332]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:04:48.624]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:07:05.913]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:07:06.651]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:07:13.993]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:07:14.229]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:07:14.538]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:07:32.493]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:07:33.237]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:08:27.636]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:08:27.871]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:08:28.164]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:08:55.586]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:08:55.818]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:08:56.122]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:11:10.850]INFO [django.server:161] "POST /api/v1/auth HTTP/1.1" 200 209
+[22/Jul/2022 00:11:19.116]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/4
+[22/Jul/2022 00:11:19.116]WARNING [django.server:161] "PUT /api/v1/user/profile/personal/4 HTTP/1.1" 400 53
+[22/Jul/2022 00:12:04.885]INFO [django.utils.autoreload:251] /usr/src/app/core/profile.py changed, reloading.
+[22/Jul/2022 00:12:05.681]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:12:10.630]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:12:10.864]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:12:11.180]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:12:25.577]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/4
+[22/Jul/2022 00:12:25.578]WARNING [django.server:161] "PUT /api/v1/user/profile/personal/4 HTTP/1.1" 400 110
+[22/Jul/2022 00:13:13.383]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:13:14.132]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:13:38.988]INFO [django.utils.autoreload:251] /usr/src/app/core/profile.py changed, reloading.
+[22/Jul/2022 00:13:39.722]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:13:49.580]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:13:49.817]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:13:50.115]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:13:54.644]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/4
+[22/Jul/2022 00:13:54.644]WARNING [django.server:161] "PUT /api/v1/user/profile/personal/4 HTTP/1.1" 400 125
+[22/Jul/2022 00:14:17.824]INFO [django.utils.autoreload:251] /usr/src/app/core/profile.py changed, reloading.
+[22/Jul/2022 00:14:18.560]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:14:23.260]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/4
+[22/Jul/2022 00:14:23.260]WARNING [django.server:161] "PUT /api/v1/user/profile/personal/4 HTTP/1.1" 400 108
+[22/Jul/2022 00:15:29.405]INFO [django.utils.autoreload:251] /usr/src/app/core/profile.py changed, reloading.
+[22/Jul/2022 00:15:30.148]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:15:35.655]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:15:35.890]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:15:36.193]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:15:42.839]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/4
+[22/Jul/2022 00:15:42.840]WARNING [django.server:161] "PUT /api/v1/user/profile/personal/4 HTTP/1.1" 400 125
+[22/Jul/2022 00:17:30.836]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:17:31.509]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:17:42.367]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:17:42.588]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:17:42.872]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:17:52.562]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/4
+[22/Jul/2022 00:17:52.562]WARNING [django.server:161] "PUT /api/v1/user/profile/personal/4 HTTP/1.1" 400 125
+[22/Jul/2022 00:20:26.563]INFO [django.utils.autoreload:251] /usr/src/app/core/profile.py changed, reloading.
+[22/Jul/2022 00:20:27.241]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:20:32.916]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:20:33.137]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:20:33.421]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:20:38.566]INFO [django.server:161] "PUT /api/v1/user/profile/personal/4 HTTP/1.1" 200 44
+[22/Jul/2022 00:21:15.637]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:21:16.337]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:21:24.211]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:21:24.430]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:21:24.708]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:22:17.293]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:22:17.514]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:22:17.792]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:24:34.870]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:24:35.565]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:24:43.146]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 59, in update
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.country.Country.DoesNotExist: Country matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:24:43.367]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:24:43.646]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:26:01.089]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'one'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 59, in update
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'one'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'ValueError'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:26:01.310]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:26:01.622]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:27:31.943]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'Bolivia'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 59, in update
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'Bolivia'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'ValueError'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:27:32.165]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:27:32.448]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:28:02.473]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 61, in update
+    complete = PersonalProfile.updated(request, country_se, city_se, pk)
+  File "/usr/src/app/core/profile.py", line 62, in updated
+    data = cls.get_by_id(request, pk)
+  File "/usr/src/app/core/profile.py", line 34, in get_by_id
+    return cls.objects.get(id=pk, user=request.user, delete=delete)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.profile.PersonalProfile.DoesNotExist: PersonalProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:28:02.694]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:28:02.978]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:28:41.601]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/5
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 61, in update
+    complete = PersonalProfile.updated(request, country_se, city_se, pk)
+  File "/usr/src/app/core/profile.py", line 62, in updated
+    data = cls.get_by_id(request, pk)
+  File "/usr/src/app/core/profile.py", line 34, in get_by_id
+    return cls.objects.get(id=pk, user=request.user, delete=delete)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.profile.PersonalProfile.DoesNotExist: PersonalProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:28:41.836]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:28:42.119]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:29:10.612]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/4
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 61, in update
+    complete = PersonalProfile.updated(request, country_se, city_se, pk)
+  File "/usr/src/app/core/profile.py", line 62, in updated
+    data = cls.get_by_id(request, pk)
+  File "/usr/src/app/core/profile.py", line 34, in get_by_id
+    return cls.objects.get(id=pk, user=request.user, delete=delete)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.profile.PersonalProfile.DoesNotExist: PersonalProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:29:10.830]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:29:11.108]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:29:28.587]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:29:29.269]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:29:34.480]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/4
+[22/Jul/2022 00:29:34.704]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:29:34.986]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:30:35.233]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:30:35.452]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:30:35.732]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:30:50.945]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:30:51.164]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:30:51.443]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:31:05.579]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:31:06.287]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:31:11.263]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 59, in update
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.country.Country.DoesNotExist: Country matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:31:11.480]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:31:11.762]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:31:34.508]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 59, in update
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.country.Country.DoesNotExist: Country matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:31:34.729]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:31:35.010]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:31:57.259]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'Bolivia'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 59, in update
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'Bolivia'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'ValueError'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:31:57.480]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:31:57.760]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:32:33.744]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 59, in update
+    country_se = Country.objects.get(id=request.data.get("country_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.country.Country.DoesNotExist: Country matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:32:33.969]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:32:34.255]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:33:56.245]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 60, in update
+    city_se = City.objects.get(id=request.data.get("city_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.city.City.DoesNotExist: City matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:33:56.465]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:33:56.748]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:34:18.308]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 61, in update
+    complete = PersonalProfile.updated(request, country_se, city_se, pk)
+  File "/usr/src/app/core/profile.py", line 62, in updated
+    data = cls.get_by_id(request, pk)
+  File "/usr/src/app/core/profile.py", line 34, in get_by_id
+    return cls.objects.get(id=pk, user=request.user, delete=delete)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.profile.PersonalProfile.DoesNotExist: PersonalProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:34:18.536]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:34:18.813]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:37:04.111]WARNING [django.request:224] Method Not Allowed: /api/v1/user/profile/personal/1
+[22/Jul/2022 00:37:04.329]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:37:04.611]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:37:26.439]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 61, in update
+    complete = PersonalProfile.updated(request, country_se, city_se, pk)
+  File "/usr/src/app/core/profile.py", line 62, in updated
+    data = cls.get_by_id(request, pk)
+  File "/usr/src/app/core/profile.py", line 34, in get_by_id
+    return cls.objects.get(id=pk, user=request.user, delete=delete)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.profile.PersonalProfile.DoesNotExist: PersonalProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:37:26.668]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:37:26.955]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:41:45.761]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:41:46.040]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:43:38.109]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:43:38.395]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:44:28.358]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:44:28.644]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:44:50.649]ERROR [django.request:224] Internal Server Error: /api/v1/user/profile/personal/1
+Traceback (most recent call last):
+  File "/usr/src/app/profiles/personal.py", line 61, in update
+    complete = PersonalProfile.updated(request, country_se, city_se, pk)
+  File "/usr/src/app/core/profile.py", line 62, in updated
+    data = cls.get_by_id(request, pk)
+  File "/usr/src/app/core/profile.py", line 34, in get_by_id
+    return cls.objects.get(id=pk, user=request.user, delete=delete)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.profile.PersonalProfile.DoesNotExist: PersonalProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/profiles/personal.py", line 68, in update
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[22/Jul/2022 00:44:50.874]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:44:51.159]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:51:02.721]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:51:03.406]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:51:09.272]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:51:09.561]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:54:04.597]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/3
+[22/Jul/2022 00:54:04.895]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:54:05.176]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:55:39.138]INFO [django.server:161] "DELETE /api/v1/user/profile/personal/4 HTTP/1.1" 204 46
+[22/Jul/2022 00:56:10.328]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:56:11.030]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:56:15.846]WARNING [django.request:224] Bad Request: /api/v1/user/profile/personal/3
+[22/Jul/2022 00:56:16.140]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:56:16.424]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:56:46.168]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:56:46.453]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:56:56.229]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[22/Jul/2022 00:56:56.920]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[22/Jul/2022 00:57:02.557]WARNING [django.request:224] Bad Request: /api/v1/user
+[22/Jul/2022 00:57:02.842]WARNING [django.request:224] Bad Request: /api/v1/user

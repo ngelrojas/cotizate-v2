@@ -9,14 +9,15 @@ from core.profile import PersonalProfile
 from core.country import Country
 from core.city import City
 
-import pdb
-
 PROFILE_CREATE_URL = reverse('profile:personal')
-PROFILE_DETAIL_URL = reverse('profile:personal-detail', kwargs={'pk': 1})
 
 
 def create_user(**params):
     return get_user_model().objects.create_user(**params)
+
+def create_profile(**params):
+    return PersonalProfile.objects.create(**params)
+
 
 
 class ProfileManagerTests(TestCase):
@@ -32,25 +33,22 @@ class ProfileManagerTests(TestCase):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user)
         self.country = Country.objects.create(
-            name = "one",
+            name = "Bolivia",
             short_name = "one",
             code_name = "one",
             description = "one"
         )
         self.city = City.objects.create(
-            name = "one",
+            name = "Santa Cruz",
             short_name = "one",
             code_name = "one",
             description = "one",
             countries = self.country
         )
-
-    def test_create_personal_profile(self):
-        """test create personal profile"""
         payload = {
                 "cinit": "cinit", 
                 "address": "address",
-                "number_address":"number_address", 
+                "number_address":"123", 
                 "neightbordhood":"neightbordhood", 
                 "cellphone": "cellphone", 
                 "telephone":  "telephone", 
@@ -59,32 +57,80 @@ class ProfileManagerTests(TestCase):
                 "rs_twitter":  "rs_twitter", 
                 "rs_linkedin":  "rs_linkedin", 
                 "rs_another":  "rs_another", 
-                "current_position": "current_position", 
+                "current_position": "current", 
                 "headline": "headline", 
                 "birthdate": "2020-03-20", 
-                "photo": "my.png", 
+                "photo": "my_nome.jpe", 
                 "user": self.user, 
-                "countries": 1, 
-                "cities": 1 
+                "countries": self.country, 
+                "cities": self.city 
         }
-        pdb.set_trace()
+        self.profile = create_profile(**payload)
+
+
+    def test_create_personal_profile(self):
+        """test create personal profile"""
+        payload = {
+                "cinit": "cinit", 
+                "address": "address",
+                "number_address":"123", 
+                "neightbordhood":"neightbordhood", 
+                "cellphone": "cellphone", 
+                "telephone":  "telephone", 
+                "description":  "description", 
+                "rs_facebook": "rs_facebook", 
+                "rs_twitter":  "rs_twitter", 
+                "rs_linkedin":  "rs_linkedin", 
+                "rs_another":  "rs_another", 
+                "current_position": "current", 
+                "headline": "headline", 
+                "birthdate": "2020-03-20", 
+                "photo": "my_nome.jpe", 
+                "user": self.user, 
+                "country_id": 1, 
+                "city_id": 1 
+        }
         res = self.client.post(PROFILE_CREATE_URL, payload) 
-        pdb.set_trace()
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
-    #
-    # def test_update_personal_profile(self):
-    #     """test update personal profile"""
-    #     payload = {
-    #         "cinit": "12132",
-    #         "address": "some where",
-    #         "number_address": "12312",
-    #         "neightbordhood": "somewhre",
-    #         "cellphone": "3123123",
-    #         "telephone": "2342343",
-    #         "description": "some words",
-    #         "user": self.user,
-    #         "countries": self.country.id,
-    #         "cities": self.city.id,
-    #     }
-    #     res = self.client.put(PROFILE_URL_DETAIL, payload)
-    #     self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_update_personal_profile(self):
+        """test update personal profile"""
+        payload = {
+                "cinit": "cinit", 
+                "address": "address",
+                "number_address":"123", 
+                "neightbordhood":"neightbordhood", 
+                "cellphone": "cellphone", 
+                "telephone": "telephone", 
+                "description": "description", 
+                "rs_facebook": "rs_facebook", 
+                "rs_twitter": "rs_twitter", 
+                "rs_linkedin": "rs_linkedin", 
+                "rs_another": "rs_another", 
+                "current_position": "current", 
+                "headline": "headline", 
+                "birthdate": "2020-03-20", 
+                "photo": "my_nome.jpe", 
+                "user": self.user, 
+                "country_id": self.country.id, 
+                "city_id": self.city.id 
+        }
+        self.user.refresh_from_db()
+        res = self.client.put(
+            reverse('profile:personal-detail',
+                    kwargs={'pk': self.profile.id}),
+            data=payload
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_delete_personal_profile(self):
+        """delete personal profile"""
+        payload = {
+                "delete": True
+        }
+        res =self.client.delete(
+            reverse('profile:personal-detail',
+                    kwargs={'pk': self.profile.id}),
+            data=payload
+        ) 
+        self.assertEqual(res.status_code, status.HTTP_204_NO_CONTENT)

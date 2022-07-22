@@ -7,7 +7,9 @@ app_name = "profile"
 urlpatterns = [
     path(
         "user/profile/personal",
-        PersonalProfileView.as_view({"get": "list", "post": "create"}),
+        PersonalProfileView.as_view(
+            {"get": "list", "post": "create"}
+        ),
         name="personal",
     ),
     path(

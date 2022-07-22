@@ -58,26 +58,26 @@ class PersonalProfile(AbstractProfile):
         return created.id
 
     @classmethod
-    def updated(cls, request, pk):
+    def updated(cls, request, country, city, pk):
         data = cls.get_by_id(request, pk) 
-        data.cinit = request.data.get("cinit"), 
-        data.address = request.data.get("address"),
-        data.number_address = request.data.get("number_address"), 
-        data.neightbordhood = request.data.get("neightbordhood"), 
-        data.cellphone = requests.data.get("cellphone"), 
-        data.telephone = request.data.get("telephone"), 
-        data.description = request.data.get("description"), 
-        data.rs_facebook = request.data.get("rs_facebook"), 
-        data.rs_twitter = request.data.get("rs_twitter"), 
-        data.rs_linkedin = request.data.get("rs_linkedin"), 
-        data.rs_another = request.data.get("rs_another"), 
-        data.current_position = request.data.get("current_position"), 
-        data.headline = request.data.get("headline"), 
-        data.birthdate = request.data.get("birthdate"), 
+        data.cinit = request.data.get("cinit") 
+        data.address = request.data.get("address")
+        data.number_address = request.data.get("number_address") 
+        data.neightbordhood = request.data.get("neightbordhood") 
+        data.cellphone = request.data.get("cellphone")
+        data.telephone = request.data.get("telephone") 
+        data.description = request.data.get("description") 
+        data.rs_facebook = request.data.get("rs_facebook") 
+        data.rs_twitter = request.data.get("rs_twitter") 
+        data.rs_linkedin = request.data.get("rs_linkedin") 
+        data.rs_another = request.data.get("rs_another")
+        data.current_position = request.data.get("current_position") 
+        data.headline = request.data.get("headline")
+        data.birthdate = request.data.get("birthdate") 
         if request.data["photo"]:
-            data.photo = request.data["photo"], 
-        data.countries = request.data.get("country_id"), 
-        data.cities = request.data.get("city_id")
+            data.photo = request.data["photo"]
+        data.countries = country
+        data.cities = city
         data.save()
         return data.id
 
