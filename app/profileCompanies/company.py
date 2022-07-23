@@ -31,12 +31,11 @@ class CompanyView(viewsets.ModelViewSet):
     def create(self, request):
         """create personal company"""
         try:
-            prof_create_company = ProfilesQuery()
-            countries = Country.objects.get(id=request.data.get("countries"))
-            cities = City.objects.get(id=request.data.get("cities"))
-            prof_company = prof_create_company.saving_profile_company(
-                request, countries, cities
-            )
+            # prof_create_company = ProfilesQuery()
+            countries = Country.objects.get(id=request.data.get("country_id"))
+            cities = City.objects.get(id=request.data.get("city_id"))
+            prof_company = ProfileCompany.created(request, countries, cities)
+
             return Response(
                 {"data": prof_company, "msg": "profile company created."},
                 status=status.HTTP_201_CREATED,

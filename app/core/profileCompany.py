@@ -27,3 +27,29 @@ class ProfileCompany(AbstractProfile):
 
     def __str__(self):
         return self.company_name
+
+    @classmethod
+    def created(cls, request, country, city):
+        res = cls.objects.create(
+            cinit = request.data.get("cinit"), 
+            address = request.data.get("address"),
+            number_address = request.data.get("number_address"), 
+            neightbordhood = request.data.get("neightbordhood"), 
+            cellphone = request.data.get("cellphone"), 
+            telephone = request.data.get("telephone"), 
+            description = request.data.get("description"), 
+            rs_facebook = request.data.get("rs_facebook"), 
+            rs_twitter = request.data.get("rs_twitter"), 
+            rs_linkedin = request.data.get("rs_linkedin"), 
+            rs_another = request.data.get("rs_another"),
+            company_name = request.data.get("company_name"),
+            representative = request.data.get("representative"),
+            heading = request.data.get("heading"),
+            email_company = request.data.get("email_company"),
+            photo = request.data.get("photo"),
+            user = request.user,
+            countries = country,
+            cities = city,
+            institution_type = request.data.get("institution_type")           
+        )
+        return res.id

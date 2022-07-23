@@ -2,19 +2,19 @@ from django.urls import path
 from .company import CompanyView
 
 
-app_name = "profile-company"
+app_name = "company"
 
 urlpatterns = [
     path(
         "user/profile/company",
         CompanyView.as_view({"get": "list", "post": "create"}),
-        name="profile-company",
+        name="profile",
     ),
     path(
         "user/profile/company/<int:pk>",
         CompanyView.as_view({
             "get": "retrieve", "put": "update", "delete": "delete"
         }),
-        name="profile-company-detail",
+        name="company-detail",
     ),
 ]

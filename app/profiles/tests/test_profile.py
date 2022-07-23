@@ -87,8 +87,8 @@ class ProfileManagerTests(TestCase):
                 "birthdate": "2020-03-20", 
                 "photo": "my_nome.jpe", 
                 "user": self.user, 
-                "country_id": 1, 
-                "city_id": 1 
+                "country_id": self.country.id, 
+                "city_id": self.city.id 
         }
         res = self.client.post(PROFILE_CREATE_URL, payload) 
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
