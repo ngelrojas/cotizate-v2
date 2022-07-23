@@ -20,9 +20,9 @@ class Reward(models.Model):
     city = ArrayField(models.CharField(max_length=50)) 
     all_cities = models.BooleanField(default=False)
     pick_up_locally = models.BooleanField(default=False)
-    delete = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now=True)
     update_at = models.DateTimeField(null=True, blank=True)
+    delete = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
@@ -44,38 +44,38 @@ class Reward(models.Model):
                 delete=erase)
 
     @classmethod
-    def create(cls, request):
-        created = cls.objects.create(
+    def created(cls, request, obj_campaing, obj_phase):
+        resp = cls.objects.create(
                 title=request.data.get("title"),
                 description=request.data.get("description"),
                 amount=request.data.get("amount"),
                 expected_delivery=request.data.get("expected_delivery"),
-                campaing=request.data.get("campaing_id"),
-                phase=request.data.get("phase_id"),
+                campaing=obj_campaing,
+                phase=obj_phase,
                 city=request.data.get("city_id")
         )
-        return created.id
+        return resp.id
 
     @classmethod
     def updated(cls, request, pk):
-        updated = cls.get_reward(request, pk)
-        update.title = request.data.get("title")
-        update.description = request.data.get("description")
-        update.amount = request.data.get("amount")
-        update.expected_delivery = request.data.get("expected_delivery")
+        resp = cls.get_reward(request, pk)
+        resp.title = request.data.get("title")
+        resp.description = request.data.get("description")
+        resp.amount = request.data.get("amount")
+        resp.expected_delivery = request.data.get("expected_delivery")
         if request.data.get("city_id"):
-            update.cities = request.data.get("city_id") 
-        update.update_at = datetime.now().date()
-        update.phase = request.data.get("phase_id") 
-        update.campaing = request.data.get("campaing_id") 
-        update.save()
-        return updated.id 
+            resp.cities = request.data.get("city_id") 
+        resp.update_at = datetime.now().date()
+        resp.phase = request.data.get("phase_id") 
+        resp.campaing = request.data.get("campaing_id") 
+        resp.save()
+        return resp.id 
 
     @classmethod
     def erase(cls, request, pk):
-        delete = cls.get_reward(request, pk)
-        delete.delete = True
-        delete.save()
+        resp = cls.get_reward(request, pk)
+        resp.delete = True
+        resp.save()
         return True
 
 #     def get_all_reward(self, request, campaingId):

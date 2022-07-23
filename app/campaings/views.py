@@ -54,7 +54,7 @@ class CampaingView(viewsets.ModelViewSet):
         except Exception as e:
             return Response(
                     {"data": False, "msg": f"{e}"},
-                    status=status.HTTP_400_BAD_REQUEST
+                    status=e
             )
 
     def update(self, request, pk=None):
@@ -70,18 +70,18 @@ class CampaingView(viewsets.ModelViewSet):
         except Exception as e:
             return Response(
                     {"data": False, "msg": f"{e}"},
-                    status=status.HTTP_400_BAD_REQUEST
+                    status=e
             )
 
     def delete(self, request, pk=None):
         try:
             resp = Campaing.erase(request, pk)
-            return Reponse(
+            return Response(
                     {"data": resp, "msg": "campaing is deleted"},
                     status=status.HTTP_204_NO_CONTENT
             )
         except Exception as e:
             return Response(
                     {"data": False, "msg": f"{e}"},
-                    status=status.HTTP_400_BAD_REQUEST
+                    status=HTTP_400_BAD_REQUEST
             )

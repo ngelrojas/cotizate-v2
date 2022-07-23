@@ -29,6 +29,16 @@ class ProfileCompany(AbstractProfile):
         return self.company_name
 
     @classmethod
+    def get_all(cls, request):
+        return cls.objects.filter(user=request.user)
+
+    @classmethod
+    def get_by_id(cls, request, pk):
+        by_id = cls.objects.get(id=pk, user=request.user)
+        return by_id
+
+
+    @classmethod
     def created(cls, request, country, city):
         res = cls.objects.create(
             cinit = request.data.get("cinit"), 
@@ -46,10 +56,43 @@ class ProfileCompany(AbstractProfile):
             representative = request.data.get("representative"),
             heading = request.data.get("heading"),
             email_company = request.data.get("email_company"),
-            photo = request.data.get("photo"),
+            photo = request.data["photo"],
             user = request.user,
             countries = country,
             cities = city,
             institution_type = request.data.get("institution_type")           
         )
         return res.id
+
+    @classmethod
+    def updated(cls, request, country, city, pk):
+        resp = cls.get_by_id(request, pk)
+        resp.cinit = request.data.get("cinit") 
+        resp.address = request.data.get("address")
+        resp.number_address = request.data.get("number_address") 
+        resp.neightbordhood = request.data.get("neightbordhood") 
+        resp.cellphone = request.data.get("cellphone")
+        resp.telephone = request.data.get("telephone") 
+        resp.description = request.data.get("description") 
+        resp.rs_facebook = request.data.get("rs_facebook") 
+        resp.rs_twitter = request.data.get("rs_twitter")
+        resp.rs_linkedin = request.data.get("rs_linkedin")
+        resp.rs_another = request.data.get("rs_another")
+        resp.company_name = request.data.get("company_name")
+        resp.representative = request.data.get("representative")
+        resp.heading = request.data.get("heading")
+        resp.email_company = request.data.get("email_company")
+        if request.data["photo"]:
+            resp.photo = request.data["photo"]
+        resp.user = request.user
+        resp.countries = country
+        resp.cities = city
+        resp.institution_type = request.data.get("institution_type")
+        return resp.id
+
+    @classmethod
+    def erase(cls, request, pk):
+        resp = cls.get_by_id(request, pk)
+        resp.delete = True
+        resp.save()
+        return True

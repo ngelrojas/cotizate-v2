@@ -1,7 +1,7 @@
 /app/staticfiles/
 /app/api/staticfiles/
 /app/api/settings/conf_email.py
-/app/log/cotizate_api_application.log.*
+/app/log/*
 /app/log/cotizate_api_application.log
 /app/api/settings/__pycache__/
 /app/*/__pycache__/*.pyc

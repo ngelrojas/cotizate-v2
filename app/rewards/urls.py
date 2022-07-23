@@ -4,10 +4,13 @@ from .views import RewardView, RewardrView
 app_name = "reward"
 
 urlpatterns = [
-    path("reward", RewardView.as_view({"post": "create"}), name="reward"),
+    path("reward", RewardView.as_view(
+        {"post": "create"}),
+    name="reward"),
     path(
         "reward/<int:pk>",
-        RewardView.as_view({"get": "retrieve", "put": "update", "delete": "delete"}),
+        RewardView.as_view(
+            {"get": "retrieve", "put": "update", "delete": "delete"}),
         name="reward-detail",
     ),
 ]

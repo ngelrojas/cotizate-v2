@@ -1,5 +1,6 @@
-from datetime import datetime
+import datetime
 from django.db import models
+from django.utils import timezone
 from autoslug import AutoSlugField
 from core.user import User
 from core.category import Category
@@ -24,7 +25,6 @@ class Campaing(models.Model):
         (5, "completed"),
         (6, "terminated"),
         (7, "archived"),
-        (8, "deleted"),
     )
 
     FLAG_CAMPAING = (
@@ -60,6 +60,7 @@ class Campaing(models.Model):
     percent_reached = models.DecimalField(max_digits=12, decimal_places=2, default=0)
     role = models.IntegerField(choices=ROLE_CAMPAING, default=2)
     code_campaing = models.CharField(max_length=250)
+    delete = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
@@ -70,11 +71,8 @@ class Campaing(models.Model):
         return Campaing.objects.exclude(user=request.user, status=deleted)
 
     @classmethod
-    def get_campaing_id(cls, request, pk=None, status=8):
-        """get campaing by id
-            status = 8: deleted
-        """
-        return Campaing.objects.get(id=pk, user=request.user, status=status)
+    def get_campaing_id(cls, request, pk=None):
+        return Campaing.objects.get(id=pk, user=request.user)
 
     @classmethod
     def create(cls, objcate, objcity, objcurrency, request):
@@ -100,35 +98,35 @@ class Campaing(models.Model):
 
     @classmethod
     def updated(cls, objcate, objcity, objcurrency, request, pk):
-        updated = cls.get_campaing_id(request, pk) 
-        update.title = request.data.get("title")
+        resp = cls.get_campaing_id(request, pk) 
+        resp.title = request.data.get("title")
         if request.data.get("video_main"):
-            update.video_main = request.data.get("video_main")
+            resp.video_main = request.data.get("video_main")
         if request.data["imagen_main"]:
-            update.imagen_main = request.data["imagen_main"]
-        update.excerpt = request.data.get("excerpt")
-        update.description = request.data.get("description")
-        update.currency = objcurrency
-        update.short_url = request.data.get("short_url")
-        update.slogan_campaing = request.data.get("slogan_campaing")
-        update.category = objcate
-        update.city = objcity
-        update.updated_at = datetime.now()
-        update.public_at = request.data.get("public_at")
-        update.ended_at = request.data.get("ended_at")
-        update.qty_day = request.data.get("qty_day")
-        update.qty_day_left = request.data.get("qty_day")
-        update.amount = request.data.get("amount")
-        update.role = request.data.get("role")
-        update.save()
-        return updated.id
+            resp.imagen_main = request.data["imagen_main"]
+        resp.excerpt = request.data.get("excerpt")
+        resp.description = request.data.get("description")
+        resp.currency = objcurrency
+        resp.short_url = request.data.get("short_url")
+        resp.slogan_campaing = request.data.get("slogan_campaing")
+        resp.category = objcate
+        resp.city = objcity
+        resp.updated_at = datetime.datetime.now(tz=timezone.utc) 
+        resp.public_at = request.data.get("public_at")
+        resp.ended_at = request.data.get("ended_at")
+        resp.qty_day = request.data.get("qty_day")
+        resp.qty_day_left = request.data.get("qty_day")
+        resp.amount = request.data.get("amount")
+        resp.role = request.data.get("role")
+        resp.save()
+        return resp.id
 
 
     @classmethod
     def erase(cls, request, pk):
-        deleted = cls.get_campaing_id(request, pk)
-        deleted.status = 8
-        deleted.save()
+        resp = cls.get_campaing_id(request, pk)
+        resp.delete = True
+        resp.save()
         return True
 
     # def get_all_completed(self):

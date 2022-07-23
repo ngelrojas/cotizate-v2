@@ -63,12 +63,10 @@ class CompanyView(viewsets.ModelViewSet):
     def update(self, request, pk=None):
         """update profile company current user"""
         try:
-            prof_comp = ProfilesQuery()
-            countries = Country.objects.get(id=request.data.get("countries"))
-            cities = City.objects.get(id=request.data.get("cities"))
-            complete = prof_comp.update_profile_company(
-                pk, request, countries, cities
-            )
+            # prof_comp = ProfilesQuery()
+            countries = Country.objects.get(id=request.data.get("country_id"))
+            cities = City.objects.get(id=request.data.get("city_id"))
+            complete = ProfileCompany.updated(request, countries, cities, pk)
 
             return Response(
                 {"data": complete, "msg": "profile updated."},
@@ -83,16 +81,15 @@ class CompanyView(viewsets.ModelViewSet):
 
     def delete(self, request, pk=None):
         try:
-            prof_comp = ProfileCompany.objects.get(id=pk, user=request.user)
-            prof_comp.delete = True
-            prof_comp.save()
+            prof_comp = ProfileCompany.erase(request, pk) 
+
             return Response(
-                {"data": True, "msg": "profile company deleted"},
+                {"data": prof_comp, "msg": "profile company deleted"},
                 status=status.HTTP_204_NO_CONTENT
             )
 
-        except Exception as e:
+        except Exception as err:
             return Response(
-                {"data": False, "msg": f"{e}"},
+                {"data": False, "msg": f"{err}"},
                 status=status.HTTP_400_BAD_REQUEST
             )

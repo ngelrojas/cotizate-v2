@@ -3,6 +3,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from core.campaing import Campaing
 from core.reward import Reward
+from core.phase import Phase
 from core.queries.rewardQuery import RewardQuery
 from .serializers import RewardSerializer
 
@@ -33,14 +34,16 @@ class RewardView(viewsets.ViewSet):
     def create(self, request):
         """create reward"""
         try:
-            resp = Reward.create(request)
+            obj_campaing = Campaing.get_campaing_id(request, request.data.get('campaing_id'))
+            obj_phase = Phase.get_phase(obj_campaing, request.data.get('phase_id'))
+            resp = Reward.created(request, obj_campaing, obj_phase)
             return Response(
                     {"data": resp, "msg":"reward created."},
                     status=status.HTTP_201_CREATED,
             )
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+                {"data": False, "msg": f"{err}"}, status=err
             )
 
     def update(self, request, pk):
