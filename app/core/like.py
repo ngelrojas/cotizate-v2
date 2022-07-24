@@ -30,10 +30,10 @@ class Like(models.Model):
         return resp
 
     @classmethod
-    def created(cls, request):
+    def created(cls, obj_campaing, request):
         resp = cls.objects.create(
                 user=request.user,
-                campaing=request.data.get("campaing_id"),
+                campaing=obj_campaing,
                 liked = request.data.get("liked")
         )
         return resp.id

@@ -1,5 +1,7 @@
-from datetime import datetime
+import datetime
+
 from django.db import models
+from django.utils import timezone
 from django.contrib.postgres.fields import ArrayField
 from core.user import User
 from core.campaing import Campaing
@@ -64,10 +66,8 @@ class Reward(models.Model):
         resp.amount = request.data.get("amount")
         resp.expected_delivery = request.data.get("expected_delivery")
         if request.data.get("city_id"):
-            resp.cities = request.data.get("city_id") 
-        resp.update_at = datetime.now().date()
-        resp.phase = request.data.get("phase_id") 
-        resp.campaing = request.data.get("campaing_id") 
+            resp.city = request.data.get("city_id") 
+        resp.update_at = datetime.datetime.now(tz=timezone.utc) 
         resp.save()
         return resp.id 
 

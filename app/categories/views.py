@@ -31,18 +31,6 @@ class CategoryView(viewsets.ModelViewSet):
         "name",
     ]
 
-    def retrieve(self, request, the_slug):
-        try:
-            list_header = CategoryQuery.get_list_camp_header(the_slug)
-            list_camp = []
-            list_camp = CampaingPrivateQuery.list_camps(list_header, 5)
-            serializer = CampaingBodySerializer(list_camp, many=True)
-            return Response({"data": serializer.data}, status=status.HTTP_200_OK)
-        except Exception as err:
-            return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
-            )
-
 
 class CategorySearch(ListAPIView):
     """

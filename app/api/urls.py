@@ -54,7 +54,7 @@ urlpatterns = [
     path("api/v1/", include("phases.urls")),
     # path("api/v1/", include("improvies.urls")),
     path("api/v1/", include("bookmarks.urls")),
-    # path("api/v1/", include("uploads.urls")),
+    path("api/v1/", include("currencies.urls")),
     # path("api/v1/", include("updatings.urls")),
     # path("api/v1/", include("denounces.urls")),
     # path("api/v1/", include("followers.urls")),

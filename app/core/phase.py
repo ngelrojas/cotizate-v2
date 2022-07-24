@@ -28,21 +28,23 @@ class Phase(models.Model):
         return retrieve
 
     @classmethod
-    def create(cls, campaing, request):
-        created = cls.objects.create(
+    def created(cls, campaing, request):
+        resp = cls.objects.create(
                 title=request.data.get("title"),
                 description=request.data.get("description"),
+                amount = request.data.get('amount'),
                 campaing=campaing
         )
-        return created.id
+        return resp.id
 
     @classmethod
-    def update(cls, campaing, request, pk):
-        updated = cls.get_phase(campaing, pk)
-        updated.title = request.data.get("title")
-        update.description = request.data.get("description")
-        update.save()
-        return updated.id
+    def updated(cls, campaing, request, pk):
+        resp = cls.get_phase(campaing, pk)
+        resp.title = request.data.get("title")
+        resp.description = request.data.get("description")
+        resp.amount = request.data.get("amount")
+        resp.save()
+        return resp.id
 
     @classmethod
     def erase(cls, campaing, pk):

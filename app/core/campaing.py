@@ -68,11 +68,11 @@ class Campaing(models.Model):
     @classmethod
     def get_all_campaings(cls, request, deleted=8):
         """get all campaings except deleted"""
-        return Campaing.objects.exclude(user=request.user, status=deleted)
+        return cls.objects.exclude(user=request.user, status=deleted)
 
     @classmethod
     def get_campaing_id(cls, request, pk=None):
-        return Campaing.objects.get(id=pk, user=request.user)
+        return cls.objects.get(id=pk, user=request.user)
 
     @classmethod
     def create(cls, objcate, objcity, objcurrency, request):

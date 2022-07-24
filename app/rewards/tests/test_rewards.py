@@ -1,3 +1,4 @@
+import datetime
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
@@ -12,7 +13,7 @@ from core.country import Country
 from core.city import City
 from core.currency import Currency
 from core.category import Category
-import datetime
+from core.reward import Reward
 
 REWARDS_CREATE_URL = reverse('reward:reward')
 
@@ -26,6 +27,9 @@ def create_campaing(**params):
 
 def create_phase(**params):
     return Phase.objects.create(**params)
+
+def create_reward(**params):
+    return Reward.objects.create(**params)
 
 
 class RewardTests(TestCase):
@@ -91,6 +95,18 @@ class RewardTests(TestCase):
         }
         self.phase = create_phase(**data_pahse)
 
+        payload = {
+                'title': 'title',
+                'description': 'a;lskdjf;alksdjf', 
+                'amount': 1234, 
+                'expected_delivery': datetime.datetime.now(tz=timezone.utc), 
+                'campaing_id': self.campaing.id,
+                'city': [{self.city.id}],
+                'user': self.user,
+                'phase_id': self.phase.id,
+        }
+        self.reward = create_reward(**payload)
+
     def test_create_reward(self):
         """test create reward"""
         payload = {
@@ -105,3 +121,34 @@ class RewardTests(TestCase):
         }
         resp = self.client.post(REWARDS_CREATE_URL, payload)
         self.assertEqual(resp.status_code, status.HTTP_201_CREATED)
+
+    def test_update_reward(self):
+        """test create reward"""
+        payload = {
+                'title': 'title',
+                'description': 'a;lskdjf;alksdjf', 
+                'amount': 1234, 
+                'expected_delivery': datetime.datetime.now(tz=timezone.utc), 
+                'campaing_id': self.campaing.id,
+                'city_id': [{self.city.id}],
+                'user': 0,
+                'phase_id': self.phase.id,
+        }
+        res = self.client.put(
+                reverse('reward:reward-detail',
+                    kwargs={'pk': self.reward.id}),
+                data=payload
+                )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_delete_reward(self):
+        """test delete reward"""
+        payload = {
+                "campaing_id": self.campaing.id
+                }
+        res = self.client.delete(
+                reverse('reward:reward-detail',
+                    kwargs={'pk': self.reward.id}),
+                data=payload
+                ) 
+        self.assertEqual(res.status_code, status.HTTP_204_NO_CONTENT)

@@ -28,7 +28,7 @@ class RewardView(viewsets.ViewSet):
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
     def create(self, request):
@@ -43,23 +43,23 @@ class RewardView(viewsets.ViewSet):
             )
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=err
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
     def update(self, request, pk):
         """update reward"""
         try:
             current_reward = Reward.updated(request, pk)
-            serializer = self.serializer_class(current_reward, data=request.data)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response(
-                    {"data": "reward updated."},
-                    status=status.HTTP_200_OK,
-                )
+            # serializer = self.serializer_class(current_reward, data=request.data)
+            # if serializer.is_valid(raise_exception=True):
+            #     serializer.save()
+            return Response(
+                    {"data": current_reward, "msg": "reward updated."},
+                status=status.HTTP_200_OK,
+            )
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
     def delete(self, request, pk):
@@ -72,7 +72,7 @@ class RewardView(viewsets.ViewSet):
             )
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )
 
 
@@ -98,5 +98,5 @@ class RewardrView(viewsets.ViewSet):
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
             )

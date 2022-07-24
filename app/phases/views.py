@@ -46,42 +46,41 @@ class PhaseView(viewsets.ViewSet):
     def create(self, request):
         """create phase"""
         try:
-            serializer = self.serializer_class(data=request.data)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response(
-                    {"data": "phase saved."},
-                    status=status.HTTP_201_CREATED,
-                )
+            pk = request.data.get('campaing_id')
+            obj_campaing = Campaing.get_campaing_id(request, pk)
+            resp = Phase.created(obj_campaing, request) 
+            return Response(
+                    {"data": resp, "msg": "phase created"},
+                status=status.HTTP_201_CREATED,
+            )
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"},
-                status=status.HTTP_404_NOT_FOUND
+                status=status.HTTP_400_BAD_REQUEST
             )
 
     def update(self, request, pk, cp):
-        """update reward"""
+        """update phase"""
         try:
-            current_phase = Phase.update(cp, pk)
-            serializer = self.serializer_class(current_phase, data=request.data)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response(
-                    {"data": "phase updated."},
-                    status=status.HTTP_200_OK,
-                )
+            obj_campaing = Campaing.get_campaing_id(request, cp)
+            resp = Phase.updated(obj_campaing, request, pk)
+            return Response(
+                    {"data": resp, "msg": "phase updated"},
+                status=status.HTTP_200_OK,
+            )
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_404_NOT_FOUND
+                {"data": False, "msg": f"{err}"},
+                status=status.HTTP_400_BAD_REQUEST
             )
 
     def delete(self, request, pk, cp):
         """delete reward"""
         try:
 
-            current_phase = Phase.erase(cp, pk)
+            resp = Phase.erase(cp, pk)
             return Response(
-                    {"data": current_phase, "msg": "phase deleted."},
+                    {"data": resp, "msg": "phase deleted."},
                 status=status.HTTP_204_NO_CONTENT,
             )
         except Exception as err:

@@ -37,7 +37,8 @@ class LikeView(viewsets.ModelViewSet):
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+                {"data": False, "msg": f"{err}"}, 
+                status=status.HTTP_400_BAD_REQUEST
             )
 
     def update(self, request, pk):
@@ -46,6 +47,8 @@ class LikeView(viewsets.ModelViewSet):
         pk = header campaing
         """
         try:
+            cp_pk = request.data.get('campaing_id')
+            obj_campaing = Campaing.get_campaing_id(request, cp_pk)
             current_like = Like.get_like_by_id(request, pk)
             if current_like:
                 serializer = self.serializer_class(
@@ -55,7 +58,7 @@ class LikeView(viewsets.ModelViewSet):
                     serializer.save()
                     return Response({"data": "update like."}, status=status.HTTP_200_OK)
 
-            liked = Like.created(request, pk)
+            liked = Like.created(obj_campaing, request, pk)
             if liked:
                 return Response(
                     {"data": True, "msg": "create like."},
@@ -70,5 +73,5 @@ class LikeView(viewsets.ModelViewSet):
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"},
-                status=status.HTTP_400_BAD_REQUEST,
+                status=status.HTTP_400_BAD_REQUEST
             )

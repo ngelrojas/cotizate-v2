@@ -21,7 +21,7 @@ class BookMarkView(viewsets.ModelViewSet):
     def list(self, request):
         """list all bookmark about current user"""
         try:
-            current_like = BookMarkQuery.get_all(request.user)
+            current_like = BookMarkQuery.list_bookmark(request)
             serializer = self.serializer_class(current_like, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -32,7 +32,7 @@ class BookMarkView(viewsets.ModelViewSet):
     def retrieve(self, request, pk):
         """retrieve bookmarked to current user and campaing"""
         try:
-            current_like = BookMarkQuery.get_retrieve(pk)
+            current_like = BookMarkQuery.get_bookmark(request, pk)
             serializer = self.serializer_class(current_like)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -43,8 +43,9 @@ class BookMarkView(viewsets.ModelViewSet):
     def create(self, request):
         """create like to current user and campaing"""
         try:
-            campaing = Campaing.objects.get(id=request.data.get("campaing"))
-            created = BookMark.create(request, campaing)
+            pk = request.data.get("campaing_id")
+            campaing = Campaing.get_campaing_id(request, pk)
+            created = BookMark.created(request, campaing)
             if created:
                 return Response(
                         {"data": created, "msg": "book mark created"},
@@ -56,18 +57,17 @@ class BookMarkView(viewsets.ModelViewSet):
             )
         except Exception as err:
             return Response(
-                {"data": False, "msg": f"{err}"}, status=status.HTTP_400_BAD_REQUEST
+                {"data": False, "msg": f"{err}"},
+                status=status.HTTP_400_BAD_REQUEST
             )
 
 
     def update(self, request, pk):
         """update bookmarked to current user and campaing"""
         try:
-            campaing = Campaing.get_campaing_id(
-                    request,
-                    request.data.get("campaing_id")
-            )
-            bookmark = BookMark.update(campaing, request, pk)
+            # cp_pk = request.data.get("campaing_id")
+            # campaing = Campaing.get_campaing_id(request, cp_pk)
+            bookmark = BookMark.updated(request, pk)
             if bookmark:
                 return Response(
                         {"data": bookmark, "msg": "bookmark updated"},
@@ -75,7 +75,7 @@ class BookMarkView(viewsets.ModelViewSet):
                 )
             return Response(
                     {"data": None, "msg": "something error"},
-                    status=status.HTTP_400_BAD_REQUEST
+                    status=status.HTTP_404_NOT_FOUND
             )
         except Exception as err:
             return Response(

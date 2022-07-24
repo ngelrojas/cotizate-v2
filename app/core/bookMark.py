@@ -14,30 +14,30 @@ class BookMark(models.Model):
         return self.campaing.title
 
     @classmethod
-    def list_bookmark(cls, campaing, request):
-        return cls.objects.filter(user=request.user, campaing=campaing)
+    def list_bookmark(cls, request):
+        return cls.objects.filter(user=request.user)
 
     @classmethod
-    def get_bookmark(cls, request, campaing, pk):
+    def get_bookmark(cls, request, pk):
         bookmarked = cls.objects.get(
                 id=pk,
                 user=request.user,
-                campaing=campaing
+                campaing=request.data.get("campaing_id")
         )
         return bookmarked
 
     @classmethod
-    def create(cls, request, campaing):
-        created = cls.objects.create(
+    def created(cls, request, campaing):
+        resp = cls.objects.create(
                 user=request.user,
                 campaing=campaing,
                 marked=request.data.get("marked")
         )
-        return created.id
+        return resp.id
 
     @classmethod
-    def update(cls, campaing, request, pk):
-        updated = cls.get_bookmark(campaing, pk)
-        updated.marked = request.data.get("marked")
-        updated.save()
-        return updated.id
+    def updated(cls, request, pk):
+        resp = cls.get_bookmark(request, pk)
+        resp.marked = request.data.get("marked")
+        resp.save()
+        return resp.id
