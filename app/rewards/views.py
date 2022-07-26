@@ -34,7 +34,8 @@ class RewardView(viewsets.ViewSet):
     def create(self, request):
         """create reward"""
         try:
-            obj_campaing = Campaing.get_campaing_id(request, request.data.get('campaing_id'))
+            obj_campaing = Campaing.get_campaing_id(
+                    request, request.data.get('campaing_id'))
             obj_phase = Phase.get_phase(obj_campaing, request.data.get('phase_id'))
             resp = Reward.created(request, obj_campaing, obj_phase)
             return Response(

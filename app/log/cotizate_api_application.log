@@ -1806,3 +1806,211 @@ TypeError: list() takes 1 positional argument but 2 were given
 [24/Jul/2022 23:18:43.410]INFO [django.server:161] "GET /api/v1/currency HTTP/1.1" 200 98
 [24/Jul/2022 23:19:37.432]WARNING [django.request:224] Bad Request: /api/v1/user
 [24/Jul/2022 23:19:37.710]WARNING [django.request:224] Bad Request: /api/v1/user
+[25/Jul/2022 23:00:26.774]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[25/Jul/2022 23:00:45.095]INFO [django.server:161] "POST /api/v1/auth HTTP/1.1" 200 209
+[25/Jul/2022 23:02:11.350]INFO [django.server:161] "GET /admin/ HTTP/1.1" 200 8570
+[25/Jul/2022 23:02:11.416]INFO [django.server:161] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 200 380
+[25/Jul/2022 23:02:11.416]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[25/Jul/2022 23:02:11.417]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18545
+[25/Jul/2022 23:02:11.418]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 19513
+[25/Jul/2022 23:02:11.440]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 200 423
+[25/Jul/2022 23:02:11.456]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Jul/2022 23:02:11.457]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Jul/2022 23:02:11.469]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[25/Jul/2022 23:02:11.471]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[25/Jul/2022 23:02:11.471]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[25/Jul/2022 23:02:11.494]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:02:11.494]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3654
+[25/Jul/2022 23:02:15.159]INFO [django.server:161] "GET /admin/core/personalprofile/ HTTP/1.1" 200 9816
+[25/Jul/2022 23:02:15.213]INFO [django.server:161] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6874
+[25/Jul/2022 23:02:15.219]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:02:15.243]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Jul/2022 23:02:18.915]INFO [django.server:161] "POST /api/v1/user/profile/personal HTTP/1.1" 201 44
+[25/Jul/2022 23:02:23.577]INFO [django.server:161] "GET /admin/core/personalprofile/ HTTP/1.1" 200 10027
+[25/Jul/2022 23:02:23.619]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Jul/2022 23:02:23.624]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Jul/2022 23:02:23.624]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Jul/2022 23:02:23.625]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[25/Jul/2022 23:02:23.625]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[25/Jul/2022 23:02:23.627]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Jul/2022 23:02:23.628]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Jul/2022 23:02:23.627]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Jul/2022 23:02:23.628]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:02:23.629]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Jul/2022 23:02:25.181]INFO [django.server:161] "GET /admin/core/personalprofile/5/change/ HTTP/1.1" 200 21075
+[25/Jul/2022 23:02:25.240]INFO [django.server:161] "GET /staticfiles/admin/css/forms.css HTTP/1.1" 200 8804
+[25/Jul/2022 23:02:25.240]INFO [django.server:161] "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 200 8466
+[25/Jul/2022 23:02:25.241]INFO [django.server:161] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+[25/Jul/2022 23:02:25.244]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:02:25.250]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[25/Jul/2022 23:02:25.259]INFO [django.server:161] "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 200 11097
+[25/Jul/2022 23:02:25.308]INFO [django.server:161] "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[25/Jul/2022 23:03:14.777]INFO [django.server:161] "GET /admin/core/profilecompany/ HTTP/1.1" 200 9404
+[25/Jul/2022 23:03:14.827]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:03:14.862]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:03:14.862]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3654
+[25/Jul/2022 23:03:41.428]WARNING [django.request:224] Bad Request: /api/v1/user/profile/company
+[25/Jul/2022 23:03:41.429]WARNING [django.server:161] "POST /api/v1/user/profile/company HTTP/1.1" 400 61
+[25/Jul/2022 23:04:01.554]INFO [django.server:161] "POST /api/v1/user/profile/company HTTP/1.1" 201 43
+[25/Jul/2022 23:04:04.972]INFO [django.server:161] "GET /admin/core/profilecompany/ HTTP/1.1" 200 9618
+[25/Jul/2022 23:04:05.007]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Jul/2022 23:04:05.008]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Jul/2022 23:04:05.008]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[25/Jul/2022 23:04:05.010]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Jul/2022 23:04:05.012]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Jul/2022 23:04:05.013]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Jul/2022 23:04:05.013]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[25/Jul/2022 23:04:05.014]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Jul/2022 23:04:05.014]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Jul/2022 23:04:05.015]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:04:06.855]INFO [django.server:161] "GET /admin/core/profilecompany/3/change/ HTTP/1.1" 200 22011
+[25/Jul/2022 23:04:06.911]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:06:48.694]INFO [django.server:161] "GET /admin/core/personalprofile/ HTTP/1.1" 200 10027
+[25/Jul/2022 23:06:48.752]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:08:48.230]INFO [django.server:161] "GET /admin/core/currency/ HTTP/1.1" 200 9320
+[25/Jul/2022 23:08:48.286]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:08:48.317]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:08:48.318]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3654
+[25/Jul/2022 23:09:03.266]ERROR [django.request:224] Internal Server Error: /api/v1/user/campaing
+Traceback (most recent call last):
+  File "/usr/src/app/campaings/views.py", line 46, in create
+    objcate = Category.objects.get(id=request.data.get("category_id"))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+core.category.Category.DoesNotExist: Category matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 119, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/campaings/views.py", line 55, in create
+    return Response(
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "/usr/local/lib/python3.9/site-packages/django/template/response.py", line 36, in __init__
+    super().__init__('', content_type, status, charset=charset, headers=headers)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 329, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 121, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[25/Jul/2022 23:09:03.267]ERROR [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 500 135090
+[25/Jul/2022 23:10:16.383]INFO [django.utils.autoreload:251] /usr/src/app/campaings/views.py changed, reloading.
+[25/Jul/2022 23:10:17.041]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[25/Jul/2022 23:10:29.253]INFO [django.server:161] "GET /admin/core/campaing/ HTTP/1.1" 200 15202
+[25/Jul/2022 23:10:29.308]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:10:29.344]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:10:34.276]INFO [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 204 62
+[25/Jul/2022 23:10:42.962]INFO [django.server:161] "GET /admin/core/category/ HTTP/1.1" 200 10154
+[25/Jul/2022 23:10:43.016]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:10:43.046]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:10:43.047]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3654
+[25/Jul/2022 23:12:10.683]INFO [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 204 36
+[25/Jul/2022 23:12:28.831]INFO [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 204 36
+[25/Jul/2022 23:12:38.714]INFO [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 204 156
+[25/Jul/2022 23:25:59.865]INFO [django.utils.autoreload:251] /usr/src/app/campaings/views.py changed, reloading.
+[25/Jul/2022 23:26:00.556]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[25/Jul/2022 23:26:03.946]WARNING [django.request:224] Unauthorized: /api/v1/user/campaing
+[25/Jul/2022 23:26:03.947]WARNING [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 401 58
+[25/Jul/2022 23:28:09.994]INFO [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 204 529
+[25/Jul/2022 23:29:53.901]INFO [django.utils.autoreload:251] /usr/src/app/campaings/views.py changed, reloading.
+[25/Jul/2022 23:29:54.563]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[25/Jul/2022 23:30:30.832]INFO [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 204 536
+[25/Jul/2022 23:30:47.658]INFO [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 204 538
+[25/Jul/2022 23:31:58.774]INFO [django.server:161] "POST /api/v1/user/campaing HTTP/1.1" 201 36
+[25/Jul/2022 23:32:05.171]INFO [django.server:161] "GET /admin/core/campaing/ HTTP/1.1" 200 15419
+[25/Jul/2022 23:32:05.229]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:32:05.274]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:32:08.811]INFO [django.server:161] "GET /admin/core/campaing/29/change/ HTTP/1.1" 200 27074
+[25/Jul/2022 23:32:08.870]INFO [django.server:161] "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+[25/Jul/2022 23:32:08.873]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:32:08.917]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:32:08.918]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3654
+[25/Jul/2022 23:32:08.941]INFO [django.server:161] "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[25/Jul/2022 23:33:47.757]INFO [django.server:161] "POST /admin/core/campaing/29/change/ HTTP/1.1" 302 0
+[25/Jul/2022 23:33:47.824]INFO [django.server:161] "GET /admin/core/campaing/29/change/ HTTP/1.1" 200 27324
+[25/Jul/2022 23:33:47.881]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:33:47.910]INFO [django.server:161] "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[25/Jul/2022 23:33:56.139]INFO [django.server:161] "POST /admin/core/campaing/29/change/ HTTP/1.1" 302 0
+[25/Jul/2022 23:33:56.206]INFO [django.server:161] "GET /admin/core/campaing/29/change/ HTTP/1.1" 200 27323
+[25/Jul/2022 23:33:56.258]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:33:56.299]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:33:56.300]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3654
+[25/Jul/2022 23:34:54.146]INFO [django.server:161] "POST /admin/core/campaing/29/change/ HTTP/1.1" 302 0
+[25/Jul/2022 23:34:54.213]INFO [django.server:161] "GET /admin/core/campaing/29/change/ HTTP/1.1" 200 27324
+[25/Jul/2022 23:34:54.270]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:34:54.312]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:34:54.312]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3654
+[25/Jul/2022 23:39:06.378]INFO [django.server:161] "GET /admin/core/phase/ HTTP/1.1" 200 14425
+[25/Jul/2022 23:39:06.441]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:39:06.475]WARNING [django.request:224] Not Found: /favicon.ico
+[25/Jul/2022 23:39:06.475]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3654
+[25/Jul/2022 23:39:09.806]INFO [django.server:161] "POST /api/v1/phase HTTP/1.1" 201 33
+[25/Jul/2022 23:39:12.256]INFO [django.server:161] "GET /admin/core/phase/ HTTP/1.1" 200 14645
+[25/Jul/2022 23:39:12.295]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Jul/2022 23:39:12.298]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[25/Jul/2022 23:39:12.298]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Jul/2022 23:39:12.302]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Jul/2022 23:39:12.302]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Jul/2022 23:39:12.304]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Jul/2022 23:39:12.305]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Jul/2022 23:39:12.305]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[25/Jul/2022 23:39:12.305]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:39:12.306]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Jul/2022 23:39:14.118]INFO [django.server:161] "GET /admin/core/phase/26/change/ HTTP/1.1" 200 13548
+[25/Jul/2022 23:39:14.178]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:40:10.535]INFO [django.server:161] "POST /api/v1/phase HTTP/1.1" 201 33
+[25/Jul/2022 23:40:14.724]INFO [django.server:161] "GET /admin/core/phase/ HTTP/1.1" 200 14865
+[25/Jul/2022 23:40:14.779]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:40:17.669]INFO [django.server:161] "GET /admin/core/phase/27/change/ HTTP/1.1" 200 13557
+[25/Jul/2022 23:40:17.731]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:40:20.982]INFO [django.server:161] "GET /admin/core/phase/ HTTP/1.1" 200 14865
+[25/Jul/2022 23:40:21.037]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:42:24.043]INFO [django.utils.autoreload:251] /usr/src/app/rewards/views.py changed, reloading.
+[25/Jul/2022 23:42:24.731]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[25/Jul/2022 23:45:59.109]WARNING [django.request:224] Method Not Allowed: /api/v1/reward
+[25/Jul/2022 23:45:59.109]WARNING [django.server:161] "GET /api/v1/reward HTTP/1.1" 405 40
+[25/Jul/2022 23:46:05.055]INFO [django.server:161] "POST /api/v1/reward HTTP/1.1" 201 35
+[25/Jul/2022 23:46:11.657]INFO [django.server:161] "GET /admin/core/reward/ HTTP/1.1" 200 14599
+[25/Jul/2022 23:46:11.713]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:46:15.442]INFO [django.server:161] "GET /admin/core/reward/26/change/ HTTP/1.1" 200 20123
+[25/Jul/2022 23:46:15.509]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:47:24.023]INFO [django.server:161] "POST /api/v1/reward HTTP/1.1" 201 35
+[25/Jul/2022 23:47:27.045]INFO [django.server:161] "GET /admin/core/reward/ HTTP/1.1" 200 14816
+[25/Jul/2022 23:47:27.101]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:47:34.181]INFO [django.server:161] "POST /api/v1/reward HTTP/1.1" 201 35
+[25/Jul/2022 23:47:35.517]INFO [django.server:161] "GET /admin/core/reward/ HTTP/1.1" 200 15033
+[25/Jul/2022 23:47:35.554]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Jul/2022 23:47:35.554]INFO [django.server:161] "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Jul/2022 23:47:35.556]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Jul/2022 23:47:35.559]INFO [django.server:161] "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+[25/Jul/2022 23:47:35.562]INFO [django.server:161] "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Jul/2022 23:47:35.563]INFO [django.server:161] "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Jul/2022 23:47:35.564]INFO [django.server:161] "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Jul/2022 23:47:35.564]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+[25/Jul/2022 23:47:35.564]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[25/Jul/2022 23:47:35.565]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0

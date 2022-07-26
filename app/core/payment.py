@@ -1,6 +1,7 @@
 from django.db import models
-from .campaing import Campaing
+from core.campaing import Campaing
 from core.user import User
+from core.reward import Reward
 
 
 class Payment(models.Model):
@@ -25,14 +26,13 @@ class Payment(models.Model):
     total_amount = models.DecimalField(max_digits=12, decimal_places=3)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(blank=True, null=True)
-    type_pay = models.IntegerField(choices=TYPE_PAY, default=1)
+    type_pay = models.CharField(max_length=100, blank=True)
     status_pay = models.IntegerField(choices=STATUS_PAY, default=1)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    header = models.ForeignKey(Campaing, on_delete=models.CASCADE)
-    encrypted_parameter = models.TextField(default="0")
-    commerce_id = models.TextField(default="0")
+    campaing = models.ForeignKey(Campaing, on_delete=models.CASCADE)
+    reward = models.ForeignKey(Reward, on_delete=models.CASCADE)
     coin = models.IntegerField(choices=COIN, default=2)
-    transaction_id = models.IntegerField(default=0)
+    transaction = models.CharField(max_length=350, blank=True)
 
     def __str__(self):
         return self.user.first_name

@@ -54,7 +54,7 @@ class CampaingView(viewsets.ModelViewSet):
         except Exception as e:
             return Response(
                     {"data": False, "msg": f"{e}"},
-                    status=e
+                    status=status.HTTP_204_NO_CONTENT
             )
 
     def update(self, request, pk=None):
