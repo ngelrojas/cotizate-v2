@@ -1,3 +1,5 @@
+import datetime
+from django.utils import timezone
 from django.db import models
 from core.campaing import Campaing
 from core.user import User
@@ -36,3 +38,34 @@ class Payment(models.Model):
 
     def __str__(self):
         return self.user.first_name
+
+    def get_all(cls, request):
+        return cls.objects.filter(user=request.user)
+
+    def get_by_id(cls, request):
+        resp = cls.objects.get(id=request.data.get('payment_id'), user=request.user)
+        return resp
+
+    def get_by_transaction(cls, request):
+        resp = cls.object.get(transaction=request.data.get('transaction'))
+        return resp
+
+    def created(cls, request, user_payed, campaing_payed, reward_payed):
+        resp = cls.objects.create(
+                total_amount = request.data.get('total_amount'), 
+                created_at = datetime.datetime.now(tz=timezone.utc), 
+                type_pay = request.data.get('type_pay'), 
+                status_pay = 1, 
+                user = user_payed, 
+                campaing = campaing_payed, 
+                reward = reward_payed,
+                coin = request.data.get('coin_id'), 
+                transaction = request.data.get('transaction') 
+        )
+        return resp.id
+
+    def updated(cls, request, campaing_payed, pk):
+        resp = cls.get_by_transaction(request)
+        resp.updated_at = datatime.datatime.now(tz=timezone.utc)
+        resp.save()
+        return True

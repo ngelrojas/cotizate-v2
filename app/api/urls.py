@@ -43,7 +43,7 @@ urlpatterns = [
     path("api/v1/", include("categories.urls")),
     # path("api/v1/", include("tags.urls")),
     path("api/v1/", include("campaings.urls")),
-    # path("api/v1/", include("payments.urls")),
+    path("api/v1/", include("payments.urls")),
     # path("api/v1/", include("comments.urls")),
     path("api/v1/", include("rewards.urls")),
     # path("api/v1/", include("favorites.urls")),

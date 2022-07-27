@@ -17,6 +17,7 @@ class CampaingView(viewsets.ModelViewSet):
     queryset = Campaing.objects.all()
 
     def list(self, request):
+        """get all campaing from current user"""
         try:
             list_camp = Campaing.get_all_campaings(request)
             serializer = self.serializer_class(list_camp, many=True)
@@ -30,7 +31,7 @@ class CampaingView(viewsets.ModelViewSet):
     def retrieve(self, request, pk=None):
         try:
             get_camp = Campaing.get_campaing_id(request, pk)
-            serialzer = self.serializer_class(get_camp)
+            serializer = self.serializer_class(get_camp)
             return Response(
                     {"data": serializer.data},
                     status=status.HTTP_200_OK

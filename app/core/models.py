@@ -6,7 +6,7 @@ from core.category import Category
 from core.campaing import Campaing
 from core.currency import Currency
 # from core.accumulated import Accumulated
-# from core.payment import Payment
+from core.payment import Payment
 # from core.comment import Comment
 from core.reward import Reward
 # from core.favorite import Favorite

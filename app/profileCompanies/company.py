@@ -17,10 +17,7 @@ class CompanyView(viewsets.ModelViewSet):
     def list(self, request):
         """all companies about the current user"""
         try:
-            list_company = ProfileCompany.objects.filter(
-                user=request.user,
-                delete=False
-            )
+            list_company = ProfileCompany.get_all(request)
             serializer = self.serializer_class(list_company, many=True)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -52,7 +49,7 @@ class CompanyView(viewsets.ModelViewSet):
         pc is the ID the profile company the current user
         """
         try:
-            current_profile = ProfileCompany.objects.get(id=pk, user=request.user)
+            current_profile = ProfileCompany.get_by_id(request, pk)
             serializer = self.serializer_class(current_profile)
             return Response({"data": serializer.data}, status=status.HTTP_200_OK)
         except Exception as err:
@@ -64,12 +61,12 @@ class CompanyView(viewsets.ModelViewSet):
         """update profile company current user"""
         try:
             # prof_comp = ProfilesQuery()
-            countries = Country.objects.get(id=request.data.get("country_id"))
-            cities = City.objects.get(id=request.data.get("city_id"))
-            complete = ProfileCompany.updated(request, countries, cities, pk)
+            country = Country.objects.get(id=request.data.get("country_id"))
+            city = City.objects.get(id=request.data.get("city_id"))
+            complete = ProfileCompany.updated(request, country, city, pk)
 
             return Response(
-                {"data": complete, "msg": "profile updated."},
+                {"data": complete, "msg": "profile updated"},
                 status=status.HTTP_200_OK,
             )
 

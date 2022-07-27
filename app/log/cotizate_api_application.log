@@ -2014,3 +2014,106 @@ TypeError: HTTP status code must be an integer.
 [25/Jul/2022 23:47:35.564]INFO [django.server:161] "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
 [25/Jul/2022 23:47:35.564]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
 [25/Jul/2022 23:47:35.565]INFO [django.server:161] "GET /staticfiles/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[26/Jul/2022 22:41:59.803]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[26/Jul/2022 23:32:41.349]INFO [django.utils.autoreload:251] /usr/src/app/core/models.py changed, reloading.
+[26/Jul/2022 23:32:42.023]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[26/Jul/2022 23:32:59.311]INFO [django.utils.autoreload:251] /usr/src/app/core/payment.py changed, reloading.
+[26/Jul/2022 23:32:59.973]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[26/Jul/2022 23:33:25.835]INFO [django.utils.autoreload:251] /usr/src/app/api/urls.py changed, reloading.
+[26/Jul/2022 23:33:26.551]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[26/Jul/2022 23:33:38.120]INFO [django.utils.autoreload:251] /usr/src/app/core/admin.py changed, reloading.
+[26/Jul/2022 23:33:38.850]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[26/Jul/2022 23:34:07.206]INFO [django.server:161] "GET /admin/ HTTP/1.1" 200 9886
+[26/Jul/2022 23:34:07.432]INFO [django.server:161] "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[26/Jul/2022 23:34:07.432]INFO [django.server:161] "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 200 380
+[26/Jul/2022 23:34:07.432]INFO [django.server:161] "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 19513
+[26/Jul/2022 23:34:07.433]INFO [django.server:161] "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 18545
+[26/Jul/2022 23:34:07.457]INFO [django.server:161] "GET /staticfiles/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Jul/2022 23:34:07.469]INFO [django.server:161] "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[26/Jul/2022 23:34:07.470]INFO [django.server:161] "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[26/Jul/2022 23:34:07.481]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[26/Jul/2022 23:34:07.482]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[26/Jul/2022 23:34:07.487]WARNING [django.request:224] Not Found: /favicon.ico
+[26/Jul/2022 23:34:07.488]WARNING [django.server:161] "GET /favicon.ico HTTP/1.1" 404 3761
+[26/Jul/2022 23:34:07.488]INFO [django.server:161] "GET /staticfiles/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[26/Jul/2022 23:34:11.301]INFO [django.server:161] "GET /admin/core/payment/ HTTP/1.1" 200 8239
+[26/Jul/2022 23:34:11.357]INFO [django.server:161] "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6874
+[26/Jul/2022 23:34:11.358]INFO [django.server:161] "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 200 347
+[26/Jul/2022 23:34:11.362]INFO [django.server:161] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jul/2022 23:34:11.386]INFO [django.server:161] "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[27/Jul/2022 00:03:32.641]INFO [django.server:161] "POST /api/v1/auth HTTP/1.1" 200 209
+[27/Jul/2022 00:03:42.455]WARNING [django.request:224] Not Found: /api/v1/user/profile/company/1
+[27/Jul/2022 00:03:42.455]WARNING [django.server:161] "GET /api/v1/user/profile/company/1 HTTP/1.1" 404 96
+[27/Jul/2022 00:03:51.645]WARNING [django.request:224] Bad Request: /api/v1/user/profile/company
+[27/Jul/2022 00:03:51.646]WARNING [django.server:161] "GET /api/v1/user/profile/company HTTP/1.1" 400 96
+[27/Jul/2022 00:05:01.724]INFO [django.utils.autoreload:251] /usr/src/app/profileCompanies/company.py changed, reloading.
+[27/Jul/2022 00:05:02.408]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:05:40.603]INFO [django.utils.autoreload:251] /usr/src/app/profileCompanies/serializers.py changed, reloading.
+[27/Jul/2022 00:05:41.284]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:06:07.201]INFO [django.utils.autoreload:251] /usr/src/app/profileCompanies/serializers.py changed, reloading.
+[27/Jul/2022 00:06:07.907]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:06:09.299]INFO [django.server:161] "GET /api/v1/user/profile/company HTTP/1.1" 200 1782
+[27/Jul/2022 00:08:00.658]INFO [django.utils.autoreload:251] /usr/src/app/profileCompanies/company.py changed, reloading.
+[27/Jul/2022 00:08:01.419]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:08:06.849]INFO [django.server:161] "GET /api/v1/user/profile/company/1 HTTP/1.1" 200 836
+[27/Jul/2022 00:08:16.484]WARNING [django.request:224] Not Found: /api/v1/user/profile/company/2
+[27/Jul/2022 00:08:16.484]WARNING [django.server:161] "GET /api/v1/user/profile/company/2 HTTP/1.1" 404 68
+[27/Jul/2022 00:08:22.515]INFO [django.server:161] "GET /api/v1/user/profile/company/3 HTTP/1.1" 200 952
+[27/Jul/2022 00:08:26.567]INFO [django.server:161] "GET /api/v1/user/profile/company/1 HTTP/1.1" 200 836
+[27/Jul/2022 00:10:24.811]INFO [django.utils.autoreload:251] /usr/src/app/profileCompanies/company.py changed, reloading.
+[27/Jul/2022 00:10:25.497]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:10:55.451]INFO [django.utils.autoreload:251] /usr/src/app/profileCompanies/company.py changed, reloading.
+[27/Jul/2022 00:10:56.137]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:11:34.214]INFO [django.utils.autoreload:251] /usr/src/app/profileCompanies/serializers.py changed, reloading.
+[27/Jul/2022 00:11:34.891]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:11:57.710]INFO [django.utils.autoreload:251] /usr/src/app/profileCompanies/serializers.py changed, reloading.
+[27/Jul/2022 00:11:58.385]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:12:51.838]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[27/Jul/2022 00:12:52.523]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:14:06.358]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[27/Jul/2022 00:14:07.053]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:15:01.485]INFO [django.utils.autoreload:251] /usr/src/app/profiles/personal.py changed, reloading.
+[27/Jul/2022 00:15:02.166]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:16:06.670]WARNING [django.request:224] Not Found: /api/v1/user/professional-profile
+[27/Jul/2022 00:16:06.671]WARNING [django.server:161] "GET /api/v1/user/professional-profile HTTP/1.1" 404 8303
+[27/Jul/2022 00:16:38.628]INFO [django.server:161] "GET /api/v1/user/profile/personal HTTP/1.1" 200 1723
+[27/Jul/2022 00:16:49.172]INFO [django.server:161] "GET /api/v1/user/profile/personal/1 HTTP/1.1" 200 827
+[27/Jul/2022 00:22:52.116]INFO [django.utils.autoreload:251] /usr/src/app/cities/serializers.py changed, reloading.
+[27/Jul/2022 00:22:52.815]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:23:40.139]INFO [django.utils.autoreload:251] /usr/src/app/campaings/serializers.py changed, reloading.
+[27/Jul/2022 00:23:40.817]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:27:05.064]INFO [django.utils.autoreload:251] /usr/src/app/api/settings/production.py changed, reloading.
+[27/Jul/2022 00:27:05.742]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:27:19.256]INFO [django.utils.autoreload:251] /usr/src/app/campaings/serializers.py changed, reloading.
+[27/Jul/2022 00:27:19.932]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:27:24.267]WARNING [django.request:224] Not Found: /api/v1/user/campaing/list/23
+[27/Jul/2022 00:27:24.267]WARNING [django.server:161] "GET /api/v1/user/campaing/list/23 HTTP/1.1" 404 8291
+[27/Jul/2022 00:28:14.701]WARNING [django.request:224] Bad Request: /api/v1/user
+[27/Jul/2022 00:28:14.983]WARNING [django.request:224] Bad Request: /api/v1/user
+[27/Jul/2022 00:28:43.263]WARNING [django.request:224] Bad Request: /api/v1/user/campaing
+[27/Jul/2022 00:28:43.264]WARNING [django.server:161] "GET /api/v1/user/campaing HTTP/1.1" 400 128
+[27/Jul/2022 00:29:19.103]INFO [django.server:161] "GET /api/v1/user/campaing HTTP/1.1" 200 2810653
+[27/Jul/2022 00:30:33.382]INFO [django.utils.autoreload:251] /usr/src/app/core/campaing.py changed, reloading.
+[27/Jul/2022 00:30:34.070]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:30:36.114]INFO [django.server:161] "GET /api/v1/user/campaing HTTP/1.1" 200 789486
+[27/Jul/2022 00:31:23.519]INFO [django.utils.autoreload:251] /usr/src/app/core/campaing.py changed, reloading.
+[27/Jul/2022 00:31:24.210]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:31:36.811]INFO [django.utils.autoreload:251] /usr/src/app/campaings/views.py changed, reloading.
+[27/Jul/2022 00:31:37.495]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:33:17.413]WARNING [django.request:224] Bad Request: /api/v1/user/campaing/3
+[27/Jul/2022 00:33:17.413]WARNING [django.server:161] "GET /api/v1/user/campaing/3 HTTP/1.1" 400 55
+[27/Jul/2022 00:33:44.639]INFO [django.utils.autoreload:251] /usr/src/app/campaings/views.py changed, reloading.
+[27/Jul/2022 00:33:45.313]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:33:46.963]INFO [django.server:161] "GET /api/v1/user/campaing/3 HTTP/1.1" 200 112271
+[27/Jul/2022 00:33:58.222]INFO [django.server:161] "GET /api/v1/user/campaing/4 HTTP/1.1" 200 112271
+[27/Jul/2022 00:34:06.741]INFO [django.server:161] "GET /api/v1/user/campaing/6 HTTP/1.1" 200 112271
+[27/Jul/2022 00:38:40.843]INFO [django.utils.autoreload:251] /usr/src/app/core/campaing.py changed, reloading.
+[27/Jul/2022 00:38:41.529]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:39:26.801]INFO [django.utils.autoreload:251] /usr/src/app/core/campaing.py changed, reloading.
+[27/Jul/2022 00:39:27.570]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:39:29.109]INFO [django.server:161] "GET /api/v1/user/campaing HTTP/1.1" 200 789486
+[27/Jul/2022 00:39:37.488]INFO [django.server:161] "GET /api/v1/user/campaing/6 HTTP/1.1" 200 112271
+[27/Jul/2022 00:39:49.422]INFO [django.utils.autoreload:251] /usr/src/app/core/campaing.py changed, reloading.
+[27/Jul/2022 00:39:50.102]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader
+[27/Jul/2022 00:41:27.320]INFO [django.utils.autoreload:251] /usr/src/app/core/campaing.py changed, reloading.
+[27/Jul/2022 00:41:28.003]INFO [django.utils.autoreload:637] Watching for file changes with StatReloader

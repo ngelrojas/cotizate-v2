@@ -66,13 +66,12 @@ class Campaing(models.Model):
         return self.title
 
     @classmethod
-    def get_all_campaings(cls, request, deleted=8):
-        """get all campaings except deleted"""
-        return cls.objects.exclude(user=request.user, status=deleted)
+    def get_all_campaings(cls, request):
+        return cls.objects.filter(user=request.user, delete=False)
 
     @classmethod
     def get_campaing_id(cls, request, pk=None):
-        return cls.objects.get(id=pk, user=request.user)
+        return cls.objects.get(id=pk, user=request.user, delete=False)
 
     @classmethod
     def create(cls, objcate, objcity, objcurrency, request):
@@ -128,6 +127,12 @@ class Campaing(models.Model):
         resp.delete = True
         resp.save()
         return True
+
+    @classmethod
+    def get_all_campaings_by_status(cls, request, status):
+        """TODO: continue query about campaings"""
+        resp = cls.objects.filter(user=request.user, status=status, delete=False)
+        return resp
 
     # def get_all_completed(self):
     # """get all completed campaing to

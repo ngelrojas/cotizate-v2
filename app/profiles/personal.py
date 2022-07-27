@@ -40,9 +40,9 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def create(self, request):
         """create personal profile"""
         try: 
-            country_se = Country.objects.get(id=request.data.get("country_id"))
-            city_se = City.objects.get(id=request.data.get("city_id"))
-            prof_personal = PersonalProfile.created(request, country_se, city_se) 
+            country = Country.objects.get(id=request.data.get("country_id"))
+            city = City.objects.get(id=request.data.get("city_id"))
+            prof_personal = PersonalProfile.created(request, country, city) 
             return Response(
                 {"data": prof_personal, "msg": "personal profile created."},
                 status=status.HTTP_201_CREATED,
@@ -56,9 +56,9 @@ class PersonalProfileView(viewsets.ModelViewSet):
     def update(self, request, pk):
         """update profile current user"""
         try:
-            country_se = Country.objects.get(id=request.data.get("country_id"))
-            city_se = City.objects.get(id=request.data.get("city_id"))
-            complete = PersonalProfile.updated(request, country_se, city_se, pk) 
+            country = Country.objects.get(id=request.data.get("country_id"))
+            city = City.objects.get(id=request.data.get("city_id"))
+            complete = PersonalProfile.updated(request, country, city, pk) 
 
             return Response(
                 {"data": complete, "msg": "personal profile updated."},
@@ -80,5 +80,5 @@ class PersonalProfileView(viewsets.ModelViewSet):
         except Exception as err:
             return Response(
                 {"data": False, "msg": f"{err}"},
-                status=status.HTTP_404_NOT_FOUND
+                status=status.HTTP_400_BAD_REQUEST 
             )
