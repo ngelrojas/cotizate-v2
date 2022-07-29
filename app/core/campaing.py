@@ -70,8 +70,49 @@ class Campaing(models.Model):
         return cls.objects.filter(user=request.user, delete=False)
 
     @classmethod
+    def get_by_category(cls, request, category):
+        return cls.objects.filter(user=request.user, category=category, delete=False)
+
+    @classmethod
+    def get_by_city(cls, request, city):
+        return cls.objects.filter(user=request.user, city=city, delete=False)
+
+    @classmethod
+    def get_by_status(cls, request, status):
+        return cls.objects.filter(user=request.user, status=status, delete=False)
+
+    @classmethod
+    def get_by_flag(cls, request, flag):
+        return cls.objects.filter(user=request.user, flag=flag, delete=False)
+
+    @classmethod
+    def get_by_role(cls, request, role):
+        return cls.objects.filter(user=request.user, role=role, delete=False)
+
+    @classmethod
     def get_campaing_id(cls, request, pk=None):
         return cls.objects.get(id=pk, user=request.user, delete=False)
+
+    @classmethod
+    def get_campaing_by_range_date_created(cls, request):
+        return cls.objects.filter(
+                        user=request.user,
+                        created_at__range=[
+                            request.data.get("date_created_at"),
+                            request.data.get("date_ended_at")
+                        ]
+                )
+
+    @classmethod
+    def get_campaing_by_range_date_ended(cls, request):
+        return cls.objects.filter(
+                        user=request.user,
+                        ended_at__range=[
+                            request.data.get("date_created_at"),
+                            request.data.get("date_ended_at")
+                        ]
+                )
+    
 
     @classmethod
     def create(cls, objcate, objcity, objcurrency, request):

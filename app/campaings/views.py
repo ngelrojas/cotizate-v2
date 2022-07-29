@@ -86,3 +86,71 @@ class CampaingView(viewsets.ModelViewSet):
                     {"data": False, "msg": f"{e}"},
                     status=HTTP_400_BAD_REQUEST
             )
+
+
+class CampaingItems(viewsets.ModelViewSet):
+   
+    serializer_class = CampaingSerializer
+    queryset = Campaing.objects.all()
+
+    def list(self, request, pk=None):
+        try:
+            category = Category.get_category(pk)
+            resp = Campaing.get_by_category(request, category)
+            serializer = self.serializer_class(resp, many=True)
+            return Response(
+                {"data": serializer.data},
+                status=status.HTTP_200_OK
+            )
+        except Exception as e:
+            return Response(
+                {"data": None, "msg": f"{e}"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+    def retrieve(self, request, pk=None):
+        try:
+            city = City.objects.get(id=pk)
+            resp = Campaing.get_by_city(request, city)
+            serializer = self.serializer_class(resp, many=True)
+            return Response(
+                {"data": serializer.data},
+                status=status.HTTP_200_OK
+            )
+        except Exception as e:
+            return Response(
+                {"data": None, "msg": f"{e}"},
+                status=status.HTTP_204_NO_CONTENT
+            )
+       
+class CampaingStatus(viewsets.ModelViewSet):
+    serializer_class = CampaingSerializer
+    queryset = Campaing.objects.all()
+
+    def list(self, request, pk=None):
+        try:
+            resp = Campaing.get_by_status(request, pk)
+            serializer = self.serializer_class(resp, many=True)
+            return Response(
+                {"data": serializer.data},
+                status=status.HTTP_200_OK
+            )
+        except Exception as e:
+            return Response(
+                {"data": None, "msg": f"{e}"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+    def retrieve(self, request, pk=None):
+        try:
+            resp = Campaing.get_by_flag(request, pk)
+            serializer = self.serializer_class(resp, many=True)
+            return Response(
+                {"data": serializer.data},
+                status=status.HTTP_200_OK
+            )
+        except Exception as e:
+            return Response(
+                {"data": None, "msg": f"{e}"},
+                status=status.HTTP_400_BAD_REQUEST
+            )

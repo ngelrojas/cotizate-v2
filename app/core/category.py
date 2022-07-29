@@ -10,9 +10,9 @@ class Category(AbstractItem):
         return cls.object.filter(delete=delete)
 
     @classmethod
-    def get_category(cls, request, pk, delete=False):
-        category = cls.objects.get(id=pk, delete=delete)
-        return category
+    def get_category(cls, pk, delete=False):
+        resp = cls.objects.get(id=pk, delete=delete)
+        return resp 
 
     @classmethod
     def create(cls, request):
@@ -42,3 +42,4 @@ class Category(AbstractItem):
         deleted.delete = True
         deleted.save()
         return True
+

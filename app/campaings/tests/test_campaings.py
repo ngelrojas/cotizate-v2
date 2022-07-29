@@ -147,3 +147,35 @@ class CampaingTests(TestCase):
                 data=payload
                 ) 
         self.assertEqual(res.status_code, status.HTTP_204_NO_CONTENT)
+
+    def test_get_campaing_by_category(self):
+        res = self.client.get(
+            reverse('campaing:campaing-category',
+                kwargs={'pk': self.category.id}),
+                    data=None
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_get_campaing_by_city(self):
+        res = self.client.get(
+            reverse('campaing:campaing-city',
+                kwargs={'pk': self.city.id}),
+                    data=None
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_get_campaing_by_status(self):
+        res = self.client.get(
+            reverse('campaing:campaing-status',
+                kwargs={'pk': 1}),
+                    data=None
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_get_campaing_by_flag(self):
+        res = self.client.get(
+            reverse('campaing:campaing-flag',
+                kwargs={'pk': 1}),
+                    data=None
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
