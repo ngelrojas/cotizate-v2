@@ -45,7 +45,7 @@ class Campaing(models.Model):
     updated_at = models.DateTimeField(null=True, blank=True)
     public_at = models.DateTimeField(null=True, blank=True)
     ended_at = models.DateTimeField(null=True, blank=True)
-    status = models.PositiveSmallIntegerField(choices=STATUS_CAMPAING, default=2)
+    status = models.PositiveSmallIntegerField(choices=STATUS_CAMPAING, default=1)
     flag = models.PositiveSmallIntegerField(choices=FLAG_CAMPAING, default=1)
     currency = models.ForeignKey(Currency, on_delete=models.CASCADE)
     short_url = models.CharField(max_length=100, null=True, blank=True)
@@ -94,29 +94,32 @@ class Campaing(models.Model):
         return cls.objects.get(id=pk, user=request.user, delete=False)
 
     @classmethod
-    def get_campaing_by_range_date_created(cls, request):
+    def get_by_status_flag(cls, request, status, flag):
+        return cls.objects.filter(
+                user=request.user,
+                status=status,
+                flag=flag,
+                delete=False
+        )
+
+    @classmethod
+    def get_campaing_by_range_date_created(cls, request, dipk, dfpk):
         return cls.objects.filter(
                         user=request.user,
-                        created_at__range=[
-                            request.data.get("date_created_at"),
-                            request.data.get("date_ended_at")
-                        ]
+                        created_at__range=[dipk, dfpk]
                 )
 
     @classmethod
-    def get_campaing_by_range_date_ended(cls, request):
+    def get_campaing_by_range_date_ended(cls, request, dipk, dfpk):
         return cls.objects.filter(
                         user=request.user,
-                        ended_at__range=[
-                            request.data.get("date_created_at"),
-                            request.data.get("date_ended_at")
-                        ]
+                        ended_at__range=[dipk, dfpk]
                 )
     
 
     @classmethod
-    def create(cls, objcate, objcity, objcurrency, request):
-        created = cls.objects.create(
+    def created(cls, objcate, objcity, objcurrency, request):
+        resp = cls.objects.create(
             title = request.data.get("title"), 
             video_main = request.data.get("video_main"), 
             imagen_main = request.data["imagen_main"], 
@@ -134,7 +137,7 @@ class Campaing(models.Model):
             role = request.data.get("role"),
             code_campaing = request.data.get("code_campaing") 
         )
-        return created.id
+        return resp.id
 
     @classmethod
     def updated(cls, objcate, objcity, objcurrency, request, pk):
@@ -175,45 +178,3 @@ class Campaing(models.Model):
         resp = cls.objects.filter(user=request.user, status=status, delete=False)
         return resp
 
-    # def get_all_completed(self):
-    # """get all completed campaing to
-    # the current user
-    # """
-    # return Campaing.objects.filter(users=self.request.user, status=6)
-
-    # def get_all_terminated(self):
-    # """get all terminated campaing"""
-    # return Campaing.objects.filter(users=self.request.user, status=7)
-
-    # def get_archived(self, current_user):
-    # """
-    # get all archived campaing
-    # current user
-    # """
-    # return Campaing.objects.filter(users=current_user, status=8)
-
-    # def retrieve_campaing(self, current_user, pk):
-    # """
-    # retrieve current campaing with the current user
-    # """
-    # return Campaing.objects.exclude(Q(status=8) | Q(status=9)).get(
-    # users=current_user, id=pk
-    # )
-
-    # def update_to_archived(self, current_user, pk):
-    # """update status to archived=8"""
-    # camp = Campaing.objects.exclude(
-    # Q(status=9) | Q(status=5) | Q(status=6) | Q(status=7)
-    # ).get(users=current_user, id=pk)
-    # camp.status = 8
-    # camp.save()
-    # return camp
-
-    # def update_to_delete(self, current_user, pk):
-    # """update status to deleted=9"""
-    # camp = Campaing.objects.exclude(
-    # Q(status=5) | Q(status=6) | Q(status=7) | Q(status=8)
-    # ).get(users=current_user, id=pk)
-    # camp.status = 9
-    # camp.save()
-    # return camp

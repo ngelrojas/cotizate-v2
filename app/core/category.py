@@ -6,7 +6,7 @@ class Category(AbstractItem):
     """category model"""
 
     @classmethod 
-    def list(cls, request, delete=False):
+    def get_all(cls, delete=False):
         return cls.object.filter(delete=delete)
 
     @classmethod
@@ -15,31 +15,31 @@ class Category(AbstractItem):
         return resp 
 
     @classmethod
-    def create(cls, request):
-        created = cls.objects.create(
+    def created(cls, request):
+        resp = cls.objects.create(
                 name=request.data.get("name"),
                 description=request.data.get("description"),
                 img_banner=request.data["img_banner"],
                 img_icon=request.data["img_icon"]
         )
-        return created.id
+        return resp.id
 
     @classmethod
-    def update(cls, request, pk):
-        updated = cls.get_category(id=pk)
-        updated.name = request.data.get("name")
-        updated.description = request.data.get("description")
+    def updated(cls, request, pk):
+        resp = cls.get_category(id=pk)
+        resp.name = request.data.get("name")
+        resp.description = request.data.get("description")
         if request.data["img_banner"]:
-            updated.img_banner = request.data["img_banner"]
+            resp.img_banner = request.data["img_banner"]
         if request.data["img_icon"]:
-            updated.img_icon = request.data["img_icon"]
-        updated.save()
-        return updated.id
+            resp.img_icon = request.data["img_icon"]
+        resp.save()
+        return resp.id
 
     @classmethod
     def erase(cls, pk):
-        deleted = cls.get_category(pk)
-        deleted.delete = True
-        deleted.save()
+        resp = cls.get_category(pk)
+        resp.delete = True
+        resp.save()
         return True
 

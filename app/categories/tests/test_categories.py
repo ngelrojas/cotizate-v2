@@ -14,5 +14,11 @@ class CategoryTests(TestCase):
 
     def test_create_category(self):
         """create a category"""
-        res = self.client.get(CATEGORY_URL)
-        self.assertEqual(res.status_code, status.HTTP_200_OK)
+        payload = {
+                "name": "one",
+                "description": "one",
+                "img_banner": "banner.png",
+                "img_icon": "icon.png"
+                } 
+        res = self.client.post(CATEGORY_URL, payload)
+        self.assertEqual(res.status_code, status.HTTP_201_CREATED)

@@ -179,3 +179,39 @@ class CampaingTests(TestCase):
                     data=None
         )
         self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_get_campaing_by_status_flag(self):
+        res = self.client.get(
+            reverse('campaing:campaing-status-flag',
+                kwargs={'pk': 1, 'fl': 2}),
+                    data=None
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_get_campaing_by_role(self):
+        res = self.client.get(
+            reverse('campaing:campaing-role',
+                kwargs={'pk': 1}),
+                    data=None
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_get_by_dates_created(self):
+        dipk = "2020-03-27"
+        dfpk = "2021-03-10"
+        res = self.client.get(
+            reverse('campaing:campaing-created',
+                kwargs={'dipk': dipk, 'dfpk': dfpk }),
+                    data=None
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def test_get_by_dates_ended(self):
+        dipk = "2020-03-27"
+        dfpk = "2021-03-10"
+        res = self.client.get(
+            reverse('campaing:campaing-ended',
+                kwargs={'dipk': dipk, 'dfpk': dfpk }),
+                    data=None
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
