@@ -4,6 +4,11 @@ from .views import CampaingItems
 from .views import CampaingStatus
 from .views import CampaingStuff
 from .views import CampaingDates
+from .campaing_views import CampaingView1
+from .campaing_views import CampaingView2
+from .campaing_views import CampaingView3
+from .campaing_views import CampaingView4
+from .campaing_views import CampaingView5
 
 app_name = "campaing"
 
@@ -51,5 +56,40 @@ urlpatterns = [
     path("user/campaing/ended/<str:dipk>/<str:dfpk>",
         CampaingDates.as_view({"get": "retrieve"}),
         name="campaing-ended"
+    ),
+    path("campaing/all", CampaingView1.as_view({"get": "list"}),
+        name="public-campaing-all"
+    ),
+    path("campaing/<int:pk>/category",
+        CampaingView1.as_view({"get": "retrieve"}),
+        name="public-campaing-category"
+    ),
+    path("campaing/<int:pk>/city",
+        CampaingView2.as_view({"get": "list"}),
+        name="public-campaing-city"
+    ),
+    path("campaing/title/<str:title>",
+        CampaingView2.as_view({"get": "retrieve"}),
+        name="public-campaing-title"
+    ),
+    path("campaing/<str:flag>/flag",
+        CampaingView3.as_view({"get": "list"}),
+        name="public-campaing-flag"
+    ),
+    path("campaing/<int:role>/role",
+        CampaingView3.as_view({"get": "retrieve"}),
+        name="public-campaing-role"
+    ),
+    path("campaing/created/<str:dinit>/<str:dfinal>",
+        CampaingView4.as_view({"get": "list"}),
+        name="public-campaing-created"
+    ),
+    path("campaing/ended/<str:dinit>/<str:dfinal>",
+        CampaingView4.as_view({"get": "retrieve"}),
+        name="public-campaing-ended"
+    ),
+    path("campaing/status/<int:status>/<int:flag>/flag",
+        CampaingView5.as_view({"get": "retrieve"}),
+        name="public-campaing-status-flag"
     ),
 ]
