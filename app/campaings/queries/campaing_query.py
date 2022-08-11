@@ -10,7 +10,7 @@ class CampaingQuery:
 
     @classmethod
     def get_by_category(cls, category):
-        return Campaing.obj.objects.filter(category=category, delete=False)
+        return Campaing.objects.filter(category=category, delete=False)
 
     @classmethod
     def get_by_city(cls, city):
@@ -18,7 +18,15 @@ class CampaingQuery:
 
     @classmethod
     def get_by_title(cls, title):
+        return Campaing.objects.filter(title__contains=title, delete=False)
+
+    @classmethod
+    def get_by_exact_title(cls, title):
         return Campaing.objects.get(title=title, delete=False)
+
+    @classmethod
+    def get_by_campaing_id(cls, campaing_id):
+        return Campaing.objects.get(id=campaing_id, delete=False)
 
     @classmethod
     def get_by_flag(cls, flag):

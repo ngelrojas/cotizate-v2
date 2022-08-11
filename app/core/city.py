@@ -10,4 +10,4 @@ class City(AbstractCC):
 
     @classmethod
     def get_by_id(cls, id):
-        return cls.objects.get(id=id, delete=False)
+        return cls.objects.get(id=id)

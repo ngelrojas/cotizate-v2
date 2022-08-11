@@ -9,6 +9,7 @@ from .campaing_views import CampaingView2
 from .campaing_views import CampaingView3
 from .campaing_views import CampaingView4
 from .campaing_views import CampaingView5
+from .campaing_views import CampaingView6
 
 app_name = "campaing"
 
@@ -72,7 +73,7 @@ urlpatterns = [
         CampaingView2.as_view({"get": "retrieve"}),
         name="public-campaing-title"
     ),
-    path("campaing/<str:flag>/flag",
+    path("campaing/<int:flag>/flag",
         CampaingView3.as_view({"get": "list"}),
         name="public-campaing-flag"
     ),
@@ -88,8 +89,16 @@ urlpatterns = [
         CampaingView4.as_view({"get": "retrieve"}),
         name="public-campaing-ended"
     ),
-    path("campaing/status/<int:status>/<int:flag>/flag",
-        CampaingView5.as_view({"get": "retrieve"}),
+    path("campaing/status/<int:field_status>/<int:flag>/flag",
+        CampaingView5.as_view({"get": "list"}),
         name="public-campaing-status-flag"
+    ),
+    path("campaing/exact-title/<str:title>",
+        CampaingView5.as_view({"get": "retrieve"}),
+        name="public-campaing-exact-title"
+    ),
+    path("campaing/<int:campaing_id>",
+        CampaingView6.as_view({"get": "retrieve"}),
+        name="public-campaing-id"
     ),
 ]

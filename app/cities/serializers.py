@@ -10,12 +10,4 @@ class CitySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = City
-        fields = (
-            "id",
-            "name",
-            "slug",
-            "short_name",
-            "code_name",
-            "description",
-            "countries",
-        )
+        fields = "__all__" 
